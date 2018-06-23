@@ -142,7 +142,7 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
    </LINK>
-   <NODE id="49" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
+   <NODE id="49" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="InAWindow">
    <BOUNDS type="Node" left="590" top="3350" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="590" top="3350">

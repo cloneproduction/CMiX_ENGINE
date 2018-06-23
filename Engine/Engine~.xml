@@ -88,7 +88,7 @@
    </NODE>
    <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="8" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <NODE id="824" componentmode="Hidden" systemname="Mask" filename="Mask\Mask.v4p" nodename="Mask\Mask.v4p">
+   <NODE id="824" componentmode="InAWindow" systemname="Mask" filename="Mask\Mask.v4p" nodename="Mask\Mask.v4p">
    <BOUNDS type="Node" left="890" top="2640" width="705" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="890" top="2640" width="16752" height="13588">

@@ -297,9 +297,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40">
-   <BOUNDS type="Box" left="3390" top="1020" width="2480" height="240">
+   <BOUNDS type="Box" left="3390" top="660" width="1590" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3390" top="1020" width="0" height="0">
+   <BOUNDS type="Node" left="3390" top="660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Geometry/GeometryPaths">
    </PIN>

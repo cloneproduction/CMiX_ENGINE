@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\TextureMask\TextureMask.v4p" systemname="TextureMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\TextureMask\TextureMask.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\TextureMask\TextureMask.v4p" systemname="TextureMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\TextureMask\TextureMask.v4p" scrollx="0" scrolly="0">
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1980" top="6330" width="100" height="100">
    </BOUNDS>
@@ -154,7 +154,7 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="21350" top="6960" width="8730" height="13290">
+   <BOUNDS type="Window" left="16240" top="7350" width="8730" height="13290">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -173,13 +173,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|SltMskName Bin Size|">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="1,0,0,0,0,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="4" values="0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
    <BOUNDS type="Node" left="1970" top="850" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1970" top="850" width="735" height="240">
+   <BOUNDS type="Box" left="1970" top="850" width="830" height="580">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -205,7 +205,7 @@
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="52">
    <BOUNDS type="Node" left="3075" top="3960" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" visible="1" slicecount="6" values="1,0,0,0,0,0">
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="6" values="1,0,1,1,1,1">
    </PIN>
@@ -281,9 +281,9 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="85">
    <BOUNDS type="Node" left="3785" top="2165" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3785" top="2165" width="1335" height="240">
+   <BOUNDS type="Box" left="3785" top="2165" width="2330" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="MaskSelectedTex">
+   <PIN pinname="Input String" slicecount="1" values="Mask/Geometry/GeometryPaths">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -307,9 +307,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="SizeXY">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="101" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="106">
    <BOUNDS type="Node" left="3605" top="1640" width="100" height="100">
    </BOUNDS>
@@ -373,6 +373,8 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1970" top="3230">
    </BOUNDS>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="82" srcpinname="Output Node" dstnodeid="118" dstpinname="Input">
    </LINK>
@@ -381,8 +383,6 @@
    <LINK srcnodeid="118" srcpinname="Output" dstnodeid="68" dstpinname="Spread">
    </LINK>
    <LINK srcnodeid="118" srcpinname="Bin Sizes" dstnodeid="52" dstpinname="Select">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Bin Sizes" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="ConstantTexArray (DX11.Effect)" filename="..\..\_Shared\ConstantTexArray.fx" nodename="ConstantTexArray (DX11.Effect)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="1100" top="8920" width="100" height="100">
@@ -403,5 +403,41 @@
    <LINK srcnodeid="75" srcpinname="Layer" dstnodeid="2" dstpinname="Layer">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="75" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Output Bin Size" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="119">
+   <BOUNDS type="Node" left="6830" top="9650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="119" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="119" srcpinname="Output" dstnodeid="101" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="120">
+   <BOUNDS type="Box" left="7490" top="8870" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7490" top="8870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="256,256">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="119" dstpinname="Default">
    </LINK>
    </PATCH>

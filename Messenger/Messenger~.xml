@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4610" top="4920" width="21110" height="11150">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -303,8 +303,6 @@
    </PIN>
    <BOUNDS type="Box" left="4050" top="5300">
    </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="LayerNames">
-   </PIN>
    </NODE>
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="1037">
    <BOUNDS type="Node" left="1420" top="5345" width="100" height="100">
@@ -413,8 +411,6 @@
    </PIN>
    <BOUNDS type="Box" left="8980" top="5300">
    </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="LayerRemoved">
-   </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1100">
    <BOUNDS type="Node" left="9920" top="1130" width="100" height="100">
@@ -511,53 +507,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1106" srcpinname="Y Output Value" dstnodeid="896" dstpinname="Evaluate">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1109">
-   <BOUNDS type="Node" left="15560" top="5350" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15560" top="5350" width="2320" height="250">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Layer0/Content/Geometry/GeometryPaths">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1108" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="0" left="14610" top="6190" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1109" srcpinname="Output String" dstnodeid="1108" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="1041" srcpinname="Output" dstnodeid="1108" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1107">
-   <BOUNDS type="Node" left="14620" top="6880" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1108" srcpinname="OnReceive" dstnodeid="1107" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="1108" srcpinname="Arguments" dstnodeid="1107" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1110">
-   <BOUNDS type="Box" left="14640" top="7890" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14640" top="7890" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1110" dstpinname="Input String">
    </LINK>
    </PATCH>
