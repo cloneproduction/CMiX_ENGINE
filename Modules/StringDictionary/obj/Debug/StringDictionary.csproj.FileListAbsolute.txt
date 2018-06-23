@@ -12,3 +12,4 @@ C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\bin\Any
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\bin\AnyCPU\Debug\StringDictionary.pdb
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.dll
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.pdb
+C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.csprojResolveAssemblyReference.cache

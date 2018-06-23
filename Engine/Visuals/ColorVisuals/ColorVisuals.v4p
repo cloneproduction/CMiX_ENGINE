@@ -61,7 +61,7 @@
    </PIN>
    </NODE>
    <NODE id="226" systemname="HexToColor (Color)" filename="plugins\ColorHexToColor\ColorHexToColor.csproj" nodename="HexToColor (Color)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input" visible="1" pintype="Input" slicecount="6" values="#FFFFFFFF,#FFFFFFFF,#FFFFFFFF,#FFFFFFFF,#FFFFFFFF,#FFFFFFFF">
+   <PIN pinname="Input" visible="1" pintype="Input">
    </PIN>
    <BOUNDS type="Node" left="930" top="4200" width="100" height="100">
    </BOUNDS>
@@ -81,24 +81,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="226" srcpinname="Output" dstnodeid="190" dstpinname="Input">
-   </LINK>
-   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="262" debug="0">
-   <BOUNDS type="Node" left="930" top="3230" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="930" top="3230">
-   </BOUNDS>
-   <PIN pinname="Address" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnReceive" visible="1">
-   </PIN>
-   <PIN pinname="Default" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="8760" top="6320" width="11120" height="9940">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="262" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\..\modules\OSCValue.v4p" componentmode="Hidden" id="263" debug="0">
    <BOUNDS type="Node" left="4090" top="9300" width="100" height="100">
@@ -548,8 +530,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="650" srcpinname="Output String" dstnodeid="262" dstpinname="Default">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="651">
    <BOUNDS type="Box" left="4560" top="8530" width="800" height="240">
    </BOUNDS>
@@ -565,8 +545,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="651" srcpinname="Y Output Value" dstnodeid="263" dstpinname="Default">
-   </LINK>
-   <LINK srcnodeid="262" srcpinname="Output" dstnodeid="226" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="652">
    <BOUNDS type="Node" left="11550" top="8530" width="100" height="100">
@@ -725,5 +703,21 @@
    <LINK srcnodeid="659" srcpinname="Output" dstnodeid="18" dstpinname="Hue">
    </LINK>
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="263" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="666" debug="0">
+   <BOUNDS type="Node" left="930" top="3230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="930" top="3230">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8760" top="6320" width="11120" height="9940">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="666" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="650" srcpinname="Output String" dstnodeid="666" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="666" srcpinname="Output" dstnodeid="226" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="619" srcpinname="Output" dstnodeid="666" dstpinname="Address">
    </LINK>
    </PATCH>

@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace VVVV.Nodes
 {
-	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#")]
+	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = true)]
 
 	public class StringDictionaryNode : IPluginEvaluate
 	{
