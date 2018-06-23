@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace VVVV.Nodes
 {
-	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = true)]
+	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#")]
 
 	public class StringDictionaryNode : IPluginEvaluate
 	{
@@ -30,8 +30,8 @@ namespace VVVV.Nodes
         public IDiffSpread<ISpread<string>> FAddValue;
 
 
-        [Input("Update", IsBang = true)]
-        public IDiffSpread<bool> FUpdate;
+        [Input("Update")]
+        public ISpread<bool> FUpdate;
 
         [Input("Update Key", DefaultString = "")]
         public ISpread<string> FUpdateKey;
@@ -69,7 +69,7 @@ namespace VVVV.Nodes
                         if (!FAdd[i]) continue;
                         if (dict.ContainsKey(FAddKey[i]) == false)
                         {
-                            dict.Add(FAddKey[i], FAddValue[i]);
+                            dict.Add(FAddKey[i], FAddValue[i].Clone());
                         }
                     }
                 }
@@ -81,11 +81,11 @@ namespace VVVV.Nodes
                 {
                     for (int i = 0; i < FUpdateKey.SliceCount; i++)
                     {
-                        if (FUpdate[i] == true)
+                        if (FUpdate[i])
                         {
                             if (dict.ContainsKey(FUpdateKey[i]))
                             {
-                                dict[FUpdateKey[i]] = FUpdateValue[i];
+                                dict[FUpdateKey[i]] = FUpdateValue[i].Clone();
                             }
                         }
                     }
@@ -115,13 +115,13 @@ namespace VVVV.Nodes
                         continue;
                     }
 
-                    if (dict.ContainsKey(FQueryKey[i]) == false)
+                    if (!dict.ContainsKey(FQueryKey[i]))
                     {
                         FOutputQueryValue[i].SliceCount = 0;
                         continue;
                     }
 
-                    if (dict.ContainsKey(FQueryKey[i]) == true)
+                    if (dict.ContainsKey(FQueryKey[i]))
                     {
                         FOutputQueryValue[i] = dict[FQueryKey[i]];
                     }

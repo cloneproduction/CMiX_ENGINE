@@ -52,7 +52,7 @@
    <BOUNDS type="Box" left="7780" top="6600">
    </BOUNDS>
    </NODE>
-   <NODE id="4" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <NODE id="4" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="1165" top="3945" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1165" top="3945" width="4800" height="3600">

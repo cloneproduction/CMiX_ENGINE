@@ -82,12 +82,12 @@
    </NODE>
    <LINK srcnodeid="226" srcpinname="Output" dstnodeid="190" dstpinname="Input">
    </LINK>
-   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="InAWindow" id="262" debug="0">
+   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="262" debug="0">
    <BOUNDS type="Node" left="930" top="3230" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="930" top="3230">
    </BOUNDS>
-   <PIN pinname="Address" visible="1">
+   <PIN pinname="Address" visible="1" slicecount="1" values="text">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -95,6 +95,8 @@
    </PIN>
    <PIN pinname="Default" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="8760" top="6320" width="11120" height="9940">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="262" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -111,9 +113,9 @@
    </PIN>
    <BOUNDS type="Window" left="15190" top="10360" width="16820" height="9030">
    </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="263" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\..\modules\OSCValue.v4p" componentmode="Hidden" id="264">
    <BOUNDS type="Node" left="11080" top="9300" width="100" height="100">
    </BOUNDS>
@@ -213,8 +215,6 @@
    <LINK srcnodeid="618" srcpinname="Output String" dstnodeid="619" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="620" srcpinname="Output" dstnodeid="619" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="619" srcpinname="Output" dstnodeid="262" dstpinname="Address">
    </LINK>
    <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="624">
    <BOUNDS type="Node" left="5610" top="7310" width="100" height="100">
@@ -723,5 +723,7 @@
    <LINK srcnodeid="665" srcpinname="Output" dstnodeid="659" dstpinname="ModifierName">
    </LINK>
    <LINK srcnodeid="659" srcpinname="Output" dstnodeid="18" dstpinname="Hue">
+   </LINK>
+   <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="263" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

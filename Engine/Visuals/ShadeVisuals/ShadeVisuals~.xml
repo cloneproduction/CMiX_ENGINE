@@ -704,7 +704,7 @@
    </NODE>
    <LINK srcnodeid="599" srcpinname="Output" dstnodeid="134" dstpinname=".. To [">
    </LINK>
-   <NODE systemname="TextureControls" filename="TextureControls.v4p" nodename="TextureControls.v4p" componentmode="Hidden" id="601">
+   <NODE systemname="TextureControls" filename="TextureControls.v4p" nodename="TextureControls.v4p" componentmode="InAWindow" id="601">
    <BOUNDS type="Node" left="13890" top="4590" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="13890" top="4590" width="18680" height="7485">

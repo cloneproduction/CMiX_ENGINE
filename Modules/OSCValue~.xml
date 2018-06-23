@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
+   <BOUNDS type="Window" left="14900" top="10220" width="13910" height="8570">
    </BOUNDS>
    <NODE id="6" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
    <BOUNDS height="0" left="5410" top="3580" type="Node" width="0">
@@ -238,6 +238,22 @@
    </LINK>
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="7" dstpinname="Input">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70">
+   <BOUNDS type="Box" left="8870" top="1950" width="4010" height="630">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8870" top="1950" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="70" dstpinname="Input String">
+   </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="66" dstpinname="Output Key" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="66" dstpinname="Delete Key">
@@ -250,8 +266,30 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="66" dstpinname="Add Value">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="66" dstpinname="Update Value">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
+   <BOUNDS type="Box" left="3900" top="3930" width="500" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3900" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Update">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="66" dstpinname="Update">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="66" dstpinname="Update">
+   <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="66" dstpinname="Update Value">
    </LINK>
    </PATCH>
