@@ -1,0 +1,325 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\TransformsView\TransformView.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4710" top="7300" width="13850" height="10970">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="104" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1710" top="7890" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="7890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Rotate Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="115">
+   <BOUNDS type="Node" left="7785" top="1560" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7785" top="1560" width="810" height="705">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="2,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BeatInfos">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10595" top="4010" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10595" top="4010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SpreadCount">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="531">
+   <BOUNDS type="Node" left="6405" top="4770" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6405" top="4770" width="11686" height="9009">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3960" top="2030" width="19500" height="11850">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="531" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="RandomXYZ" filename="RandomXYZ\RandomXYZ.v4p" nodename="RandomXYZ\RandomXYZ.v4p" componentmode="Hidden" id="532">
+   <BOUNDS type="Node" left="7790" top="4770" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7790" top="4770" width="6988" height="10042">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8550" top="5280" width="14280" height="16830">
+   </BOUNDS>
+   <PIN pinname="Input - Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="RotationName" visible="1" slicecount="6" values=",,,,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="532" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="532" dstpinname="Beat" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="533">
+   <BOUNDS type="Node" left="9180" top="4770" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9180" top="4770" width="6244" height="12997">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10150" top="5120" width="13580" height="15680">
+   </BOUNDS>
+   <PIN pinname="Input - Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="RotationName" visible="1" slicecount="6" values=",,,,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Beats" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="578">
+   <BOUNDS type="Box" left="1710" top="1590" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="1590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="584" nodename="IOBox (String)">
+   <BOUNDS height="0" left="3035" top="2745" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="3035" top="2745" type="Box" width="1635">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/Layer0/SpriteRot">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="RotationAddress">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="588" nodename="IOBox (String)">
+   <BOUNDS height="0" left="6155" top="2775" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="6155" top="2775" type="Box" width="1605">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/Layer0/SpriteRotateList">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="RotationStyle">
+   </PIN>
+   </NODE>
+   <NODE systemname="SortRotation" filename="SortRotation\SortRotation.v4p" nodename="SortRotation\SortRotation.v4p" componentmode="Hidden" id="613">
+   <BOUNDS type="Node" left="5010" top="5820" width="5600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="25880" top="9150" width="9880" height="12100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5010" top="5820">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="531" srcpinname="Output" dstnodeid="613" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="532" srcpinname="Position Out" dstnodeid="613" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="533" srcpinname="Output" dstnodeid="613" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="613" dstpinname="Select" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Rotate" filename="Rotate\Rotate.v4p" nodename="Rotate\Rotate.v4p" componentmode="Hidden" id="617">
+   <BOUNDS type="Node" left="1710" top="7175" width="6660" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13080" top="10070" width="9220" height="7890">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="1710" top="7175">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="617" srcpinname="Transform Out" dstnodeid="104" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="613" srcpinname="Output" dstnodeid="617" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="617" dstpinname="Select" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="622">
+   <BOUNDS type="Node" left="5975" top="2115" width="1230" height="270">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="621">
+   <BOUNDS type="Node" left="5990" top="3255" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="622" srcpinname="Output" dstnodeid="621" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="588" srcpinname="Output String" dstnodeid="621" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="625">
+   <BOUNDS type="Node" left="2860" top="2130" width="1230" height="270">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="624">
+   <BOUNDS type="Node" left="2855" top="3225" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="625" srcpinname="Output" dstnodeid="624" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="584" srcpinname="Output String" dstnodeid="624" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="627">
+   <BOUNDS type="Node" left="2190" top="3230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2190" top="3230" width="540" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="628">
+   <BOUNDS type="Node" left="5170" top="3240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5170" top="3240" width="740" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="STD_CTR">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="629">
+   <BOUNDS type="Node" left="5010" top="3720" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5010" top="3720" width="3100" height="4460">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="629" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="629" srcpinname="Output" dstnodeid="531" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="629" srcpinname="Output" dstnodeid="532" dstpinname="RotationName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="629" srcpinname="Output" dstnodeid="533" dstpinname="RotationName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="629" srcpinname="Output" dstnodeid="613" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="621" srcpinname="Output" dstnodeid="629" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="628" srcpinname="Output String" dstnodeid="629" dstpinname="Default">
+   </LINK>
+   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="630">
+   <BOUNDS type="Node" left="1710" top="3720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1710" top="3720">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="630" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="630" srcpinname="Output" dstnodeid="617" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="624" srcpinname="Output" dstnodeid="630" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="627" srcpinname="Y Output Value" dstnodeid="630" dstpinname="Default">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="631">
+   <BOUNDS type="Box" left="3400" top="5020" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3400" top="5020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="629" srcpinname="Output" dstnodeid="631" dstpinname="Input String">
+   </LINK>
+   </PATCH>

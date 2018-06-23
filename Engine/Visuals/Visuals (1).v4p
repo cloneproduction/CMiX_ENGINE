@@ -1,0 +1,365 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="10">
+   <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Beats">
+   </PIN>
+   <BOUNDS type="Box" left="5620" top="350" width="645" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5620" top="350" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="17430" top="12000" width="16260" height="8070">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Geometries" filename="Geometries\Geometries.v4p" nodename="Geometries\Geometries.v4p" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2890" top="1590" width="1130" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2890" top="1590" width="4324" height="6040">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18075" top="5475" width="4830" height="6735">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="GeometryBinSize" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TransformVisuals" filename="TransformVisuals\TransformVisuals.v4p" nodename="TransformVisuals" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="4130" top="1590" width="1455" height="270">
+   </BOUNDS>
+   <PIN pinname="ChannelParameters" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="4130" top="1590">
+   </BOUNDS>
+   <PIN pinname="BeatInfos" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="14115" top="11295" width="9480" height="7890">
+   </BOUNDS>
+   <PIN pinname="TexAspRat" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Beats" visible="1" slicecount="132" values="0.0630322265625,0,0,0.0630322265625,0,0,0.0630322265625,0,0,0.0630322265625,0,0,0.25212890625,0,0,0.25212890625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0,1.008515625,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="ColorVisuals" filename="ColorVisuals\ColorVisuals.v4p" nodename="ColorVisuals\ColorVisuals.v4p" componentmode="Hidden" id="2" debug="0">
+   <BOUNDS type="Node" left="13930" top="1590" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13930" top="1590" width="3360" height="5056">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16160" top="7630" width="33020" height="19590">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="FFT" visible="1" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Bass" visible="1" slicecount="1" values="0.030665788570233">
+   </PIN>
+   <PIN pinname="Influence" visible="1">
+   </PIN>
+   <PIN pinname="VisualType" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Beats" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="High" slicecount="1" visible="1" values="0.0418983651300812">
+   </PIN>
+   <PIN pinname="ColorBinSize" visible="1">
+   </PIN>
+   <PIN pinname="Beat" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="750" top="350" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="750" top="350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="5" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="2" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="750" top="6520" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="750" top="6520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node - Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="4" componentmode="Hidden" systemname="RenderVisuals" filename="RenderVisuals\RenderVisuals.v4p" nodename="RenderVisuals\RenderVisuals.v4p">
+   <BOUNDS type="Window" left="9580" top="8870" width="12670" height="11890">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1050" top="3715" width="1320" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1050" top="3715" width="9421" height="6046">
+   </BOUNDS>
+   <PIN pinname="Message" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Node - Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="AddressView" visible="1">
+   </PIN>
+   <PIN pinname="AdressViewStyle" visible="1" slicecount="1" values="/ChannelSpriteView">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="4" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="1370" top="4310" width="1180" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1370" top="4310" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SpriteFeedBack">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14">
+   <BOUNDS type="Box" left="1670" top="4825" width="780" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1670" top="4825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SpriteBlur">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE id="16" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
+   <BOUNDS type="Node" left="750" top="5840" width="1260" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="750" top="5840">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10230" top="2410" width="9450" height="5340">
+   </BOUNDS>
+   <PIN pinname="Address" visible="1" slicecount="1" values="/ChannelMaskTransform">
+   </PIN>
+   <PIN pinname="TexArray Out" visible="1">
+   </PIN>
+   <PIN pinname="Blur" visible="1">
+   </PIN>
+   <PIN pinname="AddressFeedBack" visible="1">
+   </PIN>
+   <PIN pinname="TexArray" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="AddressView" visible="1" slicecount="1" values="/ChannelSpriteView">
+   </PIN>
+   <PIN pinname="AdressViewStyle" visible="1">
+   </PIN>
+   <PIN pinname="AddressTexTransform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="16" dstpinname="Blur">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="16" dstpinname="FeedBack">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Input Node - Texture Out" dstnodeid="16" dstpinname="TexArray">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="16" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="ShadeVisuals" filename="ShadeVisuals\ShadeVisuals.v4p" nodename="ShadeVisuals\ShadeVisuals.v4p" componentmode="Hidden" id="17" debug="0">
+   <BOUNDS type="Node" left="1670" top="2470" width="13560" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4410" top="6480" width="30010" height="11600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1670" top="2470">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" visible="1">
+   </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   <PIN pinname="GeoTextureBinSize" visible="1">
+   </PIN>
+   <PIN pinname="GeoTexResolution" visible="1">
+   </PIN>
+   <PIN pinname="Beat" visible="1">
+   </PIN>
+   <PIN pinname="Tranform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Geometry Out" dstnodeid="17" dstpinname="Geometry In">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="TexAspRat" dstnodeid="17" dstpinname="TexAspRatio">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="17" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="4" dstpinname="Layer">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="2310" top="3130" width="850" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2310" top="3130" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SpriteView">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="16" dstpinname="AdressViewStyle">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="4" dstpinname="AddressView">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="4" dstpinname="AdressViewStyle">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="1970" top="5340" width="1260" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1970" top="5340" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SpriteTransform">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="16" dstpinname="AddressTexTransform">
+   </LINK>
+   <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="Hidden" id="22" debug="0">
+   <BOUNDS type="Node" left="6580" top="1590" width="2500" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6580" top="1590" width="10912" height="11968">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3490" top="10380" width="13510" height="8150">
+   </BOUNDS>
+   <PIN pinname="Resolution" visible="1">
+   </PIN>
+   <PIN pinname="TextureArray" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="22" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="TextureArray" dstnodeid="17" dstpinname="TexArray">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="TextureBinSize" dstnodeid="17" dstpinname="TextureBinSize">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Resolution" dstnodeid="17" dstpinname="Resolutioon">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="11590" top="350" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11590" top="350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="18" visible="1" values="1.04328571428571,0,0,1.04328571428571,0,0,1.04328571428571,0,0,1.04328571428571,0,0,8.34628571428568,0,0,0.521642857142855,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BeatColor">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Beat">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="11590" top="1000" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11590" top="1000" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Resolution" dstnodeid="17" dstpinname="Resolution">
+   </LINK>
+   <NODE systemname="TextureGeometry" filename="TextureVisuals\TextureGeometry.v4p" nodename="TextureVisuals\TextureGeometry.v4p" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="10250" top="1590" width="2540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10250" top="1590" width="7275" height="7365">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18530" top="12160" width="5630" height="6160">
+   </BOUNDS>
+   <PIN pinname="TextureArray" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="TextureBinSize" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="TextureArray" dstnodeid="17" dstpinname="Control">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="38" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="TextureBinSize" dstnodeid="17" dstpinname="GeoTextureBinSize">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Resolution" dstnodeid="17" dstpinname="GeoTexResolution">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Beat">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Beats">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="17" dstpinname="Tranform In">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

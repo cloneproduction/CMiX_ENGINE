@@ -1,0 +1,155 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\GeometryMask\GeometryMask.v4p" systemname="GeometryMask" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\Mask\GeometryMask\GeometryMask.v4p" scrollx="0" scrolly="0">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2553" top="5061" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2553" top="5061" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Geometry Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="4520" top="2035" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4520" top="2035" width="1530" height="240">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="..\..\Assets\EmptyGeom.fbx">
+   </PIN>
+   </NODE>
+   <NODE systemname="GeometryFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="GeometryFile (DX11.Geometry Assimp)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2100" top="4365" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2100" top="4365">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="6" values="|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Deltoida-3.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Box.fbx|">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="12120" top="2520" width="7155" height="6945">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Node" left="2100" top="1080" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2100" top="1080" width="660" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MskOn">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2100" top="3720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="6" values="|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Deltoida-3.fbx|,|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Quad.fbx|,|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - 3DModels\Box.fbx|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="|C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\GeometryMask\Quad.fbx|">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="6" values="0,1,0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2365" top="3195" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2365" top="3195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Quad.fbx">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="5" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="13">
+   <BOUNDS type="Box" left="915" top="1080" width="720" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="915" top="1080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="3255" top="1215" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3255" top="1215" width="2070" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="MaskSelectedGeom">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCString" filename="..\..\..\Modules\OSCString.v4p" nodename="..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="2595" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="21" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="3045" top="660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="3060" top="1770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="22" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="22" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="21" dstpinname="Address">
+   </LINK>
+   </PATCH>

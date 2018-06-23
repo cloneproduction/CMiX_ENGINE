@@ -1,0 +1,93 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\Videos\HapFile.v4p" systemname="HapFile" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\Videos\HapFile.v4p">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3800" top="1500" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3800" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <NODE id="1" systemname="File (Hap)" filename="Player\hap\VVVV.DX11.Nodes.Hap.dll" nodename="File (Hap)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1500" top="1500" width="1300" height="270">
+   </BOUNDS>
+   <PIN pinname="ID" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Path">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Dispose in background">
+   </LINK>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="2270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2270" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="3" dstpinname="Input Node">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Width">
+   </PIN>
+   <BOUNDS type="Box" left="2400" top="2270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="2270" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Width" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Height">
+   </PIN>
+   <BOUNDS type="Box" left="3300" top="2270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3300" top="2270" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Height" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Frame Count|">
+   </PIN>
+   <BOUNDS type="Box" left="4200" top="2270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4200" top="2270" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Frame Count" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID">
+   </PIN>
+   <BOUNDS type="Box" left="5100" top="2270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5100" top="2270" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="ID" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5300" height="3270">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

@@ -1,0 +1,149 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\Geometries\Geometries.v4p" systemname="Geometries" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Geometries\Geometries.v4p" scrollx="0" scrolly="10">
+   <BOUNDS type="Window" left="18075" top="5475" width="4830" height="6735">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1333" top="4666" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1333" top="4666" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Geometry Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <NODE systemname="GeometryFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="GeometryFile (DX11.Geometry Assimp)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="870" top="3975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="3975">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="2" values="|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Deltoida-3.fbx|,|..\..\..\..\..\..\..\RESSOURCES\VJ CONTENT\Clone - 3DModels\Box.fbx|">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="14" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="31">
+   <BOUNDS type="Box" left="870" top="1005" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="870" top="1005" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="1535" top="2010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1535" top="2010" width="1590" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="SpriteSelectedGeom">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="870" top="3360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="870" top="3360">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="1815" top="2880" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1815" top="2880" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Output String" dstnodeid="36" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="36" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="20" dstpinname="Filename">
+   </LINK>
+   <NODE id="39" systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1335" top="1545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" pintype="Input" visible="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Box" left="195" top="375" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Display Channel" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Found" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="38" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1350" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" pintype="Input" values="SpriteMultiplier">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="" pintype="Input" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Intersperse" pintype="Input" visible="1" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Intersperse String" pintype="Input" visible="0" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output String" dstnodeid="38" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="36" dstpinname="Address">
+   </LINK>
+   </PATCH>

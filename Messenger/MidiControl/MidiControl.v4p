@@ -1,0 +1,347 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Controller\Controller\MidiControl\MidiControl.v4p" scrollx="0" scrolly="0" systemname="MidiControl" filename="C:\Users\clone\Google Drive\C-MiX\Subpatches\MidiControl\MidiControl.v4p">
+   <BOUNDS type="Window" left="8310" top="2025" width="12405" height="9915">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="TodoMap (TodoMap)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.TodoMap.dll" nodename="TodoMap (TodoMap)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3360" top="2235" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="600" top="690" width="13530" height="10275">
+   </BOUNDS>
+   <PIN pinname="Learn Mode" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Selected Variable" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Engine" visible="1">
+   </PIN>
+   <PIN pinname="Save" visible="1">
+   </PIN>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Load" slicecount="1" visible="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="3360" top="2235">
+   </BOUNDS>
+   <PIN pinname="Auto Load" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Select Variable" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7452" top="1422" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7452" top="1422" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.TodoMap.dll" id="3" nodename="TodoGetValue (TodoMap)" systemname="TodoGetValue (TodoMap)">
+   <BOUNDS height="100" left="930" top="6615" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Engine" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Variable Name" visible="1">
+   </PIN>
+   <PIN pinname="Auto Register" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="930" top="6615">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Engine" dstnodeid="3" dstpinname="Engine">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="1260" top="3015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1260" top="3015" width="765" height="1845">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Input String" slicecount="9" values="Slider1,Slider2,Slider3,Slider4,Slider5,Slider6,Slider7,Slider8,Slider9">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="3" dstpinname="Variable Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="930" top="7155" width="660" height="2040">
+   </BOUNDS>
+   <BOUNDS type="Node" left="930" top="7155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Sliders">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4215" top="1002" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4215" top="1002" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Save">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Save">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2994" top="222" width="1512" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2994" top="222" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="TodoMap-1.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="TodoMap.xml">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="0" dstpinname="Path">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.TodoMap.dll" id="12" nodename="TodoGetValue (TodoMap)" systemname="TodoGetValue (TodoMap)">
+   <BOUNDS height="100" left="5640" top="6615" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Engine" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Variable Name" visible="1">
+   </PIN>
+   <PIN pinname="Auto Register" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="5640" top="6615">
+   </BOUNDS>
+   <PIN pinname="Normalized Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="5970" top="3015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5970" top="3015" width="915" height="3435">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="18">
+   </PIN>
+   <PIN pinname="Input String" slicecount="18" values="Button1.1,Button1.2,Button2.1,Button2.2,Button3.1,Button3.2,Button4.1,Button4.2,Button5.1,Button5.2,Button6.1,Button6.2,Button7.1,Button7.2,Button8.1,Button8.2,Button9.1,Button9.2">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="12" dstpinname="Variable Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5640" top="7155" width="675" height="3360">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="7155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="18">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Buttons">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Engine" dstnodeid="12" dstpinname="Engine">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.TodoMap.dll" id="18" nodename="TodoGetValue (TodoMap)" systemname="TodoGetValue (TodoMap)">
+   <BOUNDS height="100" left="3360" top="6615" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Engine" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Variable Name" visible="1">
+   </PIN>
+   <PIN pinname="Auto Register" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="3360" top="6615">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="3690" top="3015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3690" top="3015" width="960" height="2985">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Input String" slicecount="18" values="Knob1,Knob2,Knob3,Knob4,Knob5,Knob6,Knob7,Knob8,Knob9,Button5.2,Button6.1,Button6.2,Button7.1,Button7.2,Button8.1,Button8.2,Button9.1,Button9.2">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="18" dstpinname="Variable Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3360" top="7155" width="675" height="3360">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3360" top="7155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Knobs">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Engine" dstnodeid="18" dstpinname="Engine">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5502" top="6" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5502" top="6" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Load">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="5505" top="1050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="6192" top="732" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Bang" dstnodeid="20" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="0" dstpinname="Load">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7770" top="8055" width="690" height="1905">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7770" top="8055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ButtonControl">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="8070" top="4035" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8070" top="4035" width="795" height="1515">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input String" slicecount="6" values="Stop,Backward,Forward,Record,Play,Repeat">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.TodoMap.dll" id="27" nodename="TodoGetValue (TodoMap)" systemname="TodoGetValue (TodoMap)">
+   <BOUNDS height="100" left="7755" top="6600" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7755" top="6600">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Engine" dstnodeid="27" dstpinname="Engine">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="25" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="27" dstpinname="Variable Name">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   </PATCH>

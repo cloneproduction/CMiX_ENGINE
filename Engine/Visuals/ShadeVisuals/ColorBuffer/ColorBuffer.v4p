@@ -1,0 +1,49 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\ShadeVisuals\ColorBuffer\ColorBuffer.v4p" systemname="ColorBuffer" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\ShadeVisuals\ColorBuffer\ColorBuffer.v4p">
+   <NODE systemname="RGB (Color Split Vector)" nodename="RGB (Color Split Vector)" componentmode="Hidden" id="0" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.RGBVector.dll">
+   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname=" RGBA" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="1500">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DynamicBuffer (DX11.Buffer 4d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer 4d)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1500" top="2220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="DataXYZW" visible="1">
+   </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="2220">
+   </BOUNDS>
+   </NODE>
+   <NODE id="2" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Color Output" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname=" RGBA" dstnodeid="1" dstpinname="DataXYZW">
+   </LINK>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Buffer">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="2820" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2820" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Buffer" dstnodeid="3" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3100" height="3820">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

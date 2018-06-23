@@ -1,0 +1,149 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Camera\CamFOV\CamFOV.v4p" systemname="CamFOV" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamFOV\CamFOV.v4p" scrollx="0" scrolly="0">
+   <NODE componentmode="Hidden" id="0" nodename="Map (Value)" systemname="Map (Value)">
+   <BOUNDS height="100" left="1070" top="3135" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.83">
+   </PIN>
+   </NODE>
+   <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="770" top="4310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="FOV" visible="1" slicecount="6" values="0.2,0.338800000143291,0.2,0.2,0.2,0.2">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" visible="1" values="1000">
+   </PIN>
+   <PIN pinname="Near Plane" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projection">
+   </PIN>
+   <BOUNDS type="Box" left="770" top="4910" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="770" top="4910" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="5690" top="7860" width="4530" height="6910">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1330" top="3720" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1330" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Near Plane">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2500" top="3720" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2500" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10000">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Far Plane">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="2030" top="700" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2030" top="700" width="1420" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/Camera/FOV">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="26">
+   <BOUNDS type="Box" left="1070" top="700" width="690" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1070" top="700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\..\modules\OSCValue.v4p" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="1065" top="1830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="33" dstpinname="Address">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="1550" top="1270" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1550" top="1270" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="33" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="FOV">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="1070" top="2470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Position Out" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="39" dstpinname="Go To Position">
+   </LINK>
+   </PATCH>

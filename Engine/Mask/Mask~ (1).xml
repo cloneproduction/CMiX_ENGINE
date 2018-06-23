@@ -1,0 +1,337 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\Mask.v4p" systemname="Mask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\Mask.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8280" top="9760" width="11350" height="10200">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7190" top="720" width="660" height="690">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7190" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="18" visible="1" values="0.9966015625,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BeatInfos">
+   </PIN>
+   </NODE>
+   <NODE systemname="TextureMask" filename="TextureMask\TextureMask.v4p" nodename="TextureMask\TextureMask.v4p" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="8155" top="2820" width="1935" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8155" top="2820" width="8889" height="8836">
+   </BOUNDS>
+   <BOUNDS type="Window" left="23740" top="6620" width="8730" height="13290">
+   </BOUNDS>
+   <PIN pinname="SltMskName Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RenderMask" filename="RenderMask\RenderMask.v4p" nodename="RenderMask" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="1130" top="5210" width="3990" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1130" top="5210" width="9604" height="8251">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14220" top="9370" width="12640" height="9920">
+   </BOUNDS>
+   <PIN pinname="MskOn" visible="1" slicecount="6" values="1,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Node - Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="AddressView" visible="1">
+   </PIN>
+   <PIN pinname="Layer">
+   </PIN>
+   </NODE>
+   <NODE systemname="GeometryMask" filename="GeometryMask\GeometryMask.v4p" nodename="GeometryMask\GeometryMask.v4p" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="3410" top="2820" width="1320" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3410" top="2820" width="4357" height="5766">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12120" top="2520" width="7155" height="6945">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="MskOn" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="97" systemname="TransformMask" filename="TransformMask\TransformMask.v4p" nodename="TransformMask\TransformMask.v4p" componentmode="Hidden" debug="0">
+   <BOUNDS type="Node" left="5300" top="1680" width="1950" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5300" top="1680" width="7836" height="5712">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20440" top="11470" width="12190" height="7770">
+   </BOUNDS>
+   <PIN pinname="RotationName" visible="1">
+   </PIN>
+   <PIN pinname="Rotation" visible="1">
+   </PIN>
+   <PIN pinname="ScaleName" visible="1" slicecount="1" values="BNC">
+   </PIN>
+   <PIN pinname="Scale" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="TranslateName" visible="1" slicecount="1" values="CTR">
+   </PIN>
+   <PIN pinname="RotationNames" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateNames" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Output2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Random X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Random Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ChannelParameters" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="SpreadCount">
+   </PIN>
+   <PIN pinname="BeatInfos" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="2D/3D" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="TextureResolution" visible="1" slicecount="2" values="1,1">
+   </PIN>
+   <PIN pinname="TexAspRat" visible="1">
+   </PIN>
+   <PIN pinname="MskOn" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="RotationAddress" visible="1">
+   </PIN>
+   <PIN pinname="MaskCountAddress" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="97" dstpinname="BeatInfos">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="MskOn" dstnodeid="109" dstpinname="MskOn">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="MskOn" dstnodeid="100" dstpinname="MskOn">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="110">
+   <BOUNDS type="Box" left="785" top="720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="785" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="97" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="99" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="109" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="100" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="124">
+   <BOUNDS type="Box" left="815" top="8060" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="815" top="8060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="125">
+   <BOUNDS type="Box" left="4340" top="720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4340" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="texArray">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="130">
+   <BOUNDS type="Box" left="1425" top="5880" width="1065" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1425" top="5880" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MaskFeedBack">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="129">
+   <BOUNDS type="Box" left="1730" top="6345" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1730" top="6345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MaskBlur">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="128">
+   <BOUNDS type="Box" left="2045" top="6765" width="1230" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2045" top="6765" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MaskTransform">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="127" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
+   <BOUNDS type="Node" left="815" top="7295" width="1260" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="815" top="7295">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5720" top="12420" width="15900" height="6920">
+   </BOUNDS>
+   <PIN pinname="TexArray Out" visible="1">
+   </PIN>
+   <PIN pinname="TexArray" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="AddressView" visible="1">
+   </PIN>
+   <PIN pinname="AddressTexTransform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="127" dstpinname="FeedBack">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Output String" dstnodeid="127" dstpinname="Blur">
+   </LINK>
+   <LINK srcnodeid="128" srcpinname="Output String" dstnodeid="127" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="127" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="133">
+   <BOUNDS type="Box" left="5065" top="4525" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5065" top="4525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MaskView">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Output String" dstnodeid="99" dstpinname="AddressView">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Input Node - Texture Out" dstnodeid="127" dstpinname="TexArray">
+   </LINK>
+   <NODE id="101" componentmode="Hidden" systemname="ShadeMask" filename="ShadeMask\ShadeMask.v4p" nodename="ShadeMask\ShadeMask.v4p">
+   <BOUNDS type="Node" left="2454" top="3681" width="7650" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="65" top="450" width="13093" height="9337">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6310" top="4470" width="26550" height="13930">
+   </BOUNDS>
+   <PIN pinname="Select - .. To [" visible="1" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="TransformBinSize" visible="1" slicecount="6" values="1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="TextureBinSize" visible="1">
+   </PIN>
+   <PIN pinname="Message" visible="1">
+   </PIN>
+   <PIN pinname="Geometry In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="MskOn" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TransfomIn">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="texArray" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="maskArray" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100" srcpinname="SizeXY" dstnodeid="101" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="101" dstpinname="maskArray">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="101" dstpinname="texArray">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="101" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Transform Out" dstnodeid="101" dstpinname="TransfomIn">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="MaskCount" dstnodeid="101" dstpinname="TransformBinSize">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="MskOn" dstnodeid="101" dstpinname="MskOn">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="MskOn" dstnodeid="99" dstpinname="MskOn">
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="Geometry Out" dstnodeid="101" dstpinname="Geometry In">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="99" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="SltMskName Bin Size" dstnodeid="101" dstpinname="TextureBinSize">
+   </LINK>
+   <LINK srcnodeid="128" srcpinname="Output String" dstnodeid="127" dstpinname="AddressTexTransform">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

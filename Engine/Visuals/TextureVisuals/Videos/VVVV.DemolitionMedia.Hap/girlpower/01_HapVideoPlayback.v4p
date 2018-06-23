@@ -1,0 +1,397 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="D:\node17\vvvv\hap_contribution_x64\packs\VVVV.DemolitionMedia.Hap\girlpower\01_HapVideoPlayback.v4p" systemname="HapVideoPlayback" filename="C:\Users\FrostyPC\Documents\hap_vvvv_20170620\HapVideoPlayback.v4p" scrollx="0" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="255" top="1635" width="8070" height="9945">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="HapReader (Demolition Media)" filename="plugins\DemolitionMediaVVVV\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="1995" top="3255" width="900" height="270">
+   </BOUNDS>
+   <PIN pinname="Url" visible="1">
+   </PIN>
+   <PIN pinname="Preload To Memory" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Open" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Close" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Video Stream Width" visible="1">
+   </PIN>
+   <PIN pinname="Hap Media" visible="1">
+   </PIN>
+   <PIN pinname="Video Stream Height" visible="1">
+   </PIN>
+   <PIN pinname="Duration" visible="1">
+   </PIN>
+   <PIN pinname="Is Hap Q" visible="1">
+   </PIN>
+   <PIN pinname="Enable Audio" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Total Video Frames" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1995" top="3255">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Video Stream Framerate" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3495" top="2025" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3495" top="2025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Close">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Close" linkstyle="VHV">
+   <LINKPOINT x="3525" y="3030">
+   </LINKPOINT>
+   <LINKPOINT x="2865" y="3030">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="HapState (Demolition Media)" filename="plugins\DemolitionMediaVVVV\DemolitionMediaVVVV.dll" nodename="HapState (Demolition Media)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="3660" top="5370" width="900" height="270">
+   </BOUNDS>
+   <PIN pinname="Hap Media" visible="1">
+   </PIN>
+   <PIN pinname="Current Time" visible="1">
+   </PIN>
+   <PIN pinname="Current Frame" visible="1">
+   </PIN>
+   <PIN pinname="Opened" visible="1">
+   </PIN>
+   <PIN pinname="ErrorString" visible="1">
+   </PIN>
+   <PIN pinname="StateString" visible="1">
+   </PIN>
+   <PIN pinname="Is Hap Q" visible="1">
+   </PIN>
+   <PIN pinname="Dropped Frames Early" visible="1">
+   </PIN>
+   <PIN pinname="Dropped Frames Late" visible="1">
+   </PIN>
+   <PIN pinname="Playing" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3660" top="5370">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HapAudioClock (Demolition Media)" filename="plugins\DemolitionMediaVVVV\DemolitionMediaVVVV.dll" nodename="HapAudioClock (Demolition Media)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="1980" top="4590" width="1500" height="270">
+   </BOUNDS>
+   <PIN pinname="Clock" visible="1">
+   </PIN>
+   <PIN pinname="Do Seek" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Seek time" visible="1" slicecount="1" values="16.6">
+   </PIN>
+   <PIN pinname="Start Time" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="End Time" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loops" visible="1" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Next Frame" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Prev Frame" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="1980" top="4590">
+   </BOUNDS>
+   <PIN pinname="Hap Media" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Play" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Speed" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Seek frame" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Start Frame" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="End Frame" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loop" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Enable Framedrop" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="146">
+   <BOUNDS type="Node" left="2640" top="2655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="29" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow">
+   <BOUNDS type="Node" left="1230" top="7245" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1230" top="7245" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8325" top="1665" width="16665" height="9915">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Present Time" visible="1">
+   </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" visible="-1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.46790,0.46790,0.46790,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Hap Media" dstnodeid="55" dstpinname="Hap Media" linkstyle="PolyLine">
+   </LINK>
+   <NODE systemname="HapTexture (Demolition Media)" filename="plugins\DemolitionMediaVVVV\DemolitionMediaVVVV.dll" nodename="HapTexture (Demolition Media)" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="1980" top="5325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Hap Media" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1980" top="5325">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Hap Media" dstnodeid="205" dstpinname="Hap Media" linkstyle="PolyLine">
+   </LINK>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="234">
+   <BOUNDS type="Node" left="1560" top="5835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="Texture" dstnodeid="234" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="236" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2790" top="3870" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2790" top="3870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Loop">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="236" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Loop">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="237" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2145" top="3870" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2145" top="3870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Play">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="238">
+   <BOUNDS type="Node" left="2640" top="2025" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2640" top="2025" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Open">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="146" srcpinname="Bang" dstnodeid="40" dstpinname="Open">
+   </LINK>
+   <LINK srcnodeid="238" srcpinname="Y Output Value" dstnodeid="146" dstpinname="Simulate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="239" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4905" top="5925" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4905" top="5925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Opened">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Opened" dstnodeid="239" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="4365" y="5768">
+   </LINKPOINT>
+   <LINKPOINT x="4905" y="5768">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="243">
+   <BOUNDS type="Node" left="1995" top="1215" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1995" top="1215" width="3105" height="330">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="video.mov">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="245">
+   <BOUNDS type="Node" left="1395" top="6600" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1395" top="6600" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="234" srcpinname="Layer" dstnodeid="245" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="Layer Out" dstnodeid="29" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="246">
+   <BOUNDS type="Node" left="1755" top="6195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="246" srcpinname="Layer" dstnodeid="245" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="5670" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
+   <PIN pinname="Time Mode" slicecount="1" values="Raw">
+   </PIN>
+   <PIN pinname="Maximum forground fps" visible="1">
+   </PIN>
+   <PIN pinname="Maximum background fpsS" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="247">
+   <BOUNDS type="Box" left="5670" top="1245" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5670" top="1245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="247" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Hap Media" dstnodeid="49" dstpinname="Hap Media">
+   </LINK>
+   <LINK srcnodeid="243" srcpinname="Output String" dstnodeid="40" dstpinname="Path">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="264">
+   <BOUNDS type="Box" left="5565" top="5925" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5565" top="5925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Playing">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Playing" dstnodeid="264" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="4500" y="5730">
+   </LINKPOINT>
+   <LINKPOINT x="5595" y="5730">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="265">
+   <BOUNDS type="Box" left="3750" top="5925" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3750" top="5925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Current Frame|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Current Frame" dstnodeid="265" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="3840" y="5775">
+   </LINKPOINT>
+   <LINKPOINT x="3780" y="5775">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum forground fps">
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum background fpsS">
+   </LINK>
+   </PATCH>

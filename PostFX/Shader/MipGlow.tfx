@@ -1,0 +1,145 @@
+float2 R:TARGETSIZE;
+float4x4 tTex;
+
+//Variable for RGB Shifting
+float Amount=0.5;
+float2 Direction = {1,0};
+float SampleCenter <float uimin=-1;float uimax=1.0;> = 0;
+float HueShift <float uimin=0.0;float uimax=1.0;> = 0.0;
+	
+//Variable for MipGlow
+float lod <float uimin=0.0; float uimax=100.0;> = 1.0;
+float GlowBrightness <float uimin=0.0; float uimax=100.0;> = 1.0;
+	
+//Variable for HSCB
+float Hue =0;
+float Saturation = 1;
+float Contrast;
+float Brightness;
+
+//Variable for Invert
+float InvertFactor <float uimin=0.0;float uimax=1.0;> =1.0;
+
+//Variable for Scanline
+float SLBrightness;
+float2 SLAmount;	
+float2 RedPos;
+float2 GreenPos;
+float2 BluePos;
+
+SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MIP_LINEAR;AddressU=CLAMP;AddressV=CLAMP;};
+Texture2D tex0: PREVIOUS;
+Texture2D ShiftControl, vignette, ScanlineControl, GlowControl;
+
+#include "ColorSpace.fxh"
+#define bld(op,c0,c1) float4(lerp((c0*c0.a+c1*c1.a*(1-c0.a))/saturate(c0.a+c1.a*(1-c0.a)),(op),c0.a*c1.a).rgb,saturate(c0.a+c1.a*(1-c0.a)))
+
+//General Function
+float4 sm(float4 m[16],float i){
+	return float4(HSVtoRGB(float3(Hue,0,0)+RGBtoHSV(lerp(m[floor(i)],m[ceil(i)],frac(i)).xyz)),1);}
+
+
+float4 ts(Texture2D tex, SamplerState s,float2 uv,float lodRGB, float2 off){
+	float2 dir=sin((Direction+float2(0,.25))*acos(-1)*2);
+	uv+=dir*off;
+	return float4(HSVtoRGB(float3(Hue,0,0)+RGBtoHSV(tex.SampleLevel(s,uv, lodRGB).xyz)),1);
+}
+
+float3 safenormalize(float3 x){
+	x=lerp(x,x+.00001,x==0);
+	return normalize(x);
+}
+
+float4 hueshift(float2 x,float2 off){
+	x+=normalize(Direction)*Amount*off;
+	return float4(HSVtoRGB(float3(HueShift,0,0)+RGBtoHSV(tex0.SampleLevel(s0,x,0).xyz)),1);
+}
+
+float Map(float input, float in_min, float in_max, float out_min, float out_max) {
+  return (input - in_min) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
+}
+
+
+float4 pHSCB(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
+{
+	float2 x0=mul(float4((uv.xy*2-1)*float2(1,-1),0,1),tTex)*0.5*float2(1,-1)+0.5; //Transform Texture
+	float4 c= tex0.Sample(s0,x0);
+
+	//Vignette
+	float4 v = 1-vignette.Sample(s0,uv);
+	c=float4(c.rgb*v.rgb, 1.0);
+	return c;
+}
+
+float4 pMipGlow(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
+{
+	float2 x0=mul(float4((uv.xy*2-1)*float2(1,-1),0,1),tTex)*0.5*float2(1,-1)+0.5; //Transform Texture
+	float4 c=tex0.Sample(s0,x0);
+	float4 ctrl=GlowControl.Sample(s0,x0);
+	float4 cBlur0=tex0.SampleLevel(s0,x0,lod*2);
+	float4 cBlur1=tex0.SampleLevel(s0,x0,lod*4)*GlowBrightness*2;
+	float4 cBlur2=tex0.SampleLevel(s0,x0,lod*6)*GlowBrightness*4;
+	float4 cBlur3=tex0.SampleLevel(s0,x0,lod*8)*GlowBrightness*6;
+	float4 GlowCol= c+(cBlur0+cBlur1+cBlur2+cBlur3)*0.25*ctrl;
+	
+		//Invert
+	GlowCol.rgb=lerp(GlowCol.rgb,1-GlowCol.rgb,InvertFactor);
+	
+		//HSCB
+	float3 h=RGBtoHSL(GlowCol.rgb);
+	h.y=h.y*Saturation;
+	float3 k0=HSLtoRGB(float3((frac(h.x+Hue)-0),h.y,h.z));
+	float3 k1=HSLtoRGB(float3((frac(h.x+Hue)-1),h.y,h.z));
+	GlowCol.rgb=lerp(k0,k1,pow(smoothstep(0,1,h.x),2));
+	GlowCol.rgb=safenormalize(GlowCol.rgb)*sqrt(3)*pow(length(GlowCol.rgb)/sqrt(3),pow(2,Contrast))*pow(2,Brightness);
+	
+	return GlowCol;
+}
+
+float4 pScanline(float4 PosWVP:SV_POSITION,float2 uv:TEXCOORD0):SV_Target
+{	
+	float4 col = tex0.SampleLevel(s0, uv, 0);
+	float4 control = ScanlineControl.SampleLevel(s0, uv, 0);
+	
+	float RedH;
+	float GreenH;
+	float BlueH;
+	
+	float RedV;
+	float GreenV;
+	float BlueV;
+
+	RedH = 	(sin(RedPos.x+uv.y*SLAmount.x*50));
+	GreenH = (sin(GreenPos.x+uv.y*SLAmount.x*50));
+	BlueH = (sin(BluePos.x+uv.y*SLAmount.x*50));
+	
+	RedV = (sin(RedPos.y+uv.x*SLAmount.y*50));
+	GreenV = (sin(GreenPos.y+uv.x*SLAmount.y*50));
+	BlueV = (sin(BluePos.y+uv.x*SLAmount.y*50));
+
+	float4 color = float4((col.r*RedH*RedV*SLBrightness, col.g*GreenH*GreenV*Brightness,col.b*BlueH*BlueV*SLBrightness)*control.rgb, 1.0);
+	color = bld(color/2+col, color, col);
+	color.a = 1.0;
+	return color;
+}
+
+float4 pShiftRGB(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_TARGET{
+    float4 c=tex0.SampleLevel(s0,x,0);
+    float sh=.1*ShiftControl.SampleLevel(s0,x,0).x;
+    c.r=hueshift(x,sh*( 1+SampleCenter)).r;
+    c.g=hueshift(x,sh*( 0+SampleCenter)).g;
+    c.b=hueshift(x,sh*(-1+SampleCenter)).b;
+    c.rgb=HSVtoRGB(-float3(Hue,0,0)+RGBtoHSV(c.xyz));
+    return c;
+}
+technique10 PostFX
+{
+	pass P0 <bool mips=true;>
+	{ SetPixelShader(CompileShader(ps_4_0, pHSCB())); }
+	pass P1 <bool mips=true;>
+	{ SetPixelShader(CompileShader(ps_4_0, pMipGlow())); }
+	pass P2 <bool mips=true;>
+	{ SetPixelShader(CompileShader(ps_4_0, pShiftRGB())); }
+	pass P3 <bool mips=true;>
+	{ SetPixelShader(CompileShader(ps_4_0, pScanline())); }
+}

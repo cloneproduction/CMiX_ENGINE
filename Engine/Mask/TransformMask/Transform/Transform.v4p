@@ -1,0 +1,145 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\TransformMask\Transform\Transform.v4p" systemname="Transform" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Mask\TransformMask\Transform\Transform.v4p" scrollx="0" scrolly="0">
+   <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3240" top="2775" width="3150" height="270">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Transform Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\TransformsAdvanced.dll" nodename="Switch (Transform Advanced)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1365" top="4020" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1365" top="4020">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1630" top="3410" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" slicecount="3" values="1,1,1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1635" top="2775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="AspectRatio">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1365" top="2145" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="6" values="1,0,1,0,0,0">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1365" top="2145">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1365" top="4620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1365" top="4620" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="1365" top="1140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1365" top="1140" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Select">
+   </PIN>
+   <BOUNDS type="Box" left="7755" top="1140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7755" top="1140" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="2" dstpinname="Transform In">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In 1|">
+   </PIN>
+   <BOUNDS type="Box" left="3240" top="1140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="1140" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In 1">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In 2|">
+   </PIN>
+   <BOUNDS type="Box" left="4770" top="1140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4770" top="1140" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In 2">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In 3|">
+   </PIN>
+   <BOUNDS type="Box" left="6330" top="1140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6330" top="1140" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In 3">
+   </LINK>
+   <BOUNDS type="Window" left="12795" top="9090" width="9600" height="6495">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform 1">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform 2">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,309 @@
+//@author: by Martins Upitis (martinsh) (devlog-martinsh.blogspot.com)
+//@help: Depth Of Field
+//@tags: filter
+//@credits: antokhio & unc
+
+struct vs2ps { float4 PosWVP: SV_POSITION; float2 uv: TEXCOORD0;};
+SamplerState sLinear: IMMUTABLE {AddressU=Wrap;AddressV=Wrap;};
+
+
+Texture2D bgl_RenderedTexture :PREVIOUS <string uiname="Color Texture";> ; 
+Texture2D bgl_DepthTexture <string uiname="Depth Texture";>; 
+
+float2 Rt:INVTARGETSIZE;
+float2 R:TARGETSIZE;
+
+float4x4 tP <string uiname="Projection";>;
+ 
+
+#define PI  3.14159265
+//#define float2 texel = 1.0 / R;
+//uniform variables from external script
+
+float  focalDepth <bool visible = false;>;  //focal distance value in meters, but you may use autofocus option below
+float focalLength; //focal length in mm
+float fstop; //f-stop value
+bool showFocus; //show debug focus point and focal range (red = focal point, green = focal range)
+
+/* 
+make sure that these two values are the same for your camera, otherwise distances will be wrong.
+*/
+
+
+//------------------------------------------
+//user variables
+
+int samples  = 3 ; //samples on the first ring
+int rings = 3; //ring count
+
+bool manualdof <bool visible = false;> = false; //manual dof calculation
+float ndofstart <bool visible = false;> = 1.0; //near dof blur start
+float ndofdist <bool visible = false;> = 2.0; //near dof blur falloff distance
+float fdofstart <bool visible = false;> = 1.0; //far dof blur start
+float fdofdist <bool visible = false;> = 3.0; //far dof blur falloff distance
+
+float CoC <bool visible = false;> = 0.03;//circle of confusion size in mm (35mm film = 0.03mm)
+
+bool vignetting = true; //use optical lens vignetting?
+float vignout <bool visible = false;> = 1.3; //vignetting outer border
+float vignin <bool visible = false;> = 0.0; //vignetting inner border
+float vignfade <bool visible = false;> = 22.0; //f-stops till vignete fades
+
+bool autofocus = true; //use autofocus in shader? disable if you use external focalDepth value
+float2 focus <bool visible = false;> = float2(0.5,0.5); // autofocus point on screen (0.0,0.0 - left lower corner, 1.0,1.0 - upper right)
+float maxblur = 1.0; //clamp value of max blur (0.0 = no blur,1.0 default)
+
+float threshold <bool visible = false;> = 0.5; //highlight threshold;
+float gain <bool visible = false;> = 2.0; //highlight gain;
+
+float bias <bool visible = false;> = 0.5; //bokeh edge bias
+float fringe <bool visible = false;> = 0.7; //bokeh chromatic aberration/fringing
+
+bool noise <bool visible = false;> = true; //use noise instead of pattern for sample dithering
+float namount <bool visible = false;> = 0.0001; //dither amount
+
+bool depthblur <bool visible = false;> = false; //blur the depth buffer?
+float dbsize <bool visible = false;> = 1.25; //depthblursize
+
+/*
+next part is experimental
+not looking good with small sample and ring count
+looks okay starting from samples = 4, rings = 4
+*/
+
+bool pentagon <bool visible = false;> = false; //use pentagon as bokeh shape?
+float feather <bool visible = false;> = 0.4; //pentagon shape feather
+
+//------------------------------------------
+
+float penta(float2 coords) //pentagonal shape
+{
+	float scale = float(rings) - 1.3;
+	float4  HS0 = float4( 1.0,         0.0,         0.0,  1.0);
+	float4  HS1 = float4( 0.309016994, 0.951056516, 0.0,  1.0);
+	float4  HS2 = float4(-0.809016994, 0.587785252, 0.0,  1.0);
+	float4  HS3 = float4(-0.809016994,-0.587785252, 0.0,  1.0);
+	float4  HS4 = float4( 0.309016994,-0.951056516, 0.0,  1.0);
+	float4  HS5 = float4( 0.0        ,0.0         , 1.0,  1.0);
+	
+	float4  one = 1;
+	
+	float4 P = float4((coords),float2(scale, scale)); 
+	
+	float4 dist = 0;
+	float inorout = -4.0;
+	
+	dist.x = dot( P, HS0 );
+	dist.y = dot( P, HS1 );
+	dist.z = dot( P, HS2 );
+	dist.w = dot( P, HS3 );
+	
+	dist = smoothstep( -feather, feather, dist );
+	
+	inorout += dot( dist, one );
+	
+	dist.x = dot( P, HS4 );
+	dist.y = HS5.w - abs( P.z );
+	
+	dist = smoothstep( -feather, feather, dist );
+	inorout += dist.x;
+	
+	return clamp( inorout, 0.0, 1.0 );
+}
+
+float bdepth(float2 coords) //blurring depth
+{
+	
+	float d = 0.0;
+	float kernel[9];
+	float2 offset[9];
+	
+	float2 wh = float2(Rt.x, Rt.y) * dbsize;
+	
+	offset[0] = float2(-wh.x,-wh.y);
+	offset[1] = float2( 0.0, -wh.y);
+	offset[2] = float2( wh.x, -wh.y);
+	
+	offset[3] = float2(-wh.x,  0.0);
+	offset[4] = float2( 0.0,   0.0);
+	offset[5] = float2( wh.x,  0.0);
+	
+	offset[6] = float2(-wh.x, wh.y);
+	offset[7] = float2( 0.0,  wh.y);
+	offset[8] = float2( wh.x, wh.y);
+	
+	kernel[0] = 1.0/16.0;   kernel[1] = 2.0/16.0;   kernel[2] = 1.0/16.0;
+	kernel[3] = 2.0/16.0;   kernel[4] = 4.0/16.0;   kernel[5] = 2.0/16.0;
+	kernel[6] = 1.0/16.0;   kernel[7] = 2.0/16.0;   kernel[8] = 1.0/16.0;
+	
+	
+	for( int i=0; i<9; i++ )
+	{
+		float tmp =  bgl_DepthTexture.SampleLevel(sLinear, coords + offset[i],0).r;
+		d += tmp * kernel[i];
+	}
+	
+	return d;
+}
+
+float3 color(float2 coords,float blur) //processing the sample
+{
+	float3 col = 0;
+	
+	col.r = bgl_RenderedTexture.SampleLevel(sLinear,coords + float2(0.0,1.0)*Rt*fringe*blur,0).r;
+	col.g = bgl_RenderedTexture.SampleLevel(sLinear,coords + float2(-0.866,-0.5)*Rt*fringe*blur,0).g;
+	col.b = bgl_RenderedTexture.SampleLevel(sLinear,coords + float2(0.866,-0.5)*Rt*fringe*blur,0).b;
+	
+	float3 lumcoeff = float3(0.299,0.587,0.114);
+	float lum = dot(col.rgb, lumcoeff);
+	float thresh = max((lum-threshold)*gain, 0.0);
+	return col+lerp(float3 (0,0,0),col,thresh*blur);
+}
+
+float2 rand(float2 coord) //generating noise/pattern texture for dithering
+{
+	float noiseX = ((frac(1.0-coord.x*(R.x/2.0))*0.25)+(frac(coord.y*(R.y/2.0))*0.75))*2.0-1.0;
+	float noiseY = ((frac(1.0-coord.x*(R.x/2.0))*0.75)+(frac(coord.y*(R.y/2.0))*0.25))*2.0-1.0;
+	
+	if (noise)
+	{
+		noiseX = clamp(frac(sin(dot(coord ,float2(12.9898,78.233))) * 43758.5453),0.0,1.0)*2.0-1.0;
+		noiseY = clamp(frac(sin(dot(coord ,float2(12.9898,78.233)*2.0)) * 43758.5453),0.0,1.0)*2.0-1.0;
+	}
+	return float2(noiseX,noiseY);
+}
+
+float3 debugFocus(float3 col, float blur, float depth)
+{
+	float edge = 0.002*depth; //distance based edge smoothing
+	float m = clamp(smoothstep(0.0,edge,blur),0.0,1.0);
+	float e = clamp(smoothstep(1.0-edge,1.0,blur),0.0,1.0);
+	
+	col = lerp(col,float3(1.0,0.5,0.0),(1.0-m)*0.6);
+	col = lerp(col,float3(0.0,0.5,1.0),((1.0-e)-(1.0-m))*0.2);
+
+	return col;
+}
+
+float linearize(float depth)
+{
+	return float (tP._43/(depth - tP._33));
+}
+
+
+float vignette(float2 coord)
+{
+	float dist = distance(coord.xy, float2 (0.5,0.5));
+	dist = smoothstep(vignout+(fstop/vignfade), vignin+(fstop/vignfade), dist);
+	return clamp(dist,0.0,1.0);
+}
+
+
+float4 PassThrough(vs2ps input): SV_Target
+{
+	
+   	float depth = linearize(bgl_DepthTexture.SampleLevel(sLinear,input.uv.xy,0).x);
+		
+	if (depthblur)
+	{
+		depth = linearize(bdepth(input.uv.xy));
+	}
+	
+	float fDepth = focalDepth;
+	
+	if (autofocus)
+	{
+		fDepth = linearize(bgl_DepthTexture.SampleLevel(sLinear,focus,0).x);
+	}
+	
+	//dof blur factor calculation
+	
+	float blur = 0.0;
+	
+	if (manualdof)
+	{    
+		float a = depth-fDepth; //focal plane
+		float b = (a-fdofstart)/fdofdist; //far DoF
+		float c = (-a-ndofstart)/ndofdist; //near Dof
+		blur = (a>0.0)?b:c;
+	}
+	
+	else
+	{
+		float f = focalLength; //focal length in mm
+		float d = fDepth*1000.0; //focal plane in mm
+		float o = depth*1000.0; //depth in mm
+		
+		float a = (o*f)/(o-f); 
+		float b = (d*f)/(d-f); 
+		float c = (d-f)/(d*fstop*CoC); 
+		
+		blur = abs(a-b)*c;
+	}
+	
+	blur = clamp(blur,0.0,1.0);
+	
+	// calculation of pattern for ditering
+	
+	float2 noise = rand(input.uv.xy)*namount*blur;
+	
+	// getting blur x and y step factor
+	
+	float w = (1.0/R.x)*blur*maxblur+noise.x;
+	float h = (1.0/R.y)*blur*maxblur+noise.y;
+	
+	// calculation of final color
+	
+	float3 col = 0;
+	
+	if(blur < 0.05) //some optimization thingy
+	{
+		col = bgl_RenderedTexture.SampleLevel(sLinear, input.uv.xy,0).rgb;
+	}
+	
+	else
+	{
+		col = bgl_RenderedTexture.SampleLevel(sLinear, input.uv.xy,0).rgb;
+		float s = 1.0;
+		int ringsamples;
+		
+		for (int i = 1; i <= rings; i += 1)
+		{   
+			ringsamples = i * samples;
+			
+			for (int j = 0 ; j < ringsamples ; j += 1)   
+			{
+				float step = PI*2.0 / float(ringsamples);
+				float pw = (cos(float(j)*step)*float(i));
+				float ph = (sin(float(j)*step)*float(i));
+				float p = 1.0;
+				if (pentagon)
+				{ 
+					p = penta(float2(pw,ph));
+				}
+				col += color(input.uv.xy + float2(pw*w,ph*h),blur)*lerp(1.0,(float(i))/(float(rings)),bias)*p;  
+				s += 1.0*lerp(1.0,(float(i))/(float(rings)),bias)*p;   
+			}
+		}
+		col /= s; //divide by sample count
+	}
+	
+	if (showFocus)
+	{
+		col = debugFocus(col, blur, depth);
+	}
+	
+	
+	if (vignetting)
+	{
+		col *= vignette(input.uv);
+	}
+	
+	return float4 (col,1);
+}
+
+technique10 BokehDoF 
+{
+	pass P0 
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+} 

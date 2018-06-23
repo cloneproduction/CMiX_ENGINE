@@ -1,0 +1,10 @@
+C:\Users\Clone\Desktop\plugins\StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll
+C:\Users\Clone\Desktop\plugins\StringDictionary\bin\AnyCPU\Debug\StringDictionary.pdb
+C:\Users\Clone\Desktop\plugins\StringDictionary\obj\Debug\StringDictionary.csproj.CoreCompileInputs.cache
+C:\Users\Clone\Desktop\plugins\StringDictionary\obj\Debug\StringDictionary.dll
+C:\Users\Clone\Desktop\plugins\StringDictionary\obj\Debug\StringDictionary.pdb
+C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\StringDictionary\obj\Debug\StringDictionary.dll
+C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\StringDictionary\obj\Debug\StringDictionary.pdb
+C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll
+C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\StringDictionary\bin\AnyCPU\Debug\StringDictionary.pdb
+C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\StringDictionary\obj\Debug\StringDictionary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,149 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Translation\Translate\Translate.v4p" systemname="Translate" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Translation\Translate\Translate.v4p">
+   <NODE id="0" systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1530" top="4005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="1" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3449" top="3145" width="330" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="24" values="-1.10207896761755,-0.312669502882433,3.65052405912758,-4.25791333016478,0.918622561928698,-2.1549314655321,6.08770468177962,-1.32469156754265,2.80622169566558,-3.37523635570669,4.08454266903036,-1.09400992458364,1,1,1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3075" top="1680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3720" top="2445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3720" top="2445">
+   </BOUNDS>
+   </NODE>
+   <NODE id="4" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="495" top="2205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="24" values="4.05920694043579,9.47461136262567,-1.2034334764252,7.13257340385024,2.28112459475874,1.39693574563773,3.75547512373101,-1.49793563445402,-7.16017959192186,-1.12483553154194,1.65869342873441,1.27924420995418,1,1,1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="495" top="2205">
+   </BOUNDS>
+   </NODE>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1530" top="4725" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1530" top="4725" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1|">
+   </PIN>
+   <BOUNDS type="Box" left="915" top="750" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="915" top="750" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 1">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="2190" top="750" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2190" top="750" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Select">
+   </PIN>
+   <BOUNDS type="Box" left="4200" top="765" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4200" top="765" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Select">
+   </LINK>
+   <BOUNDS type="Window" left="14055" top="11655" width="5700" height="6810">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="1" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="1185" top="2205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="15" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="15" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1185" top="2910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="X" dstnodeid="16" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y" dstnodeid="16" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XYZ">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   </PATCH>

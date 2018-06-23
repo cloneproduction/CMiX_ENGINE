@@ -1,0 +1,137 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Camera\CamRotation\Rotate\Rotate.v4p" systemname="Rotate" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Camera\CamRotation\Rotate\Rotate.v4p">
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2595" top="8090" width="3210" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="3" values="0,-7.75588667105933E021,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Rotate (Transform Vector)" nodename="Rotate (Transform Vector)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2070" top="8825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,-3.28532101532898E022">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="1500" top="1505" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="1505" width="1185" height="4875">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="20" values="0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="2725" top="1500" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2725" top="1500" width="1170" height="4875">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Input String" slicecount="20" values="STD_CTR,STD_UP,STD_DN,STD_LT,STD_RT,STD_MID,SLD_RDM,SLD_DNUP,SLD_DN,SLD_UP,SLD_LT,SLD_RT,SLD_LTRT,FLA_RDM,FLA_DNUP,FLA_DN,FLA_UP,FLA_LT,FLA_RT,FLA_LTRT">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2545" top="6690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Filter" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2595" top="7385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   <BOUNDS type="Box" left="2070" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2070" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="XYZ">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="2070" top="9425" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2070" top="9425" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <NODE id="8" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="2970" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2970" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="4" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Switch">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1|">
+   </PIN>
+   <BOUNDS type="Box" left="3870" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 1">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   </PIN>
+   <BOUNDS type="Box" left="4770" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4770" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Filter Index" dstnodeid="5" dstpinname="Index">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="7305" height="10425">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

@@ -1,0 +1,46 @@
+float2 R:TARGETSIZE;
+
+SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MIP_LINEAR;AddressU=WRAP;AddressV=WRAP;};
+
+StructuredBuffer<float>Alpha;
+StructuredBuffer<int>BlendMode;
+StructuredBuffer<int>LayerIndex;
+
+
+Texture2D tex0: PREVIOUS;
+Texture2DArray texArray;
+
+int texcount = 6;
+
+#include "ColorSpace.fxh"
+#define bld(op,c0,c1) float4(lerp((c0*c0.a+c1*c1.a*(1-c0.a))/saturate(c0.a+c1.a*(1-c0.a))  ,(op)  ,c0.a*c1.a).rgb,  saturate(c0.a+c1.a*(1-c0.a)))
+
+float2 TexCoord (float2 x, float4x4 tTex){
+	float2 x0=mul(float4((x.xy*2-1)*float2(1,-1)*.5,0,1),tTex).xy*float2(1,-1)+0.5;	
+	return x0;
+}
+
+float4 pBlender(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
+{
+	float4 color = float4(0.0, 0.0, 0.0, 1.0);
+	
+	for(int i = texcount-1; i>=0; i--){
+		float4 col = texArray.Sample(s0, float3(uv, LayerIndex[i]));
+		col.a *= Alpha[i];
+		
+		if (BlendMode[i]==0){color=bld(col,col,color);}//NORMAL
+		if (BlendMode[i]==1){color=bld(color+col,color,col);}//ADD
+		if (BlendMode[i]==2){color=bld(color-col,color,col);}//SUBSTRACT
+		if (BlendMode[i]==3){color=bld(max(color,col),color,col);}//LIGHTEN
+		if (BlendMode[i]==4){color=bld(min(color,col),color,col);}//DARKEN
+		if (BlendMode[i]==5){color=bld(color*col,color,col);}//MULTIPLY
+
+	}
+	return color;
+}
+
+technique10 Blender
+{
+	pass P0 
+	{ SetPixelShader(CompileShader(ps_5_0, pBlender())); }
+} 

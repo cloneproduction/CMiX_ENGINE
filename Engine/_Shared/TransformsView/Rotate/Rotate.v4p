@@ -1,0 +1,111 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\TransformsView\Rotate\Rotate.v4p" systemname="Rotate" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Rotation\Rotate\Rotate.v4p" scrollx="0" scrolly="0">
+   <NODE systemname="Rotate (Transform Vector)" nodename="Rotate (Transform Vector)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3626" top="4081" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="63" values="1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="3626" top="4681" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3626" top="4681" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="13" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ">
+   </PIN>
+   <BOUNDS type="Box" left="3940" top="1030" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3940" top="1030" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="13080" top="10070" width="8640" height="7890">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3950" top="2380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="16" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="xyZ (3d XY)" nodename="xyZ (3d XY)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="4150" top="3200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Z" dstnodeid="18" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="XYZ" dstnodeid="0" dstpinname="XYZ">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Select">
+   </PIN>
+   <BOUNDS type="Box" left="6375" top="1170" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6375" top="1170" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE id="9" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="1230" top="1170" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1230" top="1170" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE id="7" systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="1230" top="3075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1230" top="3075">
+   </BOUNDS>
+   </NODE>
+   <NODE id="6" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1230" top="2175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1230" top="2175">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   </PATCH>

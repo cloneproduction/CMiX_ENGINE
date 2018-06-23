@@ -1,0 +1,139 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\modules\OSCBool.v4p" systemname="OSCBool" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCBool.v4p">
+   <BOUNDS type="Window" left="23290" top="12150" width="5890" height="7050">
+   </BOUNDS>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="1455" top="1050" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1455" top="1050" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE id="2" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
+   </PIN>
+   <BOUNDS type="Box" left="2410" top="1065" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2410" top="1065" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3525" top="1065" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3525" top="1065" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Default">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1440" top="4425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="6" values="False,False,False,False,False,False">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1650" top="3870" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="3870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="True">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="7" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1440" top="5040" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1440" top="5040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <NODE id="13" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
+   <BOUNDS height="0" left="1455" top="1785" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="OnReceive" visible="1">
+   </PIN>
+   <PIN pinname="Arguments" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="13" dstpinname="Address">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1440" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1440" top="2610">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="19" dstpinname="Default">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="1440" top="3420" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="7" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="OnReceive" dstnodeid="20" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Arguments" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="3280" top="3430" width="1140" height="1170">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3280" top="3430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Arguments" dstnodeid="21" dstpinname="Input String">
+   </LINK>
+   </PATCH>

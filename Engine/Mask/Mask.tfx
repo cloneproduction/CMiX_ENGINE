@@ -1,0 +1,49 @@
+Texture2D tex0 <string uiname="Texture";>;
+Texture2D mask <string uiname="Control";>;
+
+SamplerState s0 <bool visible=true;string uiname="Sampler";> {Filter=MIN_MAG_MIP_LINEAR;AddressU=CLAMP;AddressV=CLAMP;};
+float2 R:TARGETSIZE;
+#include "ColorSpace.fxh"
+float4x4 tTex <string uiname="Texture Transform";>;
+cbuffer controls:register(b0){
+	
+	float Amount=0.5;
+	int maskon = 0;
+	int invert = 0;
+	int keeporiginal = 0;
+
+};
+
+float4 pTEXCOORD(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_TARGET
+{
+	float2 x0=mul(float4((x.xy*2-1)*float2(1,-1)*.5,0,1),tTex).xy*float2(1,-1)*Amount+0.5;
+	
+	float4 msk = mask.SampleLevel(s0,x,0);
+	float4 color = tex0.SampleLevel(s0,x,0);
+	float4 final = tex0.SampleLevel(s0,x0,0);
+	
+	if(maskon == 1)
+	{
+		final.a = msk.a;
+		
+		if(invert == 1)
+		{
+			float3 h=RGBtoHSL(final.rgb);
+			h.z=lerp(h.z,1-h.z,1);
+			final.rgb=HSLtoRGB(h);
+			
+			if(keeporiginal == 1)
+			{
+				final = lerp(color, final, msk.a);
+			}
+		}
+	}
+    return final;
+}
+
+technique10 RedGreenXY{
+	pass P1
+	{SetPixelShader(CompileShader(ps_4_0,pTEXCOORD()));}
+}
+
+

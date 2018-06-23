@@ -1,0 +1,177 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
+   <BOUNDS type="Window" left="19550" top="10960" width="6820" height="5020">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="153">
+   <BOUNDS type="Node" left="5300" top="780" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5300" top="780" width="690" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Beat">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="315" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="890" top="3470" width="930" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="890" top="3470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TextureOut">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="838">
+   <BOUNDS type="Box" left="890" top="780" width="690" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="890" top="780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="8" componentmode="Hidden" systemname="Camera" filename="Camera\Camera.v4p" nodename="Camera\Camera.v4p" debug="0">
+   <BOUNDS type="Window" left="15340" top="11130" width="6860" height="5970">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3310" top="1730" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3310" top="1730">
+   </BOUNDS>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="CamViewNames" visible="1">
+   </PIN>
+   <PIN pinname="CamRotationName" visible="1">
+   </PIN>
+   <PIN pinname="CamLookAtNames" visible="1">
+   </PIN>
+   <PIN pinname="BeatInfo" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="CamFOV" slicecount="1" values="0.52">
+   </PIN>
+   <PIN pinname="CamZoom" slicecount="1" visible="1" values="0.89">
+   </PIN>
+   <PIN pinname="CameraName" slicecount="1" values="Steady">
+   </PIN>
+   <PIN pinname="LookAt" slicecount="1" values="Steady">
+   </PIN>
+   <PIN pinname="ChannelsParameters" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="C-MiX_ENGINE" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Beats" visible="1">
+   </PIN>
+   <PIN pinname="Message" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="8" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="824" componentmode="Hidden" systemname="Mask" filename="Mask\Mask.v4p" nodename="Mask\Mask.v4p">
+   <BOUNDS type="Node" left="890" top="2640" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="890" top="2640" width="16752" height="13588">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15470" top="9980" width="11350" height="10200">
+   </BOUNDS>
+   <PIN pinname="Message" visible="1">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1" slicecount="18" values="0.9966015625,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0,0.49830078125,0,0">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="texArray" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="MskOn" visible="1">
+   </PIN>
+   <PIN pinname="Blur" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="824" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1085">
+   <BOUNDS type="Node" left="1900" top="780" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1900" top="780" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SpriteBeats">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1087">
+   <BOUNDS type="Node" left="3050" top="780" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3050" top="780" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MaskBeats">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1087" srcpinname="Y Output Value" dstnodeid="824" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1088">
+   <BOUNDS type="Box" left="4130" top="780" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4130" top="780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="18" visible="1" values="0.47397265625,0,0,0.47397265625,0,0,0.47397265625,0,0,0.47397265625,0,0,0.47397265625,0,0,0.47397265625,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CamBeat">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1088" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Beats">
+   </LINK>
+   <NODE systemname="Visuals" filename="Visuals\Visuals.v4p" nodename="Visuals\Visuals.v4p" componentmode="Hidden" id="1089">
+   <BOUNDS type="Node" left="1210" top="1730" width="1460" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1210" top="1730" width="13053" height="5136">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17600" top="12300" width="16250" height="7730">
+   </BOUNDS>
+   <PIN pinname="Input Node - Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="1089" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1085" srcpinname="Y Output Value" dstnodeid="1089" dstpinname="Beats">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="1089" dstpinname="BeatColor">
+   </LINK>
+   <LINK srcnodeid="1089" srcpinname="Input Node - Texture Out" dstnodeid="824" dstpinname="texArray">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="1089" dstpinname="MainBeat">
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="Texture Out" dstnodeid="315" dstpinname="Input Node">
+   </LINK>
+   </PATCH>
