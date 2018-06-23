@@ -146,7 +146,7 @@
    </NODE>
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="Engine" filename="Engine\Engine.v4p" nodename="Engine\Engine.v4p" componentmode="Hidden" id="51" debug="0">
+   <NODE systemname="Engine" filename="Engine\Engine.v4p" nodename="Engine\Engine.v4p" componentmode="InAWindow" id="51" debug="0">
    <BOUNDS type="Node" left="2104" top="2093" width="1350" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2104" top="2093" width="8332" height="8260">

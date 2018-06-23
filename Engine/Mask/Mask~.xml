@@ -219,7 +219,7 @@
    <LINK srcnodeid="100" srcpinname="SltMskName Bin Size" dstnodeid="101" dstpinname="TextureBinSize">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="136">
-   <BOUNDS type="Box" left="6240" top="2460" width="2700" height="240">
+   <BOUNDS type="Box" left="6240" top="2460" width="2320" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="6240" top="2460" width="0" height="0">
    </BOUNDS>

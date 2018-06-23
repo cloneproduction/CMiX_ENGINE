@@ -392,6 +392,6 @@
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output String" dstnodeid="4" dstpinname="AddressIs3D">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Input Node - Texture Out" dstnodeid="12" dstpinname="Input Node">
+   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    </PATCH>

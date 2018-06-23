@@ -297,9 +297,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40">
-   <BOUNDS type="Box" left="3390" top="660" width="1590" height="240">
+   <BOUNDS type="Box" left="3390" top="1020" width="2480" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3390" top="660" width="0" height="0">
+   <BOUNDS type="Node" left="3390" top="1020" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Geometry/GeometryPaths">
    </PIN>
@@ -358,7 +358,7 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="43" dstpinname="KeepOriginal">
    </LINK>
-   <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="Hidden" id="46" debug="0">
+   <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="InAWindow" id="46" debug="0">
    <BOUNDS type="Node" left="6540" top="1750" width="2500" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="6540" top="1750" width="10912" height="11968">
@@ -392,6 +392,6 @@
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output String" dstnodeid="4" dstpinname="AddressIs3D">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Input Node - Texture Out" dstnodeid="12" dstpinname="Input Node">
+   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    </PATCH>

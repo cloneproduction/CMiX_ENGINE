@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Geometries\Geometries.v4p" systemname="Geometries" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Geometries\Geometries.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="20870" top="12230" width="7910" height="8430">
+   <BOUNDS type="Window" left="15800" top="9380" width="6450" height="8070">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -45,13 +45,13 @@
    </PIN>
    </NODE>
    <NODE id="39" systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1600" top="1900" width="100" height="100">
+   <BOUNDS type="Node" left="1590" top="2050" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" pintype="Input" visible="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Box" left="1600" top="1900" width="2400" height="1800">
+   <BOUNDS type="Box" left="1590" top="2050" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -71,7 +71,7 @@
    </PIN>
    </NODE>
    <NODE id="38" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1590" top="2615" width="100" height="100">
+   <BOUNDS type="Node" left="1580" top="2765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -142,7 +142,7 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
    </LINK>
-   <NODE id="49" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="InAWindow">
+   <NODE id="49" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
    <BOUNDS type="Node" left="590" top="3350" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="590" top="3350">
@@ -174,6 +174,20 @@
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="41" dstpinname="Filename">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Output String" dstnodeid="49" dstpinname="Default">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="50">
+   <BOUNDS type="Box" left="1090" top="1540" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1090" top="1540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="49" dstpinname="Default">
    </LINK>
    </PATCH>
