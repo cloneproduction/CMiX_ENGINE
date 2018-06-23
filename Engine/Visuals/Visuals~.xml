@@ -358,7 +358,7 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="43" dstpinname="KeepOriginal">
    </LINK>
-   <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="InAWindow" id="46" debug="0">
+   <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="Hidden" id="46" debug="0">
    <BOUNDS type="Node" left="6540" top="1750" width="2500" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="6540" top="1750" width="10912" height="11968">

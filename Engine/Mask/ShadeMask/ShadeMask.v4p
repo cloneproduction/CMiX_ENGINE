@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="11460" scrolly="0">
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1000" top="6260" width="864" height="276">
    </BOUNDS>
@@ -234,7 +234,7 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="27" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="5600" top="5530" width="26550" height="13930">
+   <BOUNDS type="Window" left="-1250" top="6300" width="26550" height="13930">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -961,7 +961,7 @@
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Select">
    </LINK>
    <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="306">
-   <BOUNDS type="Node" left="18980" top="6260" width="100" height="100">
+   <BOUNDS type="Node" left="19630" top="6570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Address" visible="1">
    </PIN>
@@ -973,7 +973,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="304">
-   <BOUNDS type="Node" left="19000" top="7420" width="100" height="100">
+   <BOUNDS type="Node" left="19650" top="7730" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" visible="1" slicecount="1" values="text">
    </PIN>
@@ -987,17 +987,17 @@
    </PIN>
    </NODE>
    <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="303">
-   <BOUNDS type="Node" left="19480" top="4340" width="100" height="100">
+   <BOUNDS type="Node" left="20130" top="4650" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="19480" top="4340">
+   <BOUNDS type="Box" left="20130" top="4650">
    </BOUNDS>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="302">
-   <BOUNDS type="Node" left="19485" top="5540" width="100" height="100">
+   <BOUNDS type="Node" left="20135" top="5850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -1007,9 +1007,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="301">
-   <BOUNDS type="Box" left="19680" top="4940" width="1490" height="240">
+   <BOUNDS type="Box" left="20330" top="5250" width="1490" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="19680" top="4940" width="0" height="0">
+   <BOUNDS type="Node" left="20330" top="5250" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="MaskSelectedInvert">
    </PIN>
@@ -1029,9 +1029,9 @@
    <LINK srcnodeid="306" srcpinname="Output" dstnodeid="304" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="300">
-   <BOUNDS type="Box" left="19170" top="6720" width="740" height="470">
+   <BOUNDS type="Box" left="19820" top="7030" width="740" height="470">
    </BOUNDS>
-   <BOUNDS type="Node" left="19170" top="6720" width="0" height="0">
+   <BOUNDS type="Node" left="19820" top="7030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="2" visible="1" values="INV_RGB,INV_VAL">
    </PIN>
@@ -1047,7 +1047,7 @@
    <LINK srcnodeid="300" srcpinname="Output String" dstnodeid="304" dstpinname="Filter">
    </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="299">
-   <BOUNDS type="Node" left="19350" top="8070" width="100" height="100">
+   <BOUNDS type="Node" left="20000" top="8380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1059,7 +1059,7 @@
    <LINK srcnodeid="304" srcpinname="Filter Index" dstnodeid="299" dstpinname="Input">
    </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer Int)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Int)" componentmode="Hidden" id="298">
-   <BOUNDS type="Node" left="19360" top="8680" width="100" height="100">
+   <BOUNDS type="Node" left="20010" top="8990" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data" visible="1">
    </PIN>
@@ -1209,9 +1209,9 @@
    <LINK srcnodeid="327" srcpinname="Output String" dstnodeid="310" dstpinname="Default">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="328">
-   <BOUNDS type="Node" left="20280" top="5570" width="100" height="100">
+   <BOUNDS type="Node" left="20930" top="5880" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="20280" top="5570" width="980" height="240">
+   <BOUNDS type="Box" left="20930" top="5880" width="980" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="INV_RGB">
    </PIN>

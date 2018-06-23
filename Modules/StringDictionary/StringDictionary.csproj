@@ -57,30 +57,30 @@
   <ItemGroup>
     <Reference Include="SlimDX">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\SlimDX.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\SlimDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition.Codeplex">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\System.ComponentModel.Composition.CodePlex.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\System.ComponentModel.Composition.CodePlex.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="VVVV.Core">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Core.dll</HintPath>
     </Reference>
     <Reference Include="VVVV.PluginInterfaces">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.PluginInterfaces.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.PluginInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="VVVV.Utils">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Utils.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Utils.dll</HintPath>
     </Reference>
     <Reference Include="VVVV.Utils3rdParty">
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Utils3rdParty.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\vvvv50\lib\core\VVVV.Utils3rdParty.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

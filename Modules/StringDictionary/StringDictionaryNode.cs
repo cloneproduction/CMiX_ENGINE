@@ -55,8 +55,8 @@ namespace VVVV.Nodes
 		public ISpread<ISpread<string>> FOutputQueryValue;
 
         #endregion fields & pins
+        Dictionary<string, ISpread<string>> dict = new Dictionary<string, ISpread<string>>();
 
-        Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
 
         public void Evaluate(int SpreadMax)
 		{
@@ -66,16 +66,10 @@ namespace VVVV.Nodes
                 {
                     for (int i = 0; i < FAddKey.SliceCount; i++)
                     {
-
                         if (!FAdd[i]) continue;
                         if (dict.ContainsKey(FAddKey[i]) == false)
                         {
-                            List<string> list = new List<string>();
-                            for (int j = 0; j < FAddValue[i].SliceCount; j++)
-                            {
-                                list.Add(FAddValue[i][j]);
-                            }
-                            dict.Add(FAddKey[i], list);
+                            dict.Add(FAddKey[i], FAddValue[i]);
                         }
                     }
                 }
@@ -91,12 +85,7 @@ namespace VVVV.Nodes
                         {
                             if (dict.ContainsKey(FUpdateKey[i]))
                             {
-                                List<string> list = new List<string>();
-                                for (int j = 0; j < FUpdateValue[i].SliceCount; j++)
-                                {
-                                    list.Add(FUpdateValue[i][j]);
-                                }
-                                dict[FUpdateKey[i]] = list;
+                                dict[FUpdateKey[i]] = FUpdateValue[i];
                             }
                         }
                     }
@@ -134,7 +123,7 @@ namespace VVVV.Nodes
 
                     if (dict.ContainsKey(FQueryKey[i]) == true)
                     {
-                        FOutputQueryValue[i].AssignFrom(dict[FQueryKey[i]]);
+                        FOutputQueryValue[i] = dict[FQueryKey[i]];
                     }
                 }
             }
