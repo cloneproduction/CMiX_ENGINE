@@ -1,2 +1,5 @@
 *.ini
-*.xaml
+
+*.xml
+
+\VVVV.DemolitionMedia.Hap
