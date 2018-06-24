@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6405" top="4770" width="11686" height="9009">
    </BOUNDS>
-   <BOUNDS type="Window" left="3960" top="2030" width="19500" height="11850">
+   <BOUNDS type="Window" left="2030" top="4760" width="19500" height="11850">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
    </PIN>
