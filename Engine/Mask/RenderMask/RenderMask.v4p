@@ -47,7 +47,7 @@
    <NODE id="8" systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden">
    <BOUNDS type="Node" left="6880" top="5970" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -201,7 +201,7 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
    <BOUNDS type="Node" left="6740" top="1730" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6740" top="1730" width="690" height="240">
+   <BOUNDS type="Box" left="6740" top="1730" width="1840" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="Mask/Geometry/Is3D">
    </PIN>

@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="110">
-   <BOUNDS type="Box" left="900" top="590" width="795" height="240">
+   <BOUNDS type="Box" left="760" top="650" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="900" top="590" width="0" height="0">
+   <BOUNDS type="Node" left="760" top="650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -89,9 +89,9 @@
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="100" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="124">
-   <BOUNDS type="Box" left="905" top="8490" width="800" height="240">
+   <BOUNDS type="Box" left="760" top="7520" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="905" top="8490" width="0" height="0">
+   <BOUNDS type="Node" left="760" top="7520" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
@@ -108,52 +108,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="texArray">
    </PIN>
    <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="130">
-   <BOUNDS type="Box" left="1385" top="6210" width="1740" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1385" top="6210" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Mask/PostFX/Feedback">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="129">
-   <BOUNDS type="Box" left="1630" top="6695" width="1350" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1630" top="6695" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Mask/PostFX/Blur">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="128">
-   <BOUNDS type="Box" left="1875" top="7235" width="1880" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1875" top="7235" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Mask/PostFX/Transforms">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="133">
@@ -177,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1480" top="980" width="13093" height="9337">
    </BOUNDS>
-   <BOUNDS type="Window" left="13280" top="5450" width="33370" height="13930">
+   <BOUNDS type="Window" left="1640" top="3300" width="21240" height="12640">
    </BOUNDS>
    <PIN pinname="Select - .. To [" visible="1" slicecount="1" values="6">
    </PIN>
@@ -218,50 +172,28 @@
    </LINK>
    <LINK srcnodeid="100" srcpinname="SltMskName Bin Size" dstnodeid="101" dstpinname="TextureBinSize">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="136">
-   <BOUNDS type="Box" left="6240" top="2460" width="2320" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6240" top="2460" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Mask/Geometry/GeometryPaths">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE id="137" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
-   <BOUNDS type="Node" left="905" top="7795" width="1260" height="270">
+   <BOUNDS type="Node" left="760" top="6830" width="1260" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="905" top="7795">
+   <BOUNDS type="Box" left="760" top="6830">
    </BOUNDS>
-   <BOUNDS type="Window" left="5720" top="12420" width="15900" height="6920">
+   <BOUNDS type="Window" left="16480" top="12950" width="9700" height="4900">
    </BOUNDS>
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
+   <PIN pinname="FeedBack" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="137" dstpinname="FeedBack">
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Output String" dstnodeid="137" dstpinname="Blur">
-   </LINK>
-   <LINK srcnodeid="128" srcpinname="Output String" dstnodeid="137" dstpinname="Address">
-   </LINK>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="137" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Input Node - Texture Out" dstnodeid="137" dstpinname="TexArray">
-   </LINK>
-   <LINK srcnodeid="128" srcpinname="Output String" dstnodeid="137" dstpinname="AddressTexTransform">
    </LINK>
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="137" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="137" dstpinname="texArray" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="137" dstpinname="KeepOriginal">
-   <LINKPOINT x="11450" y="7820">
+   <LINKPOINT x="11420" y="6830">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="99" dstpinname="BeatInfos">
@@ -307,16 +239,16 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5710" top="3480" width="4324" height="6040">
    </BOUNDS>
-   <BOUNDS type="Window" left="20870" top="12230" width="7910" height="8430">
+   <BOUNDS type="Window" left="20870" top="12230" width="6960" height="7010">
    </BOUNDS>
    <PIN pinname="Switch" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="145" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="136" srcpinname="Output String" dstnodeid="145" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="150">
    <BOUNDS type="Node" left="4055" top="1150" width="100" height="100">
@@ -395,5 +327,29 @@
    <LINK srcnodeid="145" srcpinname="Geometry Out" dstnodeid="101" dstpinname="Geometry In">
    </LINK>
    <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="151">
+   <BOUNDS type="Node" left="1980" top="6280" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="6280" width="800" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="Mask">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="137" dstpinname="FeedBack">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="152">
+   <BOUNDS type="Node" left="6250" top="2950" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6250" top="2950" width="800" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="Mask">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Output String" dstnodeid="145" dstpinname="Input 2">
    </LINK>
    </PATCH>

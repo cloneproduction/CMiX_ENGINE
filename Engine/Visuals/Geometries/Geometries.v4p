@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Geometries\Geometries.v4p" systemname="Geometries" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Geometries\Geometries.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="15800" top="9380" width="6450" height="8070">
+   <BOUNDS type="Window" left="20870" top="12230" width="6960" height="7010">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -9,9 +9,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="4323" top="5696" width="830" height="240">
+   <BOUNDS type="Box" left="4303" top="5296" width="830" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4323" top="5696" width="0" height="0">
+   <BOUNDS type="Node" left="4303" top="5296" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Geometry Out|">
    </PIN>
@@ -21,9 +21,9 @@
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="31">
-   <BOUNDS type="Box" left="580" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="560" top="650" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="580" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="560" top="650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -33,9 +33,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="33">
-   <BOUNDS type="Node" left="1770" top="1050" width="100" height="100">
+   <BOUNDS type="Node" left="1760" top="650" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1770" top="1050" width="1590" height="240">
+   <BOUNDS type="Box" left="1760" top="650" width="700" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -45,13 +45,13 @@
    </PIN>
    </NODE>
    <NODE id="39" systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1580" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="1820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" pintype="Input" visible="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Box" left="1580" top="2220" width="2400" height="1800">
+   <BOUNDS type="Box" left="1560" top="1820" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -71,7 +71,7 @@
    </PIN>
    </NODE>
    <NODE id="38" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1580" top="2765" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="2365" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -83,7 +83,7 @@
    </PIN>
    <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="3">
    </PIN>
    <PIN pinname="" pintype="Input" slicecount="1" values="text">
    </PIN>
@@ -93,11 +93,13 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Output String" dstnodeid="38" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="3810" top="4520" width="100" height="100">
+   <BOUNDS type="Node" left="3790" top="4120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -109,9 +111,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="3810" top="1050" width="800" height="240">
+   <BOUNDS type="Box" left="3790" top="650" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3810" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="3790" top="650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -127,9 +129,9 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Switch">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="4080" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="4060" top="1820" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4080" top="2220" width="800" height="240">
+   <BOUNDS type="Box" left="4060" top="1820" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -143,9 +145,9 @@
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
    </LINK>
    <NODE id="49" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
-   <BOUNDS type="Node" left="590" top="3350" width="100" height="100">
+   <BOUNDS type="Node" left="570" top="2950" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="590" top="3350">
+   <BOUNDS type="Box" left="570" top="2950">
    </BOUNDS>
    <BOUNDS type="Window" left="15280" top="5710" width="11120" height="9940">
    </BOUNDS>
@@ -163,9 +165,9 @@
    <NODE id="41" systemname="GeometryFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="GeometryFile (DX11.Geometry Assimp)" componentmode="Hidden">
    <PIN pinname="Filename" visible="1" slicecount="1" values="Quad.fbx">
    </PIN>
-   <BOUNDS type="Node" left="3820" top="5095" width="100" height="100">
+   <BOUNDS type="Node" left="3800" top="4695" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3820" top="5095">
+   <BOUNDS type="Box" left="3800" top="4695">
    </BOUNDS>
    <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
@@ -175,9 +177,9 @@
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="41" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="1090" top="1670" width="800" height="240">
+   <BOUNDS type="Box" left="1070" top="1270" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1090" top="1670" width="0" height="0">
+   <BOUNDS type="Node" left="1070" top="1270" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -189,5 +191,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="49" dstpinname="Default">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="51">
+   <BOUNDS type="Box" left="1930" top="1350" width="2020" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1930" top="1350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/GeometryPaths">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output String" dstnodeid="38" dstpinname="Input 3">
    </LINK>
    </PATCH>
