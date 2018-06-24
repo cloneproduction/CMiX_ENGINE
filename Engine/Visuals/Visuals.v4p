@@ -177,7 +177,7 @@
    <NODE systemname="ShadeVisuals" filename="ShadeVisuals\ShadeVisuals.v4p" nodename="ShadeVisuals\ShadeVisuals.v4p" componentmode="Hidden" id="17" debug="0">
    <BOUNDS type="Node" left="1630" top="2630" width="13560" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1560" top="2210" width="20630" height="12540">
+   <BOUNDS type="Window" left="5530" top="1740" width="20630" height="12540">
    </BOUNDS>
    <BOUNDS type="Box" left="1630" top="2630">
    </BOUNDS>

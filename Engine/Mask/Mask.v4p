@@ -177,7 +177,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1480" top="980" width="13093" height="9337">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1250" top="6300" width="26550" height="13930">
+   <BOUNDS type="Window" left="13280" top="5450" width="33370" height="13930">
    </BOUNDS>
    <PIN pinname="Select - .. To [" visible="1" slicecount="1" values="6">
    </PIN>

@@ -172,6 +172,6 @@
    </LINK>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="1089" dstpinname="MainBeat">
    </LINK>
-   <LINK srcnodeid="1089" srcpinname="Input Node - Texture Out" dstnodeid="315" dstpinname="Input Node">
+   <LINK srcnodeid="824" srcpinname="Texture Out" dstnodeid="315" dstpinname="Input Node">
    </LINK>
    </PATCH>

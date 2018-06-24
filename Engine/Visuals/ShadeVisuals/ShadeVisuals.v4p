@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" systemname="ShadeVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1560" top="2210" width="20630" height="12540">
+   <BOUNDS type="Window" left="5530" top="1740" width="20630" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -521,7 +521,7 @@
    <LINK srcnodeid="510" srcpinname="Output" dstnodeid="435" dstpinname="Input">
    </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="512">
-   <BOUNDS type="Node" left="16140" top="5910" width="100" height="100">
+   <BOUNDS type="Node" left="20930" top="5900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Buffer" visible="1">
    </PIN>
@@ -529,7 +529,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="514">
-   <BOUNDS type="Node" left="16300" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="21090" top="4580" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -537,7 +537,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="16300" top="4590">
+   <BOUNDS type="Box" left="21090" top="4580">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="514" dstpinname="Select" hiddenwhenlocked="1">
@@ -553,7 +553,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="542">
-   <BOUNDS type="Node" left="16130" top="5250" width="100" height="100">
+   <BOUNDS type="Node" left="20920" top="5240" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
    </PIN>
@@ -565,7 +565,7 @@
    <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
    </LINK>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="550">
-   <BOUNDS type="Node" left="16940" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="21730" top="4580" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -623,17 +623,17 @@
    </BOUNDS>
    <PIN pinname="Light DirectionXYZ" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Contrast" slicecount="1" values="||">
+   <PIN pinname="Contrast" slicecount="1" values="||" visible="1">
    </PIN>
-   <PIN pinname="Brightness" slicecount="1" values="||">
+   <PIN pinname="Brightness" slicecount="1" values="||" visible="1">
    </PIN>
-   <PIN pinname="Saturation" slicecount="1" values="||">
+   <PIN pinname="Saturation" slicecount="1" values="||" visible="1">
    </PIN>
-   <PIN pinname="Invert" slicecount="1" values="||">
+   <PIN pinname="Invert" slicecount="1" values="||" visible="1">
    </PIN>
-   <PIN pinname="InvertMode" slicecount="1" values="||">
+   <PIN pinname="InvertMode" slicecount="1" values="||" visible="1">
    </PIN>
-   <PIN pinname="Keying" slicecount="1" values="||">
+   <PIN pinname="Keying" slicecount="1" values="||" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="586" dstpinname="Geometry">
@@ -704,30 +704,6 @@
    </NODE>
    <LINK srcnodeid="599" srcpinname="Output" dstnodeid="134" dstpinname=".. To [">
    </LINK>
-   <NODE systemname="TextureControls" filename="TextureControls.v4p" nodename="TextureControls.v4p" componentmode="Hidden" id="601">
-   <BOUNDS type="Node" left="13890" top="4590" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13890" top="4590" width="18680" height="7485">
-   </BOUNDS>
-   <BOUNDS type="Window" left="15320" top="10970" width="21420" height="9310">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="601" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer 3" dstnodeid="586" dstpinname="Contrast">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer 4" dstnodeid="586" dstpinname="Brightness">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer 1" dstnodeid="586" dstpinname="Saturation">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="601" dstpinname="Select" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer 2" dstnodeid="586" dstpinname="Invert">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer 5" dstnodeid="586" dstpinname="Keying">
-   </LINK>
-   <LINK srcnodeid="601" srcpinname="Buffer" dstnodeid="586" dstpinname="InvertMode">
-   </LINK>
    <NODE systemname="LightPosition" filename="LightPosition.v4p" nodename="LightPosition.v4p" componentmode="Hidden" id="602">
    <BOUNDS type="Node" left="6920" top="4590" width="0" height="0">
    </BOUNDS>
@@ -763,5 +739,143 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="517" srcpinname="Output Enum" dstnodeid="516" dstpinname="Mode">
+   </LINK>
+   <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="609">
+   <BOUNDS type="Node" left="14820" top="4590" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3100" top="10950" width="21420" height="9310">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Saturation" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" visible="1">
+   </PIN>
+   <PIN pinname="Invert" visible="1">
+   </PIN>
+   <PIN pinname="Keying" visible="1">
+   </PIN>
+   <PIN pinname="InvertMode" visible="1">
+   </PIN>
+   <PIN pinname="TransformBinSize" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="14820" top="4590">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="608">
+   <BOUNDS type="Box" left="15230" top="2050" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15230" top="2050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/Saturation">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="608" srcpinname="Output String" dstnodeid="609" dstpinname="Saturation">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="607">
+   <BOUNDS type="Box" left="15430" top="2500" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15430" top="2500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/Contrast">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="607" srcpinname="Output String" dstnodeid="609" dstpinname="Contrast">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="606">
+   <BOUNDS type="Box" left="15630" top="2940" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15630" top="2940" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/Brightness">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="606" srcpinname="Output String" dstnodeid="609" dstpinname="Brightness">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="605">
+   <BOUNDS type="Box" left="15820" top="3360" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15820" top="3360" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/Invert">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="605" srcpinname="Output String" dstnodeid="609" dstpinname="Invert">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="604">
+   <BOUNDS type="Box" left="16040" top="3740" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16040" top="3740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/Keying">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="604" srcpinname="Output String" dstnodeid="609" dstpinname="Keying">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="603">
+   <BOUNDS type="Box" left="16240" top="4220" width="2420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16240" top="4220" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content/Texture/InvertMode">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="603" srcpinname="Output String" dstnodeid="609" dstpinname="InvertMode">
+   </LINK>
+   <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="609" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="609" dstpinname="TransformBinSize">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="586" dstpinname="Saturation">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Contrast" dstnodeid="586" dstpinname="Contrast">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Brightness" dstnodeid="586" dstpinname="Brightness">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Invert" dstnodeid="586" dstpinname="Invert">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Keying" dstnodeid="586" dstpinname="Keying">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="586" dstpinname="InvertMode">
    </LINK>
    </PATCH>
