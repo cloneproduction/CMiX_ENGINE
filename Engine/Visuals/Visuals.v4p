@@ -125,7 +125,7 @@
    <NODE systemname="ShadeVisuals" filename="ShadeVisuals\ShadeVisuals.v4p" nodename="ShadeVisuals\ShadeVisuals.v4p" componentmode="Hidden" id="17" debug="0">
    <BOUNDS type="Node" left="1640" top="4950" width="14670" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="4050" top="4870" width="25720" height="12540">
+   <BOUNDS type="Window" left="1440" top="7190" width="25720" height="12540">
    </BOUNDS>
    <BOUNDS type="Box" left="1640" top="4950">
    </BOUNDS>
@@ -151,9 +151,9 @@
    </PIN>
    <PIN pinname="LayerName" visible="1">
    </PIN>
+   <PIN pinname="Transform BinSize" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="5" srcpinname="TexAspRat" dstnodeid="17" dstpinname="TexAspRatio">
@@ -244,8 +244,6 @@
    </LINK>
    <LINK srcnodeid="46" srcpinname="Resolution" dstnodeid="17" dstpinname="Resolution">
    </LINK>
-   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry.v4p" nodename="..\_Shared\Geometry.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="4080" top="3970" width="1130" height="270">
    </BOUNDS>
@@ -273,7 +271,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10170" top="3010" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="14000" top="6120" width="8660" height="11230">
+   <BOUNDS type="Window" left="11230" top="6660" width="8660" height="11230">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0.08958203125">
    </PIN>
@@ -330,6 +328,8 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="53" dstpinname="Address">
@@ -427,5 +427,9 @@
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="4" dstpinname="BeatInfos" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="17" dstpinname="LayerName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize">
    </LINK>
    </PATCH>

@@ -326,8 +326,6 @@
    <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/Is3D">
    </PIN>
    </NODE>
-   <LINK srcnodeid="102" srcpinname="Transform Out" dstnodeid="96" dstpinname="View">
-   </LINK>
    <LINK srcnodeid="26" srcpinname="Input Value" dstnodeid="30" dstpinname="Transform 2">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Transform Out" dstnodeid="79" dstpinname="Transform 1">
@@ -361,6 +359,8 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4970" top="2880">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="112" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -423,5 +423,7 @@
    <LINK srcnodeid="115" srcpinname="Output String" dstnodeid="107" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="107" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Transform Out" dstnodeid="96" dstpinname="View">
    </LINK>
    </PATCH>

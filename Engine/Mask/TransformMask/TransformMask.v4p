@@ -149,7 +149,7 @@
    </PIN>
    <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Select" visible="1">
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
@@ -183,9 +183,9 @@
    <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="148">
-   <BOUNDS type="Box" left="7760" top="960" width="800" height="240">
+   <BOUNDS type="Box" left="8240" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7760" top="960" width="0" height="0">
+   <BOUNDS type="Node" left="8240" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -229,5 +229,7 @@
    <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="79" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="80" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Select">
    </LINK>
    </PATCH>

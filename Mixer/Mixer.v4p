@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="9590" top="9440" width="5940" height="5600">
+   <BOUNDS type="Window" left="9590" top="9440" width="18220" height="5600">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

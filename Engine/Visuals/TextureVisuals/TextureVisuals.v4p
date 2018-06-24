@@ -293,9 +293,9 @@
    <LINK srcnodeid="377" srcpinname="Output String" dstnodeid="306" dstpinname="Input 1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="378">
-   <BOUNDS type="Node" left="4800" top="840" width="100" height="100">
+   <BOUNDS type="Node" left="4540" top="780" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4800" top="840" width="800" height="240">
+   <BOUNDS type="Box" left="4540" top="780" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -303,9 +303,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="379">
-   <BOUNDS type="Box" left="4590" top="1680" width="800" height="240">
+   <BOUNDS type="Box" left="4550" top="1610" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4590" top="1680" width="0" height="0">
+   <BOUNDS type="Node" left="4550" top="1610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

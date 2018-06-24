@@ -182,7 +182,7 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="9290" top="6700" width="10190" height="10750">
+   <BOUNDS type="Window" left="11230" top="6660" width="8660" height="11230">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>

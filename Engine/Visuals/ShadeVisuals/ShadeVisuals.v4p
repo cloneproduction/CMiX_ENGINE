@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" systemname="ShadeVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4050" top="4870" width="25720" height="12540">
+   <BOUNDS type="Window" left="1440" top="7190" width="25720" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -253,9 +253,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="357">
-   <BOUNDS type="Box" left="780" top="720" width="795" height="240">
+   <BOUNDS type="Box" left="640" top="710" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="780" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="640" top="710" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -611,17 +611,19 @@
    </BOUNDS>
    <PIN pinname="Light DirectionXYZ" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Contrast" slicecount="1" values="||" visible="1">
+   <PIN pinname="Contrast" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Brightness" slicecount="1" values="||" visible="1">
+   <PIN pinname="Brightness" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Saturation" slicecount="1" values="||" visible="1">
+   <PIN pinname="Saturation" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Invert" slicecount="1" values="||" visible="1">
+   <PIN pinname="Invert" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="InvertMode" slicecount="1" values="||" visible="1">
+   <PIN pinname="InvertMode" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Keying" slicecount="1" values="||" visible="1">
+   <PIN pinname="Keying" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="sbWorld" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="586" dstpinname="Geometry">
@@ -629,8 +631,6 @@
    <LINK srcnodeid="586" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="586" dstpinname="InstanceStartIndex">
-   </LINK>
-   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="586" dstpinname="sbWorld">
    </LINK>
    <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="586" dstpinname="Amb">
    </LINK>
@@ -731,7 +731,7 @@
    <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="609">
    <BOUNDS type="Node" left="14070" top="4590" width="2500" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="3050" top="8930" width="21420" height="9310">
+   <BOUNDS type="Window" left="10960" top="9650" width="21420" height="9310">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -758,7 +758,7 @@
    </NODE>
    <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="609" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="609" dstpinname="TransformBinSize">
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="609" dstpinname="TransformBinSize" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="586" dstpinname="Saturation">
    </LINK>
@@ -773,9 +773,9 @@
    <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="586" dstpinname="InvertMode">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="611">
-   <BOUNDS type="Box" left="1710" top="670" width="800" height="240">
+   <BOUNDS type="Box" left="1720" top="750" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1710" top="670" width="0" height="0">
+   <BOUNDS type="Node" left="1720" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -793,5 +793,7 @@
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="485" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="609" dstpinname="Name" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="586" dstpinname="sbWorld">
    </LINK>
    </PATCH>

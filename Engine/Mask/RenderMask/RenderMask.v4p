@@ -165,9 +165,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="1900" top="950" width="630" height="620">
+   <BOUNDS type="Box" left="2000" top="910" width="630" height="620">
    </BOUNDS>
-   <BOUNDS type="Node" left="1900" top="950" width="0" height="0">
+   <BOUNDS type="Node" left="2000" top="910" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>

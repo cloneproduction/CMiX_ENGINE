@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="611">
-   <BOUNDS type="Node" left="6880" top="810" width="100" height="100">
+   <BOUNDS type="Node" left="6870" top="810" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6880" top="810" width="1050" height="240">
+   <BOUNDS type="Box" left="6870" top="810" width="700" height="770">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -59,7 +59,7 @@
    </PIN>
    <PIN pinname="Beat" visible="1">
    </PIN>
-   <PIN pinname="TranslateName" visible="1" slicecount="6" values=",,,,,">
+   <PIN pinname="TranslateName" visible="1">
    </PIN>
    <PIN pinname="XYZ Transformed" visible="1">
    </PIN>
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="16590" top="5040" width="33160" height="17730">
    </BOUNDS>
-   <PIN pinname="TranslateName" visible="1" slicecount="6" values=",,,,,">
+   <PIN pinname="TranslateName" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1067" dstpinname="Input 1" hiddenwhenlocked="1">
@@ -179,20 +179,10 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/TranslateAmount">
    </PIN>
-   </NODE>
-   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="1131">
-   <BOUNDS type="Node" left="2560" top="810" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="2560" top="810">
-   </BOUNDS>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="1130">
    <BOUNDS type="Node" left="4650" top="2350" width="100" height="100">
@@ -203,13 +193,11 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/TranslateMode">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1131" srcpinname="Output" dstnodeid="1130" dstpinname="Input 1" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1132">
    <BOUNDS type="Node" left="1630" top="2350" width="100" height="100">
    </BOUNDS>
@@ -228,48 +216,10 @@
    <PIN pinname="Input String" slicecount="1" values="STD_CTR">
    </PIN>
    </NODE>
-   <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="1134">
-   <BOUNDS type="Node" left="3120" top="3000" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="3000" width="3100" height="4460">
-   </BOUNDS>
-   <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1134" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1134" srcpinname="Output" dstnodeid="1067" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1134" srcpinname="Output" dstnodeid="1068" dstpinname="TranslateName" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1134" srcpinname="Output" dstnodeid="1069" dstpinname="TranslateName" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1134" srcpinname="Output" dstnodeid="1107" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1130" srcpinname="Output" dstnodeid="1134" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="1133" srcpinname="Output String" dstnodeid="1134" dstpinname="Default">
-   </LINK>
-   <NODE systemname="OSCValue" filename="..\..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="1135">
-   <BOUNDS type="Node" left="1140" top="3000" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1140" top="3000">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1135" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1135" srcpinname="Output" dstnodeid="1126" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="1128" srcpinname="Output" dstnodeid="1135" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="1132" srcpinname="Y Output Value" dstnodeid="1135" dstpinname="Default">
-   </LINK>
-   <LINK srcnodeid="1131" srcpinname="Output" dstnodeid="1128" dstpinname="Input 1" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1136">
-   <BOUNDS type="Box" left="2910" top="1760" width="800" height="240">
+   <BOUNDS type="Box" left="2740" top="1780" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2910" top="1760" width="0" height="0">
+   <BOUNDS type="Node" left="2740" top="1780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateAmount">
    </PIN>
@@ -279,13 +229,13 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1136" srcpinname="Output String" dstnodeid="1128" dstpinname="Input 3">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1137">
-   <BOUNDS type="Box" left="4810" top="810" width="800" height="240">
+   <BOUNDS type="Box" left="2550" top="810" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4810" top="810" width="0" height="0">
+   <BOUNDS type="Node" left="2550" top="810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="text">
    </PIN>
@@ -300,14 +250,10 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1128" dstpinname="Input 2" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1130" dstpinname="Input 2" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="5010" top="1760" width="800" height="240">
+   <BOUNDS type="Box" left="4830" top="1760" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5010" top="1760" width="0" height="0">
+   <BOUNDS type="Node" left="4830" top="1760" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode">
    </PIN>
@@ -317,7 +263,51 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1138" srcpinname="Output String" dstnodeid="1130" dstpinname="Input 3">
+   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1128" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1130" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1136" srcpinname="Output String" dstnodeid="1128" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1138" srcpinname="Output String" dstnodeid="1130" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="OSCValue" filename="..\..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="1139">
+   <BOUNDS type="Node" left="1140" top="3000" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1140" top="3000">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1139" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1139" srcpinname="Output" dstnodeid="1126" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1128" srcpinname="Output" dstnodeid="1139" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="1132" srcpinname="Y Output Value" dstnodeid="1139" dstpinname="Default">
+   </LINK>
+   <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="1140">
+   <BOUNDS type="Node" left="3120" top="3000" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3120" top="3000" width="3100" height="4460">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1140" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1067" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1068" dstpinname="TranslateName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1069" dstpinname="TranslateName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1107" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1130" srcpinname="Output" dstnodeid="1140" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="1133" srcpinname="Output String" dstnodeid="1140" dstpinname="Default">
    </LINK>
    </PATCH>
