@@ -63,7 +63,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="820" top="950" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Messenger">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>

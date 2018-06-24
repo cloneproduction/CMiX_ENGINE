@@ -124,7 +124,7 @@
    <PIN pinname="MasterPeriod" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="1089" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="1089" dstpinname="Messenger" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="1089" srcpinname="Input Node - Texture Out" dstnodeid="824" dstpinname="texArray">
    </LINK>
@@ -148,7 +148,7 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1089" dstpinname="Name">
+   <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1089" dstpinname="LayerNames">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1091">
    <BOUNDS type="Box" left="3700" top="660" width="800" height="240">

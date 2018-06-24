@@ -145,11 +145,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="730" top="7840">
    </BOUNDS>
-   <BOUNDS type="Window" left="16480" top="12950" width="9700" height="4900">
+   <BOUNDS type="Window" left="16480" top="12950" width="7200" height="4400">
    </BOUNDS>
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
    <PIN pinname="FeedBack" visible="1">
+   </PIN>
+   <PIN pinname="KeepOriginal" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="137" dstpinname="Input" hiddenwhenlocked="1">
@@ -159,10 +161,6 @@
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="137" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="137" dstpinname="texArray" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="137" dstpinname="KeepOriginal">
-   <LINKPOINT x="10290" y="7850">
-   </LINKPOINT>
    </LINK>
    <NODE id="143" systemname="TransformMask" filename="TransformMask\TransformMask.v4p" nodename="TransformMask\TransformMask.v4p" componentmode="Hidden" debug="0">
    <BOUNDS type="Node" left="6470" top="4920" width="1420" height="270">
@@ -251,18 +249,6 @@
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="151">
-   <BOUNDS type="Node" left="1950" top="7290" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1950" top="7290" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="Mask">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="137" dstpinname="FeedBack">
    </LINK>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry.v4p" nodename="..\_Shared\Geometry.v4p" componentmode="Hidden" id="145">
    <BOUNDS type="Node" left="4560" top="4920" width="1130" height="270">
@@ -376,7 +362,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="MasterPeriod">
    </PIN>
    </NODE>
-   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="158" dstpinname="Input 1">
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="158" dstpinname="MasterPeriod">
    </LINK>
    <LINK srcnodeid="155" srcpinname="Output" dstnodeid="158" dstpinname="ObjectCount">
    </LINK>
@@ -451,5 +437,11 @@
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="148" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="100" dstpinname="LayerNames" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="137" dstpinname="FeedBack" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="137" dstpinname="KeepOriginal">
+   <LINKPOINT x="10290" y="7850">
+   </LINKPOINT>
    </LINK>
    </PATCH>

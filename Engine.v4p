@@ -27,7 +27,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2184" top="787" width="9028" height="7636">
    </BOUNDS>
-   <BOUNDS type="Window" left="14250" top="6230" width="11150" height="10280">
+   <BOUNDS type="Window" left="14250" top="6230" width="10760" height="10300">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -204,13 +204,13 @@
    <PIN pinname="LayerNames" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="48" dstpinname="Input Node">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="48" dstpinname="Messenger">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="38" dstpinname="Input">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="38" dstpinname="Messenger">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="51" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="37" dstpinname="Output">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="37" dstpinname="Messenger">
    </LINK>
    <LINK srcnodeid="53" srcpinname="LayerNames" dstnodeid="51" dstpinname="Name">
    </LINK>
