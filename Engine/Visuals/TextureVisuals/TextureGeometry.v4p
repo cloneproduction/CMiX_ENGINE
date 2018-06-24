@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\TextureGeometry.v4p" systemname="TextureGeometry" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\TextureGeometry.v4p" scrollx="0" scrolly="10">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\TextureVisuals\TextureGeometry.v4p" systemname="TextureGeometry" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\TextureGeometry.v4p" scrollx="0" scrolly="10">
    <NODE id="0" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,0,0,1">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -159,6 +159,8 @@
    </BOUNDS>
    <PIN pinname="Bin Sizes" visible="1">
    </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="20" dstpinname="Input">
    </LINK>
@@ -234,7 +236,15 @@
    </NODE>
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="5" dstpinname="PicturesRes">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="5" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="5" dstpinname="Pictures">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="SizeXY" dstnodeid="25" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="26" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4400" top="3500" width="800" height="960">
    </BOUNDS>
    <BOUNDS type="Node" left="4400" top="3500" width="0" height="0">
@@ -253,13 +263,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="5" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="5" dstpinname="Pictures">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="SizeXY" dstnodeid="25" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

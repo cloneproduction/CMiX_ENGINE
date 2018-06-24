@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Engine.v4p" scrollx="10" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="19550" top="10960" width="6820" height="5020">
+   <BOUNDS type="Window" left="17430" top="10990" width="6820" height="5020">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -157,7 +157,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1210" top="1730" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="13190" top="12250" width="16250" height="7730">
+   <BOUNDS type="Window" left="12870" top="10570" width="16250" height="7730">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>

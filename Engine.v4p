@@ -151,7 +151,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2014" top="2033" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="19550" top="10960" width="6820" height="5020">
+   <BOUNDS type="Window" left="17430" top="10990" width="6820" height="5020">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>

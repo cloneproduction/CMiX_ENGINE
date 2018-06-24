@@ -230,20 +230,6 @@
    </LINK>
    <LINK srcnodeid="369" srcpinname="Output" dstnodeid="368" dstpinname="Pictures">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="370">
-   <BOUNDS type="Box" left="4670" top="2640" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4670" top="2640" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="372">
    <BOUNDS type="Box" left="970" top="1920" width="800" height="240">
    </BOUNDS>

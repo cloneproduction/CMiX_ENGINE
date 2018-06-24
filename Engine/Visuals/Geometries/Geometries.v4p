@@ -155,6 +155,8 @@
    </PIN>
    <PIN pinname="Default" visible="1">
    </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output" dstnodeid="42" dstpinname="Input 2">
    </LINK>
