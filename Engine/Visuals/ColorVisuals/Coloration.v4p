@@ -616,4 +616,56 @@
    </LINK>
    <LINK srcnodeid="663" srcpinname="Output" dstnodeid="619" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="671">
+   <BOUNDS type="Node" left="18050" top="1300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18050" top="1300" width="1870" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Coloration/BeatMultiplier">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="670">
+   <BOUNDS type="Node" left="18580" top="2360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18580" top="2360" width="2180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Coloration/Geometry/Count">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="669">
+   <BOUNDS type="Node" left="18320" top="1810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18320" top="1810" width="1900" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Coloration/ChanceToHit">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="BeatControl" filename="BeatControl.v4p" nodename="BeatControl.v4p" componentmode="Hidden" id="668" debug="0">
+   <BOUNDS type="Node" left="17190" top="3630" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17190" top="3630" width="8860" height="11275">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9290" top="6700" width="10190" height="10750">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Address 1" visible="1">
+   </PIN>
+   <PIN pinname="Address 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="671" srcpinname="Output String" dstnodeid="668" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="669" srcpinname="Output String" dstnodeid="668" dstpinname="Address 1">
+   </LINK>
+   <LINK srcnodeid="670" srcpinname="Output String" dstnodeid="668" dstpinname="Address 2">
+   </LINK>
    </PATCH>

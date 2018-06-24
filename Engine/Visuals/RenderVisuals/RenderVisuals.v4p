@@ -312,16 +312,6 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="Layer Out" dstnodeid="96" dstpinname="Layer">
    </LINK>
-   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="108">
-   <BOUNDS type="Node" left="5850" top="710" width="1230" height="270">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="5850" top="710">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="107">
    <BOUNDS type="Node" left="5850" top="1870" width="600" height="270">
    </BOUNDS>
@@ -331,13 +321,11 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/Is3D">
    </PIN>
    </NODE>
-   <LINK srcnodeid="108" srcpinname="Output" dstnodeid="107" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="102" srcpinname="Transform Out" dstnodeid="96" dstpinname="View">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Input Value" dstnodeid="30" dstpinname="Transform 2">
@@ -397,9 +385,9 @@
    <LINK srcnodeid="113" srcpinname="Output" dstnodeid="96" dstpinname="Element Count">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="114">
-   <BOUNDS type="Box" left="8200" top="840" width="800" height="240">
+   <BOUNDS type="Box" left="5850" top="670" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8200" top="840" width="0" height="0">
+   <BOUNDS type="Node" left="5850" top="670" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="text">
    </PIN>
@@ -417,9 +405,9 @@
    <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="103" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="115">
-   <BOUNDS type="Box" left="6210" top="1300" width="800" height="240">
+   <BOUNDS type="Box" left="6020" top="1240" width="1260" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6210" top="1300" width="0" height="0">
+   <BOUNDS type="Node" left="6020" top="1240" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Is3D">
    </PIN>
@@ -429,9 +417,11 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="115" srcpinname="Output String" dstnodeid="107" dstpinname="Input 3">
+   <LINK srcnodeid="115" srcpinname="Output String" dstnodeid="107" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="107" dstpinname="Input 2">
+   <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="107" dstpinname="Input 1">
    </LINK>
    </PATCH>

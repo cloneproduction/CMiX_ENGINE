@@ -560,4 +560,20 @@
    </NODE>
    <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1110" dstpinname="Input String">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1111">
+   <BOUNDS type="Box" left="5150" top="8980" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5150" top="8980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1083" srcpinname="Output" dstnodeid="1111" dstpinname="Input String">
+   </LINK>
    </PATCH>

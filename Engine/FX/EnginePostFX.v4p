@@ -103,7 +103,7 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="560" top="3480" width="17800" height="18960">
+   <BOUNDS type="Window" left="6540" top="3470" width="17800" height="18960">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>

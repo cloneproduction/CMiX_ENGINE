@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="115">
-   <BOUNDS type="Node" left="7785" top="1560" width="100" height="100">
+   <BOUNDS type="Node" left="7790" top="1560" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7785" top="1560" width="810" height="705">
+   <BOUNDS type="Box" left="7790" top="1560" width="810" height="705">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -107,9 +107,9 @@
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Beats" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="578">
-   <BOUNDS type="Box" left="1710" top="1590" width="795" height="240">
+   <BOUNDS type="Box" left="1710" top="1560" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1710" top="1590" width="0" height="0">
+   <BOUNDS type="Node" left="1710" top="1560" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -172,16 +172,8 @@
    </LINK>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="617" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="622">
-   <BOUNDS type="Node" left="5975" top="2115" width="1230" height="270">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="621">
-   <BOUNDS type="Node" left="5990" top="3255" width="600" height="270">
+   <BOUNDS type="Node" left="6480" top="3230" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -189,23 +181,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Input 3" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="622" srcpinname="Output" dstnodeid="621" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="625">
-   <BOUNDS type="Node" left="2860" top="2130" width="1230" height="270">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="624">
-   <BOUNDS type="Node" left="2855" top="3225" width="600" height="270">
+   <BOUNDS type="Node" left="2960" top="3230" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -213,13 +195,11 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
    </PIN>
    </NODE>
-   <LINK srcnodeid="625" srcpinname="Output" dstnodeid="624" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="627">
    <BOUNDS type="Node" left="2190" top="3230" width="100" height="100">
    </BOUNDS>
@@ -229,9 +209,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="628">
-   <BOUNDS type="Node" left="5170" top="3240" width="100" height="100">
+   <BOUNDS type="Node" left="5510" top="3230" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5170" top="3240" width="740" height="240">
+   <BOUNDS type="Box" left="5510" top="3230" width="740" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="STD_CTR">
    </PIN>
@@ -277,9 +257,9 @@
    <LINK srcnodeid="627" srcpinname="Y Output Value" dstnodeid="630" dstpinname="Default">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="632">
-   <BOUNDS type="Box" left="6980" top="3150" width="2250" height="240">
+   <BOUNDS type="Box" left="6660" top="2650" width="1110" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6980" top="3150" width="0" height="0">
+   <BOUNDS type="Node" left="6660" top="2650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/View">
    </PIN>
@@ -289,13 +269,15 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="632" srcpinname="Output String" dstnodeid="621" dstpinname="Input 3">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="633">
-   <BOUNDS type="Box" left="5270" top="1540" width="800" height="240">
+   <BOUNDS type="Box" left="4350" top="1560" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5270" top="1540" width="0" height="0">
+   <BOUNDS type="Node" left="4350" top="1560" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -310,14 +292,10 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="621" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="624" dstpinname="Input 2">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="634">
-   <BOUNDS type="Box" left="4260" top="2430" width="800" height="240">
+   <BOUNDS type="Box" left="3150" top="2650" width="1170" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4260" top="2430" width="0" height="0">
+   <BOUNDS type="Node" left="3150" top="2650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/View">
    </PIN>
@@ -327,7 +305,15 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="634" srcpinname="Output String" dstnodeid="624" dstpinname="Input 3">
+   <LINK srcnodeid="632" srcpinname="Output String" dstnodeid="621" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="621" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="624" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="634" srcpinname="Output String" dstnodeid="624" dstpinname="Input 2">
    </LINK>
    </PATCH>
