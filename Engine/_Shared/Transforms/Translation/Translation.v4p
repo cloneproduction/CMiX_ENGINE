@@ -41,7 +41,7 @@
    <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="1067">
    <BOUNDS type="Node" left="4785" top="3565" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -251,7 +251,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="4830" top="1760" width="800" height="240">
+   <BOUNDS type="Box" left="4830" top="1760" width="2050" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4830" top="1760" width="0" height="0">
    </BOUNDS>
@@ -288,7 +288,19 @@
    </LINK>
    <LINK srcnodeid="1132" srcpinname="Y Output Value" dstnodeid="1139" dstpinname="Default">
    </LINK>
-   <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="1140">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1141">
+   <BOUNDS type="Box" left="2640" top="3570" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2640" top="3570" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="1142">
    <BOUNDS type="Node" left="3120" top="3000" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3120" top="3000" width="3100" height="4460">
@@ -296,18 +308,20 @@
    <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1140" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1142" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1067" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1142" srcpinname="Output" dstnodeid="1067" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1068" dstpinname="TranslateName" hiddenwhenlocked="1">
+   <LINK srcnodeid="1142" srcpinname="Output" dstnodeid="1068" dstpinname="TranslateName" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1069" dstpinname="TranslateName" hiddenwhenlocked="1">
+   <LINK srcnodeid="1142" srcpinname="Output" dstnodeid="1069" dstpinname="TranslateName" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1107" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1142" srcpinname="Output" dstnodeid="1107" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1130" srcpinname="Output" dstnodeid="1140" dstpinname="Address">
+   <LINK srcnodeid="1130" srcpinname="Output" dstnodeid="1142" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="1133" srcpinname="Output String" dstnodeid="1140" dstpinname="Default">
+   <LINK srcnodeid="1133" srcpinname="Output String" dstnodeid="1142" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="1142" srcpinname="Output" dstnodeid="1141" dstpinname="Input String">
    </LINK>
    </PATCH>

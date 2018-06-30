@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12180" top="9030" width="17600" height="9410">
+   <BOUNDS type="Window" left="11680" top="14490" width="17600" height="9410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -37,7 +37,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15030" top="3970" width="3360" height="5056">
    </BOUNDS>
-   <BOUNDS type="Window" left="2100" top="1480" width="24710" height="12540">
+   <BOUNDS type="Window" left="3080" top="9510" width="24710" height="12540">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -60,6 +60,10 @@
    <PIN pinname="Beat" visible="1">
    </PIN>
    <PIN pinname="SpreadCount" visible="1">
+   </PIN>
+   <PIN pinname="MasterPeriod" visible="1">
+   </PIN>
+   <PIN pinname="Address 1" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" hiddenwhenlocked="0">
@@ -217,6 +221,8 @@
    </PIN>
    <PIN pinname="FeedBack" visible="1">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Input Node - Texture Out" dstnodeid="43" dstpinname="TexArray">
    </LINK>
@@ -271,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10170" top="3010" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="11230" top="6660" width="8660" height="11230">
+   <BOUNDS type="Window" left="11310" top="6700" width="8660" height="11230">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0.08958203125">
    </PIN>
@@ -373,6 +379,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="MasterPeriod">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="48" dstpinname="MasterPeriod">
    </LINK>
@@ -431,5 +439,9 @@
    <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterPeriod">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="2" dstpinname="Address 1">
    </LINK>
    </PATCH>

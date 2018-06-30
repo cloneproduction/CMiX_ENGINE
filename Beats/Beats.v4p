@@ -10,7 +10,7 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="14250" top="6230" width="10760" height="10300">
+   <BOUNDS type="Window" left="25190" top="9670" width="10760" height="10300">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -236,24 +236,6 @@
    </LINK>
    <LINK srcnodeid="162" srcpinname="Y Output Value" dstnodeid="163" dstpinname="Default">
    </LINK>
-   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="181">
-   <BOUNDS type="Node" left="4450" top="3050" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4450" top="3050">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Address" visible="1" slicecount="6" values="/Layer0/BeatMultiplier,/Layer1/BeatMultiplier,/Layer2/BeatMultiplier,/Layer3/BeatMultiplier,/Layer4/BeatMultiplier,/Layer5/BeatMultiplier">
-   </PIN>
-   <PIN pinname="Default" visible="1" slicecount="6" values="0,0,0,0,0,0">
-   </PIN>
-   <BOUNDS type="Window" left="16090" top="10890" width="11440" height="8200">
-   </BOUNDS>
-   <PIN pinname="Init" slicecount="1" visible="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="181" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="185">
    <BOUNDS type="Box" left="2290" top="2370" width="800" height="240">
    </BOUNDS>
@@ -266,8 +248,6 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="181" srcpinname="Output" dstnodeid="119" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="119" srcpinname="Output" dstnodeid="118" dstpinname="Input 2">
    </LINK>
    <NODE systemname="LT (Value)" nodename="LT (Value)" componentmode="Hidden" id="265">
@@ -291,7 +271,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5585" top="1095" width="1130" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="BeatMultiplier">
+   <PIN pinname="Input String" slicecount="1" values="BeatModifier/Multiplier">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -308,8 +288,6 @@
    </NODE>
    <LINK srcnodeid="268" srcpinname="Output String" dstnodeid="266" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="181" dstpinname="Address">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="273">
    <BOUNDS type="Box" left="4940" top="2370" width="810" height="240">
    </BOUNDS>
@@ -324,8 +302,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="273" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Default">
-   </LINK>
    <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="274" debug="0">
    <BOUNDS type="Node" left="1810" top="3050" width="100" height="100">
    </BOUNDS>
@@ -389,5 +365,35 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="282" srcpinname="Output String" dstnodeid="266" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="284">
+   <BOUNDS type="Box" left="5820" top="2260" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5820" top="2260" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="284" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="285">
+   <BOUNDS type="Node" left="4450" top="3050" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4450" top="3050">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16090" top="10890" width="11440" height="8200">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="285" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="285" srcpinname="Output" dstnodeid="119" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="285" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Y Output Value" dstnodeid="285" dstpinname="Default">
    </LINK>
    </PATCH>

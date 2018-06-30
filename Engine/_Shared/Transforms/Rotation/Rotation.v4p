@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5190" top="3610" width="13790" height="9990">
+   <BOUNDS type="Window" left="15390" top="8310" width="13790" height="9990">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -59,7 +59,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9250" top="5300" width="6988" height="10042">
    </BOUNDS>
-   <BOUNDS type="Window" left="1950" top="4060" width="26180" height="16830">
+   <BOUNDS type="Window" left="16100" top="8920" width="26180" height="16830">
    </BOUNDS>
    <PIN pinname="Input - Input 1" visible="1">
    </PIN>
@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7510" top="5300" width="11686" height="9009">
    </BOUNDS>
-   <BOUNDS type="Window" left="10520" top="7000" width="26050" height="15180">
+   <BOUNDS type="Window" left="460" top="7040" width="26050" height="15180">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="2" values=",">
    </PIN>
@@ -195,7 +195,7 @@
    <NODE systemname="SortRotation" filename="SortRotation\SortRotation.v4p" nodename="SortRotation\SortRotation.v4p" componentmode="Hidden" id="691">
    <BOUNDS type="Node" left="5780" top="6280" width="6990" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="610" top="9140" width="8540" height="11420">
+   <BOUNDS type="Window" left="15980" top="9240" width="8540" height="11420">
    </BOUNDS>
    <BOUNDS type="Box" left="5780" top="6280">
    </BOUNDS>
