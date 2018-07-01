@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="3420" top="4860" width="17770" height="8150">
+   <BOUNDS type="Window" left="19650" top="12520" width="12420" height="8480">
    </BOUNDS>
    <NODE id="6" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
    <BOUNDS height="0" left="5410" top="3580" type="Node" width="0">
@@ -233,6 +233,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="59" dstpinname="Input 2">
    </LINK>
@@ -244,8 +246,6 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="OnChange" dstnodeid="66" dstpinname="Delete">
    </LINK>
-   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="66" dstpinname="Add">
-   </LINK>
    <LINK srcnodeid="21" srcpinname="Last Slice" dstnodeid="66" dstpinname="Add Key">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="66" dstpinname="Add Value">
@@ -253,5 +253,7 @@
    <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="66" dstpinname="Update Value">
    </LINK>
    <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="66" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="66" dstpinname="Add">
    </LINK>
    </PATCH>

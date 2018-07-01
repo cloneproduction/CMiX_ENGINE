@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Camera\CamFOV\CamFOV.v4p" systemname="CamFOV" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamFOV\CamFOV.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Camera\CamFOV\CamFOV.v4p" systemname="CamFOV" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamFOV\CamFOV.v4p" scrollx="0" scrolly="0">
    <NODE componentmode="Hidden" id="0" nodename="Map (Value)" systemname="Map (Value)">
    <BOUNDS height="100" left="1070" top="3135" type="Node" width="100">
    </BOUNDS>
@@ -45,7 +45,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1330" top="3720" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.05">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -59,7 +59,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2500" top="3720" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10000">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1000">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

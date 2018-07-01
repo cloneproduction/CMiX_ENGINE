@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-360" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="24330" top="10640" width="4650" height="6640">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
+   <BOUNDS type="Window" left="30050" top="11130" width="4650" height="6640">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -27,7 +27,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2204" top="677" width="9028" height="7636">
    </BOUNDS>
-   <BOUNDS type="Window" left="25190" top="9670" width="10760" height="10300">
+   <BOUNDS type="Window" left="17580" top="9650" width="10760" height="10300">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -195,7 +195,7 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="24590" top="10840" width="21110" height="11150">
+   <BOUNDS type="Window" left="9100" top="10340" width="21110" height="11150">
    </BOUNDS>
    <BOUNDS type="Node" left="670" top="620" width="1490" height="270">
    </BOUNDS>

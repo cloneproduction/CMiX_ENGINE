@@ -129,7 +129,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4840" top="4675" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="3840,2160">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="2880,1620">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -295,7 +295,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3310" top="3760" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="20580" top="200" width="17820" height="9890">
+   <BOUNDS type="Window" left="21290" top="0" width="17110" height="10050">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -306,6 +306,6 @@
    </NODE>
    <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="265" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="265" srcpinname="Actual BackBuffer SizeXY" dstnodeid="237" dstpinname="Y Input Value">
+   <LINK srcnodeid="263" srcpinname="Output" dstnodeid="237" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

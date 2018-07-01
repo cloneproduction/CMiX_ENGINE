@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\TransformsView\TransformView.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4710" top="7300" width="13850" height="10970">
+   <BOUNDS type="Window" left="22040" top="10600" width="13850" height="10970">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

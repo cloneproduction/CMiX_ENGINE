@@ -289,7 +289,7 @@
    <NODE systemname="TransformView" filename="..\..\_Shared\TransformsView\TransformView.v4p" nodename="..\..\_Shared\TransformsView\TransformView.v4p" componentmode="Hidden" id="103">
    <BOUNDS type="Node" left="8490" top="5450" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4710" top="7300" width="13850" height="10970">
+   <BOUNDS type="Window" left="22040" top="10600" width="13850" height="10970">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

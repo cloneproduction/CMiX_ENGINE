@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3640" top="1800" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="9290" top="6700" width="10190" height="10750">
+   <BOUNDS type="Window" left="24670" top="10810" width="10190" height="10750">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -211,7 +211,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3330" top="890" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Camera/">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Camera">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>

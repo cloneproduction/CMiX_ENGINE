@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Address 1" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1580" top="3740" width="20630" height="12710">
+   <BOUNDS type="Window" left="15560" top="8190" width="20630" height="12710">
    </BOUNDS>
    <BOUNDS type="Box" left="870" top="2210">
    </BOUNDS>

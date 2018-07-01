@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11680" top="14490" width="17600" height="9410">
+   <BOUNDS type="Window" left="12520" top="13070" width="17600" height="9410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="590" top="730" width="800" height="240">
+   <BOUNDS type="Box" left="360" top="750" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="590" top="730" width="0" height="0">
+   <BOUNDS type="Node" left="360" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -83,9 +83,9 @@
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="2" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12">
-   <BOUNDS type="Box" left="590" top="7520" width="795" height="240">
+   <BOUNDS type="Box" left="410" top="7540" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="590" top="7520" width="0" height="0">
+   <BOUNDS type="Node" left="410" top="7540" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node - Texture Out|">
    </PIN>
@@ -211,9 +211,9 @@
    </PIN>
    </NODE>
    <NODE id="43" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
-   <BOUNDS type="Node" left="590" top="6710" width="1260" height="270">
+   <BOUNDS type="Node" left="410" top="6730" width="1260" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="590" top="6710">
+   <BOUNDS type="Box" left="410" top="6730">
    </BOUNDS>
    <BOUNDS type="Window" left="16170" top="12350" width="10280" height="5020">
    </BOUNDS>
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10170" top="3010" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="11310" top="6700" width="8660" height="11230">
+   <BOUNDS type="Window" left="19180" top="9820" width="7310" height="10770">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0.08958203125">
    </PIN>
