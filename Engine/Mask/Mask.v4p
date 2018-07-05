@@ -99,7 +99,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="530" top="2440" width="13093" height="9337">
    </BOUNDS>
-   <BOUNDS type="Window" left="16180" top="10310" width="20690" height="10210">
+   <BOUNDS type="Window" left="12410" top="8990" width="20690" height="10210">
    </BOUNDS>
    <PIN pinname="Select - .. To [" visible="1" slicecount="1" values="6">
    </PIN>
@@ -129,10 +129,10 @@
    </PIN>
    <PIN pinname="LayerNames" visible="1">
    </PIN>
+   <PIN pinname="MaskArray" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="100" srcpinname="SizeXY" dstnodeid="101" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="101" dstpinname="MaskArray">
    </LINK>
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="101" dstpinname="ContentArray" hiddenwhenlocked="1">
    </LINK>
@@ -418,11 +418,9 @@
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="137" dstpinname="FeedBack" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="137" dstpinname="KeepOriginal">
+   <LINK srcnodeid="101" srcpinname="KeepOriginal" dstnodeid="137" dstpinname="KeepOriginal">
    <LINKPOINT x="10390" y="7860">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="101" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
@@ -437,6 +435,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="19650" top="12490" width="5050" height="6420">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="167" dstpinname="Address">
    </LINK>
@@ -451,5 +451,9 @@
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="101" dstpinname="TransformBinSize">
    </LINK>
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="137" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="101" dstpinname="MaskArray">
+   </LINK>
+   <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
    </LINK>
    </PATCH>
