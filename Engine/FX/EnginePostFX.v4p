@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\FX\EnginePostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="10" scrolly="10">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\FX\EnginePostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="10" scrolly="10">
    <BOUNDS type="Window" left="16170" top="12350" width="10280" height="5020">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -103,9 +103,9 @@
    <NODE id="29" componentmode="Hidden" systemname="FeedbackCS" filename="FeedbackCS\FeedbackCS.v4p" nodename="FX\FeedbackCS\FeedbackCS.v4p">
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
-   <PIN pinname="KeepOriginal" visible="1">
+   <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="6540" top="3470" width="17800" height="18960">
+   <BOUNDS type="Window" left="1905" top="210" width="17715" height="20115">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>
@@ -126,17 +126,11 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
-   </LINK>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="29" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="29" dstpinname="AddressFeedBack">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="29" dstpinname="TexArray">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="29" dstpinname="Input 2">
    </LINK>
@@ -159,5 +153,13 @@
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
    </LINK>
    </PATCH>

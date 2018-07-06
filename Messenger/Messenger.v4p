@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="16170" scrolly="6540">
-   <BOUNDS type="Window" left="3760" top="5530" width="21110" height="11150">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="6240" scrolly="570">
+   <BOUNDS type="Window" left="1290" top="10575" width="21105" height="11145">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -259,9 +259,9 @@
    <LINK srcnodeid="928" srcpinname="Output String" dstnodeid="907" dstpinname="Type Tags">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="930">
-   <BOUNDS type="Box" left="15880" top="10180" width="32580" height="12030">
+   <BOUNDS type="Box" left="18225" top="9985" width="26610" height="12840">
    </BOUNDS>
-   <BOUNDS type="Node" left="15880" top="10180" width="0" height="0">
+   <BOUNDS type="Node" left="18225" top="9985" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -520,4 +520,6 @@
    </LINK>
    <LINK srcnodeid="1112" srcpinname="Output" dstnodeid="1041" dstpinname="Input">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="12520" top="13070" width="17600" height="9410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -193,9 +193,9 @@
    <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="17" dstpinname="Tranform In">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="2250" top="730" width="700" height="240">
+   <BOUNDS type="Box" left="2250" top="750" width="700" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2250" top="730" width="0" height="0">
+   <BOUNDS type="Node" left="2250" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content">
    </PIN>
@@ -297,7 +297,7 @@
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="2" dstpinname="Beat" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="12720" top="1600" width="100" height="100">
+   <BOUNDS type="Node" left="12690" top="1600" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -311,9 +311,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="11750" top="1610" width="800" height="240">
+   <BOUNDS type="Box" left="11720" top="1610" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11750" top="1610" width="0" height="0">
+   <BOUNDS type="Node" left="11720" top="1610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -325,9 +325,9 @@
    </PIN>
    </NODE>
    <NODE systemname="OSCValue" filename="..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="11270" top="2210" width="100" height="100">
+   <BOUNDS type="Node" left="11240" top="2210" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11270" top="2210">
+   <BOUNDS type="Box" left="11240" top="2210">
    </BOUNDS>
    <BOUNDS type="Window" left="19650" top="12490" width="5050" height="6420">
    </BOUNDS>
@@ -343,9 +343,9 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Default">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
-   <BOUNDS type="Box" left="12890" top="1020" width="1330" height="240">
+   <BOUNDS type="Box" left="12855" top="750" width="1330" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12890" top="1020" width="0" height="0">
+   <BOUNDS type="Node" left="12855" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Count">
    </PIN>
@@ -360,16 +360,16 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="53" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="5" dstpinname="SpreadCount">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="5" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="2" dstpinname="SpreadCount">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="2" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="48" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="10900" top="730" width="800" height="240">
+   <BOUNDS type="Box" left="10890" top="750" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10900" top="730" width="0" height="0">
+   <BOUNDS type="Node" left="10890" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.08958203125">
    </PIN>
@@ -384,7 +384,7 @@
    </NODE>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="48" dstpinname="MasterPeriod">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="48" dstpinname="ObjectCount">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="48" dstpinname="ObjectCount" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="2250" top="2320" width="100" height="100">
@@ -438,10 +438,12 @@
    </LINK>
    <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize">
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterPeriod">
    </LINK>
-   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="2" dstpinname="Address 1">
+   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="2" dstpinname="Address 1" hiddenwhenlocked="1">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>
