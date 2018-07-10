@@ -617,7 +617,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="9660" top="10620" width="12075" height="9615">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Buffer" visible="1">
    </PIN>
@@ -758,8 +758,6 @@
    </LINK>
    <LINK srcnodeid="326" srcpinname="Output String" dstnodeid="347" dstpinname="Default">
    </LINK>
-   <LINK srcnodeid="347" srcpinname="Output" dstnodeid="186" dstpinname="Input">
-   </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="352">
    <BOUNDS type="Node" left="14190" top="1690" width="100" height="100">
    </BOUNDS>
@@ -793,5 +791,31 @@
    <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="186" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="353" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="355">
+   <BOUNDS type="Node" left="8220" top="4190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="355" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="354">
+   <BOUNDS type="Node" left="8500" top="4790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="347" srcpinname="Output" dstnodeid="354" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="354" srcpinname="Output" dstnodeid="186" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="355" srcpinname="Output" dstnodeid="354" dstpinname="Input 1">
    </LINK>
    </PATCH>

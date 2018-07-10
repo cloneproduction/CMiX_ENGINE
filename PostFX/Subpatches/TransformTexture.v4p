@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\PostFX\Subpatches\TransformTexture.v4p" systemname="TransformTexture" filename="C:\Users\clone\Google Drive\PROJECT\C-MiX\C-MiX\PostFX\Subpatches\TransformTexture.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\Subpatches\TransformTexture.v4p" systemname="TransformTexture" filename="C:\Users\clone\Google Drive\PROJECT\C-MiX\C-MiX\PostFX\Subpatches\TransformTexture.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="6996" top="1812" width="7632" height="9036">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2748" top="603" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.8">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -163,9 +163,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="-0.002">
+   <PIN pinname="Destination Minimum" slicecount="1" values="-0.001">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.002">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.001">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">

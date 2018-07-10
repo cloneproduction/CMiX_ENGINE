@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
    <BOUNDS type="Window" left="26100" top="12490" width="5870" height="4940">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3170" top="1610" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="12520" top="13070" width="17600" height="9410">
+   <BOUNDS type="Window" left="2470" top="6020" width="17600" height="9410">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -172,8 +172,8 @@
    </LINK>
    <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="8" dstpinname="MasterPeriod">
    </LINK>
-   <LINK srcnodeid="824" srcpinname="Texture Out" dstnodeid="315" dstpinname="Input Node">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="824" srcpinname="Texture Out" dstnodeid="315" dstpinname="Input Node">
+   </LINK>
    </PATCH>

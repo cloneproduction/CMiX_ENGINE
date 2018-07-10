@@ -1,15 +1,15 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\FX\EnginePostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="10" scrolly="10">
-   <BOUNDS type="Window" left="16170" top="12350" width="10280" height="5020">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\FX\EnginePostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8020" top="14130" width="7090" height="4380">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <BOUNDS type="Box" left="870" top="3030" width="1440" height="240">
+   <BOUNDS type="Box" left="730" top="2900" width="1440" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="870" top="3030" width="750" height="240">
+   <BOUNDS type="Node" left="730" top="2900" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|TexArray Out|">
    </PIN>
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <BOUNDS type="Box" left="3160" top="760" width="750" height="240">
+   <BOUNDS type="Box" left="2790" top="630" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3160" top="760" width="750" height="240">
+   <BOUNDS type="Node" left="2790" top="630" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="TexArray">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="19">
-   <BOUNDS type="Box" left="870" top="760" width="795" height="240">
+   <BOUNDS type="Box" left="730" top="630" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="870" top="760" width="0" height="0">
+   <BOUNDS type="Node" left="730" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -41,17 +41,17 @@
    <NODE id="21" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="4310" top="760" width="100" height="100">
+   <BOUNDS type="Node" left="4080" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4310" top="760" width="650" height="240">
+   <BOUNDS type="Box" left="4080" top="630" width="650" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/ChannelFeedBack">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="FeedBack">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
    </PIN>
    </NODE>
    <NODE systemname="Blur" filename="Blur\Blur.v4p" nodename="Blur\Blur.v4p" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="870" top="2210" width="3500" height="270">
+   <BOUNDS type="Node" left="730" top="2080" width="5090" height="270">
    </BOUNDS>
    <PIN pinname="tex0" visible="1" slicecount="1" values="||">
    </PIN>
@@ -67,7 +67,7 @@
    </PIN>
    <BOUNDS type="Window" left="15560" top="8190" width="20630" height="12710">
    </BOUNDS>
-   <BOUNDS type="Box" left="870" top="2210">
+   <BOUNDS type="Box" left="730" top="2080">
    </BOUNDS>
    <PIN pinname="AdressTransform" visible="1">
    </PIN>
@@ -86,34 +86,20 @@
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="58" dstpinname="Input">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Box" left="5460" top="760" width="940" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5460" top="760" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="KeepOriginal">
-   </PIN>
-   </NODE>
    <NODE id="29" componentmode="Hidden" systemname="FeedbackCS" filename="FeedbackCS\FeedbackCS.v4p" nodename="FX\FeedbackCS\FeedbackCS.v4p">
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
-   <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="0">
+   <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Window" left="1905" top="210" width="17715" height="20115">
+   <BOUNDS type="Window" left="1900" top="5320" width="14230" height="13100">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="3145" top="1500" width="1180" height="270">
+   <BOUNDS type="Node" left="2415" top="1350" width="1180" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3145" top="1500">
+   <BOUNDS type="Box" left="2415" top="1350">
    </BOUNDS>
    <PIN pinname="ArraySize" visible="1" slicecount="1" values="0">
    </PIN>
@@ -137,9 +123,9 @@
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="58" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Node" left="2010" top="660" width="100" height="100">
+   <BOUNDS type="Node" left="5760" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2010" top="660" width="480" height="480">
+   <BOUNDS type="Box" left="5760" top="630" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -149,12 +135,14 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>

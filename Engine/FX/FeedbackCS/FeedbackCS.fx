@@ -4,12 +4,10 @@ Texture2DArray texarray;
 int texcount;
 int2 Reso=512;
 
-//int Reset[6];
-//float4 Fade <bool color=true;String uiname="Fade Color";> =.5;
 RWStructuredBuffer<float4> Output : BACKBUFFER;
 StructuredBuffer<int>offsetID;
 StructuredBuffer<uint>Enable;
-StructuredBuffer<float4>Fade;
+StructuredBuffer<float>Fade;
 
 [numthreads(64, 1, 1)]
 void CSFeedback( uint3 DTid : SV_DispatchThreadID )
