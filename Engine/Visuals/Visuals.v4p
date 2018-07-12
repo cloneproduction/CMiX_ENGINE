@@ -297,7 +297,7 @@
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="2" dstpinname="Beat" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="12500" top="1600" width="100" height="100">
+   <BOUNDS type="Node" left="12030" top="1600" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -310,26 +310,12 @@
    <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="11530" top="1610" width="800" height="240">
+   <NODE systemname="OSCValue" filename="..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="53" debug="0">
+   <BOUNDS type="Node" left="11070" top="2210" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="11530" top="1610" width="0" height="0">
+   <BOUNDS type="Box" left="11070" top="2210">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="OSCValue" filename="..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="11050" top="2210" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11050" top="2210">
-   </BOUNDS>
-   <BOUNDS type="Window" left="19650" top="12490" width="5050" height="6420">
+   <BOUNDS type="Window" left="19650" top="12490" width="5090" height="5530">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -340,12 +326,10 @@
    </NODE>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="53" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Default">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
-   <BOUNDS type="Box" left="12665" top="750" width="1330" height="240">
+   <BOUNDS type="Box" left="12195" top="750" width="1330" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12665" top="750" width="0" height="0">
+   <BOUNDS type="Node" left="12195" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Count">
    </PIN>

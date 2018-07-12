@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="962" top="2291" width="8980" height="7828">
    </BOUNDS>
-   <BOUNDS type="Window" left="9590" top="9440" width="18220" height="5600">
+   <BOUNDS type="Window" left="11160" top="9770" width="15640" height="10660">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -172,8 +172,8 @@
    </LINK>
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
-   <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="0" top="6555" width="21105" height="11145">
+   <NODE id="53" componentmode="InAWindow" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
+   <BOUNDS type="Window" left="13370" top="7090" width="16630" height="14090">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1490" height="270">
    </BOUNDS>

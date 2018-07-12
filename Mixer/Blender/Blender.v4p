@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Mixer\Blender\Blender.v4p" systemname="Blender" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Blender\Blender.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Mixer\Blender\Blender.v4p" systemname="Blender" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Blender\Blender.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="13350" top="10480" width="7980" height="9990">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -207,19 +207,19 @@
    </PIN>
    <BOUNDS type="Box" left="560" top="3180">
    </BOUNDS>
-   <BOUNDS type="Window" left="20720" top="8270" width="12160" height="9690">
+   <BOUNDS type="Window" left="7040" top="10160" width="12160" height="9690">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="264" srcpinname="Output" dstnodeid="286" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="224" srcpinname="Output Node" dstnodeid="264" dstpinname="Input">
    </LINK>
-   <NODE systemname="OSCString" filename="..\..\Modules\OSCString.v4p" nodename="..\..\Modules\OSCString.v4p" componentmode="Hidden" id="292">
+   <NODE systemname="OSCString" filename="..\..\Modules\OSCString.v4p" nodename="..\..\Modules\OSCString.v4p" componentmode="InAWindow" id="292">
    <BOUNDS type="Node" left="3260" top="3180" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3260" top="3180" width="3100" height="4460">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="3100" height="4460">
+   <BOUNDS type="Window" left="27560" top="12070" width="6160" height="6480">
    </BOUNDS>
    <PIN pinname="Address" visible="1">
    </PIN>
@@ -247,9 +247,9 @@
    <LINK srcnodeid="293" srcpinname="Output" dstnodeid="264" dstpinname="Address">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="298">
-   <BOUNDS type="Node" left="5010" top="1850" width="100" height="100">
+   <BOUNDS type="Node" left="4430" top="1870" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5010" top="1850" width="890" height="240">
+   <BOUNDS type="Box" left="4430" top="1870" width="890" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -257,7 +257,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="296">
-   <BOUNDS type="Node" left="4830" top="2490" width="100" height="100">
+   <BOUNDS type="Node" left="4250" top="2510" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -269,28 +269,6 @@
    <LINK srcnodeid="298" srcpinname="Output String" dstnodeid="296" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="296" srcpinname="Output" dstnodeid="292" dstpinname="Address">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="300">
-   <BOUNDS type="Node" left="1040" top="2490" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1040" top="2490" width="580" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="300" srcpinname="Y Output Value" dstnodeid="264" dstpinname="Default">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="301">
-   <BOUNDS type="Node" left="3750" top="2490" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3750" top="2490" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="Normal">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="301" srcpinname="Output String" dstnodeid="292" dstpinname="Default">
    </LINK>
    <LINK srcnodeid="83" srcpinname="Output String" dstnodeid="127" dstpinname="Filter">
    </LINK>
@@ -374,20 +352,4 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="315">
-   <BOUNDS type="Box" left="4575" top="4200" width="1125" height="900">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4575" top="4200" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="287" srcpinname="Output" dstnodeid="315" dstpinname="Input String">
-   </LINK>
    </PATCH>
