@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="30" scrolly="0">
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="900" top="5570" width="864" height="276">
    </BOUNDS>
@@ -642,28 +642,6 @@
    </LINK>
    <LINK srcnodeid="186" srcpinname="Buffer" dstnodeid="255" dstpinname="sbWorld">
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="326">
-   <BOUNDS type="Node" left="9500" top="3510" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9500" top="3510" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="False">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="327">
-   <BOUNDS type="Node" left="15370" top="3510" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15370" top="3510" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="False">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="327" srcpinname="Output String" dstnodeid="310" dstpinname="Default">
-   </LINK>
    <LINK srcnodeid="37" srcpinname="Output Node" dstnodeid="24" dstpinname="Geometry In" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="334">
@@ -751,12 +729,12 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="17520" top="10680" width="5270" height="6470">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="84" srcpinname="Output Node" dstnodeid="347" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="269" srcpinname="Output" dstnodeid="347" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="326" srcpinname="Output String" dstnodeid="347" dstpinname="Default">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="352">
    <BOUNDS type="Node" left="14190" top="1690" width="100" height="100">

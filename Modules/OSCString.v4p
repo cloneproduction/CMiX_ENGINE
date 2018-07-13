@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCString.v4p" systemname="OSCString" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCString.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCString.v4p" systemname="OSCString" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCString.v4p" scrollx="0" scrolly="0">
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -23,16 +23,16 @@
    <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="640" top="3650" width="1050" height="1000">
+   <BOUNDS type="Box" left="640" top="3770" width="1170" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="640" top="3650" width="750" height="240">
+   <BOUNDS type="Node" left="640" top="3770" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1">
+   <PIN pinname="Input String" visible="1" slicecount="4" values="Normal,Normal,Normal,Normal">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="15280" top="5710" width="11120" height="9940">
+   <BOUNDS type="Window" left="20830" top="8810" width="5120" height="5400">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -51,9 +51,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="2560" top="3630" width="800" height="240">
+   <BOUNDS type="Box" left="2550" top="3770" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2560" top="3630" width="0" height="0">
+   <BOUNDS type="Node" left="2550" top="3770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -73,35 +73,43 @@
    </PIN>
    <PIN pinname="OnReceive" visible="1">
    </PIN>
+   <PIN pinname="Bin Sizes" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="46" dstpinname="Address" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="46" dstpinname="Input">
    </LINK>
-   <NODE systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden" id="53">
+   <NODE systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="640" top="2740" width="1980" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="640" top="2740">
    </BOUNDS>
-   <PIN pinname="Update" visible="1" slicecount="2" values="0,0">
+   <PIN pinname="Value Bin Size" visible="1" slicecount="2" values="1,1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="53" dstpinname="Delete Key">
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="63" dstpinname="Delete Key">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="53" dstpinname="Update Key" hiddenwhenlocked="1">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Update Key" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="53" dstpinname="Output Key" hiddenwhenlocked="1">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Output Key" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
+   <LINK srcnodeid="63" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="53" dstpinname="Key">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Key">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="53" dstpinname="Update Value">
+   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="63" dstpinname="Update Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="53" dstpinname="Value">
+   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="63" dstpinname="Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="53" dstpinname="Update">
+   <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="63" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="63" dstpinname="Value Bin Size">
    </LINK>
    </PATCH>

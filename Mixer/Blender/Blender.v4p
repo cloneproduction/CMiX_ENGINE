@@ -207,14 +207,14 @@
    </PIN>
    <BOUNDS type="Box" left="560" top="3180">
    </BOUNDS>
-   <BOUNDS type="Window" left="7040" top="10160" width="12160" height="9690">
+   <BOUNDS type="Window" left="19520" top="7290" width="5430" height="5510">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="264" srcpinname="Output" dstnodeid="286" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="224" srcpinname="Output Node" dstnodeid="264" dstpinname="Input">
    </LINK>
-   <NODE systemname="OSCString" filename="..\..\Modules\OSCString.v4p" nodename="..\..\Modules\OSCString.v4p" componentmode="InAWindow" id="292">
+   <NODE systemname="OSCString" filename="..\..\Modules\OSCString.v4p" nodename="..\..\Modules\OSCString.v4p" componentmode="Hidden" id="292">
    <BOUNDS type="Node" left="3260" top="3180" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3260" top="3180" width="3100" height="4460">

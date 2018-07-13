@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace VVVV.Nodes
 {
-	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = true)]
+	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = false)]
 
 	public class StringDictionaryNode : IPluginEvaluate
 	{
@@ -24,10 +24,10 @@ namespace VVVV.Nodes
         public IDiffSpread<ISpread<string>> FValue;
 
         [Input("Update")]
-        public ISpread<bool> FUpdate;
+        public IDiffSpread<bool> FUpdate;
 
         [Input("Key")]
-        public ISpread<string> FKey;
+        public IDiffSpread<string> FKey;
 
         [Input("Delete Key")]
         public IDiffSpread<string> FDeleteKey;
@@ -39,30 +39,46 @@ namespace VVVV.Nodes
 
         Dictionary<string, ISpread<string>> dict = new Dictionary<string, ISpread<string>>();
 
-
         public void Evaluate(int SpreadMax)
 		{
-            if (FKey.IsChanged && FKey.SliceCount != 0)
+            FOutputQueryValue.SliceCount = FKey.SliceCount;
+
+            if (FKey.IsChanged)
             {
-                for (int i = 0; i < FKey.SliceCount; i++)
+                if (FKey.SliceCount != 0)
                 {
-                    if (!dict.ContainsKey(FKey[i]))
+                    for (int i = 0; i < FKey.SliceCount; i++)
                     {
-                        dict.Add(FKey[i], FValue[i].Clone());
+                        if (!dict.ContainsKey(FKey[i]))
+                        {
+                            dict.Add(FKey[i], FValue[i].Clone());
+                        }
+
+                        /*if (FKey[i] == null)
+                        {
+                            FOutputQueryValue[i].SliceCount = 0;
+                            continue;
+                        }
+
+                        if (!dict.ContainsKey(FKey[i]))
+                        {
+                            FOutputQueryValue[i].SliceCount = 0;
+                            continue;
+                        }*/
+
+                        //FOutputQueryValue[i].SliceCount = FValue[i].SliceCount;
+                        //FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
             }
 
             if (FUpdate.IsChanged && FUpdate.SliceCount != 0)
             {
-                for (int i = 0; i < FKey.SliceCount; i++)
+                for (int i = 0; i < FUpdate.SliceCount; i++)
                 {
                     if (FUpdate[i])
                     {
-                        if (dict.ContainsKey(FKey[i]))
-                        {
-                            dict[FKey[i]] = FValue[i].Clone();
-                        }
+                        dict[FKey[i]] = FValue[i].Clone();
                     }
                 }
             }
@@ -79,28 +95,11 @@ namespace VVVV.Nodes
                 }
             }
 
-            FOutputQueryValue.SliceCount = FKey.SliceCount;
-
-            for (int i = 0; i < FKey.SliceCount; i++)
+            if(FKey.IsChanged || FDeleteKey.IsChanged || FUpdate.IsChanged)
             {
-                if (FKey.IsChanged || FDeleteKey.IsChanged || FUpdate.IsChanged)
+                for (int i = 0; i < FKey.SliceCount; i++)
                 {
-                    if (FKey[i] == null)
-                    {
-                        FOutputQueryValue[i].SliceCount = 0;
-                        continue;
-                    }
-
-                    if (!dict.ContainsKey(FKey[i]))
-                    {
-                        FOutputQueryValue[i].SliceCount = 0;
-                        continue;
-                    }
-
-                    if (dict.ContainsKey(FKey[i]))
-                    {
-                        FOutputQueryValue[i] = dict[FKey[i]];
-                    }
+                    FOutputQueryValue[i] = dict[FKey[i]];
                 }
             }
         }

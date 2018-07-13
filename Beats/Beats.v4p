@@ -331,7 +331,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4450" top="3050">
    </BOUNDS>
-   <BOUNDS type="Window" left="16800" top="10960" width="5980" height="5680">
+   <BOUNDS type="Window" left="17910" top="11280" width="5980" height="5680">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
