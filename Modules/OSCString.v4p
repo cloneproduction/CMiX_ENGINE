@@ -32,7 +32,7 @@
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="20830" top="8810" width="5120" height="5400">
+   <BOUNDS type="Window" left="25950" top="8810" width="11120" height="9940">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

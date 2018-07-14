@@ -162,24 +162,6 @@
    </NODE>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="683">
-   <BOUNDS type="Node" left="4090" top="3590" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4090" top="3590" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="False">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="684">
-   <BOUNDS type="Node" left="1970" top="3590" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1970" top="3590" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="685">
    <BOUNDS type="Node" left="7510" top="5300" width="0" height="0">
    </BOUNDS>
@@ -232,16 +214,6 @@
    </NODE>
    <LINK srcnodeid="694" srcpinname="Output String" dstnodeid="617" dstpinname="Axis">
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="695">
-   <BOUNDS type="Node" left="6280" top="3590" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6280" top="3590" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="STD_CTR">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="698" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="7250" top="3590" width="100" height="100">
    </BOUNDS>
@@ -358,8 +330,6 @@
    </LINK>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="704" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="695" srcpinname="Output String" dstnodeid="704" dstpinname="Default">
-   </LINK>
    <LINK srcnodeid="704" srcpinname="Output" dstnodeid="691" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="704" srcpinname="Output" dstnodeid="685" dstpinname="Input" hiddenwhenlocked="1">
@@ -382,8 +352,6 @@
    </LINK>
    <LINK srcnodeid="628" srcpinname="Output" dstnodeid="705" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="683" srcpinname="Output String" dstnodeid="705" dstpinname="Default">
-   </LINK>
    <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="706">
    <BOUNDS type="Node" left="1500" top="4400" width="100" height="100">
    </BOUNDS>
@@ -395,8 +363,6 @@
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="706" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="626" srcpinname="Output" dstnodeid="706" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="684" srcpinname="Y Output Value" dstnodeid="706" dstpinname="Default">
    </LINK>
    <LINK srcnodeid="706" srcpinname="Output" dstnodeid="617" dstpinname="Input">
    </LINK>

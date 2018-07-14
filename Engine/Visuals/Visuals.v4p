@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Visuals.v4p" systemname="Visuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\Visuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2470" top="6020" width="17600" height="9410">
+   <BOUNDS type="Window" left="6310" top="12050" width="17600" height="9410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -129,7 +129,7 @@
    <NODE systemname="ShadeVisuals" filename="ShadeVisuals\ShadeVisuals.v4p" nodename="ShadeVisuals\ShadeVisuals.v4p" componentmode="Hidden" id="17" debug="0">
    <BOUNDS type="Node" left="1450" top="4950" width="14670" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1440" top="7190" width="25720" height="12540">
+   <BOUNDS type="Window" left="13060" top="7720" width="25720" height="12540">
    </BOUNDS>
    <BOUNDS type="Box" left="1450" top="4950">
    </BOUNDS>
@@ -420,8 +420,6 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="17" dstpinname="LayerName" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="17" dstpinname="Transform BinSize" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterPeriod">
@@ -430,4 +428,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="43" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
    </PATCH>

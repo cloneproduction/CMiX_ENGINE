@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Engine.v4p" scrollx="0" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
    <BOUNDS type="Window" left="26100" top="12490" width="5870" height="4940">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3170" top="1610" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="2470" top="6020" width="17600" height="9410">
+   <BOUNDS type="Window" left="6310" top="12050" width="17600" height="9410">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -170,10 +170,24 @@
    </LINK>
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="824" dstpinname="LayerNames">
    </LINK>
-   <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="8" dstpinname="MasterPeriod">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="824" srcpinname="Texture Out" dstnodeid="315" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1092">
+   <BOUNDS type="Box" left="3070" top="700" width="700" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3070" top="700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0.12818212890625,0,0,2.0509140625,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CameraMasterPeriod">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1092" srcpinname="Y Output Value" dstnodeid="8" dstpinname="MasterPeriod">
    </LINK>
    </PATCH>

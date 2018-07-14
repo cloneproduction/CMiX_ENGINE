@@ -335,7 +335,7 @@
    <LINK srcnodeid="140" srcpinname="Output" dstnodeid="19" dstpinname="SampAdress">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="10645" top="2830" width="100" height="100">
+   <BOUNDS type="Node" left="10105" top="2830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -375,9 +375,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="152">
-   <BOUNDS type="Node" left="9120" top="2720" width="100" height="100">
+   <BOUNDS type="Node" left="8010" top="3590" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9120" top="2720" width="800" height="240">
+   <BOUNDS type="Box" left="8010" top="3590" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="NONE">
    </PIN>
@@ -413,9 +413,9 @@
    <LINK srcnodeid="151" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Default">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="156">
-   <BOUNDS type="Box" left="10810" top="2300" width="1940" height="240">
+   <BOUNDS type="Box" left="10270" top="2300" width="1940" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10810" top="2300" width="0" height="0">
+   <BOUNDS type="Node" left="10270" top="2300" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/Transforms">
    </PIN>
@@ -523,7 +523,7 @@
    <LINK srcnodeid="162" srcpinname="Output" dstnodeid="19" dstpinname="Width">
    </LINK>
    <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="163">
-   <BOUNDS type="Node" left="8740" top="4290" width="100" height="100">
+   <BOUNDS type="Node" left="8630" top="4330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
@@ -543,35 +543,5 @@
    <LINK srcnodeid="161" srcpinname="Y Output Value" dstnodeid="163" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="151" srcpinname="Y Output Value" dstnodeid="162" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="164">
-   <BOUNDS type="Box" left="10600" top="4620" width="1640" height="2160">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10600" top="4620" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="6">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="153" srcpinname="Output" dstnodeid="164" dstpinname="Input String">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="165">
-   <BOUNDS type="Box" left="10560" top="3420" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10560" top="3420" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="145" srcpinname="Output" dstnodeid="165" dstpinname="Input String">
    </LINK>
    </PATCH>

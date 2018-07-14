@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace VVVV.Nodes
 {
-	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = false)]
+	[PluginInfo(Name = "Dictionary", Category = "String", Help = "Dico", Tags = "c#", AutoEvaluate = true)]
 
 	public class StringDictionaryNode : IPluginEvaluate
 	{
@@ -53,55 +53,64 @@ namespace VVVV.Nodes
                         {
                             dict.Add(FKey[i], FValue[i].Clone());
                         }
-
-                        /*if (FKey[i] == null)
-                        {
-                            FOutputQueryValue[i].SliceCount = 0;
-                            continue;
-                        }
-
-                        if (!dict.ContainsKey(FKey[i]))
-                        {
-                            FOutputQueryValue[i].SliceCount = 0;
-                            continue;
-                        }*/
-
-                        //FOutputQueryValue[i].SliceCount = FValue[i].SliceCount;
-                        //FOutputQueryValue[i] = dict[FKey[i]];
+                        FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
             }
 
-            if (FUpdate.IsChanged && FUpdate.SliceCount != 0)
-            {
+
+            //if (FUpdate.IsChanged)
+            //{
                 for (int i = 0; i < FUpdate.SliceCount; i++)
                 {
-                    if (FUpdate[i])
+                    if (FUpdate.SliceCount != 0)
                     {
-                        dict[FKey[i]] = FValue[i].Clone();
+                        if (FUpdate[i])
+                        {
+                            dict[FKey[i]] = FValue[i].Clone();
+                        }
+                        FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
-            }
+            //}
 
 
-            if (FDeleteKey.IsChanged && FDeleteKey.SliceCount != 0)
+            if (FDeleteKey.IsChanged)
             {
-                for (int i = 0; i < FDeleteKey.SliceCount; i++)
+                if(FDeleteKey.SliceCount != 0)
                 {
-                    if (dict.ContainsKey(FDeleteKey[i]) == true)
+                    for (int i = 0; i < FDeleteKey.SliceCount; i++)
                     {
-                        dict.Remove(FDeleteKey[i]);
+                        if (dict.ContainsKey(FDeleteKey[i]) == true)
+                        {
+                            dict.Remove(FDeleteKey[i]);
+                        }
+                        if (FDeleteKey.SliceCount > 0)
+                            FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
             }
 
-            if(FKey.IsChanged || FDeleteKey.IsChanged || FUpdate.IsChanged)
+            /*if(FKey.IsChanged || FDeleteKey.IsChanged || FUpdate.IsChanged)
             {
                 for (int i = 0; i < FKey.SliceCount; i++)
                 {
+                    if (FKey[i] == null)
+                    {
+                        FOutputQueryValue[i].SliceCount = 0;
+                        continue;
+                    }
+
+                    if (!dict.ContainsKey(FKey[i]))
+                    {
+                        FOutputQueryValue[i].SliceCount = 0;
+                        continue;
+                    }
+
+                    FOutputQueryValue[i].SliceCount = FValue[i].SliceCount;
                     FOutputQueryValue[i] = dict[FKey[i]];
-                }
-            }
+                }*/
+
         }
 	}
 }

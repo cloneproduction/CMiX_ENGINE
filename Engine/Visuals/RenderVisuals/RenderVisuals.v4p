@@ -172,22 +172,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="5030" top="1860" width="590" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5030" top="1860" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="False">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="53">
    <BOUNDS type="Box" left="2590" top="8615" width="795" height="240">
    </BOUNDS>
@@ -369,8 +353,6 @@
    <LINK srcnodeid="107" srcpinname="Output" dstnodeid="112" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="112" srcpinname="Output" dstnodeid="30" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="112" dstpinname="Default">
    </LINK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="113">
    <BOUNDS type="Node" left="6680" top="2400" width="100" height="100">

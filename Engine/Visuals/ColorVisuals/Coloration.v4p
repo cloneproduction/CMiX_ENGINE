@@ -371,9 +371,9 @@
    <LINK srcnodeid="648" srcpinname="Y Output Value" dstnodeid="265" dstpinname="Default">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="650">
-   <BOUNDS type="Node" left="640" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="880" top="2210" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="640" top="2310" width="800" height="240">
+   <BOUNDS type="Box" left="880" top="2210" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="#FFFFFFFF">
    </PIN>
@@ -553,7 +553,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="650" top="2980">
    </BOUNDS>
-   <BOUNDS type="Window" left="8760" top="6320" width="11120" height="9940">
+   <BOUNDS type="Window" left="25950" top="8810" width="11120" height="9940">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="666" dstpinname="Input" hiddenwhenlocked="1">

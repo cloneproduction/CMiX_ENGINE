@@ -67,7 +67,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1030" top="4390" width="9508" height="8596">
    </BOUNDS>
-   <BOUNDS type="Window" left="4640" top="7850" width="13290" height="12010">
+   <BOUNDS type="Window" left="12050" top="7620" width="13290" height="12010">
    </BOUNDS>
    <PIN pinname="BeatPeriod" visible="1" slicecount="1" values="4">
    </PIN>
@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3640" top="1800" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="24670" top="10810" width="10190" height="10750">
+   <BOUNDS type="Window" left="20220" top="8800" width="7150" height="10700">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -180,6 +180,8 @@
    <PIN pinname="ObjectCount" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="MasterPeriod" visible="1" slicecount="6" values="0.12818212890625,0,0,2.0509140625,0,0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1187" srcpinname="Output Node" dstnodeid="1188" dstpinname="Input">

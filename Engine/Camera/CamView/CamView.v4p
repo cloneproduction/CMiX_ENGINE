@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Camera\CamView\CamView.v4p" systemname="CamView" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamView\CamView.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4640" top="7850" width="13290" height="12010">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Camera\CamView\CamView.v4p" systemname="CamView" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamView\CamView.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="12050" top="7620" width="13290" height="12010">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -51,9 +51,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4970" top="3570" width="792" height="240">
+   <BOUNDS type="Box" left="4970" top="3380" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4970" top="3570" width="0" height="0">
+   <BOUNDS type="Node" left="4970" top="3380" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
@@ -83,7 +83,7 @@
    </PIN>
    </NODE>
    <NODE id="13" systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="7700" top="3570" width="100" height="100">
+   <BOUNDS type="Node" left="7700" top="3380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
@@ -105,7 +105,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Input String" slicecount="7" values="SpinLeft,SpinRight,SpinRandom,FlashRandom,Oblique125,Oblique-125,STD">
+   <PIN pinname="Input String" slicecount="7" values="SpinLeft,SpinRight,SpinRandom,FlashRandom,Oblique125,Oblique-125,STD_CTR">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -313,7 +313,7 @@
    <INFO author="" description="" tags="">
    </INFO>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="39">
-   <BOUNDS type="Node" left="4720" top="2690" width="100" height="100">
+   <BOUNDS type="Node" left="4720" top="2280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="6080" top="2690" width="100" height="100">
+   <BOUNDS type="Node" left="6080" top="2280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -405,7 +405,7 @@
    <LINK srcnodeid="42" srcpinname="Output Node" dstnodeid="23" dstpinname="Transform In">
    </LINK>
    <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="980" top="2690" width="100" height="100">
+   <BOUNDS type="Node" left="980" top="2280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Address" visible="1">
    </PIN>
@@ -415,35 +415,49 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="980" top="2690">
+   <BOUNDS type="Box" left="980" top="2280">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="49" dstpinname="Address">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="1490" top="2155" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1490" top="2155" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="STD">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="49" dstpinname="Default">
-   </LINK>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="49" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="31" dstpinname="Filter">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="30" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="17" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="23" dstpinname="Z">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="990" top="3380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="990" top="3380">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="31" dstpinname="Filter">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
+   <BOUNDS type="Box" left="1880" top="2850" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1880" top="2850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="STD_CTR">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="51" dstpinname="Default">
    </LINK>
    </PATCH>

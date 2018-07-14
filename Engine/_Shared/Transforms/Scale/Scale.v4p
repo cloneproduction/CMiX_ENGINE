@@ -180,24 +180,6 @@
    </LINK>
    <LINK srcnodeid="256" srcpinname="Position Out" dstnodeid="444" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="454">
-   <BOUNDS type="Node" left="1870" top="3660" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1870" top="3660" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="456">
-   <BOUNDS type="Node" left="4010" top="3730" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4010" top="3730" width="800" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="STD_CTR">
-   </PIN>
-   </NODE>
    <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="457">
    <BOUNDS type="Node" left="5340" top="4665" width="0" height="0">
    </BOUNDS>
@@ -271,20 +253,20 @@
    <LINK srcnodeid="462" srcpinname="Output String" dstnodeid="452" dstpinname="Input 1">
    </LINK>
    <NODE systemname="OSCValue" filename="..\..\..\..\modules\OSCValue.v4p" nodename="..\..\..\..\modules\OSCValue.v4p" componentmode="Hidden" id="465">
-   <BOUNDS type="Node" left="1445" top="4470" width="100" height="100">
+   <BOUNDS type="Node" left="1395" top="4470" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1445" top="4470">
+   <BOUNDS type="Box" left="1395" top="4470">
    </BOUNDS>
    <BOUNDS type="Window" left="19060" top="10590" width="13270" height="9480">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="427" srcpinname="Output Node" dstnodeid="465" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="465" srcpinname="Output" dstnodeid="446" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="450" srcpinname="Output" dstnodeid="465" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="454" srcpinname="Y Output Value" dstnodeid="465" dstpinname="Default">
    </LINK>
    <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="466">
    <BOUNDS type="Node" left="3510" top="4430" width="0" height="0">
@@ -304,8 +286,20 @@
    </LINK>
    <LINK srcnodeid="452" srcpinname="Output" dstnodeid="466" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="456" srcpinname="Output String" dstnodeid="466" dstpinname="Default">
-   </LINK>
    <LINK srcnodeid="466" srcpinname="Output" dstnodeid="457" dstpinname="ScaleName" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="467">
+   <BOUNDS type="Box" left="4030" top="2150" width="4430" height="250">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4030" top="2150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="450" srcpinname="Output" dstnodeid="467" dstpinname="Input String">
    </LINK>
    </PATCH>

@@ -464,14 +464,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="159">
-   <BOUNDS type="Node" left="10710" top="1620" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10710" top="1620" width="420" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="160" systemname="OSCValue" filename="..\..\Modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="10430" top="2280" width="100" height="100">
    </BOUNDS>
@@ -485,8 +477,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="112" srcpinname="Output Node" dstnodeid="160" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Default">
    </LINK>
    <NODE id="162" systemname="SelectTexArray (DX11.Effect)" filename="SelectTexArray.fx" nodename="SelectTexArray (DX11.Effect)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="17510" top="10065" width="100" height="100">

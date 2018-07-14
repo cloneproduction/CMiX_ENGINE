@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="6970" top="10310" width="10840" height="9060">
+   <BOUNDS type="Window" left="6430" top="5840" width="10840" height="9060">
    </BOUNDS>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="4830" top="5430" width="100" height="100">
@@ -129,7 +129,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4840" top="4675" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="2880,1620">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1280,960">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -290,24 +290,104 @@
    </NODE>
    <LINK srcnodeid="263" srcpinname="Output" dstnodeid="264" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="265" border="1" stayontop="1">
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="266">
+   <BOUNDS type="Node" left="6450" top="2380" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6450" top="2380" width="4000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="26200" top="11350" width="4220" height="3560">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="266" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="267" border="0" stayontop="1">
    <BOUNDS type="Node" left="3310" top="3760" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3310" top="3760" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="27800" top="160" width="10600" height="6500">
+   <BOUNDS type="Window" left="60550" top="3180" width="10600" height="6500">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </NODE>
+   <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="267" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Divide (Value)" filename="" nodename="Divide (Value)" componentmode="Hidden" id="268">
+   <BOUNDS type="Node" left="8750" top="5100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="265" dstpinname="Layers">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="269">
+   <BOUNDS type="Box" left="8760" top="4180" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8760" top="4180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1280">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="269" srcpinname="Y Output Value" dstnodeid="268" dstpinname="Input">
    </LINK>
-   <PACK Name="vvvv-Message" Version="2.9.10">
-   </PACK>
-   <LINK srcnodeid="263" srcpinname="Output" dstnodeid="237" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="270">
+   <BOUNDS type="Box" left="8680" top="6000" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8680" top="6000" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="270" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="271">
+   <BOUNDS type="Node" left="8720" top="6570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="271" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="272">
+   <BOUNDS type="Box" left="9270" top="6330" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9270" top="6330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="272" srcpinname="Y Output Value" dstnodeid="271" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="273">
+   <BOUNDS type="Box" left="8740" top="7700" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8740" top="7700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="271" srcpinname="Output" dstnodeid="273" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

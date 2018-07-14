@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="19520" top="7290" width="5430" height="5510">
+   <BOUNDS type="Window" left="19650" top="12490" width="5090" height="5530">
    </BOUNDS>
    <NODE id="6" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
    <BOUNDS height="0" left="830" top="1490" type="Node" width="0">
@@ -103,6 +103,8 @@
    </BOUNDS>
    <BOUNDS type="Box" left="830" top="2230">
    </BOUNDS>
+   <PIN pinname="Update" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Output Bin Size" dstnodeid="20" dstpinname="Y Input Value">
    </LINK>
@@ -116,12 +118,12 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="74" dstpinname="Update Value">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="74" dstpinname="Update">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="74" dstpinname="Key">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="74" dstpinname="Value">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Bin Sizes" dstnodeid="74" dstpinname="Value Bin Size">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="74" dstpinname="Update">
    </LINK>
    </PATCH>

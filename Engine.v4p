@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Beats" filename="Beats\Beats.v4p" nodename="Beats\Beats.v4p" componentmode="Hidden" id="48" debug="0">
-   <BOUNDS type="Node" left="2400" top="943" width="710" height="270">
+   <BOUNDS type="Node" left="2790" top="1003" width="710" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2124" top="137" width="9028" height="7636">
+   <BOUNDS type="Box" left="2514" top="197" width="9028" height="7636">
    </BOUNDS>
    <BOUNDS type="Window" left="17580" top="9650" width="10760" height="10300">
    </BOUNDS>
@@ -46,6 +46,8 @@
    <PIN pinname="MasterPeriod" visible="1">
    </PIN>
    <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="MainBeat" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Mixer" filename="Mixer\Mixer.v4p" nodename="Mixer\Mixer.v4p" componentmode="Hidden" id="37" debug="0" stayontop="0">
@@ -108,10 +110,6 @@
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="48" srcpinname="MainBeat" dstnodeid="38" dstpinname="Beat">
-   <LINKPOINT x="3105" y="3030">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Renderer" filename="Renderer\Renderer.v4p" nodename="Renderer" componentmode="Hidden" id="36" debug="0">
    <BOUNDS type="Node" left="590" top="3640" width="2490" height="270">
    </BOUNDS>
@@ -121,7 +119,7 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="6970" top="10310" width="10840" height="9060">
+   <BOUNDS type="Window" left="6430" top="5840" width="10840" height="9060">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
@@ -155,6 +153,8 @@
    </PIN>
    <PIN pinname="MasterPeriod" visible="1">
    </PIN>
+   <PIN pinname="CameraMasterPeriod" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="MainBeat" dstnodeid="51" dstpinname="Beat">
    </LINK>
@@ -173,7 +173,7 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="13370" top="7090" width="16630" height="14090">
+   <BOUNDS type="Window" left="19940" top="7030" width="16630" height="14090">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1490" height="270">
    </BOUNDS>
@@ -192,8 +192,6 @@
    </LINK>
    <LINK srcnodeid="53" srcpinname="LayerNames" dstnodeid="51" dstpinname="Name">
    </LINK>
-   <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="51" dstpinname="MasterPeriod">
-   </LINK>
    <LINK srcnodeid="53" srcpinname="LayerNames" dstnodeid="37" dstpinname="LayerNames">
    </LINK>
    <LINK srcnodeid="53" srcpinname="LayerNames" dstnodeid="48" dstpinname="LayerNames">
@@ -201,5 +199,11 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="MainBeat" dstnodeid="51" dstpinname="MasterPeriod">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="51" dstpinname="CameraMasterPeriod">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="38" dstpinname="Beat">
    </LINK>
    </PATCH>
