@@ -265,7 +265,7 @@
    <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="26" dstpinname="Input 3">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
-   <BOUNDS type="Box" left="2010" top="1430" width="1160" height="240">
+   <BOUNDS type="Box" left="2010" top="1430" width="2050" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2010" top="1430" width="0" height="0">
    </BOUNDS>
@@ -299,10 +299,10 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Address" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="45" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="45" dstpinname="Address">
    </LINK>
    <NODE systemname="OSCValue" filename="..\modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="4350" top="2810" width="100" height="100">
@@ -313,10 +313,10 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Address" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="46" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="46" dstpinname="Address">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="47">
    <BOUNDS type="Node" left="860" top="3480" width="100" height="100">
@@ -327,6 +327,8 @@
    </PIN>
    <BOUNDS type="Box" left="860" top="3480">
    </BOUNDS>
+   <PIN pinname="Default" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="47" dstpinname="Input">
    </LINK>
@@ -359,5 +361,23 @@
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="55" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="55" srcpinname="X" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="45" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="46" dstpinname="Address">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Box" left="2020" top="2820" width="670" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2020" top="2820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Default">
    </LINK>
    </PATCH>

@@ -241,9 +241,9 @@
    <LINK srcnodeid="225" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="262">
-   <BOUNDS type="Node" left="7620" top="3210" width="100" height="100">
+   <BOUNDS type="Node" left="8200" top="1600" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7620" top="3210" width="795" height="480">
+   <BOUNDS type="Box" left="8200" top="1600" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -257,7 +257,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="263">
-   <BOUNDS type="Node" left="7610" top="4180" width="100" height="100">
+   <BOUNDS type="Node" left="8190" top="2570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -269,9 +269,9 @@
    <LINK srcnodeid="262" srcpinname="Y Output Value" dstnodeid="263" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="264">
-   <BOUNDS type="Box" left="7610" top="4820" width="795" height="480">
+   <BOUNDS type="Box" left="8190" top="3210" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7610" top="4820" width="0" height="0">
+   <BOUNDS type="Node" left="8190" top="3210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -292,24 +292,24 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="266">
-   <BOUNDS type="Node" left="6450" top="2380" width="100" height="100">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="266">
+   <BOUNDS type="Node" left="5390" top="3760" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6450" top="2380" width="4000" height="3000">
+   <BOUNDS type="Box" left="5390" top="3760" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="26200" top="11350" width="4220" height="3560">
+   <BOUNDS type="Window" left="22600" top="920" width="14060" height="8900">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="266" dstpinname="Layers">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="267" border="0" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="267" border="1" stayontop="1">
    <BOUNDS type="Node" left="3310" top="3760" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3310" top="3760" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="60550" top="3180" width="10600" height="6500">
+   <BOUNDS type="Window" left="25580" top="1860" width="11070" height="9090">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>

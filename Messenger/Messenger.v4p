@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="16510" scrolly="9240">
-   <BOUNDS type="Window" left="13370" top="7090" width="16630" height="14090">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="13160" top="6910" width="16630" height="14090">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -623,49 +623,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1118" srcpinname="Output" dstnodeid="1121" dstpinname="Input String">
-   </LINK>
-   <NODE id="1123" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
-   </PIN>
-   <BOUNDS type="Box" left="15270" top="5170" width="2250" height="260">
-   </BOUNDS>
-   <BOUNDS type="Node" left="15270" top="5170" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="/Layer0/BlendMode">
-   </PIN>
-   </NODE>
-   <NODE id="1122" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="0" left="13830" top="6090" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Match Rule" slicecount="1" values="All">
-   </PIN>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="OnReceive" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1123" srcpinname="Output String" dstnodeid="1122" dstpinname="Address" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="1122" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1124">
-   <BOUNDS type="Box" left="13800" top="7250" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13800" top="7250" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1122" srcpinname="Arguments" dstnodeid="1124" dstpinname="Input String">
    </LINK>
    </PATCH>

@@ -58,23 +58,6 @@ namespace VVVV.Nodes
                 }
             }
 
-
-            //if (FUpdate.IsChanged)
-            //{
-                for (int i = 0; i < FUpdate.SliceCount; i++)
-                {
-                    if (FUpdate.SliceCount != 0)
-                    {
-                        if (FUpdate[i])
-                        {
-                            dict[FKey[i]] = FValue[i].Clone();
-                        }
-                        FOutputQueryValue[i] = dict[FKey[i]];
-                    }
-                }
-            //}
-
-
             if (FDeleteKey.IsChanged)
             {
                 if(FDeleteKey.SliceCount != 0)
@@ -91,26 +74,17 @@ namespace VVVV.Nodes
                 }
             }
 
-            /*if(FKey.IsChanged || FDeleteKey.IsChanged || FUpdate.IsChanged)
+            for (int i = 0; i < FUpdate.SliceCount; i++)
             {
-                for (int i = 0; i < FKey.SliceCount; i++)
+                if (FUpdate.SliceCount != 0)
                 {
-                    if (FKey[i] == null)
+                    if (FUpdate[i])
                     {
-                        FOutputQueryValue[i].SliceCount = 0;
-                        continue;
+                        dict[FKey[i]] = FValue[i].Clone();
                     }
-
-                    if (!dict.ContainsKey(FKey[i]))
-                    {
-                        FOutputQueryValue[i].SliceCount = 0;
-                        continue;
-                    }
-
-                    FOutputQueryValue[i].SliceCount = FValue[i].SliceCount;
                     FOutputQueryValue[i] = dict[FKey[i]];
-                }*/
-
+                }
+            }
         }
 	}
 }
