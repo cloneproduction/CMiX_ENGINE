@@ -10,7 +10,7 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="17580" top="9650" width="10760" height="10300">
+   <BOUNDS type="Window" left="17300" top="10700" width="10760" height="10300">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -31,9 +31,9 @@
    </BOUNDS>
    <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="2770" top="1760" type="Box" width="1160">
+   <BOUNDS height="240" left="2770" top="1760" type="Box" width="2200">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/MasterPeriod">
+   <PIN pinname="Input String" slicecount="1" values="/MasterBeat/Period">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>

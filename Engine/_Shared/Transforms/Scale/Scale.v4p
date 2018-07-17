@@ -275,6 +275,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="427" srcpinname="Output Node" dstnodeid="466" dstpinname="Input">
    </LINK>
@@ -301,5 +303,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="450" srcpinname="Output" dstnodeid="467" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="468">
+   <BOUNDS type="Box" left="2430" top="5160" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2430" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="466" srcpinname="Output" dstnodeid="468" dstpinname="Input String">
    </LINK>
    </PATCH>

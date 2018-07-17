@@ -508,7 +508,7 @@
    </NODE>
    <LINK srcnodeid="165" srcpinname="Output String" dstnodeid="166" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="166" dstpinname="Input 1">
+   <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="166" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="166" srcpinname="Output" dstnodeid="164" dstpinname="Switch">
    </LINK>
@@ -696,7 +696,7 @@
    </NODE>
    <LINK srcnodeid="174" srcpinname="Output String" dstnodeid="175" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="175" dstpinname="Input 1">
+   <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="175" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="175" srcpinname="Output" dstnodeid="176" dstpinname="Switch">
    </LINK>
