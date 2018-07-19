@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <BOUNDS type="Box" left="2790" top="630" width="750" height="240">
+   <BOUNDS type="Box" left="3080" top="580" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2790" top="630" width="750" height="240">
+   <BOUNDS type="Node" left="3080" top="580" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="TexArray">
    </PIN>
@@ -91,7 +91,7 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Window" left="1900" top="5320" width="14230" height="13100">
+   <BOUNDS type="Window" left="3170" top="2450" width="20640" height="18860">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>
@@ -110,6 +110,8 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Original" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="29" dstpinname="Input">
@@ -149,5 +151,33 @@
    <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Box" left="6490" top="470" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6490" top="470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="KeepOriginal">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="65">
+   <BOUNDS type="Box" left="2020" top="580" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2020" top="580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output Node" dstnodeid="29" dstpinname="Original">
    </LINK>
    </PATCH>

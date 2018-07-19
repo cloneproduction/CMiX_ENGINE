@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="31390" top="11380" width="4650" height="5450">
+   <BOUNDS type="Window" left="31750" top="11010" width="4650" height="5450">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -85,6 +85,8 @@
    </PIN>
    <PIN pinname="LayerNames" visible="1">
    </PIN>
+   <PIN pinname="TexArray" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <NODE id="38" componentmode="Hidden" systemname="PostFX" filename="PostFX\PostFX.v4p" nodename="PostFX\PostFX.v4p" debug="0">
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
@@ -135,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1644" top="1653" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="24950" top="12410" width="5870" height="4940">
+   <BOUNDS type="Window" left="28140" top="11040" width="5870" height="4940">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>
@@ -154,6 +156,8 @@
    <PIN pinname="MasterPeriod" visible="1">
    </PIN>
    <PIN pinname="CameraMasterPeriod" visible="1">
+   </PIN>
+   <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="MainBeat" dstnodeid="51" dstpinname="Beat">

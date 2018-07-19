@@ -229,7 +229,7 @@
    <NODE systemname="SelectTexArray (DX11.Effect)" filename="SelectTexArray.fx" nodename="SelectTexArray (DX11.Effect)" componentmode="Hidden" id="328">
    <BOUNDS type="Node" left="8020" top="6590" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="TexArray" visible="1">
+   <PIN pinname="TexArray" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Geometry" visible="1">
    </PIN>
@@ -240,8 +240,6 @@
    <PIN pinname="TexIndex" visible="1" slicecount="1" values="3">
    </PIN>
    </NODE>
-   <LINK srcnodeid="272" srcpinname="Output Node" dstnodeid="328" dstpinname="TexArray" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Quad (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Geometry)" componentmode="Hidden" id="327">
    <BOUNDS type="Node" left="7310" top="5910" width="100" height="100">
    </BOUNDS>
@@ -337,5 +335,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="374" srcpinname="Y Output Value" dstnodeid="328" dstpinname="TexIndex">
+   </LINK>
+   <LINK srcnodeid="272" srcpinname="Output Node" dstnodeid="328" dstpinname="TexArray" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

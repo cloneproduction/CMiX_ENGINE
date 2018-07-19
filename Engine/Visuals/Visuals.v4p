@@ -83,9 +83,9 @@
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="2" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12">
-   <BOUNDS type="Box" left="410" top="7540" width="795" height="240">
+   <BOUNDS type="Box" left="340" top="7540" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="410" top="7540" width="0" height="0">
+   <BOUNDS type="Node" left="340" top="7540" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node - Texture Out|">
    </PIN>
@@ -211,9 +211,9 @@
    </PIN>
    </NODE>
    <NODE id="43" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
-   <BOUNDS type="Node" left="410" top="6730" width="1260" height="270">
+   <BOUNDS type="Node" left="340" top="6730" width="1260" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="410" top="6730">
+   <BOUNDS type="Box" left="340" top="6730">
    </BOUNDS>
    <BOUNDS type="Window" left="8020" top="14130" width="7090" height="4380">
    </BOUNDS>
@@ -222,6 +222,8 @@
    <PIN pinname="FeedBack" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="KeepOriginal" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Input Node - Texture Out" dstnodeid="43" dstpinname="TexArray">
