@@ -129,7 +129,7 @@
    <NODE systemname="ShadeVisuals" filename="ShadeVisuals\ShadeVisuals.v4p" nodename="ShadeVisuals\ShadeVisuals.v4p" componentmode="Hidden" id="17" debug="0">
    <BOUNDS type="Node" left="1450" top="4950" width="14670" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="13060" top="7720" width="25720" height="12540">
+   <BOUNDS type="Window" left="14390" top="6420" width="25720" height="12540">
    </BOUNDS>
    <BOUNDS type="Box" left="1450" top="4950">
    </BOUNDS>

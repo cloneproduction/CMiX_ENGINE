@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9785" top="1015" width="1380" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="Output">
+   <PIN pinname="Input String" slicecount="1" values="Out">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -320,22 +320,8 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="374">
-   <BOUNDS type="Box" left="10570" top="5320" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10570" top="5320" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="374" srcpinname="Y Output Value" dstnodeid="328" dstpinname="TexIndex">
-   </LINK>
    <LINK srcnodeid="272" srcpinname="Output Node" dstnodeid="328" dstpinname="TexArray" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output" dstnodeid="328" dstpinname="TexIndex">
    </LINK>
    </PATCH>

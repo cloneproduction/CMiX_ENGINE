@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCBool.v4p" systemname="OSCBool" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCBool.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="3860" top="8300" width="10690" height="9680">
+   <BOUNDS type="Window" left="23150" top="10630" width="10690" height="9680">
    </BOUNDS>
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
@@ -15,7 +15,7 @@
    <NODE id="2" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Address">
    </PIN>
-   <BOUNDS type="Box" left="2270" top="860" width="750" height="240">
+   <BOUNDS type="Box" left="2270" top="860" width="4350" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="860" width="750" height="240">
    </BOUNDS>

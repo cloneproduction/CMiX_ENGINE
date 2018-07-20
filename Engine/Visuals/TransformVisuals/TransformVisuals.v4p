@@ -105,7 +105,7 @@
    <NODE systemname="Rotation" filename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="117">
    <BOUNDS type="Node" left="810" top="1860" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="15390" top="8310" width="13790" height="9990">
+   <BOUNDS type="Window" left="11720" top="6880" width="15590" height="8700">
    </BOUNDS>
    <BOUNDS type="Box" left="810" top="1860">
    </BOUNDS>

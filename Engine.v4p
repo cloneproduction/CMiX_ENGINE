@@ -177,7 +177,7 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="17100" top="5740" width="16630" height="14090">
+   <BOUNDS type="Window" left="19790" top="5390" width="16630" height="14090">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1490" height="270">
    </BOUNDS>

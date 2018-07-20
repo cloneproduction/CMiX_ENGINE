@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" systemname="ShadeVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\ShadeVisuals\ShadeVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="13060" top="7720" width="25720" height="12540">
+   <BOUNDS type="Window" left="14390" top="6420" width="25720" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -408,16 +408,6 @@
    </LINK>
    <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="459" dstpinname="InstanceStartIndex">
    </LINK>
-   <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="472">
-   <BOUNDS type="Node" left="13570" top="6680" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerNames">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="13570" top="6680">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="471">
    <BOUNDS type="Node" left="13580" top="7770" width="100" height="100">
    </BOUNDS>
@@ -429,11 +419,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="470">
-   <BOUNDS type="Box" left="13765" top="7240" width="1170" height="240">
+   <BOUNDS type="Box" left="13765" top="7240" width="4730" height="250">
    </BOUNDS>
    <BOUNDS type="Node" left="13765" top="7240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="GSFXTranslate">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/GeometryFX/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -441,11 +431,9 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="470" srcpinname="Output String" dstnodeid="471" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="472" srcpinname="Output" dstnodeid="471" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="471" srcpinname="Output" dstnodeid="438" dstpinname="Address">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="485">
@@ -507,7 +495,7 @@
    <LINK srcnodeid="447" srcpinname="Output" dstnodeid="510" dstpinname="Input 2">
    </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="512">
-   <BOUNDS type="Node" left="17280" top="4710" width="100" height="100">
+   <BOUNDS type="Node" left="14580" top="10880" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Buffer" visible="1">
    </PIN>
@@ -515,7 +503,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="514">
-   <BOUNDS type="Node" left="17440" top="3390" width="100" height="100">
+   <BOUNDS type="Node" left="14740" top="9560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -523,7 +511,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="17440" top="3390">
+   <BOUNDS type="Box" left="14740" top="9560">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="514" dstpinname="Select" hiddenwhenlocked="1">
@@ -539,11 +527,11 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="542">
-   <BOUNDS type="Node" left="17270" top="4050" width="100" height="100">
+   <BOUNDS type="Node" left="14570" top="10220" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Rotate" visible="1">
+   <PIN pinname="Rotate" visible="1" slicecount="2" values="0.364497138652951,0.33934058691375">
    </PIN>
    </NODE>
    <LINK srcnodeid="542" srcpinname="Transform Out" dstnodeid="512" dstpinname="Data">
@@ -551,7 +539,7 @@
    <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
    </LINK>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="550">
-   <BOUNDS type="Node" left="18080" top="3390" width="100" height="100">
+   <BOUNDS type="Node" left="15910" top="9170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -559,8 +547,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="507" srcpinname="Y" dstnodeid="550" dstpinname="Enabled" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="550" srcpinname="Output" dstnodeid="542" dstpinname="Rotate">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState Advanced)" componentmode="Hidden" id="546">
    <BOUNDS type="Node" left="780" top="2340" width="100" height="100">
@@ -771,5 +757,11 @@
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="609" dstpinname="Name" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="586" dstpinname="sbWorld">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Output String" dstnodeid="471" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="471" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="510" srcpinname="Output" dstnodeid="435" dstpinname="Input">
    </LINK>
    </PATCH>
