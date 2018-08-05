@@ -76,11 +76,11 @@ float4 pMipGlow(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
 	float2 x0=mul(float4((uv.xy*2-1)*float2(1,-1),0,1),tTex)*0.5*float2(1,-1)+0.5; //Transform Texture
 	float4 c=tex0.Sample(s0,x0);
 	float4 ctrl=GlowControl.Sample(s0,x0);
-	float4 cBlur0=tex0.SampleLevel(s0,x0,lod*2);
-	float4 cBlur1=tex0.SampleLevel(s0,x0,lod*4)*GlowBrightness*2;
-	float4 cBlur2=tex0.SampleLevel(s0,x0,lod*6)*GlowBrightness*4;
-	float4 cBlur3=tex0.SampleLevel(s0,x0,lod*8)*GlowBrightness*6;
-	float4 GlowCol= c+(cBlur0+cBlur1+cBlur2+cBlur3)*0.25*ctrl;
+	//float4 cBlur0=tex0.SampleLevel(s0,x0,lod*2);
+	//float4 cBlur1=tex0.SampleLevel(s0,x0,lod*4)*GlowBrightness*2;
+	//float4 cBlur2=tex0.SampleLevel(s0,x0,lod*6)*GlowBrightness*4;
+	//float4 cBlur3=tex0.SampleLevel(s0,x0,lod*8)*GlowBrightness*6;
+	float4 GlowCol= c;// c+(cBlur0+cBlur1+cBlur2+cBlur3)*0.25*ctrl;
 	
 		//Invert
 	GlowCol.rgb=lerp(GlowCol.rgb,1-GlowCol.rgb,InvertFactor);

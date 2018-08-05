@@ -315,7 +315,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6600" top="1356" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.12">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -369,7 +369,7 @@
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
-   <PIN pinname="Rotate" slicecount="1" values="0.25">
+   <PIN pinname="Rotate" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
@@ -489,7 +489,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6500" top="11990" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="12870" top="14060" width="4220" height="3560">
+   <BOUNDS type="Window" left="25860" top="16090" width="4220" height="3560">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -514,4 +514,24 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="90">
+   <BOUNDS type="Box" left="8400" top="8210" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8400" top="8210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.25,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
    </PATCH>

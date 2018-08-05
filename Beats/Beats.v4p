@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Beats\Beats.v4p" systemname="Beats" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Beats\Beats.v4p" scrollx="0" scrolly="0">
    <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="MainBeat">
+   <PIN pinname="Descriptive Name" slicecount="1" values="BeatLayer">
    </PIN>
    <BOUNDS type="Box" left="5060" top="8090" width="630" height="240">
    </BOUNDS>
@@ -49,7 +49,7 @@
    </BOUNDS>
    <BOUNDS height="240" left="8270" top="1760" type="Box" width="1755">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/MasterPeriod/Resync">
+   <PIN pinname="Input String" slicecount="1" values="/MasterBeat/Resync">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>

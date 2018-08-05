@@ -239,7 +239,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="830" top="2640">
    </BOUNDS>
-   <BOUNDS type="Window" left="20830" top="8810" width="5120" height="5400">
+   <BOUNDS type="Window" left="20830" top="8810" width="9980" height="8060">
    </BOUNDS>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>

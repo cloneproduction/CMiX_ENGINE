@@ -243,9 +243,9 @@
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry.v4p" nodename="..\_Shared\Geometry.v4p" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="5440" top="4960" width="1010" height="270">
+   <BOUNDS type="Node" left="5420" top="4960" width="1010" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5440" top="4960" width="4324" height="6040">
+   <BOUNDS type="Box" left="5420" top="4960" width="4324" height="6040">
    </BOUNDS>
    <BOUNDS type="Window" left="20870" top="12230" width="6960" height="7010">
    </BOUNDS>
@@ -426,12 +426,12 @@
    </LINK>
    <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="101" dstpinname="MaskArray">
    </LINK>
-   <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="137" dstpinname="Original">
    </LINK>
    <LINK srcnodeid="101" srcpinname="KeepOriginal" dstnodeid="137" dstpinname="KeepOriginal">
+   </LINK>
+   <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
    </LINK>
    </PATCH>

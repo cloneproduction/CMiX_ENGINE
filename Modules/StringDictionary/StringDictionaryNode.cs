@@ -64,12 +64,11 @@ namespace VVVV.Nodes
                 {
                     for (int i = 0; i < FDeleteKey.SliceCount; i++)
                     {
-                        if (dict.ContainsKey(FDeleteKey[i]) == true)
+                        if (dict.ContainsKey(FDeleteKey[i]))
                         {
                             dict.Remove(FDeleteKey[i]);
                         }
-                        if (FDeleteKey.SliceCount > 0)
-                            FOutputQueryValue[i] = dict[FKey[i]];
+                        FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
             }
