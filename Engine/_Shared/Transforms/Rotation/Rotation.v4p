@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="11720" top="6880" width="15590" height="8700">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -7,9 +7,9 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="104" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="940" top="6830" width="792" height="240">
+   <BOUNDS type="Box" left="945" top="6960" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="940" top="6830" width="0" height="0">
+   <BOUNDS type="Node" left="945" top="6960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Rotate Out|">
    </PIN>
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="115">
-   <BOUNDS type="Node" left="8150" top="820" width="100" height="100">
+   <BOUNDS type="Node" left="8145" top="1140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8150" top="820" width="810" height="705">
+   <BOUNDS type="Box" left="8145" top="1140" width="1155" height="240">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -35,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11290" top="820" width="795" height="240">
+   <BOUNDS type="Box" left="11550" top="1140" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11290" top="820" width="0" height="0">
+   <BOUNDS type="Node" left="11550" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -95,9 +95,9 @@
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Beats" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="578">
-   <BOUNDS type="Box" left="940" top="820" width="795" height="240">
+   <BOUNDS type="Box" left="945" top="1140" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="940" top="820" width="0" height="0">
+   <BOUNDS type="Node" left="945" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -107,7 +107,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Rotate" filename="Rotate\Rotate.v4p" nodename="Rotate\Rotate.v4p" componentmode="Hidden" id="617">
-   <BOUNDS type="Node" left="940" top="5980" width="10110" height="270">
+   <BOUNDS type="Node" left="945" top="6090" width="10110" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="19130" top="7080" width="11540" height="9150">
    </BOUNDS>
@@ -121,7 +121,7 @@
    </PIN>
    <PIN pinname="Select" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="940" top="5980">
+   <BOUNDS type="Box" left="945" top="6090">
    </BOUNDS>
    <PIN pinname="RotationAddress" visible="1">
    </PIN>
@@ -137,7 +137,7 @@
    <LINK srcnodeid="617" srcpinname="Transform Out" dstnodeid="104" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="626">
-   <BOUNDS type="Node" left="3930" top="2710" width="100" height="100">
+   <BOUNDS type="Node" left="3900" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -151,7 +151,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="628">
-   <BOUNDS type="Node" left="5840" top="2710" width="100" height="100">
+   <BOUNDS type="Node" left="5865" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -201,7 +201,7 @@
    <LINK srcnodeid="685" srcpinname="Output" dstnodeid="691" dstpinname="Input 1">
    </LINK>
    <NODE id="698" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="7980" top="2710" width="100" height="100">
+   <BOUNDS type="Node" left="7920" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -227,9 +227,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="700">
-   <BOUNDS type="Box" left="8150" top="2110" width="1900" height="240">
+   <BOUNDS type="Box" left="8085" top="2115" width="1900" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8150" top="2110" width="0" height="0">
+   <BOUNDS type="Node" left="8085" top="2115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationMode">
    </PIN>
@@ -243,9 +243,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="701">
-   <BOUNDS type="Box" left="3940" top="820" width="800" height="240">
+   <BOUNDS type="Box" left="3915" top="1140" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3940" top="820" width="0" height="0">
+   <BOUNDS type="Node" left="3915" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content">
    </PIN>
@@ -261,9 +261,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="702">
-   <BOUNDS type="Box" left="6010" top="2110" width="1280" height="240">
+   <BOUNDS type="Box" left="6045" top="2115" width="1280" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6010" top="2110" width="0" height="0">
+   <BOUNDS type="Node" left="6045" top="2115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Is3D">
    </PIN>
@@ -277,9 +277,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="703">
-   <BOUNDS type="Box" left="4110" top="2110" width="1200" height="240">
+   <BOUNDS type="Box" left="4080" top="2115" width="1200" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4110" top="2110" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="2115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationAmount">
    </PIN>
@@ -356,4 +356,8 @@
    </LINK>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="617" dstpinname="Raw" hiddenwhenlocked="1">
    </LINK>
+   <LINK srcnodeid="706" srcpinname="Output" dstnodeid="617" dstpinname="Input">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>

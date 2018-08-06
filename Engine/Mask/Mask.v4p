@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\Mask.v4p" systemname="Mask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\Mask.v4p" scrollx="10" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Mask\Mask.v4p" systemname="Mask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\Mask.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="19910" top="9230" width="12890" height="11010">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -28,34 +28,6 @@
    <PIN pinname="LayerNames" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="RenderMask" filename="RenderMask\RenderMask.v4p" nodename="RenderMask" componentmode="Hidden" id="99">
-   <BOUNDS type="Node" left="1210" top="6670" width="2110" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1210" top="6670" width="9604" height="8251">
-   </BOUNDS>
-   <BOUNDS type="Window" left="9430" top="7500" width="13000" height="10470">
-   </BOUNDS>
-   <PIN pinname="MskOn" visible="1" slicecount="6" values="1,0,0,0,0,0">
-   </PIN>
-   <PIN pinname="Texture Slices Out" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Input Node - Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="AddressView" visible="1" slicecount="1" values="Mask/PostFX/View">
-   </PIN>
-   <PIN pinname="Layer">
-   </PIN>
-   <PIN pinname="BeatInfos" visible="1">
-   </PIN>
-   <PIN pinname="AddressIs3D" visible="1" slicecount="1" values="Mask/Geometry/Is3D">
-   </PIN>
-   <PIN pinname="LayerNames" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="110">
    <BOUNDS type="Box" left="810" top="1300" width="800" height="240">
    </BOUNDS>
@@ -68,8 +40,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="99" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="100" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="124">
@@ -140,8 +110,6 @@
    </LINK>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="101" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="99" dstpinname="Layer">
-   </LINK>
    <LINK srcnodeid="100" srcpinname="SltMskName Bin Size" dstnodeid="101" dstpinname="MaskBinSize">
    </LINK>
    <NODE id="137" componentmode="Hidden" systemname="EnginePostFX" filename="..\FX\EnginePostFX.v4p" nodename="..\FX\EnginePostFX.v4p">
@@ -149,7 +117,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="730" top="7840">
    </BOUNDS>
-   <BOUNDS type="Window" left="16480" top="12950" width="7200" height="4400">
+   <BOUNDS type="Window" left="16470" top="12945" width="9390" height="5535">
    </BOUNDS>
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
@@ -157,7 +125,7 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="TexArray" visible="1">
+   <PIN pinname="TexArray" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="MaskEnabled" visible="1">
    </PIN>
@@ -195,9 +163,9 @@
    <LINK srcnodeid="143" srcpinname="Transform Out" dstnodeid="101" dstpinname="TransfomIn">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="150">
-   <BOUNDS type="Node" left="2400" top="3120" width="100" height="100">
+   <BOUNDS type="Node" left="2415" top="3120" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2400" top="3120" width="1080" height="240">
+   <BOUNDS type="Box" left="2415" top="3120" width="1080" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/Enable">
    </PIN>
@@ -205,7 +173,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="148">
-   <BOUNDS type="Node" left="2210" top="3950" width="600" height="270">
+   <BOUNDS type="Node" left="2225" top="3950" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -240,8 +208,6 @@
    </LINK>
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="101" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry.v4p" nodename="..\_Shared\Geometry.v4p" componentmode="Hidden" id="145">
    <BOUNDS type="Node" left="5420" top="4960" width="1010" height="270">
    </BOUNDS>
@@ -263,9 +229,9 @@
    <LINK srcnodeid="145" srcpinname="Geometry Out" dstnodeid="101" dstpinname="Geometry In">
    </LINK>
    <NODE systemname="BeatControl" filename="BeatControl.v4p" nodename="BeatControl.v4p" componentmode="Hidden" id="158">
-   <BOUNDS type="Node" left="3260" top="3950" width="1160" height="270">
+   <BOUNDS type="Node" left="7475" top="3905" width="1160" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3260" top="3950" width="8860" height="11275">
+   <BOUNDS type="Box" left="7475" top="3905" width="8860" height="11275">
    </BOUNDS>
    <BOUNDS type="Window" left="14000" top="6120" width="8660" height="11230">
    </BOUNDS>
@@ -281,7 +247,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="157">
-   <BOUNDS type="Node" left="9530" top="3120" width="600" height="270">
+   <BOUNDS type="Node" left="9545" top="2490" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -295,9 +261,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="154">
-   <BOUNDS type="Box" left="9700" top="2370" width="1330" height="240">
+   <BOUNDS type="Box" left="9715" top="1740" width="1330" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9700" top="2370" width="0" height="0">
+   <BOUNDS type="Node" left="9715" top="1740" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Count">
    </PIN>
@@ -362,8 +328,6 @@
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="158" dstpinname="Address 1" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="158" srcpinname="XYZ" dstnodeid="99" dstpinname="BeatInfos">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="161">
    <BOUNDS type="Box" left="2135" top="1865" width="800" height="240">
    </BOUNDS>
@@ -388,8 +352,6 @@
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="143" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="99" dstpinname="LayerNames" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="148" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="100" dstpinname="LayerNames" hiddenwhenlocked="1">
@@ -398,14 +360,12 @@
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="101" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="99" srcpinname="Input Node - Texture Out" dstnodeid="137" dstpinname="TexArray">
-   </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="157" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="OSCValue" filename="..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="167">
-   <BOUNDS type="Node" left="8580" top="3735" width="1020" height="270">
+   <BOUNDS type="Node" left="8595" top="3105" width="1020" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8580" top="3735">
+   <BOUNDS type="Box" left="8595" top="3105">
    </BOUNDS>
    <BOUNDS type="Window" left="19650" top="12490" width="5050" height="6420">
    </BOUNDS>
@@ -422,7 +382,7 @@
    </LINK>
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="101" dstpinname="TransformBinSize" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="137" dstpinname="Enabled">
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="137" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="101" dstpinname="MaskArray">
    </LINK>
@@ -433,5 +393,45 @@
    <LINK srcnodeid="101" srcpinname="KeepOriginal" dstnodeid="137" dstpinname="KeepOriginal">
    </LINK>
    <LINK srcnodeid="137" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Render" filename="..\_Shared\Render.v4p" nodename="..\_Shared\Render.v4p" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="1210" top="6670" width="2110" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1210" top="6670" width="9604" height="8251">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3765" top="9780" width="12990" height="10470">
+   </BOUNDS>
+   <PIN pinname="MskOn" visible="1" slicecount="6" values="1,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Node - Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="AddressView" visible="1" slicecount="1" values="Mask/PostFX/View">
+   </PIN>
+   <PIN pinname="Layer">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1">
+   </PIN>
+   <PIN pinname="AddressIs3D" visible="1" slicecount="1" values="Mask/Geometry/Is3D">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="99" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="99" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="XYZ" dstnodeid="99" dstpinname="BeatInfos">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="99" dstpinname="LayerNames" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Input Node - Texture Out" dstnodeid="137" dstpinname="TexArray">
    </LINK>
    </PATCH>

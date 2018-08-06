@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Engine.v4p" scrollx="10" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="28140" top="11040" width="5870" height="4940">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" scrollx="10" scrolly="0" systemname="Layer" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" locked="0">
+   <BOUNDS type="Window" left="16785" top="11880" width="5865" height="4935">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -20,7 +20,7 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="838">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="838" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="730" top="710" width="690" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="730" top="710" width="0" height="0">
@@ -110,12 +110,12 @@
    </NODE>
    <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="824" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Visuals" filename="Visuals\Visuals.v4p" nodename="Visuals\Visuals.v4p" componentmode="Hidden" id="1089">
+   <NODE systemname="Content" filename="Visuals\Content.v4p" nodename="Visuals\Content.v4p" componentmode="Hidden" id="1089">
    <BOUNDS type="Node" left="3170" top="1610" width="830" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3170" top="1610" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="6310" top="12050" width="17600" height="9410">
+   <BOUNDS type="Window" left="2985" top="7290" width="18630" height="9975">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -128,7 +128,7 @@
    </LINK>
    <LINK srcnodeid="1089" srcpinname="Input Node - Texture Out" dstnodeid="824" dstpinname="texArray">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1090">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1090" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1950" top="710" width="800" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1950" top="710" width="0" height="0">
@@ -148,7 +148,7 @@
    </NODE>
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1089" dstpinname="LayerNames">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1091">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1091" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4390" top="710" width="800" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4390" top="710" width="0" height="0">
@@ -172,7 +172,7 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1092">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1092" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3070" top="700" width="700" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="3070" top="700" width="0" height="0">

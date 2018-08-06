@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
    <BOUNDS type="Window" left="11030" top="9820" width="11610" height="8120">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -185,7 +185,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="1130">
-   <BOUNDS type="Node" left="4120" top="2350" width="100" height="100">
+   <BOUNDS type="Node" left="4075" top="2350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -199,7 +199,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1136">
-   <BOUNDS type="Box" left="2270" top="1760" width="1810" height="240">
+   <BOUNDS type="Box" left="2270" top="1760" width="1575" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1760" width="0" height="0">
    </BOUNDS>
@@ -215,9 +215,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1137">
-   <BOUNDS type="Box" left="4120" top="810" width="800" height="240">
+   <BOUNDS type="Box" left="4090" top="810" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4120" top="810" width="0" height="0">
+   <BOUNDS type="Node" left="4090" top="810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="text">
    </PIN>
@@ -233,9 +233,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="4300" top="1760" width="2050" height="240">
+   <BOUNDS type="Box" left="4255" top="1760" width="2050" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4300" top="1760" width="0" height="0">
+   <BOUNDS type="Node" left="4255" top="1760" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode">
    </PIN>
@@ -288,4 +288,6 @@
    </LINK>
    <LINK srcnodeid="1130" srcpinname="Output" dstnodeid="1142" dstpinname="Address">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>
