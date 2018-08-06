@@ -79,6 +79,8 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Output Node" dstnodeid="114" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -173,5 +175,7 @@
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="114" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="117" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="114" dstpinname="LayerNames">
    </LINK>
    </PATCH>

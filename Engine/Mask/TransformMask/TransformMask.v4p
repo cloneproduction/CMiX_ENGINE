@@ -85,6 +85,8 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Rotation" filename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
@@ -231,5 +233,7 @@
    <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="80" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="79" dstpinname="LayerNames">
    </LINK>
    </PATCH>

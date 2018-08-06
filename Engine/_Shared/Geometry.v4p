@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Geometry.v4p" systemname="Geometry" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Geometry.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Geometry.v4p" systemname="Geometry" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Geometry.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="25730" top="10940" width="6450" height="8070">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -9,9 +9,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="3268" top="6016" width="830" height="240">
+   <BOUNDS type="Box" left="3318" top="6036" width="830" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3268" top="6016" width="0" height="0">
+   <BOUNDS type="Node" left="3318" top="6036" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Geometry Out|">
    </PIN>
@@ -21,9 +21,9 @@
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="31" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="795" top="990" width="570" height="240">
+   <BOUNDS type="Box" left="800" top="990" width="570" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="795" top="990" width="0" height="0">
+   <BOUNDS type="Node" left="800" top="990" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -33,9 +33,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="33">
-   <BOUNDS type="Node" left="1755" top="990" width="100" height="100">
+   <BOUNDS type="Node" left="1810" top="990" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1755" top="990" width="700" height="240">
+   <BOUNDS type="Box" left="1810" top="990" width="700" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -45,7 +45,7 @@
    </PIN>
    </NODE>
    <NODE id="38" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1760" top="2365" width="100" height="100">
+   <BOUNDS type="Node" left="1810" top="2380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -117,9 +117,9 @@
    <LINK srcnodeid="38" srcpinname="Output" dstnodeid="49" dstpinname="Address">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1930" top="1620" width="1155" height="240">
+   <BOUNDS type="Box" left="1980" top="1630" width="1155" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1930" top="1620" width="0" height="0">
+   <BOUNDS type="Node" left="1980" top="1630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/GeometryPaths">
    </PIN>
@@ -181,7 +181,7 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="3510" top="2415" width="100" height="100">
+   <BOUNDS type="Node" left="3510" top="2380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

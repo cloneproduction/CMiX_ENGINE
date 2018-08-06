@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2985" top="7290" width="18630" height="9975">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="14180" top="8840" width="18630" height="9970">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -154,7 +154,7 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Resolution" dstnodeid="17" dstpinname="GeoTexResolution">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="17" dstpinname="Tranform In">
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40" hiddenwhenlocked="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2115" top="1020" width="700" height="240">
@@ -401,7 +401,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="3765" top="9780" width="12990" height="10470">
    </BOUNDS>
-   <PIN pinname="MskOn" visible="1" slicecount="1" values="0">
+   <PIN pinname="MskOn" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Texture Slices Out" visible="1">
    </PIN>
@@ -431,5 +431,25 @@
    <LINK srcnodeid="61" srcpinname="Input Node - Texture Out" dstnodeid="43" dstpinname="TexArray">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="61" dstpinname="LayerNames" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
+   <BOUNDS type="Box" left="1610" top="5140" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1610" top="5140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="61" dstpinname="MskOn">
    </LINK>
    </PATCH>

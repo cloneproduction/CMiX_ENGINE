@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Mask\ShadeMask\ShadeMask.v4p" systemname="ShadeMask" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Mask\ShadeMask\ShadeMask.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="900" top="5565" width="864" height="276">
    </BOUNDS>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TransfomIn">
+   <PIN pinname="Descriptive Name" slicecount="1" values="TransformIn">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -234,7 +234,7 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="27" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="6885" top="1890" width="20850" height="10290">
+   <BOUNDS type="Window" left="6310" top="10180" width="20690" height="10210">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
