@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="15" scrolly="0">
    <BOUNDS type="Window" left="17445" top="9195" width="18630" height="9960">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -55,9 +55,9 @@
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="2" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1080" top="8385" width="795" height="240">
+   <BOUNDS type="Box" left="1050" top="8385" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1080" top="8385" width="0" height="0">
+   <BOUNDS type="Node" left="1050" top="8385" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node - Texture Out|">
    </PIN>
@@ -277,9 +277,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Box" left="1875" top="1950" width="480" height="480">
+   <BOUNDS type="Box" left="1725" top="2460" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1875" top="1950" width="0" height="0">
+   <BOUNDS type="Node" left="1725" top="2460" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -415,7 +415,7 @@
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="65" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="PostFX" filename="..\_Shared\PostFX\PostFX.v4p" nodename="..\_Shared\PostFX\PostFX.v4p" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="1080" top="7680" width="100" height="100">
+   <BOUNDS type="Node" left="1050" top="7680" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Original" visible="1" slicecount="1" values="||">
    </PIN>
@@ -429,14 +429,14 @@
    </PIN>
    <PIN pinname="KeepOriginal" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0">
+   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="1080" top="7680">
+   <BOUNDS type="Box" left="1050" top="7680">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="67" dstpinname="Input">
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="67" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="67" dstpinname="Address">
+   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="67" dstpinname="Address" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
@@ -479,5 +479,7 @@
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="66" dstpinname="BeatInfos">
    </LINK>
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="65" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

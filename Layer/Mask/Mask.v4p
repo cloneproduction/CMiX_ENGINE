@@ -7,9 +7,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="TextureMask" filename="TextureMask\TextureMask.v4p" nodename="TextureMask\TextureMask.v4p" componentmode="Hidden" id="100">
-   <BOUNDS type="Node" left="9010" top="4960" width="1850" height="270">
+   <BOUNDS type="Node" left="9015" top="4965" width="1850" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9010" top="4960" width="8889" height="8836">
+   <BOUNDS type="Box" left="9015" top="4965" width="8889" height="8836">
    </BOUNDS>
    <BOUNDS type="Window" left="2820" top="5355" width="14505" height="13290">
    </BOUNDS>
@@ -23,15 +23,15 @@
    </PIN>
    <PIN pinname="SizeXY" visible="1">
    </PIN>
-   <PIN pinname="MskOn" visible="1">
+   <PIN pinname="MskOn" visible="1" slicecount="2" values="0,0">
    </PIN>
    <PIN pinname="LayerNames" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="110">
-   <BOUNDS type="Box" left="900" top="1305" width="800" height="240">
+   <BOUNDS type="Box" left="855" top="915" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="900" top="1305" width="0" height="0">
+   <BOUNDS type="Node" left="855" top="915" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -43,9 +43,9 @@
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="100" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="124">
-   <BOUNDS type="Box" left="1060" top="8680" width="800" height="240">
+   <BOUNDS type="Box" left="880" top="8575" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1060" top="8680" width="0" height="0">
+   <BOUNDS type="Node" left="880" top="8575" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
@@ -53,9 +53,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="125">
-   <BOUNDS type="Box" left="6315" top="1305" width="800" height="240">
+   <BOUNDS type="Box" left="6315" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6315" top="1305" width="0" height="0">
+   <BOUNDS type="Node" left="6315" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="410" top="2440" width="13093" height="9337">
    </BOUNDS>
-   <BOUNDS type="Window" left="6310" top="10180" width="20690" height="10210">
+   <BOUNDS type="Window" left="5640" top="6930" width="20700" height="11145">
    </BOUNDS>
    <PIN pinname="Select - .. To [" visible="1" slicecount="1" values="6">
    </PIN>
@@ -113,9 +113,9 @@
    <LINK srcnodeid="100" srcpinname="SltMskName Bin Size" dstnodeid="101" dstpinname="MaskBinSize">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="150">
-   <BOUNDS type="Node" left="2670" top="3135" width="100" height="100">
+   <BOUNDS type="Node" left="2655" top="3045" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2670" top="3135" width="1080" height="240">
+   <BOUNDS type="Box" left="2655" top="3045" width="1080" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/Enable">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="148">
-   <BOUNDS type="Node" left="2480" top="3965" width="600" height="270">
+   <BOUNDS type="Node" left="2465" top="3875" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -135,9 +135,9 @@
    <LINK srcnodeid="150" srcpinname="Output String" dstnodeid="148" dstpinname="Input 2">
    </LINK>
    <NODE systemname="OSCBool" filename="..\..\..\Modules\OSCBool.v4p" nodename="..\..\..\Modules\OSCBool.v4p" componentmode="Hidden" id="147">
-   <BOUNDS type="Node" left="1585" top="4735" width="940" height="270">
+   <BOUNDS type="Node" left="1555" top="4720" width="940" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1585" top="4735">
+   <BOUNDS type="Box" left="1555" top="4720">
    </BOUNDS>
    <BOUNDS type="Window" left="23290" top="12150" width="5890" height="7050">
    </BOUNDS>
@@ -151,8 +151,6 @@
    <LINK srcnodeid="148" srcpinname="Output" dstnodeid="147" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="147" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="100" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="101" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
@@ -171,9 +169,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="154">
-   <BOUNDS type="Box" left="9670" top="1725" width="1330" height="240">
+   <BOUNDS type="Box" left="9675" top="1770" width="1330" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9670" top="1725" width="0" height="0">
+   <BOUNDS type="Node" left="9675" top="1770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Count">
    </PIN>
@@ -187,9 +185,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="153">
-   <BOUNDS type="Box" left="8220" top="1305" width="800" height="240">
+   <BOUNDS type="Box" left="8220" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8220" top="1305" width="0" height="0">
+   <BOUNDS type="Node" left="8220" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.08958203125">
    </PIN>
@@ -203,9 +201,9 @@
    <LINK srcnodeid="154" srcpinname="Output String" dstnodeid="157" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="159">
-   <BOUNDS type="Box" left="4125" top="1305" width="800" height="240">
+   <BOUNDS type="Box" left="4125" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4125" top="1305" width="0" height="0">
+   <BOUNDS type="Node" left="4125" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -221,7 +219,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="160">
-   <BOUNDS type="Node" left="4120" top="2295" width="600" height="270">
+   <BOUNDS type="Node" left="4120" top="2265" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -233,9 +231,9 @@
    <LINK srcnodeid="159" srcpinname="Output String" dstnodeid="160" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="161">
-   <BOUNDS type="Box" left="4295" top="1790" width="800" height="240">
+   <BOUNDS type="Box" left="4290" top="1770" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4295" top="1790" width="0" height="0">
+   <BOUNDS type="Node" left="4290" top="1770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Mask">
    </PIN>
@@ -277,9 +275,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry\Geometry.v4p" nodename="..\_Shared\Geometry\Geometry.v4p" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="5420" top="4960" width="1010" height="270">
+   <BOUNDS type="Node" left="5415" top="4965" width="1010" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5420" top="4960" width="4324" height="6040">
+   <BOUNDS type="Box" left="5415" top="4965" width="4324" height="6040">
    </BOUNDS>
    <BOUNDS type="Window" left="20870" top="12230" width="6960" height="7010">
    </BOUNDS>
@@ -288,6 +286,8 @@
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
    <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="UseDefault" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="145" dstpinname="Input" hiddenwhenlocked="1">
@@ -332,12 +332,12 @@
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="99" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn">
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="99" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    <NODE id="143" systemname="Transform" filename="..\_Shared\Transforms\Transform.v4p" nodename="..\_Shared\Transforms\Transform.v4p" componentmode="Hidden" debug="0">
-   <BOUNDS type="Node" left="7200" top="4960" width="1420" height="270">
+   <BOUNDS type="Node" left="7200" top="4965" width="1420" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7200" top="4960" width="7836" height="5712">
+   <BOUNDS type="Box" left="7200" top="4965" width="7836" height="5712">
    </BOUNDS>
    <BOUNDS type="Window" left="16755" top="5715" width="10275" height="5970">
    </BOUNDS>
@@ -365,7 +365,7 @@
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="143" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="PostFX" filename="..\_Shared\PostFX\PostFX.v4p" nodename="..\_Shared\PostFX\PostFX.v4p" componentmode="Hidden" id="169">
-   <BOUNDS type="Node" left="1050" top="7740" width="100" height="100">
+   <BOUNDS type="Node" left="870" top="7635" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Original" visible="1" slicecount="1" values="||">
    </PIN>
@@ -381,18 +381,20 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="0">
    </PIN>
+   <BOUNDS type="Window" left="16470" top="12945" width="8955" height="4950">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="169" srcpinname="TexArray Out" dstnodeid="124" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="169" dstpinname="Input">
+   <LINK srcnodeid="110" srcpinname="Output Node" dstnodeid="169" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Input Node - Texture Out" dstnodeid="169" dstpinname="TexArray">
    </LINK>
-   <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="169" dstpinname="Original">
+   <LINK srcnodeid="125" srcpinname="Output Node" dstnodeid="169" dstpinname="Original" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="169" dstpinname="Address">
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="169" dstpinname="Address" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="169" dstpinname="Enabled">
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="169" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="101" srcpinname="KeepOriginal" dstnodeid="169" dstpinname="KeepOriginal">
    </LINK>
@@ -427,5 +429,9 @@
    <LINK srcnodeid="158" srcpinname="XYZ" dstnodeid="143" dstpinname="MaskCount">
    </LINK>
    <LINK srcnodeid="158" srcpinname="XYZ" dstnodeid="143" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="145" dstpinname="UseDefault" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="100" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

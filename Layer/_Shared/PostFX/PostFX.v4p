@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\PostFX\PostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="16470" top="12945" width="9390" height="5535">
+   <BOUNDS type="Window" left="16470" top="12945" width="8955" height="4950">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <BOUNDS type="Box" left="1450" top="3680" width="1440" height="240">
+   <BOUNDS type="Box" left="985" top="3380" width="1440" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1450" top="3680" width="750" height="240">
+   <BOUNDS type="Node" left="985" top="3380" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|TexArray Out|">
    </PIN>
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <BOUNDS type="Box" left="3795" top="975" width="750" height="240">
+   <BOUNDS type="Box" left="3210" top="675" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3795" top="975" width="750" height="240">
+   <BOUNDS type="Node" left="3210" top="675" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="TexArray">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="19">
-   <BOUNDS type="Box" left="1455" top="975" width="795" height="240">
+   <BOUNDS type="Box" left="990" top="675" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1455" top="975" width="0" height="0">
+   <BOUNDS type="Node" left="990" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -41,9 +41,9 @@
    <NODE id="21" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="4800" top="975" width="100" height="100">
+   <BOUNDS type="Node" left="4335" top="675" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4800" top="975" width="650" height="240">
+   <BOUNDS type="Box" left="4335" top="675" width="650" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/ChannelFeedBack">
    </PIN>
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Blur" filename="Blur\Blur.v4p" nodename="Blur\Blur.v4p" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="1450" top="2860" width="5090" height="270">
+   <BOUNDS type="Node" left="985" top="2560" width="5090" height="270">
    </BOUNDS>
    <PIN pinname="tex0" visible="1" slicecount="1" values="||">
    </PIN>
@@ -67,7 +67,7 @@
    </PIN>
    <BOUNDS type="Window" left="15560" top="8190" width="20630" height="12710">
    </BOUNDS>
-   <BOUNDS type="Box" left="1450" top="2860">
+   <BOUNDS type="Box" left="985" top="2560">
    </BOUNDS>
    <PIN pinname="AdressTransform" visible="1">
    </PIN>
@@ -97,9 +97,9 @@
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="3120" top="1980" width="1180" height="270">
+   <BOUNDS type="Node" left="2655" top="1680" width="3795" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="1980">
+   <BOUNDS type="Box" left="2655" top="1680">
    </BOUNDS>
    <PIN pinname="ArraySize" visible="1" slicecount="1" values="0">
    </PIN>
@@ -125,9 +125,9 @@
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="58" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Node" left="6465" top="975" width="100" height="100">
+   <BOUNDS type="Node" left="7335" top="675" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6465" top="975" width="480" height="480">
+   <BOUNDS type="Box" left="7335" top="675" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -153,9 +153,9 @@
    <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="65">
-   <BOUNDS type="Box" left="2745" top="975" width="800" height="240">
+   <BOUNDS type="Box" left="2130" top="675" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2745" top="975" width="0" height="0">
+   <BOUNDS type="Node" left="2130" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -165,9 +165,9 @@
    <LINK srcnodeid="65" srcpinname="Output Node" dstnodeid="29" dstpinname="Original">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
-   <BOUNDS type="Box" left="7740" top="975" width="480" height="480">
+   <BOUNDS type="Box" left="5655" top="675" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7740" top="975" width="0" height="0">
+   <BOUNDS type="Node" left="5655" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
