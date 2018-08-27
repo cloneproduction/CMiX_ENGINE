@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4695" top="6540" width="25710" height="12540">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="150" scrolly="0">
+   <BOUNDS type="Window" left="2175" top="5625" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -538,16 +538,6 @@
    </LINK>
    <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
    </LINK>
-   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="550">
-   <BOUNDS type="Node" left="15520" top="9035" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="507" srcpinname="Y" dstnodeid="550" dstpinname="Enabled" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState Advanced)" componentmode="Hidden" id="546">
    <BOUNDS type="Node" left="780" top="2340" width="100" height="100">
    </BOUNDS>
@@ -561,6 +551,10 @@
    </PIN>
    <BOUNDS type="Box" left="780" top="2340">
    </BOUNDS>
+   <PIN pinname="Source Blend" slicecount="1" values="SourceColor">
+   </PIN>
+   <PIN pinname="Write Mask" slicecount="1" values="Alpha">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="561" systemname="IOBox (Color)">
    <BOUNDS type="Box" left="7210" top="6840" width="2250" height="490">
@@ -592,8 +586,6 @@
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="546" srcpinname="Render State" dstnodeid="516" dstpinname="Render State">
-   </LINK>
    <LINK srcnodeid="516" srcpinname="Render State" dstnodeid="142" dstpinname="Render State">
    </LINK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="599">
@@ -809,5 +801,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="613" dstpinname="Technique">
+   </LINK>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="615">
+   <BOUNDS type="Node" left="640" top="2980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="615" srcpinname="Render State" dstnodeid="516" dstpinname="Render State">
    </LINK>
    </PATCH>

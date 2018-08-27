@@ -30,7 +30,7 @@
    <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="22910" top="9240" width="9710" height="10910">
+   <BOUNDS type="Window" left="6990" top="3850" width="12990" height="10900">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -95,7 +95,7 @@
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="473">
    <BOUNDS type="Node" left="4170" top="7790" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   <PIN pinname="X" visible="1">
    </PIN>
    <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
@@ -182,14 +182,6 @@
    </LINK>
    <LINK srcnodeid="462" srcpinname="Count" dstnodeid="463" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="HapAudioClock (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapAudioClock (Demolition Media)" componentmode="Hidden" id="458">
-   <BOUNDS type="Node" left="1740" top="7090" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="471" srcpinname="Y Output Value" dstnodeid="458" dstpinname="Play">
-   </LINK>
-   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="458" dstpinname="Loop">
-   </LINK>
    <NODE systemname="HapTexture (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapTexture (Demolition Media)" componentmode="Hidden" id="457">
    <BOUNDS type="Node" left="1740" top="7790" width="100" height="100">
    </BOUNDS>
@@ -199,8 +191,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="457" srcpinname="Texture" dstnodeid="466" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="458" srcpinname="Hap Media" dstnodeid="457" dstpinname="Hap Media">
    </LINK>
    <LINK srcnodeid="466" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
    </LINK>
@@ -267,7 +257,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="497">
-   <BOUNDS type="Node" left="6840" top="3300" width="100" height="100">
+   <BOUNDS type="Node" left="6825" top="3270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -279,30 +269,6 @@
    <LINK srcnodeid="497" srcpinname="OnChange" dstnodeid="496" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="488" srcpinname="OnChange" dstnodeid="489" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="HapReader (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="500">
-   <BOUNDS type="Node" left="3490" top="6180" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Preload To Memory" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Close" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Open" visible="1" slicecount="1" values="0">
-   </PIN>
-   <BOUNDS type="Box" left="3490" top="6180">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="500" srcpinname="Video Stream Width" dstnodeid="473" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="500" srcpinname="Video Stream Height" dstnodeid="473" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="500" dstpinname="Path">
-   </LINK>
-   <LINK srcnodeid="500" srcpinname="Hap Media" dstnodeid="458" dstpinname="Hap Media">
-   </LINK>
-   <LINK srcnodeid="496" srcpinname="Output" dstnodeid="489" dstpinname="Input 3">
-   </LINK>
-   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="500" dstpinname="Open">
    </LINK>
    <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="496" dstpinname="Select">
    </LINK>
@@ -319,5 +285,77 @@
    <LINK srcnodeid="462" srcpinname="Count" dstnodeid="502" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="502" srcpinname="Output" dstnodeid="466" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="509">
+   <BOUNDS type="Node" left="7620" top="4680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7620" top="4680" width="480" height="465">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="2" values="0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="510">
+   <BOUNDS type="Node" left="7320" top="4995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7320" top="4995" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="511">
+   <BOUNDS type="Node" left="7440" top="3990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="496" srcpinname="Output" dstnodeid="511" dstpinname="Input">
+   </LINK>
+   <NODE systemname="HapAudioClock (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapAudioClock (Demolition Media)" componentmode="Hidden" id="512">
+   <BOUNDS type="Node" left="1740" top="7090" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="471" srcpinname="Y Output Value" dstnodeid="512" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="512" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="512" srcpinname="Hap Media" dstnodeid="457" dstpinname="Hap Media">
+   </LINK>
+   <NODE systemname="HapReader (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="513">
+   <BOUNDS type="Node" left="3490" top="6180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3490" top="6180">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="513" srcpinname="Video Stream Width" dstnodeid="473" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="513" srcpinname="Video Stream Height" dstnodeid="473" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="513" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="513" dstpinname="Open">
+   </LINK>
+   <LINK srcnodeid="513" srcpinname="Hap Media" dstnodeid="512" dstpinname="Hap Media">
+   </LINK>
+   <LINK srcnodeid="510" srcpinname="Y Output Value" dstnodeid="489" dstpinname="Input 3">
    </LINK>
    </PATCH>

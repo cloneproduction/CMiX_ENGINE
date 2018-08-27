@@ -384,4 +384,18 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="55" dstpinname="XY">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="63">
+   <BOUNDS type="Box" left="4060" top="4420" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4060" top="4420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Output" dstnodeid="63" dstpinname="Input String">
+   </LINK>
    </PATCH>

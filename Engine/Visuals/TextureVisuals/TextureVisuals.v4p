@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="9630" top="11360" width="9410" height="6650">
+   <BOUNDS type="Window" left="11760" top="7935" width="11640" height="7350">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3730" top="3360" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="22910" top="9240" width="9710" height="10910">
+   <BOUNDS type="Window" left="16590" top="3960" width="12990" height="10905">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -154,34 +154,12 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE id="354" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5650" top="2640" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5650" top="2640">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Width" visible="1">
-   </PIN>
-   <PIN pinname="Height" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="349" srcpinname="Output Enum" dstnodeid="354" dstpinname="Device">
-   </LINK>
-   <LINK srcnodeid="348" srcpinname="Output Enum" dstnodeid="354" dstpinname="Video Format">
-   </LINK>
-   <LINK srcnodeid="347" srcpinname="Output Enum" dstnodeid="354" dstpinname="Resolution">
-   </LINK>
-   <LINK srcnodeid="346" srcpinname="Output Enum" dstnodeid="354" dstpinname="Framerate">
-   </LINK>
-   <LINK srcnodeid="345" srcpinname="Y Output Value" dstnodeid="354" dstpinname="Enable">
-   </LINK>
-   <NODE systemname="TexArray" filename="TexArray\TexArray.v4p" nodename="TexArray\TexArray.v4p" componentmode="Hidden" id="368" stayontop="0" debug="0">
+   <NODE systemname="TexArray" filename="TexArray\TexArray.v4p" nodename="TexArray\TexArray.v4p" componentmode="Hidden" id="368" stayontop="1" debug="0">
    <BOUNDS type="Node" left="830" top="4070" width="5850" height="280">
    </BOUNDS>
    <BOUNDS type="Box" left="830" top="4070" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="6380" top="8360" width="13590" height="11190">
+   <BOUNDS type="Window" left="11835" top="2985" width="16095" height="11190">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="TexArray\">
    </PIN>
@@ -195,12 +173,6 @@
    <LINK srcnodeid="275" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Output" dstnodeid="35" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="354" srcpinname="Texture Out" dstnodeid="368" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="354" srcpinname="Width" dstnodeid="368" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="354" srcpinname="Height" dstnodeid="368" dstpinname="Y">
    </LINK>
    <NODE systemname="Pictures" filename="Pictures\Pictures.v4p" nodename="Pictures\Pictures.v4p" componentmode="Hidden" id="369">
    <BOUNDS type="Node" left="1790" top="3360" width="1040" height="270">
@@ -228,10 +200,6 @@
    <PIN pinname="XY" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="354" srcpinname="Width" dstnodeid="375" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="354" srcpinname="Height" dstnodeid="375" dstpinname="Y">
-   </LINK>
    <LINK srcnodeid="375" srcpinname="XY" dstnodeid="368" dstpinname="CaptureRes">
    </LINK>
    <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="376" debug="0">
@@ -297,5 +265,33 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="378" srcpinname="Y Output Value" dstnodeid="379" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="392" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5650" top="2640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5650" top="2640">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="349" srcpinname="Output Enum" dstnodeid="392" dstpinname="Device">
+   </LINK>
+   <LINK srcnodeid="348" srcpinname="Output Enum" dstnodeid="392" dstpinname="Video Format">
+   </LINK>
+   <LINK srcnodeid="347" srcpinname="Output Enum" dstnodeid="392" dstpinname="Resolution">
+   </LINK>
+   <LINK srcnodeid="346" srcpinname="Output Enum" dstnodeid="392" dstpinname="Framerate">
+   </LINK>
+   <LINK srcnodeid="345" srcpinname="Y Output Value" dstnodeid="392" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Texture Out" dstnodeid="368" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Width" dstnodeid="368" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Height" dstnodeid="368" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Width" dstnodeid="375" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="392" srcpinname="Height" dstnodeid="375" dstpinname="Y">
    </LINK>
    </PATCH>

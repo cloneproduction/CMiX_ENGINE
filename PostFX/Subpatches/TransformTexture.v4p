@@ -83,7 +83,7 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="2460" top="5124" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="3" values="0.0448809462040663,0.05,0.05">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -163,7 +163,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="-0.001">
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.002">
    </PIN>
    <PIN pinname="Destination Maximum" slicecount="1" values="0.001">
    </PIN>
@@ -179,8 +179,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="21" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="13" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 2">
    </LINK>
@@ -303,5 +301,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="37" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="13" dstpinname="Input 1">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="31250" top="10900" width="4630" height="5910">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
+   <BOUNDS type="Window" left="21810" top="700" width="4620" height="5910">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1202" top="2271" width="8980" height="7828">
    </BOUNDS>
-   <BOUNDS type="Window" left="11160" top="9770" width="15640" height="10660">
+   <BOUNDS type="Window" left="7200" top="1845" width="15630" height="10650">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -101,7 +101,7 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="700" top="13990" width="20250" height="10910">
+   <BOUNDS type="Window" left="6705" top="2955" width="20250" height="10905">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -121,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="22860" top="12910" width="10840" height="9060">
+   <BOUNDS type="Window" left="14925" top="4755" width="10830" height="9060">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1884" top="1633" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="16785" top="11880" width="5865" height="4935">
+   <BOUNDS type="Window" left="9300" top="8655" width="5850" height="4920">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>
@@ -202,8 +202,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
-   </LINK>
    <LINK srcnodeid="48" srcpinname="BeatLayer" dstnodeid="51" dstpinname="MasterPeriod">
    </LINK>
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="51" dstpinname="CameraMasterPeriod">
@@ -211,5 +209,7 @@
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="38" dstpinname="Beat">
    <LINKPOINT x="3970" y="2450">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
    </LINK>
    </PATCH>

@@ -369,7 +369,7 @@
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
-   <PIN pinname="Rotate" slicecount="1" visible="1" values="0">
+   <PIN pinname="Rotate" slicecount="1" visible="1" values="0.25">
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
