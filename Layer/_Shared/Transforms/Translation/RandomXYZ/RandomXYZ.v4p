@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="20400" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="0" debug="0">
    <BOUNDS type="Node" left="8030" top="8100" width="100" height="100">
    </BOUNDS>
@@ -96,7 +96,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10810" top="2940" width="33160" height="17610">
+   <BOUNDS type="Window" left="16590" top="5040" width="33160" height="17730">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -1191,17 +1191,19 @@
    <LINK srcnodeid="128" srcpinname="Output" dstnodeid="215" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="213">
-   <BOUNDS type="Node" left="31120" top="8110" width="100" height="100">
+   <BOUNDS type="Node" left="31120" top="7480" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Select" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="31120" top="8110">
+   <BOUNDS type="Box" left="31120" top="7480">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="215" srcpinname="Output" dstnodeid="213" dstpinname="Input">
+   </LINK>
    <NODE id="212" systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Position Out" visible="1" pintype="Output">
    </PIN>
@@ -1323,17 +1325,19 @@
    <LINK srcnodeid="128" srcpinname="Output" dstnodeid="227" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="226">
-   <BOUNDS type="Node" left="33850" top="8150" width="100" height="100">
+   <BOUNDS type="Node" left="33870" top="7520" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Select" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="33850" top="8150">
+   <BOUNDS type="Box" left="33870" top="7520">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="227" srcpinname="Output" dstnodeid="226" dstpinname="Input">
+   </LINK>
    <NODE id="225" systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Position Out" visible="1" pintype="Output">
    </PIN>
@@ -1459,17 +1463,19 @@
    <LINK srcnodeid="128" srcpinname="Output" dstnodeid="237" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="236">
-   <BOUNDS type="Node" left="36580" top="8110" width="100" height="100">
+   <BOUNDS type="Node" left="36580" top="7550" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Select" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="36580" top="8110">
+   <BOUNDS type="Box" left="36580" top="7550">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="237" srcpinname="Output" dstnodeid="236" dstpinname="Input">
+   </LINK>
    <NODE id="235" systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Position Out" visible="1" pintype="Output">
    </PIN>
@@ -1910,46 +1916,4 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="273">
-   <BOUNDS type="Node" left="31120" top="7460" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="215" srcpinname="Output" dstnodeid="273" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="274">
-   <BOUNDS type="Node" left="33860" top="7560" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="227" srcpinname="Output" dstnodeid="274" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="275">
-   <BOUNDS type="Node" left="36570" top="7540" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="237" srcpinname="Output" dstnodeid="275" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="275" srcpinname="Output" dstnodeid="236" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="274" srcpinname="Output" dstnodeid="226" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="213" dstpinname="Input">
-   </LINK>
    </PATCH>

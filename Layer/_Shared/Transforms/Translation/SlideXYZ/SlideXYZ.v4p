@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\SlideXYZ\SlideXYZ.v4p" systemname="SlideXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\SlideXYZ.v4p" scrollx="0" scrolly="1040">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\SlideXYZ\SlideXYZ.v4p" systemname="SlideXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\SlideXYZ.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2610" top="8340" width="100" height="100">
    </BOUNDS>
@@ -264,7 +264,7 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-270" top="2610" width="23280" height="17660">
+   <BOUNDS type="Window" left="14600" top="2420" width="23280" height="17660">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
