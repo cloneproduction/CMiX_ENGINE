@@ -1,0 +1,417 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\TextureVisuals\Videos\Videos.v4p" systemname="Videos" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\Videos\Videos.v4p" scrollx="0" scrolly="0">
+   <NODE id="12" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="1070" top="1040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1070" top="1040" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1480" top="9270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1480" top="9270" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
+   </PIN>
+   <BOUNDS type="Box" left="4170" top="9270" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4170" top="9270" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="6990" top="3850" width="12990" height="10900">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="479">
+   <BOUNDS type="Node" left="2202" top="2534" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="png">
+   </PIN>
+   <PIN pinname="Filter" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="Contains">
+   </PIN>
+   <PIN pinname="Found At Position" visible="1">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="478" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2390" top="1890" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2390" top="1890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="mov">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="477">
+   <BOUNDS type="Node" left="1070" top="3300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="4" values="|D:\Google Drive\RESSOURCES\VJ CONTENT\Clone - Texture\_Selection\BebasBold-a - Copy.png|,|D:\Google Drive\RESSOURCES\VJ CONTENT\Clone - Texture\_Selection\BebasBold-t - Copy.png|,|D:\Google Drive\RESSOURCES\VJ CONTENT\Clone - Texture\_Selection\Border_Tech_Line (1).png|,|D:\Google Drive\RESSOURCES\VJ CONTENT\Clone - Vids\render4.sco|">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="476">
+   <BOUNDS type="Node" left="1490" top="1890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="file.foo">
+   </PIN>
+   <PIN pinname="Extension" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="479" srcpinname="Input Index" dstnodeid="477" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="476" srcpinname="Extension" dstnodeid="479" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="478" srcpinname="Output String" dstnodeid="479" dstpinname="Filter">
+   </LINK>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="473">
+   <BOUNDS type="Node" left="4170" top="7790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="471">
+   <BOUNDS type="Box" left="1890" top="6180" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1890" top="6180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="470">
+   <BOUNDS type="Box" left="2540" top="6180" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2540" top="6180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Switch (DX11.Texture 2d)" componentmode="Hidden" id="466">
+   <BOUNDS type="Node" left="1480" top="8640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="1480" top="8640">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="NIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\NIL (Node).v4p" nodename="NIL (Node)" componentmode="Hidden" id="465">
+   <BOUNDS type="Node" left="2870" top="7790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2870" top="7790">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="465" srcpinname="Output" dstnodeid="466" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="463">
+   <BOUNDS type="Node" left="4130" top="4360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="462">
+   <BOUNDS type="Node" left="1070" top="4140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="462" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="462" srcpinname="Count" dstnodeid="463" dstpinname="Input 1">
+   </LINK>
+<<<<<<< HEAD:Engine/Visuals/TextureVisuals/Videos/Videos.v4p
+   <NODE systemname="HapTexture (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapTexture (Demolition Media)" componentmode="Hidden" id="457">
+   <BOUNDS type="Node" left="1740" top="7790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1740" top="7790">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="457" srcpinname="Texture" dstnodeid="466" dstpinname="Input 1">
+   </LINK>
+=======
+>>>>>>> 0dbf10cd2d97bcea64779c39329b14f11a3597ab:Layer/Content/TextureVisuals/Videos/Videos.v4p
+   <LINK srcnodeid="466" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="488">
+   <BOUNDS type="Node" left="5500" top="4360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="488" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="489">
+   <BOUNDS type="Node" left="4130" top="5510" width="2770" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="490">
+   <BOUNDS type="Node" left="4130" top="4870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="463" srcpinname="Output" dstnodeid="490" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="490" srcpinname="Up Edge" dstnodeid="489" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="491">
+   <BOUNDS type="Node" left="7320" top="1040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7320" top="1040" width="800" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Y Input Value|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="476" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="477" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="496">
+   <BOUNDS type="Node" left="6840" top="4360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="6840" top="4360">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="497">
+   <BOUNDS type="Node" left="6825" top="3270" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="497" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="497" srcpinname="OnChange" dstnodeid="496" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="488" srcpinname="OnChange" dstnodeid="489" dstpinname="Input 2">
+   </LINK>
+<<<<<<< HEAD:Engine/Visuals/TextureVisuals/Videos/Videos.v4p
+=======
+   <LINK srcnodeid="496" srcpinname="Output" dstnodeid="489" dstpinname="Input 3">
+   </LINK>
+>>>>>>> 0dbf10cd2d97bcea64779c39329b14f11a3597ab:Layer/Content/TextureVisuals/Videos/Videos.v4p
+   <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="496" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="473" srcpinname="XY" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="502">
+   <BOUNDS type="Node" left="1070" top="7790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="462" srcpinname="Count" dstnodeid="502" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="502" srcpinname="Output" dstnodeid="466" dstpinname="Switch">
+<<<<<<< HEAD:Engine/Visuals/TextureVisuals/Videos/Videos.v4p
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="509">
+   <BOUNDS type="Node" left="7620" top="4680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7620" top="4680" width="480" height="465">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="2" values="0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="510">
+   <BOUNDS type="Node" left="7320" top="4995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7320" top="4995" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="511">
+   <BOUNDS type="Node" left="7440" top="3990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="496" srcpinname="Output" dstnodeid="511" dstpinname="Input">
+   </LINK>
+   <NODE systemname="HapAudioClock (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapAudioClock (Demolition Media)" componentmode="Hidden" id="512">
+   <BOUNDS type="Node" left="1740" top="7090" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="471" srcpinname="Y Output Value" dstnodeid="512" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="512" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="512" srcpinname="Hap Media" dstnodeid="457" dstpinname="Hap Media">
+   </LINK>
+   <NODE systemname="HapReader (Demolition Media)" filename="..\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="513">
+   <BOUNDS type="Node" left="3490" top="6180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3490" top="6180">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="513" srcpinname="Video Stream Width" dstnodeid="473" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="513" srcpinname="Video Stream Height" dstnodeid="473" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="513" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="513" dstpinname="Open">
+   </LINK>
+   <LINK srcnodeid="513" srcpinname="Hap Media" dstnodeid="512" dstpinname="Hap Media">
+   </LINK>
+   <LINK srcnodeid="510" srcpinname="Y Output Value" dstnodeid="489" dstpinname="Input 3">
+   </LINK>
+=======
+   </LINK>
+   <NODE systemname="HapAudioClock (Demolition Media)" filename="VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapAudioClock (Demolition Media)" componentmode="Hidden" id="458">
+   <BOUNDS type="Node" left="1740" top="7090" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="471" srcpinname="Y Output Value" dstnodeid="458" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="458" dstpinname="Loop">
+   </LINK>
+   <NODE systemname="HapTexture (Demolition Media)" filename="VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapTexture (Demolition Media)" componentmode="Hidden" id="457">
+   <BOUNDS type="Node" left="1740" top="7790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1740" top="7790">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="457" srcpinname="Texture" dstnodeid="466" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="458" srcpinname="Hap Media" dstnodeid="457" dstpinname="Hap Media">
+   </LINK>
+   <NODE systemname="HapReader (Demolition Media)" filename="VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="500">
+   <BOUNDS type="Node" left="3490" top="6180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Preload To Memory" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Close" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Open" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="3490" top="6180">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="500" srcpinname="Video Stream Width" dstnodeid="473" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="500" srcpinname="Video Stream Height" dstnodeid="473" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="500" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="500" dstpinname="Open">
+   </LINK>
+   <LINK srcnodeid="500" srcpinname="Hap Media" dstnodeid="458" dstpinname="Hap Media">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+>>>>>>> 0dbf10cd2d97bcea64779c39329b14f11a3597ab:Layer/Content/TextureVisuals/Videos/Videos.v4p
+   </PATCH>

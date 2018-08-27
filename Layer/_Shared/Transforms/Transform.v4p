@@ -1,0 +1,261 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" systemname="Transform" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" scrollx="0" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="16755" top="5715" width="10275" height="5970">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1980" top="4230" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1980" top="4230" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="BeatInfos">
+   </PIN>
+   <BOUNDS type="Box" left="5560" top="960" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5560" top="960" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <NODE systemname="Translation" filename="Translation\Translation.v4p" nodename="..\..\_Shared\Transforms\Translation\Translation.v4p" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="6690" top="2130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="SpreadCount" visible="1">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="TranslateName" visible="1" slicecount="1" values="R_FLA">
+   </PIN>
+   <PIN pinname="Translate Out" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="6690" top="2130">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2340" top="2355" width="12255" height="8745">
+   </BOUNDS>
+   <PIN pinname="SprTra" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateListAddress" visible="1">
+   </PIN>
+   <PIN pinname="TranslateAddress" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Scale" filename="Scale\Scale.v4p" nodename="..\..\_Shared\Transforms\Scale\Scale.v4p" componentmode="Hidden" id="79" debug="0">
+   <BOUNDS type="Node" left="5120" top="2130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Scale" visible="1" slicecount="1" values="6.21">
+   </PIN>
+   <PIN pinname="ScaleName" visible="1" slicecount="1" values="BNC">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1" slicecount="3" values="2,0,0">
+   </PIN>
+   <PIN pinname="SpreadCount" visible="1">
+   </PIN>
+   <PIN pinname="Scale Out" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5120" top="2130">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2570" top="3820" width="13110" height="8890">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ScaleListAddress" visible="1">
+   </PIN>
+   <PIN pinname="ScaleAddress" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Rotation" filename="Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3040" top="4680" width="16290" height="17280">
+   </BOUNDS>
+   <PIN pinname="RotationName" visible="1" slicecount="1" values="FLA">
+   </PIN>
+   <PIN pinname="2D/3D" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rotation" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1" slicecount="3" values="2,0,0">
+   </PIN>
+   <PIN pinname="SpreadCount" visible="1">
+   </PIN>
+   <PIN pinname="Rotate Out" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3540" top="2130">
+   </BOUNDS>
+   <PIN pinname="RotationAddress" visible="1">
+   </PIN>
+   <PIN pinname="2D3DAddress" visible="1">
+   </PIN>
+   <PIN pinname="RotationStyle" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="RotationAxis" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="104" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="780" top="960" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="780" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="104" srcpinname="Output Node" dstnodeid="79" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output Node" dstnodeid="78" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output Node" dstnodeid="80" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Transform" filename="..\..\Mask\TransformMask\Transform\Transform.v4p" nodename="Transform\Transform.v4p" componentmode="Hidden" id="135">
+   <BOUNDS type="Node" left="1980" top="3160" width="6330" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="3160" width="8020" height="4980">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10545" top="11400" width="9600" height="6495">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
+   </LINK>
+   <LINK srcnodeid="135" srcpinname="Output" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Rotate Out" dstnodeid="135" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="78" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="79" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="80" dstpinname="BeatInfos" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Scale Out" dstnodeid="135" dstpinname="Transform In 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1980" top="960" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1980" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MaskOn">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="148" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8240" top="960" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8240" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SpreadCount">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="78" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="79" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="80" dstpinname="SpreadCount" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="149" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3840" top="960" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3840" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Content">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="78" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="79" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="80" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="79" dstpinname="LayerNames">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE id="150" systemname="Transform" filename="..\_Shared\Transforms\Transform.v4p" nodename="..\_Shared\Transforms\Transform.v4p" componentmode="Hidden" debug="0">
+   <BOUNDS type="Node" left="7110" top="9405" width="1420" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7110" top="9405" width="7836" height="5712">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16755" top="5715" width="10275" height="5970">
+   </BOUNDS>
+   <PIN pinname="MskOn" visible="1">
+   </PIN>
+   <PIN pinname="MaskOn" visible="1">
+   </PIN>
+   <PIN pinname="BeatInfos" visible="1">
+   </PIN>
+   <PIN pinname="MaskCount" visible="1">
+   </PIN>
+   <PIN pinname="SpreadCount" visible="1">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   </NODE>
+   </PATCH>

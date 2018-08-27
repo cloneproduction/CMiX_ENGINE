@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Beats\Beats.v4p" systemname="Beats" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Beats\Beats.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Beats\Beats.v4p" systemname="Beats" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Beats\Beats.v4p" scrollx="0" scrolly="0">
    <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="BeatLayer">
    </PIN>
@@ -10,16 +10,16 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="17300" top="10700" width="10760" height="10300">
+   <BOUNDS type="Window" left="19200" top="9810" width="10755" height="10290">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="13">
-   <BOUNDS type="Node" left="1790" top="1220" width="100" height="100">
+   <BOUNDS type="Node" left="1785" top="1140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1790" top="1220" width="795" height="240">
+   <BOUNDS type="Box" left="1785" top="1140" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -27,11 +27,11 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="74" nodename="IOBox (String)">
-   <BOUNDS height="0" left="2770" top="1760" type="Node" width="0">
+   <BOUNDS height="0" left="2730" top="1755" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="2770" top="1760" type="Box" width="2200">
+   <BOUNDS height="240" left="2730" top="1755" type="Box" width="2205">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/MasterBeat/Period">
    </PIN>
@@ -43,11 +43,11 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="72" nodename="IOBox (String)">
-   <BOUNDS height="0" left="8270" top="1760" type="Node" width="0">
+   <BOUNDS height="0" left="8235" top="1755" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="33945" top="15495" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="8270" top="1760" type="Box" width="1755">
+   <BOUNDS height="240" left="8235" top="1755" type="Box" width="1755">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/MasterBeat/Resync">
    </PIN>
@@ -223,7 +223,7 @@
    <NODE systemname="LT (Value)" nodename="LT (Value)" componentmode="Hidden" id="265">
    <BOUNDS type="Node" left="7020" top="3960" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -237,9 +237,9 @@
    <LINK srcnodeid="265" srcpinname="Output" dstnodeid="59" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="268">
-   <BOUNDS type="Node" left="5580" top="1760" width="100" height="100">
+   <BOUNDS type="Node" left="5535" top="1755" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5580" top="1760" width="2160" height="240">
+   <BOUNDS type="Box" left="5535" top="1755" width="2160" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="BeatModifier/Multiplier">
    </PIN>
@@ -247,7 +247,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="266">
-   <BOUNDS type="Node" left="5410" top="2250" width="100" height="100">
+   <BOUNDS type="Node" left="5365" top="2250" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -301,9 +301,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="282">
-   <BOUNDS type="Box" left="5400" top="1220" width="800" height="240">
+   <BOUNDS type="Box" left="5355" top="1140" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5400" top="1220" width="0" height="0">
+   <BOUNDS type="Node" left="5355" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -402,4 +402,6 @@
    </LINK>
    <LINK srcnodeid="290" srcpinname="XYZ" dstnodeid="281" dstpinname="Y Input Value">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>
