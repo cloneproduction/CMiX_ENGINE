@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11720" top="6880" width="15590" height="8700">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4480" top="9610" width="16290" height="10240">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -171,7 +171,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8710" top="4210" width="11686" height="9009">
    </BOUNDS>
-   <BOUNDS type="Window" left="460" top="7040" width="26050" height="15180">
+   <BOUNDS type="Window" left="3190" top="2520" width="22140" height="12690">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="2" values=",">
    </PIN>

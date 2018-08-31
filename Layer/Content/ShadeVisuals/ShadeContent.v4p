@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4695" top="6540" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -623,9 +623,9 @@
    <LINK srcnodeid="507" srcpinname="Y" dstnodeid="602" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE id="576" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="1495" top="4205" width="730" height="240">
+   <BOUNDS type="Box" left="1555" top="4355" width="730" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1495" top="4205" width="0" height="0">
+   <BOUNDS type="Node" left="1555" top="4355" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="NoCullSimple">
    </PIN>
@@ -635,9 +635,9 @@
    <LINK srcnodeid="576" srcpinname="Output Enum" dstnodeid="142" dstpinname="Mode">
    </LINK>
    <NODE id="517" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="1665" top="3010" width="2030" height="240">
+   <BOUNDS type="Box" left="1695" top="3110" width="2030" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1665" top="3010" width="0" height="0">
+   <BOUNDS type="Node" left="1695" top="3110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="LessReadStencilIncrement">
    </PIN>
