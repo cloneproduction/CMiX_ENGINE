@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Layer.v4p" scrollx="10" scrolly="0" systemname="Layer" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" locked="0">
-   <BOUNDS type="Window" left="21090" top="12285" width="5865" height="4935">
+   <BOUNDS type="Window" left="20940" top="10665" width="5865" height="4935">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -151,9 +151,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1092" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2970" top="720" width="700" height="240">
+   <BOUNDS type="Box" left="2900" top="750" width="700" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2970" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="2900" top="750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0.12818212890625,0,0,2.0509140625,0,0">
    </PIN>
@@ -161,7 +161,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="CameraMasterPeriod">
+   <PIN pinname="Descriptive Name" slicecount="1" values="CamBeat">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3170" top="1610" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="10160" top="7560" width="18630" height="9960">
+   <BOUNDS type="Window" left="8265" top="7185" width="18630" height="9960">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1" slicecount="1" values="||">
    </PIN>

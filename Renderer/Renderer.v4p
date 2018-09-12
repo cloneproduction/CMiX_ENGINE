@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="20655" top="8850" width="10830" height="9060">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="360" scrolly="2325">
+   <BOUNDS type="Window" left="17970" top="9045" width="10830" height="9060">
    </BOUNDS>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="4830" top="6945" width="100" height="100">
@@ -125,9 +125,9 @@
    <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="149" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="237" systemname="IOBox (Value Advanced)" debug="0">
-   <BOUNDS type="Box" left="4840" top="6190" width="795" height="480">
+   <BOUNDS type="Box" left="4735" top="5920" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4840" top="6190" width="0" height="0">
+   <BOUNDS type="Node" left="4735" top="5920" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="960,920">
    </PIN>
@@ -370,16 +370,18 @@
    </NODE>
    <LINK srcnodeid="271" srcpinname="Output" dstnodeid="273" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="275" stayontop="0" border="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="275" stayontop="0" border="1">
    <BOUNDS type="Node" left="4070" top="4965" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4070" top="4965" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="23910" top="12740" width="14650" height="7910">
+   <BOUNDS type="Window" left="-24195" top="2475" width="13620" height="8460">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="275" dstpinname="Layers">
@@ -419,6 +421,50 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="278" srcpinname="Y Output Value" dstnodeid="277" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="279">
+   <BOUNDS type="Node" left="6465" top="3690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1.77">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="0.09">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="-0.14">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="280">
+   <BOUNDS type="Box" left="6930" top="3180" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6930" top="3180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.07">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="280" srcpinname="Y Output Value" dstnodeid="279" dstpinname="ScaleX">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="281">
+   <BOUNDS type="Box" left="7095" top="2625" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7095" top="2625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.61">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="281" srcpinname="Y Output Value" dstnodeid="279" dstpinname="ScaleY">
    </LINK>
    <LINK srcnodeid="275" srcpinname="Actual BackBuffer SizeXY" dstnodeid="237" dstpinname="Y Input Value">
    </LINK>

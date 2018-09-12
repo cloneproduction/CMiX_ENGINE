@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="15" scrolly="0">
-   <BOUNDS type="Window" left="10160" top="7560" width="18630" height="9960">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8265" top="7185" width="18630" height="9960">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -97,6 +97,8 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
+   <PIN pinname="tex" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
    </LINK>
@@ -145,15 +147,17 @@
    </PIN>
    </NODE>
    <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="Hidden" id="46" debug="0">
-   <BOUNDS type="Node" left="9030" top="4230" width="2500" height="270">
+   <BOUNDS type="Node" left="9090" top="4250" width="2500" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9030" top="4230" width="10912" height="11968">
+   <BOUNDS type="Box" left="9090" top="4250" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="17430" top="12015" width="9405" height="6645">
+   <BOUNDS type="Window" left="14130" top="6950" width="19840" height="12150">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Texture Spread" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="46" dstpinname="Input" hiddenwhenlocked="1">
@@ -301,7 +305,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5370" top="4230" width="4324" height="6040">
    </BOUNDS>
-   <BOUNDS type="Window" left="25730" top="10940" width="6450" height="8070">
+   <BOUNDS type="Window" left="19470" top="7155" width="6450" height="8070">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -312,6 +316,8 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="UseDefault" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Input" hiddenwhenlocked="1">
@@ -481,5 +487,9 @@
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="65" dstpinname="BeatInfos" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Enabled" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="0" dstpinname="UseDefault">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Texture Spread" dstnodeid="17" dstpinname="tex">
    </LINK>
    </PATCH>

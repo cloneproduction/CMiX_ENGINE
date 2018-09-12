@@ -2,6 +2,8 @@ Texture2DArray texArray;
 Texture2DArray maskArray;
 Texture2DArray ControlTexture <string uiname="Control";>;
 
+Texture2D tex;
+
 StructuredBuffer<uint> texarrayID;
 StructuredBuffer<uint> mskarrayID;
 StructuredBuffer< float4x4> sbWorld;
@@ -195,8 +197,8 @@ float4 PS(vs2psVisual In): SV_Target
 {
 	int id = In.iid + InstanceStartIndex;
 	
-	float4 c = texArray.SampleLevel(g_samLinear, float3(In.TexCd.xy, texarrayID[id]), 0);
-
+	//float4 c = texArray.SampleLevel(g_samLinear, float3(In.TexCd.xy, texarrayID[id]), 0);
+	float4 c = tex.SampleLevel(g_samLinear, In.TexCd.xy, 0);
 	
 	if(InvertMode[id] == 0)
 	{

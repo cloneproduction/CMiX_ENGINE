@@ -509,7 +509,7 @@
    </PIN>
    <PIN pinname="Select" visible="1">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0">
+   <PIN pinname="Input" slicecount="1" visible="1" values="0">
    </PIN>
    <BOUNDS type="Box" left="14740" top="9560">
    </BOUNDS>
@@ -533,10 +533,10 @@
    </PIN>
    <PIN pinname="Rotate" visible="1" slicecount="2" values="0.364497138652951,0.33934058691375">
    </PIN>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="542" srcpinname="Transform Out" dstnodeid="512" dstpinname="Data">
-   </LINK>
-   <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
    </LINK>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="550">
    <BOUNDS type="Node" left="15520" top="9035" width="100" height="100">
@@ -592,8 +592,6 @@
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="546" srcpinname="Render State" dstnodeid="516" dstpinname="Render State">
-   </LINK>
    <LINK srcnodeid="516" srcpinname="Render State" dstnodeid="142" dstpinname="Render State">
    </LINK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="599">
@@ -755,6 +753,8 @@
    </PIN>
    <PIN pinname="Technique" visible="1">
    </PIN>
+   <PIN pinname="tex" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="613" dstpinname="Render State">
    </LINK>
@@ -809,5 +809,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="613" dstpinname="Technique">
+   </LINK>
+   <LINK srcnodeid="550" srcpinname="Output" dstnodeid="514" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="615">
+   <BOUNDS type="Box" left="20180" top="880" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20180" top="880" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="tex">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="613" dstpinname="tex">
+   </LINK>
+   <LINK srcnodeid="546" srcpinname="Render State" dstnodeid="516" dstpinname="Render State">
    </LINK>
    </PATCH>
