@@ -121,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="17970" top="9045" width="10830" height="9060">
+   <BOUNDS type="Window" left="20930" top="10210" width="10830" height="9060">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="360" scrolly="2325">
-   <BOUNDS type="Window" left="17970" top="9045" width="10830" height="9060">
+   <BOUNDS type="Window" left="20930" top="10210" width="10830" height="9060">
    </BOUNDS>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="4830" top="6945" width="100" height="100">
@@ -93,7 +93,7 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="221">
-   <BOUNDS type="Node" left="2320" top="2705" width="100" height="100">
+   <BOUNDS type="Node" left="2710" top="2685" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" slicecount="3" values="2,2,2">
    </PIN>
@@ -370,12 +370,12 @@
    </NODE>
    <LINK srcnodeid="271" srcpinname="Output" dstnodeid="273" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="275" stayontop="0" border="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="275" stayontop="0" border="1">
    <BOUNDS type="Node" left="4070" top="4965" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4070" top="4965" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="-24195" top="2475" width="13620" height="8460">
+   <BOUNDS type="Window" left="22100" top="420" width="15280" height="9870">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
