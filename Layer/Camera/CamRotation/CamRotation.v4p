@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Camera\CamRotation\CamRotation.v4p" systemname="CamRotation" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamRotation\CamRotation.v4p" scrollx="40" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Camera\CamRotation\CamRotation.v4p" systemname="CamRotation" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\CamRotation\CamRotation.v4p" scrollx="40" scrolly="0">
    <BOUNDS type="Window" left="13490" top="8560" width="7620" height="7710">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -25,9 +25,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
-   <BOUNDS type="Node" left="5840" top="1400" width="100" height="100">
+   <BOUNDS type="Node" left="5825" top="1400" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5840" top="1400" width="795" height="720">
+   <BOUNDS type="Box" left="5825" top="1400" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -166,4 +166,6 @@
    </LINK>
    <LINK srcnodeid="196" srcpinname="Output" dstnodeid="201" dstpinname="Input 2">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
    </PATCH>
