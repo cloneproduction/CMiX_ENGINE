@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Render\Render.v4p" systemname="Render" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Render.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Render\Render.v4p" systemname="Render" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Render.v4p" scrollx="0" scrolly="0">
    <NODE id="1" systemname="R (Value Advanced)" nodename="R (Value Advanced)" componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll">
    <BOUNDS type="Node" left="2640" top="6270" width="100" height="100">
    </BOUNDS>
@@ -47,7 +47,7 @@
    <NODE id="8" systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden">
    <BOUNDS type="Node" left="6510" top="5535" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -115,7 +115,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="6690" top="6270" width="100" height="100">
+   <BOUNDS type="Node" left="6740" top="6340" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Projection">
    </PIN>

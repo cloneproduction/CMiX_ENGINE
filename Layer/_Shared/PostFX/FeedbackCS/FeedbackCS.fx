@@ -14,16 +14,16 @@ void CSFeedback( uint3 DTid : SV_DispatchThreadID )
 {
 	for(int i = 0; i < texcount; i++){
 		float2 uv=(float2(DTid.x%Reso.x,DTid.x/Reso.x)+0.5)/Reso;
-
-		if(Enable[i] == 0)
-		{
-			Output[DTid.x+offsetID[i]]=float4(texarray.SampleLevel(s0,float3(uv, i),0));
-		}
-		else
+		
+		if(Fade[i] > 0)
 		{
 			float4 c=Output[DTid.x+offsetID[i]];
 			float4 cc = texarray.SampleLevel(s0,float3(uv, i),0);
 			Output[DTid.x+offsetID[i]]= lerp(lerp(cc,c,Fade[i]), cc, cc.a);	
+		}
+		else
+		{
+			Output[DTid.x+offsetID[i]]=float4(texarray.SampleLevel(s0,float3(uv, i),0));
 		}
 	}
 }

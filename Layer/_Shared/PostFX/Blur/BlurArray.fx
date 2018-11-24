@@ -3,7 +3,7 @@
 Texture2DArray tex0;
 
 float2 R:TARGETSIZE;
-
+#include "ColorSpace.fxh"
 
 SamplerState s0<string uiname="Sampler State";>
 {
@@ -29,6 +29,9 @@ cbuffer cbPerDraw : register( b0 )
 	float4x4 tW : WORLD;
 	float4x4 tTex;
 	float Width;
+	float Saturation;
+	float Contrast;
+	float Brightness;
 	int InstanceStartIndex;
 	int SampAdress;
 
@@ -104,6 +107,17 @@ float4 PS_Tex(vs2ps In): SV_Target
 
 	c/=9;
 	
+	/*float3 k = RGBtoHSL(c.rgb);
+	float3 h=RGBtoHSV(c.rgb);
+    //h.x=(frac(h.x+Hue))*HueCycles;
+    h.y=h.y*Saturation;
+    c.rgb=HSLtoRGB(h);
+	float3 k0=HSVtoRGB(float3((frac(h.x)-0),h.y,h.z));
+	float3 k1=HSVtoRGB(float3((frac(h.x)-1),h.y,h.z));
+	c.rgb=lerp(k0,k1,pow(smoothstep(0,1,h.x),2));
+    c.rgb=c.rgb*sqrt(3)*pow(length(c.rgb)/sqrt(3),pow(2,Contrast))*pow(2,Brightness);*/
+
+
     return c;
 }
 

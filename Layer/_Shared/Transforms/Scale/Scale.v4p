@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Transforms\Scale\Scale.v4p" systemname="Scale" filename="C:\Users\clone\Desktop\2D_MOTION\Scale\Scale.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11640" top="9210" width="13020" height="9180">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Scale\Scale.v4p" systemname="Scale" filename="C:\Users\clone\Desktop\2D_MOTION\Scale\Scale.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2570" top="3820" width="13110" height="8890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -139,7 +139,7 @@
    </PIN>
    <BOUNDS type="Box" left="1020" top="5520">
    </BOUNDS>
-   <BOUNDS type="Window" left="10720" top="10680" width="5050" height="6080">
+   <BOUNDS type="Window" left="10720" top="10680" width="7800" height="6080">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="444" srcpinname="Output" dstnodeid="446" dstpinname="Input 1">

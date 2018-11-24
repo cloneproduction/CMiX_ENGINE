@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2925" top="8460" width="25710" height="12540">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="3090" top="2710" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -203,9 +203,9 @@
    <LINK srcnodeid="199" srcpinname="Y Output Value" dstnodeid="351" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureIDBuffer" filename="TextureIDBuffer\TextureIDBuffer.v4p" nodename="TextureIDBuffer\TextureIDBuffer.v4p" componentmode="Hidden" id="350">
-   <BOUNDS type="Node" left="9810" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="9250" top="4365" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9810" top="4995" width="7225" height="10220">
+   <BOUNDS type="Box" left="9250" top="4365" width="7225" height="10220">
    </BOUNDS>
    <BOUNDS type="Window" left="9180" top="8010" width="12220" height="10770">
    </BOUNDS>
@@ -253,9 +253,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="357" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1365" top="720" width="795" height="240">
+   <BOUNDS type="Box" left="695" top="680" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1365" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="695" top="680" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -409,9 +409,9 @@
    <LINK srcnodeid="448" srcpinname="Y Output Value" dstnodeid="447" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="498" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3390" top="735" width="795" height="240">
+   <BOUNDS type="Box" left="2980" top="685" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3390" top="735" width="0" height="0">
+   <BOUNDS type="Node" left="2980" top="685" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="18" visible="1" values="1.04328571428571,0,0,1.04328571428571,0,0,1.04328571428571,0,0,1.04328571428571,0,0,8.34628571428568,0,0,0.521642857142855,0,0">
    </PIN>
@@ -427,7 +427,7 @@
    <LINK srcnodeid="438" srcpinname="Output" dstnodeid="447" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="507">
-   <BOUNDS type="Node" left="3400" top="1285" width="100" height="100">
+   <BOUNDS type="Node" left="2990" top="1235" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -525,9 +525,11 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7075" top="6945" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.60073,0.60073,0.60073,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="562" systemname="IOBox (Color)">
@@ -548,6 +550,8 @@
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00556,0.00556,0.00556,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="516" srcpinname="Render State" dstnodeid="142" dstpinname="Render State">
@@ -603,7 +607,7 @@
    <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="609" debug="0">
    <BOUNDS type="Node" left="14220" top="4995" width="2430" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="10960" top="9650" width="21420" height="9310">
+   <BOUNDS type="Window" left="5750" top="8940" width="21420" height="9310">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -633,9 +637,9 @@
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="609" dstpinname="TransformBinSize" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="611" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2670" top="720" width="800" height="240">
+   <BOUNDS type="Box" left="2000" top="680" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2670" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="2000" top="680" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -713,6 +717,8 @@
    </PIN>
    <PIN pinname="tex" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="613" dstpinname="Render State">
    </LINK>
@@ -780,6 +786,8 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="tex">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="613" dstpinname="tex">

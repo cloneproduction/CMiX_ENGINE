@@ -1,10 +1,9 @@
-//@author: vux
-//@help: standard constant shader
-//@tags: color
-//@credits: 
 Texture2DArray Mask <string uiname="Mask";>;
 Texture2DArray Content <string uiname="Content";>;
 uint texarrayID;
+
+#include "ColorSpace.fxh"
+
 bool EnableMask;
 
 struct vsInput
@@ -44,9 +43,6 @@ cbuffer cbPerDraw : register(b0)
 cbuffer cbPerObj : register( b1 )
 {
 	float4x4 tW : WORLD;
-	//float Alpha <float uimin=0.0; float uimax=1.0;> = 1; 
-	//float4 cAmb <bool color=true;String uiname="Color";> = { 1.0f,1.0f,1.0f,1.0f };
-	//float4x4 tColor <string uiname="Color Transform";>;
 };
 
 cbuffer cbTextureData : register(b2)
@@ -68,7 +64,8 @@ float4 PS_Textured(psInputTextured input): SV_Target
 	float4 m;
 	if(EnableMask == true)
 	{
-		m = Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID));
+		m = RGBtoHSV(Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID)).rgb).z;
+		
 		c.a *= m.a;
 	}
 	else{
@@ -85,8 +82,3 @@ technique11 Constant <string noTexCdFallback="ConstantNoTexture"; >
 		SetPixelShader( CompileShader( ps_4_0, PS_Textured() ) );
 	}
 }
-
-
-
-
-

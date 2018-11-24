@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\PostFX\Blur\Blur.v4p" systemname="Blur" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\FX\Blur\Blur.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\Blur\Blur.v4p" systemname="Blur" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\FX\Blur\Blur.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Quad (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Geometry)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1600" top="6280" width="100" height="100">
    </BOUNDS>
@@ -150,7 +150,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="15560" top="8190" width="20630" height="12710">
+   <BOUNDS type="Window" left="430" top="2260" width="20630" height="12710">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -305,13 +305,13 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Intersperse" visible="1" slicecount="1" values="None">
+   <PIN pinname="Intersperse" visible="1" slicecount="1" values="UnixPath">
    </PIN>
    <PIN pinname="Input 3" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="147">
-   <BOUNDS type="Node" left="3425" top="3495" width="100" height="100">
+   <BOUNDS type="Node" left="3545" top="3285" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -325,9 +325,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="151">
-   <BOUNDS type="Node" left="2750" top="3520" width="100" height="100">
+   <BOUNDS type="Node" left="2210" top="3230" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2750" top="3520" width="560" height="240">
+   <BOUNDS type="Box" left="2210" top="3230" width="560" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -355,9 +355,9 @@
    <LINK srcnodeid="152" srcpinname="Output String" dstnodeid="153" dstpinname="Default">
    </LINK>
    <NODE id="154" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="2280" top="4240" width="100" height="100">
+   <BOUNDS type="Node" left="2400" top="4030" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2280" top="4240" width="4800" height="3600">
+   <BOUNDS type="Box" left="2400" top="4030" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
    </BOUNDS>
@@ -375,7 +375,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10270" top="2300" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/Transforms">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Transforms">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -527,6 +527,12 @@
    </PIN>
    <PIN pinname="SampAdress" visible="1">
    </PIN>
+   <PIN pinname="Saturation" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" visible="1" slicecount="1" values="2.36">
+   </PIN>
    </NODE>
    <LINK srcnodeid="162" srcpinname="Output" dstnodeid="19" dstpinname="Width">
    </LINK>
@@ -546,4 +552,50 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="164">
+   <BOUNDS type="Box" left="7360" top="6460" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7360" top="6460" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Saturation">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Saturation">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="165">
+   <BOUNDS type="Box" left="9260" top="6960" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9260" top="6960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Contrast">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="165" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Contrast">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
+   <BOUNDS type="Box" left="9720" top="7290" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9720" top="7290" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Brightness">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Brightness">
+   </LINK>
    </PATCH>

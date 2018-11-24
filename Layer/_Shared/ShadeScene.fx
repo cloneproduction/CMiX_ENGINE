@@ -1,15 +1,11 @@
-Texture2DArray texArray;
-Texture2DArray maskArray;
+
 Texture2DArray ControlTexture <string uiname="Control";>;
 
 Texture2D tex;
 
-StructuredBuffer<uint> texarrayID;
-StructuredBuffer<uint> mskarrayID;
 StructuredBuffer< float4x4> sbWorld;
 
 StructuredBuffer< float4x4> gsfxTransformTex;
-StructuredBuffer<uint> MskOn;
 
 StructuredBuffer<uint> KeepOriginal;
 StructuredBuffer<float4> Amb;
@@ -26,7 +22,45 @@ StructuredBuffer<float>ExplodeAmount;
 int InstanceStartIndex = 0;
 
 #include "ColorSpace.fxh"
-//#include "PhongDirectional.fxh"
+
+float4x4 brightnessMatrix (float brightness)
+{
+	return float4x4(1, 0, 0, 0,
+					0, 1, 0, 0,
+					0, 0, 1, 0,
+					brightness, brightness, brightness, 1);
+}
+
+float4x4 contrastMatrix (float contrast)
+{
+	float t = ( 1.0 - contrast) / 2.0;
+	return float4x4 ( contrast, 0, 0, 0,
+                 	0, contrast, 0, 0,
+                 	0, 0, contrast, 0,
+                 	t, t, t, 1 );
+}
+
+
+float4x4 saturationMatrix( float saturation )
+{
+    float3 luminance = float3( 0.3086, 0.6094, 0.0820 );
+    
+    float oneMinusSat = 1.0 - saturation;
+    
+    float3 red = float3( luminance.x * oneMinusSat, luminance.x * oneMinusSat, luminance.x * oneMinusSat );
+    red+= float3( saturation, 0, 0 );
+    
+    float3 green = float3( luminance.y * oneMinusSat, luminance.y * oneMinusSat, luminance.y * oneMinusSat );
+    green += float3( 0, saturation, 0 );
+    
+    float3 blue = float3( luminance.z * oneMinusSat, luminance.z * oneMinusSat, luminance.z * oneMinusSat );
+    blue += float3( 0, 0, saturation );
+    
+    return float4x4( red,     0,
+                 green,   0,
+                 blue,    0,
+                 0, 0, 0, 1 );
+}
 
 float3 safenormalize(float3 x)
 {
@@ -74,14 +108,6 @@ struct VS_IN
 	float4 TexCd : TEXCOORD0;
 };
 
-struct vs2ps
-{
-    float4 Pos: SV_POSITION;
-    float4 TexCd: TEXCOORD0;
-	float4 MskCd: TEXCOORD1;
-	uint iid: TEXCOORD2;
-};
-
 struct vs2psVisual
 {
     float4 Pos: SV_POSITION;
@@ -109,28 +135,6 @@ vs2psVisual VS(VS_IN input)
     return Out;
 }
 
-vs2ps VSMask(VS_IN input)
-{
-    vs2ps Out = (vs2ps)0;
-	float4x4 wo = sbWorld[input.ii + InstanceStartIndex];
-	wo=mul(wo,tW);
-	float4x4 wv = mul(wo, tV);
-	float4 PosV = mul(input.PosO, wv);
-	Out.Pos = mul(PosV, tP);
-	
-	if(MskOn[input.ii + InstanceStartIndex] == 1)
-	{
-	    Out.TexCd = mul(Out.Pos, tTex);
-	}
-	else
-	{
-	    Out.TexCd = input.TexCd;
-	}
-	
-	Out.MskCd = input.TexCd;
-	Out.iid = input.ii;
-	return Out;
-}
 
 [maxvertexcount(3)]
 void GS(triangle vs2psVisual input[3], inout TriangleStream<vs2psVisual> gsout)
@@ -196,9 +200,9 @@ void GS(triangle vs2psVisual input[3], inout TriangleStream<vs2psVisual> gsout)
 float4 PS(vs2psVisual In): SV_Target
 {
 	int id = In.iid + InstanceStartIndex;
-	
-	//float4 c = texArray.SampleLevel(g_samLinear, float3(In.TexCd.xy, texarrayID[id]), 0);
+
 	float4 c = tex.SampleLevel(g_samLinear, In.TexCd.xy, 0);
+
 	
 	if(InvertMode[id] == 0)
 	{
@@ -212,62 +216,16 @@ float4 PS(vs2psVisual In): SV_Target
 		hsv.z = lerp(hsv.z, clamp(0, 1, 1-hsv.z),Invert[id]);
 		c.rgb = HSVtoRGB(hsv);
 	}
-		float3 k = RGBtoHSL(c.rgb);
 	
-	float3 h=RGBtoHSV(c.rgb);
-    //h.x=(frac(h.x+Hue))*HueCycles;
-    h.y=h.y*Saturation[id];
-    c.rgb=HSLtoRGB(h);
-	float3 k0=HSVtoRGB(float3((frac(h.x)-0),h.y,h.z));
-	float3 k1=HSVtoRGB(float3((frac(h.x)-1),h.y,h.z));
-	c.rgb=lerp(k0,k1,pow(smoothstep(0,1,h.x),2));
-    c.rgb=safenormalize(c.rgb)*sqrt(3)*pow(length(c.rgb)/sqrt(3),pow(2,Contrast[id]))*pow(2,Brightness[id]);
-	c.rgb *= In.Color.rgb;
+	c = mul(c, mul(saturationMatrix(Saturation[id]), mul(contrastMatrix(Contrast[id]), brightnessMatrix(Brightness[id]))));
+
 	
-	c.rgb *= In.Diffuse.xyz + In.Specular.xyz;
-	
-	c.a = lerp(c.a, k.z, Keying[id]*10);
+	float3 k = RGBtoHSL(c.rgb);
+
+	c.rgb = saturate(c.rgb * In.Color.rgb);
+	c.rgb = saturate(c.rgb* (In.Diffuse.xyz + In.Specular.xyz));
+	c.a = lerp(c.a, k.z , Keying[id]);
 	return c;
-}
-
-
-float4 PSMask(vs2ps In): SV_Target
-{
-	int id = In.iid + InstanceStartIndex;
-	
-	float4 c = texArray.Sample(g_samLinear,float3(In.TexCd.xy/In.TexCd.w, texarrayID[id]));
-
-	///INVERT///
-	float4 originalcol = c;
-	float4 modifcol = c;
-	
-	if(MskOn[id] == 1)
-	{
-		float4 mask = maskArray.Sample(g_samLinear,float3(In.MskCd.xy, mskarrayID[id]));
-		modifcol.a *=  mask.a;
-		
-		float3 h=RGBtoHSV(modifcol.rgb);
-	    //h.x=(frac(h.x+Hue))*HueCycles;
-
-	    h.y=h.y*Saturation[id];
-	    //modifcol.rgb=HSLtoRGB(h);
-		float3 k0=HSVtoRGB(float3((frac(h.x)-0),h.y,h.z));
-		float3 k1=HSVtoRGB(float3((frac(h.x)-1),h.y,h.z));
-		modifcol.rgb=lerp(k0,k1,pow(smoothstep(0,1,h.x),2));
-	    modifcol.rgb=safenormalize(modifcol.rgb)*sqrt(3)*pow(length(modifcol.rgb)/sqrt(3),pow(2,Contrast[id]))*pow(2,Brightness[id]);
-
-		if(InvertMode[id] == 0) 		// INVERT RGB
-		{
-			modifcol.rgb = lerp(modifcol.rgb,1-modifcol.rgb,Invert[id]);
-		}
-		else if (InvertMode[id] == 1)   // INVERT LUMA
-		{
-			float3 hsv = RGBtoHSV(modifcol.rgb);
-			hsv.z = lerp(hsv.z, clamp(0, 1, 1-hsv.z),Invert[id]);
-			modifcol.rgb = HSVtoRGB(hsv);
-		}
-	}
-	return modifcol;
 }
 
 technique10 Visual
@@ -277,16 +235,6 @@ technique10 Visual
 		SetVertexShader( CompileShader( vs_5_0, VS() ) );
 		SetGeometryShader ( CompileShader( gs_5_0, GS() ) );
 		SetPixelShader( CompileShader( ps_5_0, PS() ) );
-	}
-}
-
-technique10 Mask
-{
-	pass P0
-	{
-		SetVertexShader( CompileShader( vs_4_0, VSMask() ) );
-		//SetGeometryShader ( CompileShader( gs_5_0, GS() ) );
-		SetPixelShader( CompileShader( ps_4_0, PSMask() ) );
 	}
 }
 

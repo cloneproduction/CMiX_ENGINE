@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="7980" top="14265" width="4620" height="5910">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
+   <BOUNDS type="Window" left="12020" top="11650" width="4620" height="5910">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Beats" filename="Beats\Beats.v4p" nodename="Beats\Beats.v4p" componentmode="Hidden" id="48" debug="0">
-   <BOUNDS type="Node" left="2610" top="953" width="710" height="270">
+   <BOUNDS type="Node" left="2420" top="953" width="710" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2334" top="147" width="9028" height="7636">
+   <BOUNDS type="Box" left="2144" top="147" width="9028" height="7636">
    </BOUNDS>
    <BOUNDS type="Window" left="17300" top="10700" width="10760" height="10300">
    </BOUNDS>
@@ -51,9 +51,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Mixer" filename="Mixer\Mixer.v4p" nodename="Mixer\Mixer.v4p" componentmode="Hidden" id="37" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="1202" top="2271" width="740" height="280">
+   <BOUNDS type="Node" left="1012" top="2271" width="740" height="280">
    </BOUNDS>
-   <BOUNDS type="Box" left="1202" top="2271" width="8980" height="7828">
+   <BOUNDS type="Box" left="1012" top="2271" width="8980" height="7828">
    </BOUNDS>
    <BOUNDS type="Window" left="14715" top="9765" width="15630" height="10650">
    </BOUNDS>
@@ -101,7 +101,7 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="5970" top="8025" width="20250" height="10905">
+   <BOUNDS type="Window" left="7170" top="5370" width="20250" height="10905">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -121,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="20930" top="10210" width="10830" height="9060">
+   <BOUNDS type="Window" left="9820" top="11830" width="10830" height="9060">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
@@ -135,9 +135,9 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="21590" top="5300" width="16630" height="14090">
+   <BOUNDS type="Window" left="13070" top="4320" width="16630" height="14090">
    </BOUNDS>
-   <BOUNDS type="Node" left="580" top="460" width="1730" height="270">
+   <BOUNDS type="Node" left="580" top="460" width="1550" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="580" top="460">
    </BOUNDS>
@@ -157,15 +157,15 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="38" dstpinname="Beat">
-   <LINKPOINT x="3970" y="2450">
+   <LINKPOINT x="3875" y="2450">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Layer" filename="Layer\Layer.v4p" nodename="Layer\Layer.v4p" componentmode="Hidden" id="51" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="1884" top="1633" width="1150" height="270">
+   <BOUNDS type="Node" left="1694" top="1633" width="1150" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1884" top="1633" width="8332" height="8260">
+   <BOUNDS type="Box" left="1694" top="1633" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="1215" top="5490" width="31935" height="15045">
+   <BOUNDS type="Window" left="3030" top="9380" width="8110" height="7780">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>

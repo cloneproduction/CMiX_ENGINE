@@ -1,15 +1,15 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Mask\MaskTexture.v4p" systemname="MaskTexture" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Mask\MaskTexture.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Mask\MaskTexture.v4p" systemname="MaskTexture" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Mask\MaskTexture.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Quad (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Geometry)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1500" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="1500" top="4020" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="3900" width="3000" height="3000">
+   <BOUNDS type="Box" left="1500" top="4020" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2190" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="2190" top="4020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="3135" top="2100" width="100" height="100">
+   <BOUNDS type="Node" left="3025" top="1740" width="100" height="100">
    </BOUNDS>
    <PIN pinname=".. To [" visible="1">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="2370" top="2745" width="100" height="100">
+   <BOUNDS type="Node" left="2340" top="2730" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -47,7 +47,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="6750" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="6790" top="4020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -121,17 +121,17 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
-   <BOUNDS type="Node" left="5100" top="2115" width="100" height="100">
+   <BOUNDS type="Node" left="5080" top="2145" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5100" top="2115" width="1080" height="240">
+   <BOUNDS type="Box" left="5080" top="2145" width="1080" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Enable">
+   <PIN pinname="Input String" slicecount="1" values="Mask/Enable">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="4920" top="2745" width="600" height="270">
+   <BOUNDS type="Node" left="4900" top="2730" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -141,9 +141,9 @@
    </PIN>
    </NODE>
    <NODE systemname="OSCBool" filename="..\..\modules\OSCBool.v4p" nodename="..\..\..\Modules\OSCBool.v4p" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="4005" top="3900" width="940" height="270">
+   <BOUNDS type="Node" left="4010" top="4020" width="940" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4005" top="3900">
+   <BOUNDS type="Box" left="4010" top="4020">
    </BOUNDS>
    <BOUNDS type="Window" left="23290" top="12150" width="5890" height="7050">
    </BOUNDS>
@@ -157,9 +157,9 @@
    <NODE id="14" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mask">
    </PIN>
-   <BOUNDS type="Box" left="3615" top="485" width="750" height="240">
+   <BOUNDS type="Box" left="4285" top="435" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3615" top="485" width="750" height="240">
+   <BOUNDS type="Node" left="4285" top="435" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="9" dstpinname="Mask">
@@ -167,9 +167,9 @@
    <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Content">
    </PIN>
-   <BOUNDS type="Box" left="2235" top="455" width="750" height="240">
+   <BOUNDS type="Box" left="2625" top="405" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2235" top="455" width="750" height="240">
+   <BOUNDS type="Node" left="2625" top="405" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Output Node" dstnodeid="9" dstpinname="Content">
@@ -221,9 +221,9 @@
    <NODE id="18" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Input 1|">
    </PIN>
-   <BOUNDS type="Box" left="4905" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="7735" top="610" width="840" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4905" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="7735" top="610" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
@@ -236,10 +236,12 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="5805" top="7650" width="8340" height="7125">
+   <BOUNDS type="Window" left="10990" top="8600" width="9400" height="7640">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    </PATCH>

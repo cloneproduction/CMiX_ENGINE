@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="14130" top="6950" width="19840" height="12150">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="370" top="5370" width="19840" height="12150">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3510" top="5780" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="14340" top="8010" width="11260" height="12730">
+   <BOUNDS type="Window" left="13875" top="3840" width="11250" height="12720">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -72,6 +72,8 @@
    <PIN pinname="Sequence" visible="1">
    </PIN>
    <PIN pinname="Beat" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="279">
@@ -185,7 +187,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1350" top="6540" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="4910" top="6420" width="27160" height="13570">
+   <BOUNDS type="Window" left="3300" top="3160" width="27160" height="13570">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="TexArray\">
    </PIN>
@@ -197,12 +199,12 @@
    </PIN>
    <PIN pinname="Texture Spread" visible="1">
    </PIN>
+   <PIN pinname="Videos" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="368" srcpinname="Texture Out" dstnodeid="190" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="275" srcpinname="Resolution" dstnodeid="368" dstpinname="VideosRes">
-   </LINK>
-   <LINK srcnodeid="275" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Output" dstnodeid="35" dstpinname="Y Input Value">
    </LINK>
@@ -251,7 +253,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1340" top="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="20830" top="8810" width="9980" height="8060">
+   <BOUNDS type="Window" left="16720" top="7160" width="9980" height="8060">
    </BOUNDS>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>
@@ -361,5 +363,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="368" srcpinname="Texture Spread" dstnodeid="387" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
    </LINK>
    </PATCH>

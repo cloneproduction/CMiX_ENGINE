@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\PostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="16470" top="12945" width="8955" height="4950">
+   <BOUNDS type="Window" left="9790" top="15240" width="8950" height="4950">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -41,11 +41,11 @@
    <NODE id="21" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="4335" top="675" width="100" height="100">
+   <BOUNDS type="Node" left="4330" top="670" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4335" top="675" width="650" height="240">
+   <BOUNDS type="Box" left="4330" top="670" width="1310" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ChannelFeedBack">
+   <PIN pinname="Input String" slicecount="1" values="/Layer0/LayerFX">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Address">
    </PIN>
@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Address 1" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9520" top="5340" width="20630" height="12710">
+   <BOUNDS type="Window" left="430" top="2260" width="20630" height="12710">
    </BOUNDS>
    <BOUNDS type="Box" left="985" top="2560">
    </BOUNDS>
@@ -81,7 +81,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="58" dstpinname="Input">
@@ -91,15 +91,15 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Window" left="3735" top="1245" width="16425" height="14910">
+   <BOUNDS type="Window" left="5710" top="4390" width="16420" height="14910">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="2655" top="1680" width="3795" height="270">
+   <BOUNDS type="Node" left="1815" top="1710" width="3795" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2655" top="1680">
+   <BOUNDS type="Box" left="1815" top="1710">
    </BOUNDS>
    <PIN pinname="ArraySize" visible="1" slicecount="1" values="0">
    </PIN>
@@ -120,14 +120,10 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="29" dstpinname="TexArray">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="29" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="58" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Node" left="7335" top="675" width="100" height="100">
+   <BOUNDS type="Node" left="8015" top="785" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7335" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="8015" top="785" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -137,21 +133,15 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enabled">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="65">
    <BOUNDS type="Box" left="2130" top="675" width="800" height="240">
    </BOUNDS>
@@ -185,5 +175,47 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="4370" top="1180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="UnixPath">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="67" dstpinname="Input 1">
+   <LINKPOINT x="4370" y="1200">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="68">
+   <BOUNDS type="Box" left="5360" top="110" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5360" top="110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output String" dstnodeid="67" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="29" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="58" dstpinname="Input 2">
    </LINK>
    </PATCH>

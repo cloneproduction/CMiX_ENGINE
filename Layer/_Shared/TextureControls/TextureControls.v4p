@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\TextureControls\TextureControls.v4p" systemname="TextureControls" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\ShadeVisuals\TextureControls.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\TextureControls\TextureControls.v4p" systemname="TextureControls" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\ShadeVisuals\TextureControls.v4p" scrollx="0" scrolly="0">
    <NODE id="1" systemname="DynamicBuffer (DX11.Buffer Value)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="4320" top="6420" width="100" height="100">
    </BOUNDS>
@@ -30,26 +30,6 @@
    <BOUNDS type="Box" left="930" top="6420">
    </BOUNDS>
    </NODE>
-   <NODE id="6" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="7760" top="4620" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="5">
-   </PIN>
-   </NODE>
-   <NODE id="7" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="4320" top="4620" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="5">
-   </PIN>
-   </NODE>
    <NODE id="8" systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="920" top="4620" width="100" height="100">
    </BOUNDS>
@@ -65,7 +45,7 @@
    </BOUNDS>
    <PIN pinname="Select" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -75,7 +55,7 @@
    <NODE id="10" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="4320" top="5800" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" visible="1">
+   <PIN pinname="Select" visible="1" slicecount="3" values="1,1,1">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -351,6 +331,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9910" top="1470" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
@@ -377,8 +359,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Buffer" dstnodeid="50" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="9" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
@@ -408,10 +388,6 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="Buffer" dstnodeid="52" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="10" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Select" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="3" dstpinname="Data">
    </LINK>
    <NODE id="53" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -423,8 +399,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Buffer" dstnodeid="53" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="11" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
@@ -442,7 +416,7 @@
    </LINK>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="10960" top="9650" width="21420" height="9310">
+   <BOUNDS type="Window" left="5750" top="8940" width="21420" height="9310">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -583,12 +557,12 @@
    </BOUNDS>
    <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output Node" dstnodeid="62" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="62" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="7" dstpinname="Input 1">
    </LINK>
    <NODE id="63" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="7760" top="4000" width="100" height="100">
@@ -603,8 +577,6 @@
    <LINK srcnodeid="47" srcpinname="Output Node" dstnodeid="63" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="63" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="6" dstpinname="Input 1">
    </LINK>
    <NODE id="64" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
    <BOUNDS type="Node" left="11100" top="4000" width="100" height="100">
@@ -650,4 +622,24 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="4310" top="4630" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="71" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Select" hiddenwhenlocked="1">
+   </LINK>
    </PATCH>

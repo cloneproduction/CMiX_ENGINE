@@ -149,6 +149,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6420" top="1100" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
@@ -194,7 +196,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="4910" top="6420" width="27160" height="13570">
+   <BOUNDS type="Window" left="3300" top="3160" width="27160" height="13570">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
