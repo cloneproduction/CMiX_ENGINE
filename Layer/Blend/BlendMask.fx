@@ -62,6 +62,7 @@ float4 PS_Textured(psInputTextured input): SV_Target
 {
 	float4 c = Content.Sample(linearSampler,float3(input.uv.xy, texarrayID));
 	float4 m;
+	
 	if(EnableMask == true)
 	{
 		m = RGBtoHSV(Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID)).rgb).z;
