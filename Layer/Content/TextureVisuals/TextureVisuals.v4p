@@ -24,16 +24,6 @@
    </NODE>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="190" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1350" top="7370" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1350" top="7370" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TextureArray">
-   </PIN>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="197" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3280" top="7370" width="820" height="240">
    </BOUNDS>
@@ -202,8 +192,6 @@
    <PIN pinname="Videos" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="368" srcpinname="Texture Out" dstnodeid="190" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="275" srcpinname="Resolution" dstnodeid="368" dstpinname="VideosRes">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Output" dstnodeid="35" dstpinname="Y Input Value">

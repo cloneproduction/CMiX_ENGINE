@@ -217,13 +217,12 @@ float4 PS(vs2psVisual In): SV_Target
 		c.rgb = HSVtoRGB(hsv);
 	}
 	
-	c = mul(c, mul(saturationMatrix(Saturation[id]), mul(contrastMatrix(Contrast[id]), brightnessMatrix(Brightness[id]))));
+	c =  mul(c, mul(saturationMatrix(Saturation[id] + 1.0), mul(contrastMatrix((Contrast[id] + 1.0) * 2.0), brightnessMatrix(Brightness[id] * 2.0))));
 
-	
 	float3 k = RGBtoHSL(c.rgb);
 
-	c.rgb = saturate(c.rgb * In.Color.rgb);
-	c.rgb = saturate(c.rgb* (In.Diffuse.xyz + In.Specular.xyz));
+	c.rgb = c.rgb * In.Color.rgb;
+	c.rgb = c.rgb* (In.Diffuse.xyz + In.Specular.xyz);
 	c.a = lerp(c.a, k.z , Keying[id]);
 	return c;
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="3090" top="2710" width="25710" height="12540">
+   <BOUNDS type="Window" left="2850" top="11010" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -46,26 +46,14 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="128" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="7020" top="735" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7020" top="735" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TexArray">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Integral (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Integral (Spreads)" componentmode="Hidden" id="131">
-   <BOUNDS type="Node" left="5760" top="4230" width="600" height="270">
+   <BOUNDS type="Node" left="5800" top="4300" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="5760" top="4230">
+   <BOUNDS type="Box" left="5800" top="4300">
    </BOUNDS>
    </NODE>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="129">
@@ -165,7 +153,7 @@
    </PIN>
    </NODE>
    <NODE systemname="IndexedInstancer (DX11.Drawer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="IndexedInstancer (DX11.Drawer)" componentmode="Hidden" id="245">
-   <BOUNDS type="Node" left="3195" top="4995" width="100" height="100">
+   <BOUNDS type="Node" left="2915" top="5005" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry In" visible="1" slicecount="2" values=",">
    </PIN>
@@ -173,7 +161,7 @@
    </PIN>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3195" top="4995">
+   <BOUNDS type="Box" left="2915" top="5005">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
@@ -203,9 +191,9 @@
    <LINK srcnodeid="199" srcpinname="Y Output Value" dstnodeid="351" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureIDBuffer" filename="TextureIDBuffer\TextureIDBuffer.v4p" nodename="TextureIDBuffer\TextureIDBuffer.v4p" componentmode="Hidden" id="350">
-   <BOUNDS type="Node" left="9250" top="4365" width="0" height="0">
+   <BOUNDS type="Node" left="19830" top="1975" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9250" top="4365" width="7225" height="10220">
+   <BOUNDS type="Box" left="19830" top="1975" width="7225" height="10220">
    </BOUNDS>
    <BOUNDS type="Window" left="9180" top="8010" width="12220" height="10770">
    </BOUNDS>
@@ -359,8 +347,6 @@
    <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="459" dstpinname="Amb">
    </LINK>
    <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="459" dstpinname="texarrayID">
-   </LINK>
-   <LINK srcnodeid="128" srcpinname="Output Node" dstnodeid="459" dstpinname="texArray">
    </LINK>
    <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="459" dstpinname="InstanceStartIndex">
    </LINK>
@@ -583,9 +569,9 @@
    <LINK srcnodeid="507" srcpinname="Y" dstnodeid="602" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE id="576" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="2190" top="4230" width="730" height="240">
+   <BOUNDS type="Box" left="2270" top="4370" width="730" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2190" top="4230" width="0" height="0">
+   <BOUNDS type="Node" left="2270" top="4370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="NoCullSimple">
    </PIN>
@@ -607,7 +593,7 @@
    <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="609" debug="0">
    <BOUNDS type="Node" left="14220" top="4995" width="2430" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="5750" top="8940" width="21420" height="9310">
+   <BOUNDS type="Window" left="11330" top="10740" width="21420" height="9310">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -666,104 +652,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE systemname="ShadeScene (DX11.Effect)" filename="..\..\_Shared\ShadeScene.fx" nodename="ShadeScene (DX11.Effect)" componentmode="Hidden" id="613">
-   <BOUNDS type="Node" left="3285" top="5895" width="15270" height="270">
-   </BOUNDS>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   <PIN pinname="Geometry" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="InstanceStartIndex" visible="1">
-   </PIN>
-   <PIN pinname="Light DirectionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Ambient Color" visible="1">
-   </PIN>
-   <PIN pinname="Diffuse Color" visible="1">
-   </PIN>
-   <PIN pinname="Specular Color" visible="1">
-   </PIN>
-   <PIN pinname="texArray" visible="1">
-   </PIN>
-   <PIN pinname="Control" visible="1">
-   </PIN>
-   <PIN pinname="texarrayID" visible="1">
-   </PIN>
-   <PIN pinname="sbWorld" visible="1">
-   </PIN>
-   <PIN pinname="gsfxTransformTex" visible="1">
-   </PIN>
-   <PIN pinname="Amb" visible="1">
-   </PIN>
-   <PIN pinname="Saturation" visible="1">
-   </PIN>
-   <PIN pinname="Contrast" visible="1">
-   </PIN>
-   <PIN pinname="Brightness" visible="1">
-   </PIN>
-   <PIN pinname="Invert" visible="1">
-   </PIN>
-   <PIN pinname="Keying" visible="1">
-   </PIN>
-   <PIN pinname="InvertMode" visible="1">
-   </PIN>
-   <PIN pinname="ExplodeAmount" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Technique" visible="1">
-   </PIN>
-   <PIN pinname="tex" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Query" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="613" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="613" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="136" srcpinname="Transform Out" dstnodeid="613" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="613" dstpinname="InstanceStartIndex">
-   </LINK>
-   <LINK srcnodeid="602" srcpinname="Output" dstnodeid="613" dstpinname="Light DirectionXYZ">
-   </LINK>
-   <LINK srcnodeid="561" srcpinname="Color Output" dstnodeid="613" dstpinname="Ambient Color">
-   </LINK>
-   <LINK srcnodeid="562" srcpinname="Color Output" dstnodeid="613" dstpinname="Diffuse Color">
-   </LINK>
-   <LINK srcnodeid="563" srcpinname="Color Output" dstnodeid="613" dstpinname="Specular Color">
-   </LINK>
-   <LINK srcnodeid="128" srcpinname="Output Node" dstnodeid="613" dstpinname="texArray">
-   </LINK>
-   <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="613" dstpinname="Control">
-   </LINK>
-   <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="613" dstpinname="texarrayID">
-   </LINK>
-   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="613" dstpinname="sbWorld">
-   </LINK>
-   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="613" dstpinname="gsfxTransformTex">
-   </LINK>
-   <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="613" dstpinname="Amb">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="613" dstpinname="Saturation">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Contrast" dstnodeid="613" dstpinname="Contrast">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Brightness" dstnodeid="613" dstpinname="Brightness">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Invert" dstnodeid="613" dstpinname="Invert">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Keying" dstnodeid="613" dstpinname="Keying">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="613" dstpinname="InvertMode">
-   </LINK>
-   <LINK srcnodeid="437" srcpinname="Buffer" dstnodeid="613" dstpinname="ExplodeAmount">
-   </LINK>
-   <LINK srcnodeid="613" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
-   </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="614">
    <BOUNDS type="Box" left="18015" top="4995" width="1590" height="270">
    </BOUNDS>
@@ -772,16 +660,14 @@
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Visual">
    </PIN>
    </NODE>
-   <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="613" dstpinname="Technique">
-   </LINK>
    <LINK srcnodeid="550" srcpinname="Output" dstnodeid="514" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="514" srcpinname="Output" dstnodeid="542" dstpinname="TranslateX">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="615">
-   <BOUNDS type="Box" left="10410" top="750" width="800" height="240">
+   <BOUNDS type="Box" left="10640" top="700" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10410" top="750" width="0" height="0">
+   <BOUNDS type="Node" left="10640" top="700" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -790,8 +676,72 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="613" dstpinname="tex">
-   </LINK>
    <LINK srcnodeid="546" srcpinname="Render State" dstnodeid="516" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="ShadeScene (DX11.Effect)" filename="..\..\_Shared\ShadeScene.fx" nodename="ShadeScene (DX11.Effect)" componentmode="Hidden" id="617">
+   <BOUNDS type="Node" left="3285" top="5895" width="15270" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="617" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="136" srcpinname="Transform Out" dstnodeid="617" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="617" dstpinname="InstanceStartIndex">
+   </LINK>
+   <LINK srcnodeid="602" srcpinname="Output" dstnodeid="617" dstpinname="Light DirectionXYZ">
+   </LINK>
+   <LINK srcnodeid="561" srcpinname="Color Output" dstnodeid="617" dstpinname="Ambient Color">
+   </LINK>
+   <LINK srcnodeid="562" srcpinname="Color Output" dstnodeid="617" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="563" srcpinname="Color Output" dstnodeid="617" dstpinname="Specular Color">
+   </LINK>
+   <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="617" dstpinname="Control">
+   </LINK>
+   <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="617" dstpinname="texarrayID">
+   </LINK>
+   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="617" dstpinname="sbWorld">
+   </LINK>
+   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="617" dstpinname="gsfxTransformTex">
+   </LINK>
+   <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="617" dstpinname="Amb">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="617" dstpinname="Saturation">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Contrast" dstnodeid="617" dstpinname="Contrast">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Brightness" dstnodeid="617" dstpinname="Brightness">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Invert" dstnodeid="617" dstpinname="Invert">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Keying" dstnodeid="617" dstpinname="Keying">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="617" dstpinname="InvertMode">
+   </LINK>
+   <LINK srcnodeid="437" srcpinname="Buffer" dstnodeid="617" dstpinname="ExplodeAmount">
+   </LINK>
+   <LINK srcnodeid="617" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="617" dstpinname="Technique">
+   </LINK>
+   <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="617" dstpinname="tex">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="618">
+   <BOUNDS type="Node" left="5590" top="8180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5590" top="8180" width="4000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20800" top="1040" width="13070" height="10710">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="617" srcpinname="Layer" dstnodeid="618" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="617" dstpinname="Geometry">
    </LINK>
    </PATCH>
