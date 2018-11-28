@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="-350" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="12020" top="11650" width="4620" height="5910">
+   <BOUNDS type="Window" left="19140" top="10640" width="4520" height="7020">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" debug="0" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="590" top="4240" width="795" height="240">
+   <BOUNDS type="Box" left="590" top="4240" width="1120" height="710">
    </BOUNDS>
    <BOUNDS type="Node" left="590" top="4240" width="0" height="0">
    </BOUNDS>
@@ -20,6 +20,10 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="fps">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="24">
    </PIN>
    </NODE>
    <NODE systemname="Beats" filename="Beats\Beats.v4p" nodename="Beats\Beats.v4p" componentmode="Hidden" id="48" debug="0">
@@ -130,12 +134,10 @@
    <PIN pinname="Texture Out - Texture" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="fps" dstnodeid="49" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="13070" top="4320" width="16630" height="14090">
+   <BOUNDS type="Window" left="16970" top="5230" width="16630" height="14090">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1550" height="270">
    </BOUNDS>
@@ -157,8 +159,6 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="38" dstpinname="Beat">
-   <LINKPOINT x="3875" y="2450">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Layer" filename="Layer\Layer.v4p" nodename="Layer\Layer.v4p" componentmode="Hidden" id="51" debug="0" stayontop="0">
    <BOUNDS type="Node" left="1694" top="1633" width="1150" height="270">
@@ -212,4 +212,22 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
    </LINK>
+   <LINK srcnodeid="36" srcpinname="fps" dstnodeid="49" dstpinname="Y Input Value">
+   <LINKPOINT x="600" y="3890">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55">
+   <BOUNDS type="Node" left="590" top="5340" width="3690" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="590" top="5340" width="2600" height="610">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Problem with loading video on remove/delete layer.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

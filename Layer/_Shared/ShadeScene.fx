@@ -1,25 +1,26 @@
-
 Texture2DArray ControlTexture <string uiname="Control";>;
 
 Texture2D tex;
 
 StructuredBuffer< float4x4> sbWorld;
-
+StructuredBuffer< float4x4> TexTransform;
 StructuredBuffer< float4x4> gsfxTransformTex;
 
 StructuredBuffer<uint> KeepOriginal;
 StructuredBuffer<float4> Amb;
 
+StructuredBuffer<float>Hue;
 StructuredBuffer<float>Saturation;
+StructuredBuffer<float>Luminosity;
+
 StructuredBuffer<float>Contrast;
 StructuredBuffer<float>Brightness;
 StructuredBuffer<float>Invert;
-StructuredBuffer<float>Keying;
 StructuredBuffer<uint> InvertMode;
 
-StructuredBuffer<float>ExplodeAmount;
+StructuredBuffer<float>Keying;
 
-int InstanceStartIndex = 0;
+StructuredBuffer<float>ExplodeAmount;
 
 #include "ColorSpace.fxh"
 
@@ -62,11 +63,6 @@ float4x4 saturationMatrix( float saturation )
                  0, 0, 0, 1 );
 }
 
-float3 safenormalize(float3 x)
-{
-	x=lerp(x,x+.00001,x==0);
-	return normalize(x);
-}
 
 SamplerState g_samLinear <string uiname="Sampler State";>
 {
@@ -83,12 +79,13 @@ cbuffer cbPerDraw : register( b0 )
 	float4x4 tWV : WORLDVIEW;
 	float4x4 tW : WORLD;
 	float4x4 tWIT: WORLDLAYERINVERSETRANSPOSE;
-	float Hue=0;
+	int InstanceStartIndex = 0;
 };
 
 cbuffer cbPerObj : register( b1 )
 {
 	float4x4 tTex <string uiname="Texture Transform"; bool uvspace=true; >;
+	
 };
 
 cbuffer cbLightData : register(b3)
@@ -201,9 +198,18 @@ float4 PS(vs2psVisual In): SV_Target
 {
 	int id = In.iid + InstanceStartIndex;
 
-	float4 c = tex.SampleLevel(g_samLinear, In.TexCd.xy, 0);
+	float2 uv = mul(float4((In.TexCd.xy*2-1)*float2(1,-1)*.5,0,1),TexTransform[id]).xy*float2(1,-1)+0.5;
+	float4 c = tex.SampleLevel(g_samLinear, uv, 0);
 
+	float3 hsv = RGBtoHSL(c.rgb);
+
+	hsv.r += Hue[id];
+	hsv.g *= Saturation[id];
+	hsv.b += Luminosity[id];
+	c.rgb = HSLtoRGB(hsv.rgb);
 	
+	c =  mul(c, mul(contrastMatrix((Contrast[id] + 1.0)), brightnessMatrix(Brightness[id] * 2.0)));
+
 	if(InvertMode[id] == 0)
 	{
 		/// INVERT RGB ///
@@ -212,18 +218,15 @@ float4 PS(vs2psVisual In): SV_Target
 	else if (InvertMode[id] == 1)
 	{
 		/// INVERT LUMA ///
-		float3 hsv = RGBtoHSV(c.rgb);
 		hsv.z = lerp(hsv.z, clamp(0, 1, 1-hsv.z),Invert[id]);
 		c.rgb = HSVtoRGB(hsv);
 	}
 	
-	c =  mul(c, mul(saturationMatrix(Saturation[id] + 1.0), mul(contrastMatrix((Contrast[id] + 1.0) * 2.0), brightnessMatrix(Brightness[id] * 2.0))));
-
-	float3 k = RGBtoHSL(c.rgb);
-
 	c.rgb = c.rgb * In.Color.rgb;
 	c.rgb = c.rgb* (In.Diffuse.xyz + In.Specular.xyz);
-	c.a = lerp(c.a, k.z , Keying[id]);
+	
+	c.a = lerp(c.a, hsv.z , Keying[id]);
+	
 	return c;
 }
 
@@ -236,7 +239,3 @@ technique10 Visual
 		SetPixelShader( CompileShader( ps_5_0, PS() ) );
 	}
 }
-
-
-
-

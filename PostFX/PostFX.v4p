@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="4900">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="4820">
    <BOUNDS type="Window" left="7170" top="5370" width="20250" height="10905">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
@@ -801,20 +801,6 @@
    <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="624" dstpinname="Texture In">
    </LINK>
    <LINK srcnodeid="624" srcpinname="Texture Out" dstnodeid="589" dstpinname="Texture In">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="625" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9392" top="7367" width="790" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9392" top="7367" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Brightness">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="625" srcpinname="Y Output Value" dstnodeid="589" dstpinname="Brightness">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="641">
    <BOUNDS type="Box" left="7470" top="1810" width="800" height="240">

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2850" top="11010" width="25710" height="12540">
+   <BOUNDS type="Window" left="11170" top="7390" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -57,7 +57,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="5775" top="4995" width="100" height="100">
+   <BOUNDS type="Node" left="5785" top="4945" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -171,9 +171,9 @@
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Instance Count" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TransformBuffer" filename="TransformBuffer\TransformBuffer.v4p" nodename="TransformBuffer\TransformBuffer.v4p" componentmode="Hidden" id="351">
-   <BOUNDS type="Node" left="11835" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="10885" top="5035" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11835" top="4995" width="5850" height="7145">
+   <BOUNDS type="Box" left="10885" top="5035" width="5850" height="7145">
    </BOUNDS>
    <BOUNDS type="Window" left="14310" top="8540" width="12070" height="9610">
    </BOUNDS>
@@ -205,9 +205,9 @@
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="350" dstpinname="Transform BinSize" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="ColorBuffer" filename="ColorBuffer\ColorBuffer.v4p" nodename="ColorBuffer\ColorBuffer.v4p" componentmode="Hidden" id="352">
-   <BOUNDS type="Node" left="13740" top="4230" width="0" height="0">
+   <BOUNDS type="Node" left="12460" top="4270" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="13740" top="4230" width="3100" height="3820">
+   <BOUNDS type="Box" left="12460" top="4270" width="3100" height="3820">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="3100" height="3820">
    </BOUNDS>
@@ -217,9 +217,9 @@
    <LINK srcnodeid="193" srcpinname="Color Output" dstnodeid="352" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="356">
-   <BOUNDS type="Node" left="12915" top="2995" width="100" height="100">
+   <BOUNDS type="Node" left="11965" top="3035" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12915" top="2995" width="2810" height="240">
+   <BOUNDS type="Box" left="11965" top="3035" width="2810" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="/Geometry/KeepAspectRatio">
    </PIN>
@@ -227,7 +227,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OSCBool" filename="..\..\..\modules\OSCBool.v4p" nodename="..\..\..\Modules\OSCBool.v4p" componentmode="Hidden" id="354">
-   <BOUNDS type="Node" left="11835" top="4230" width="100" height="100">
+   <BOUNDS type="Node" left="10885" top="4270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Default" visible="1">
    </PIN>
@@ -237,7 +237,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="11835" top="4230">
+   <BOUNDS type="Box" left="10885" top="4270">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="357" systemname="IOBox (Node)">
@@ -379,7 +379,7 @@
    <LINK srcnodeid="471" srcpinname="Output" dstnodeid="438" dstpinname="Address">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="485">
-   <BOUNDS type="Node" left="12735" top="3565" width="100" height="100">
+   <BOUNDS type="Node" left="11785" top="3605" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -591,9 +591,9 @@
    <LINK srcnodeid="517" srcpinname="Output Enum" dstnodeid="516" dstpinname="Mode">
    </LINK>
    <NODE systemname="TextureControls" filename="..\..\_Shared\TextureControls\TextureControls.v4p" nodename="..\..\_Shared\TextureControls\TextureControls.v4p" componentmode="Hidden" id="609" debug="0">
-   <BOUNDS type="Node" left="14220" top="4995" width="2430" height="270">
+   <BOUNDS type="Node" left="13150" top="5015" width="2430" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="11330" top="10740" width="21420" height="9310">
+   <BOUNDS type="Window" left="1340" top="12510" width="28540" height="9980">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -613,9 +613,13 @@
    </PIN>
    <PIN pinname="TransformBinSize" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="14220" top="4995">
+   <BOUNDS type="Box" left="13150" top="5015">
    </BOUNDS>
    <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Hue" visible="1">
+   </PIN>
+   <PIN pinname="Luminosity" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="609" dstpinname="Input" hiddenwhenlocked="1">
@@ -653,9 +657,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="614">
-   <BOUNDS type="Box" left="18015" top="4995" width="1590" height="270">
+   <BOUNDS type="Box" left="18655" top="5105" width="1590" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="18015" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="18655" top="5105" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Visual">
    </PIN>
@@ -684,6 +688,12 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TexTransform" visible="1">
+   </PIN>
+   <PIN pinname="Hue" visible="1">
+   </PIN>
+   <PIN pinname="Luminosity" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="617" dstpinname="Render State">
@@ -730,18 +740,28 @@
    </LINK>
    <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="617" dstpinname="tex">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="618">
-   <BOUNDS type="Node" left="5590" top="8180" width="100" height="100">
+   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="617" dstpinname="Geometry">
+   </LINK>
+   <NODE systemname="TexTransformBuffer" filename="TexTransformBuffer.v4p" nodename="TexTransformBuffer.v4p" componentmode="Hidden" id="628">
+   <BOUNDS type="Node" left="17275" top="4617" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5590" top="8180" width="4000" height="3000">
+   <BOUNDS type="Box" left="14873" top="1775" width="4805" height="5685">
    </BOUNDS>
-   <BOUNDS type="Window" left="20800" top="1040" width="13070" height="10710">
+   <BOUNDS type="Window" left="10340" top="9550" width="11450" height="9120">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="TransformBinSize" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="617" srcpinname="Layer" dstnodeid="618" dstpinname="Layers">
+   <LINK srcnodeid="628" srcpinname="Buffer" dstnodeid="617" dstpinname="TexTransform">
    </LINK>
-   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="617" dstpinname="Geometry">
+   <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="628" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="628" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="628" dstpinname="TransformBinSize">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Hue" dstnodeid="617" dstpinname="Hue">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Luminosity" dstnodeid="617" dstpinname="Luminosity">
    </LINK>
    </PATCH>
