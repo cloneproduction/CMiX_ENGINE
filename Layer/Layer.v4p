@@ -266,8 +266,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="1160" srcpinname="Output String" dstnodeid="1142" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Subtract (String)" nodename="Subtract (String)" componentmode="Hidden" id="1161">
@@ -285,5 +283,7 @@
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1161" dstpinname="Operand 1">
    </LINK>
    <LINK srcnodeid="1161" srcpinname="Result" dstnodeid="1142" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
    </LINK>
    </PATCH>

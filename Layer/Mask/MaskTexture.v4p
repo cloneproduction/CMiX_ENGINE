@@ -79,6 +79,8 @@
    </PIN>
    <PIN pinname="SizeXY" visible="1">
    </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2760" top="3285" width="795" height="240">
@@ -244,4 +246,14 @@
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="5800" top="3750" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5800" top="3750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Color Output" dstnodeid="7" dstpinname="Background Color">
+   </LINK>
    </PATCH>

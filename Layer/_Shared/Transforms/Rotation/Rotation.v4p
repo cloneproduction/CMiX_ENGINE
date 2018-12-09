@@ -59,7 +59,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10450" top="4210" width="6988" height="10042">
    </BOUNDS>
-   <BOUNDS type="Window" left="10220" top="6180" width="26180" height="16830">
+   <BOUNDS type="Window" left="5170" top="4360" width="26180" height="16830">
    </BOUNDS>
    <PIN pinname="Input - Input 1" visible="1">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="130" scrolly="0">
-   <BOUNDS type="Window" left="16970" top="5230" width="16630" height="14090">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="620" scrolly="110">
+   <BOUNDS type="Window" left="14020" top="9110" width="16630" height="14090">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -453,7 +453,7 @@
    <LINK srcnodeid="1106" srcpinname="Y Output Value" dstnodeid="896" dstpinname="Evaluate">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1111">
-   <BOUNDS type="Box" left="4920" top="6570" width="2460" height="240">
+   <BOUNDS type="Box" left="4920" top="6570" width="2700" height="1040">
    </BOUNDS>
    <BOUNDS type="Node" left="4920" top="6570" width="0" height="0">
    </BOUNDS>
@@ -466,6 +466,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
    </PIN>
    <PIN pinname="Input String" visible="1" slicecount="1" values="/Layer0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.10">
@@ -571,5 +573,19 @@
    <LINK srcnodeid="1123" srcpinname="Output" dstnodeid="1124" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="1083" srcpinname="Output" dstnodeid="1111" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1125">
+   <BOUNDS type="Box" left="8820" top="7230" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8820" top="7230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1091" srcpinname="Output" dstnodeid="1125" dstpinname="Input String">
    </LINK>
    </PATCH>

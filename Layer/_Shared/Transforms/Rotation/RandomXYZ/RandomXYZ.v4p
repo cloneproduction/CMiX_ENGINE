@@ -40,7 +40,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10220" top="6180" width="26180" height="16830">
+   <BOUNDS type="Window" left="5170" top="4360" width="26180" height="16830">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -680,8 +680,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="97" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="97" srcpinname="Output" dstnodeid="48" dstpinname="Input 4">
@@ -1531,5 +1529,7 @@
    <LINK srcnodeid="185" srcpinname="Output" dstnodeid="187" dstpinname="Up">
    </LINK>
    <LINK srcnodeid="196" srcpinname="Output" dstnodeid="198" dstpinname="Up">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="97" dstpinname="Input 1">
    </LINK>
    </PATCH>
