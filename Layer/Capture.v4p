@@ -1,0 +1,123 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Capture.v4p" systemname="Capture" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Capture.v4p" scrollx="20" scrolly="830">
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="0" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="1510" top="1500" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1510" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|XI100DUSB-HDMI Video|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="1" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="1670" top="2080" width="700" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1670" top="2080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="YUY2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="2" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3240" top="1500" width="1010" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1920x1080">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="2750" top="2080" width="1010" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2750" top="2080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="59">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3810" top="2080" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3810" top="2080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1500" top="2800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="2800">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="1710" top="3460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="1920">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="1080">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="5" dstpinname="Device">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Enum" dstnodeid="5" dstpinname="Video Format">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="5" dstpinname="Resolution">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="5" dstpinname="Framerate">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Width" dstnodeid="6" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Height" dstnodeid="6" dstpinname="Y">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5310" height="5120">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="1710" top="4110" width="800" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="4110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="XY" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="640" top="4110" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="640" top="4110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

@@ -19,9 +19,9 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1">
    <BOUNDS type="Node" left="5040" top="1850" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5040" top="1850" width="1250" height="240">
+   <BOUNDS type="Box" left="5040" top="1850" width="2080" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/Scale">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/Scale/Amount">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.01">
+   <PIN pinname="TranslateX" visible="1">
    </PIN>
    <PIN pinname="TranslateY" visible="1">
    </PIN>
@@ -135,9 +135,9 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
    <BOUNDS type="Node" left="7240" top="1850" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7240" top="1850" width="1210" height="240">
+   <BOUNDS type="Box" left="7240" top="1850" width="2770" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/Rotate">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/Rotate/Amount">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -179,11 +179,11 @@
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="2" dstpinname="Rotate">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="26">
-   <BOUNDS type="Node" left="3550" top="1850" width="100" height="100">
+   <BOUNDS type="Node" left="3550" top="1540" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3550" top="1850" width="1250" height="240">
+   <BOUNDS type="Box" left="3550" top="1540" width="1750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/Tilt">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/Tilt/Amount">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -223,11 +223,11 @@
    <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="25" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="30">
-   <BOUNDS type="Node" left="2060" top="1850" width="100" height="100">
+   <BOUNDS type="Node" left="2070" top="1100" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2060" top="1850" width="1250" height="240">
+   <BOUNDS type="Box" left="2070" top="1100" width="2320" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/Pan">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/Pan/Amount">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -246,27 +246,9 @@
    <PIN pinname="Input 3" visible="1">
    </PIN>
    </NODE>
-   <NODE id="28" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="910" top="3170" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="910" top="3170" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="28" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="28" dstpinname="Address">
-   </LINK>
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="29" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output String" dstnodeid="29" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="2" dstpinname="TranslateX">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="2" dstpinname="TranslateY">
    </LINK>
@@ -295,5 +277,19 @@
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Select">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="0" dstpinname="Data">
+   </LINK>
+   <NODE id="33" systemname="OSCValue" filename="..\..\..\modules\OSCValue.v4p" nodename="..\..\Modules\OSCValue.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="910" top="3170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="910" top="3170" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="33" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="2" dstpinname="TranslateX">
    </LINK>
    </PATCH>

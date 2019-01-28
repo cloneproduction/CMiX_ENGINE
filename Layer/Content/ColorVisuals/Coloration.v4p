@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4545" top="6795" width="24315" height="11895">
+   <BOUNDS type="Window" left="5920" top="9220" width="24310" height="11890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -191,7 +191,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4660" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Hue/Range">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Hue/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -219,7 +219,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="19730" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Value/Range">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Value/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -269,7 +269,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="634" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9680" top="6240" width="1050" height="240">
+   <BOUNDS type="Box" left="9680" top="6240" width="2320" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="9680" top="6240" width="0" height="0">
    </BOUNDS>
@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11930" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Saturation/Range">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Saturation/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -565,7 +565,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9165" top="2985" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="17460" top="10480" width="10190" height="10750">
+   <BOUNDS type="Window" left="9920" top="9740" width="10190" height="10750">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="680" dstpinname="Input" hiddenwhenlocked="1">

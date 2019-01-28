@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="25460" top="10820" width="11580" height="8300">
+   <BOUNDS type="Window" left="16080" top="9930" width="11580" height="8300">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -73,7 +73,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="820" top="2700" width="16428" height="12460">
    </BOUNDS>
-   <BOUNDS type="Window" left="13350" top="10480" width="7980" height="9990">
+   <BOUNDS type="Window" left="12900" top="7720" width="14360" height="9990">
    </BOUNDS>
    <PIN pinname="TransformTexture" visible="1" slicecount="1" values="||">
    </PIN>

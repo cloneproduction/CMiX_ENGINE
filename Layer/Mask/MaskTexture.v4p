@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="3025" top="1740" width="100" height="100">
+   <BOUNDS type="Node" left="3155" top="1740" width="100" height="100">
    </BOUNDS>
    <PIN pinname=".. To [" visible="1">
    </PIN>
@@ -238,7 +238,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="10990" top="8600" width="9400" height="7640">
+   <BOUNDS type="Window" left="10760" top="11310" width="9400" height="7640">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -247,9 +247,9 @@
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="19">
-   <BOUNDS type="Box" left="5800" top="3750" width="2250" height="480">
+   <BOUNDS type="Box" left="5050" top="4030" width="920" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5800" top="3750" width="0" height="0">
+   <BOUNDS type="Node" left="5050" top="4030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,0.00000|">
    </PIN>

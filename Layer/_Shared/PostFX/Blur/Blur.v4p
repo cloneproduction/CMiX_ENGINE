@@ -150,7 +150,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="430" top="2260" width="20630" height="12710">
+   <BOUNDS type="Window" left="4300" top="12080" width="20630" height="12710">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -407,11 +407,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="158">
-   <BOUNDS type="Box" left="4930" top="2640" width="800" height="240">
+   <BOUNDS type="Box" left="3720" top="2690" width="1310" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4930" top="2640" width="0" height="0">
+   <BOUNDS type="Node" left="3720" top="2690" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/Blur">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Blur/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -501,13 +501,13 @@
    <LINK srcnodeid="151" srcpinname="Y Output Value" dstnodeid="162" dstpinname="Input 1">
    </LINK>
    <NODE id="19" systemname="BlurArray (DX11.Effect)" filename="..\BlurArray.fx" nodename="BlurArray (DX11.Effect)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1500" top="7095" width="1950" height="270">
+   <BOUNDS type="Node" left="890" top="7035" width="1950" height="270">
    </BOUNDS>
    <PIN pinname="Sampler State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="tex0" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="7095">
+   <BOUNDS type="Box" left="890" top="7035">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -589,13 +589,27 @@
    <LINK srcnodeid="165" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Contrast">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
-   <BOUNDS type="Box" left="9720" top="7290" width="800" height="240">
+   <BOUNDS type="Box" left="10410" top="7040" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9720" top="7290" width="0" height="0">
+   <BOUNDS type="Node" left="10410" top="7040" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Brightness">
    </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Brightness">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="169">
+   <BOUNDS type="Box" left="2640" top="4880" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2640" top="4880" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="154" srcpinname="Output" dstnodeid="169" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -15,7 +15,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2545" top="2625" width="6256" height="6784">
    </BOUNDS>
-   <BOUNDS type="Window" left="11580" top="7970" width="7800" height="10990">
+   <BOUNDS type="Window" left="11280" top="8340" width="7800" height="10990">
    </BOUNDS>
    <PIN pinname="CamCut" visible="1" slicecount="1" values="1">
    </PIN>
@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2730" top="4320" width="4396" height="7837">
    </BOUNDS>
-   <BOUNDS type="Window" left="5690" top="7860" width="4530" height="6910">
+   <BOUNDS type="Window" left="10620" top="10650" width="4530" height="6910">
    </BOUNDS>
    <PIN pinname="BeatPeriod" visible="1" slicecount="1" values="4">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\FeedbackCS\FeedbackCS.v4p" systemname="FeedbackCS" filename="C:\WORK\Michael Theater\Interactive\EchoCS\FeedbackCS.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\FeedbackCS\FeedbackCS.v4p" systemname="FeedbackCS" filename="C:\WORK\Michael Theater\Interactive\EchoCS\FeedbackCS.v4p" scrollx="2420" scrolly="0">
    <BOUNDS type="Window" left="5710" top="4390" width="16420" height="14910">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
@@ -211,7 +211,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|TexArray Out|">
    </PIN>
-   <PIN pinname="Input Node" slicecount="1" values="||" visible="1">
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="R (Value Advanced)" nodename="R (Value Advanced)" componentmode="Hidden" id="95" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll">
@@ -457,7 +457,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14235" top="950" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Feedback">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Feedback/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>

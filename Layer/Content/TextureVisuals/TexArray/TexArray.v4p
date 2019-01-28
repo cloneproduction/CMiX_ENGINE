@@ -345,7 +345,7 @@
    <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="99" dstpinname="XYZ">
    </LINK>
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="101">
-   <BOUNDS type="Node" left="17890" top="5170" width="100" height="100">
+   <BOUNDS type="Node" left="13230" top="8610" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1">
    </PIN>

@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="115">
-   <BOUNDS type="Node" left="8145" top="1140" width="100" height="100">
+   <BOUNDS type="Node" left="8150" top="1140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8145" top="1140" width="1155" height="240">
+   <BOUNDS type="Box" left="8150" top="1140" width="1155" height="240">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -95,9 +95,9 @@
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Beats" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="578">
-   <BOUNDS type="Box" left="945" top="1140" width="795" height="240">
+   <BOUNDS type="Box" left="950" top="1140" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="945" top="1140" width="0" height="0">
+   <BOUNDS type="Node" left="950" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -137,7 +137,7 @@
    <LINK srcnodeid="617" srcpinname="Transform Out" dstnodeid="104" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="626">
-   <BOUNDS type="Node" left="3900" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="3920" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -151,7 +151,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="628">
-   <BOUNDS type="Node" left="5865" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="5840" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
    </PIN>
@@ -201,7 +201,7 @@
    <LINK srcnodeid="685" srcpinname="Output" dstnodeid="691" dstpinname="Input 1">
    </LINK>
    <NODE id="698" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="7920" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="7970" top="2790" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -227,9 +227,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="700">
-   <BOUNDS type="Box" left="8085" top="2115" width="1900" height="240">
+   <BOUNDS type="Box" left="8140" top="1780" width="1890" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8085" top="2115" width="0" height="0">
+   <BOUNDS type="Node" left="8140" top="1780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationMode">
    </PIN>
@@ -243,9 +243,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="701">
-   <BOUNDS type="Box" left="3915" top="1140" width="800" height="240">
+   <BOUNDS type="Box" left="3920" top="1140" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3915" top="1140" width="0" height="0">
+   <BOUNDS type="Node" left="3920" top="1140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content">
    </PIN>
@@ -261,9 +261,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="702">
-   <BOUNDS type="Box" left="6045" top="2115" width="1280" height="240">
+   <BOUNDS type="Box" left="6015" top="2265" width="1320" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6045" top="2115" width="0" height="0">
+   <BOUNDS type="Node" left="6015" top="2265" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Is3D">
    </PIN>
@@ -277,11 +277,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="703">
-   <BOUNDS type="Box" left="4080" top="2115" width="1200" height="240">
+   <BOUNDS type="Box" left="4100" top="1780" width="2090" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="2115" width="0" height="0">
+   <BOUNDS type="Node" left="4100" top="1780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationAmount">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Rotation/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2960" top="3500">
    </BOUNDS>
-   <BOUNDS type="Window" left="120" top="4730" width="17770" height="8150">
+   <BOUNDS type="Window" left="730" top="7990" width="17770" height="8150">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
