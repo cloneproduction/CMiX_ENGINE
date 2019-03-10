@@ -73,7 +73,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="820" top="2700" width="16428" height="12460">
    </BOUNDS>
-   <BOUNDS type="Window" left="12900" top="7720" width="14360" height="9990">
+   <BOUNDS type="Window" left="15490" top="10180" width="14360" height="9990">
    </BOUNDS>
    <PIN pinname="TransformTexture" visible="1" slicecount="1" values="||">
    </PIN>

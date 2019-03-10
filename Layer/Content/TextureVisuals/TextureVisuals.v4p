@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="10">
-   <BOUNDS type="Window" left="8590" top="7360" width="19840" height="12150">
+   <BOUNDS type="Window" left="13430" top="8090" width="12840" height="8160">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2790" top="3970" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="13650" top="7540" width="9750" height="11250">
+   <BOUNDS type="Window" left="6730" top="9350" width="9750" height="11250">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1800" top="1670" width="1750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/TexturePaths">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/FilePaths">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -168,7 +168,7 @@
    </LINK>
    <LINK srcnodeid="376" srcpinname="Output Bin Size" dstnodeid="197" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="376" srcpinname="Output Bin Size" dstnodeid="275" dstpinname="Y Input Value">
+   <LINK srcnodeid="376" srcpinname="Output Bin Size" dstnodeid="275" dstpinname="VideoCount">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="377">
    <BOUNDS type="Box" left="1610" top="1080" width="800" height="240">

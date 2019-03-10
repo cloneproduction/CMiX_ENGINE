@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="13680" top="1620" width="21250" height="12340">
+   <BOUNDS type="Window" left="14290" top="8250" width="21250" height="12340">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -151,7 +151,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10250" top="5235" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="8590" top="7360" width="19840" height="12150">
+   <BOUNDS type="Window" left="13430" top="8090" width="12840" height="8160">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -207,11 +207,11 @@
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="53" dstpinname="Address">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18855" top="2860" width="1330" height="240">
+   <BOUNDS type="Box" left="18855" top="2860" width="1990" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="18855" top="2860" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Count">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Counter/Count">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -377,7 +377,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8765" top="5255" width="7836" height="5712">
    </BOUNDS>
-   <BOUNDS type="Window" left="12570" top="5610" width="10270" height="5970">
+   <BOUNDS type="Window" left="10820" top="12520" width="10270" height="5970">
    </BOUNDS>
    <PIN pinname="MskOn" visible="1">
    </PIN>
