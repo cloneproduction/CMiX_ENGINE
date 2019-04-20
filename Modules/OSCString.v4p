@@ -13,9 +13,9 @@
    <NODE id="4" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Address">
    </PIN>
-   <BOUNDS type="Box" left="2090" top="990" width="2250" height="260">
+   <BOUNDS type="Box" left="2090" top="980" width="2250" height="260">
    </BOUNDS>
-   <BOUNDS type="Node" left="2090" top="990" width="750" height="240">
+   <BOUNDS type="Node" left="2090" top="980" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -23,16 +23,16 @@
    <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="640" top="3770" width="1170" height="240">
+   <BOUNDS type="Box" left="650" top="3770" width="1170" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="640" top="3770" width="750" height="240">
+   <BOUNDS type="Node" left="650" top="3770" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="1" slicecount="4" values="Normal,Normal,Normal,Normal">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="20830" top="8810" width="9980" height="8060">
+   <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -51,9 +51,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="2580" top="3700" width="800" height="240">
+   <BOUNDS type="Box" left="2580" top="3770" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2580" top="3700" width="0" height="0">
+   <BOUNDS type="Node" left="2580" top="3770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

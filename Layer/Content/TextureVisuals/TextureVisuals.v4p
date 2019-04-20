@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="10">
-   <BOUNDS type="Window" left="13430" top="8090" width="12840" height="8160">
+   <BOUNDS type="Window" left="13150" top="11750" width="12840" height="8160">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -105,7 +105,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="630" top="4730" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="3300" top="3160" width="27160" height="13570">
+   <BOUNDS type="Window" left="3760" top="3980" width="27160" height="13570">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="TexArray\">
    </PIN>
@@ -246,8 +246,6 @@
    </LINK>
    <LINK srcnodeid="279" srcpinname="Output Node" dstnodeid="386" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="386" srcpinname="Output" dstnodeid="368" dstpinname="Sequence">
-   </LINK>
    <LINK srcnodeid="377" srcpinname="Output String" dstnodeid="384" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="378" srcpinname="Y Output Value" dstnodeid="368" dstpinname="Beat">
@@ -291,5 +289,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="389" srcpinname="Output Node" dstnodeid="368" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="386" srcpinname="Output" dstnodeid="368" dstpinname="Sequence">
    </LINK>
    </PATCH>

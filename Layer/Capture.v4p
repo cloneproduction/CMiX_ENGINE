@@ -50,18 +50,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE id="5" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1500" top="2800" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="2800">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Width" visible="1">
-   </PIN>
-   <PIN pinname="Height" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1710" top="3460" width="100" height="100">
    </BOUNDS>
@@ -72,20 +60,6 @@
    <PIN pinname="XY" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="5" dstpinname="Device">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output Enum" dstnodeid="5" dstpinname="Video Format">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="5" dstpinname="Resolution">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="5" dstpinname="Framerate">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Width" dstnodeid="6" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Height" dstnodeid="6" dstpinname="Y">
-   </LINK>
    <BOUNDS type="Window" left="-1" top="-1" width="5310" height="5120">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
@@ -118,6 +92,40 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="9" stayontop="1">
+   <BOUNDS type="Node" left="3220" top="4110" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3220" top="4110" width="4000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18680" top="10700" width="12350" height="8260">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="12" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1500" top="2800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="2800">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="12" dstpinname="Device">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Enum" dstnodeid="12" dstpinname="Video Format">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="12" dstpinname="Resolution">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="12" dstpinname="Framerate">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Width" dstnodeid="6" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Height" dstnodeid="6" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture In">
    </LINK>
    </PATCH>

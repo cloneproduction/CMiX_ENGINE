@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\PostFX.v4p" systemname="EnginePostFX" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX 3.0\Engine\Engine\FX\EnginePostFX.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="7800" top="14660" width="8950" height="4950">
+   <BOUNDS type="Window" left="2860" top="11090" width="8950" height="4950">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -85,6 +85,8 @@
    </PIN>
    <PIN pinname="Contrast" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="58" dstpinname="Input">
    </LINK>
@@ -93,7 +95,7 @@
    </PIN>
    <PIN pinname="KeepOriginal" visible="1" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Window" left="5710" top="4390" width="16420" height="14910">
+   <BOUNDS type="Window" left="4180" top="6730" width="16420" height="14910">
    </BOUNDS>
    <PIN pinname="texArray" visible="1" slicecount="1" values="||">
    </PIN>
@@ -111,7 +113,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Original" visible="1" slicecount="1" values="||">
    </PIN>
@@ -140,8 +142,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="65">
@@ -152,6 +152,8 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="65" srcpinname="Output Node" dstnodeid="29" dstpinname="Original">
@@ -177,8 +179,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="29" dstpinname="KeepOriginal">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="67">
    <BOUNDS type="Node" left="4370" top="1180" width="100" height="100">
@@ -217,6 +217,12 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="29" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="58" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
    </LINK>

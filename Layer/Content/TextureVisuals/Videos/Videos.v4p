@@ -163,7 +163,7 @@
    <LINK srcnodeid="465" srcpinname="Output" dstnodeid="466" dstpinname="Input 2">
    </LINK>
    <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="463">
-   <BOUNDS type="Node" left="4100" top="4220" width="100" height="100">
+   <BOUNDS type="Node" left="3540" top="4050" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -213,9 +213,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="491">
-   <BOUNDS type="Node" left="6850" top="1430" width="100" height="100">
+   <BOUNDS type="Node" left="4930" top="1480" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6850" top="1430" width="800" height="240">
+   <BOUNDS type="Box" left="4930" top="1480" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -246,11 +246,7 @@
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="497" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="497" srcpinname="OnChange" dstnodeid="496" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="496" dstpinname="Select">
    </LINK>
    <LINK srcnodeid="473" srcpinname="XY" dstnodeid="16" dstpinname="Y Input Value">
    </LINK>
@@ -308,8 +304,6 @@
    </LINK>
    <LINK srcnodeid="511" srcpinname="Hap Media" dstnodeid="510" dstpinname="Hap Media">
    </LINK>
-   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="511" dstpinname="Open">
-   </LINK>
    <LINK srcnodeid="490" srcpinname="Up Edge" dstnodeid="489" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="496" srcpinname="Output" dstnodeid="489" dstpinname="Input 3">
@@ -317,7 +311,7 @@
    <LINK srcnodeid="477" srcpinname="Output" dstnodeid="488" dstpinname="Input">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="517">
-   <BOUNDS type="Node" left="4110" top="3550" width="100" height="100">
+   <BOUNDS type="Node" left="3550" top="3380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -355,5 +349,49 @@
    <LINK srcnodeid="463" srcpinname="Output" dstnodeid="519" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="519" srcpinname="Output" dstnodeid="490" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" filename="" nodename="GetSlice (Spreads)" componentmode="Hidden" id="520">
+   <BOUNDS type="Node" left="4980" top="2490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="520" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="479" srcpinname="Input Index" dstnodeid="520" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="520" srcpinname="Output" dstnodeid="497" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="520" srcpinname="Output" dstnodeid="496" dstpinname="Select">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="521">
+   <BOUNDS type="Box" left="6670" top="3030" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6670" top="3030" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="520" srcpinname="Output" dstnodeid="521" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="522">
+   <BOUNDS type="Node" left="5040" top="6120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="489" srcpinname="Output" dstnodeid="522" dstpinname="Input">
+   <LINKPOINT x="5130" y="6090">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="522" srcpinname="Output" dstnodeid="511" dstpinname="Open">
    </LINK>
    </PATCH>

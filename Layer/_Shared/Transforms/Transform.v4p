@@ -153,10 +153,10 @@
    </PIN>
    <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
-   </LINK>
-   <LINK srcnodeid="135" srcpinname="Output" dstnodeid="9" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="78" srcpinname="Rotate Out" dstnodeid="135" dstpinname="Transform In 1">
    </LINK>
@@ -257,5 +257,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="79" srcpinname="Scale Out" dstnodeid="135" dstpinname="Transform In 2">
+   </LINK>
+   <LINK srcnodeid="135" srcpinname="Output" dstnodeid="9" dstpinname="Input Node">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ShadeVisuals\ShadeContent.v4p" systemname="ShadeContent" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\ShadeVisuals\ShadeContent.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5960" top="6280" width="25710" height="12540">
+   <BOUNDS type="Window" left="1380" top="3000" width="25710" height="12540">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -175,9 +175,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10105" top="4945" width="5850" height="7145">
    </BOUNDS>
-   <BOUNDS type="Window" left="14310" top="8540" width="12070" height="9610">
+   <BOUNDS type="Window" left="9300" top="8470" width="12070" height="9610">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Transform BinSize" visible="1">
    </PIN>
@@ -253,8 +253,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="357" srcpinname="Output Node" dstnodeid="354" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="354" srcpinname="Output" dstnodeid="351" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="351" dstpinname="Transform BinSize" hiddenwhenlocked="1">
    </LINK>
@@ -507,9 +505,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="561" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="7075" top="6945" width="2250" height="490">
+   <BOUNDS type="Box" left="7005" top="6975" width="2250" height="490">
    </BOUNDS>
-   <BOUNDS type="Node" left="7075" top="6945" width="0" height="0">
+   <BOUNDS type="Node" left="7005" top="6975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
@@ -691,6 +689,8 @@
    </BOUNDS>
    <PIN pinname="TransformBinSize" visible="1">
    </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="628" dstpinname="Input 1">
    </LINK>
@@ -702,6 +702,12 @@
    <BOUNDS type="Node" left="3335" top="5935" width="15270" height="270">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="sbWorld" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="gsfxTransformTex" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TexTransform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="630" dstpinname="Render State">
@@ -721,10 +727,6 @@
    <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="630" dstpinname="Control">
    </LINK>
    <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="630" dstpinname="texarrayID">
-   </LINK>
-   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="630" dstpinname="sbWorld">
-   </LINK>
-   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="630" dstpinname="gsfxTransformTex">
    </LINK>
    <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="630" dstpinname="Amb">
    </LINK>
@@ -750,10 +752,24 @@
    </LINK>
    <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="630" dstpinname="Geometry">
    </LINK>
-   <LINK srcnodeid="628" srcpinname="Buffer" dstnodeid="630" dstpinname="TexTransform">
-   </LINK>
    <LINK srcnodeid="609" srcpinname="Hue" dstnodeid="630" dstpinname="Hue">
    </LINK>
    <LINK srcnodeid="609" srcpinname="Luminosity" dstnodeid="630" dstpinname="Luminosity">
+   </LINK>
+   <LINK srcnodeid="354" srcpinname="Output" dstnodeid="351" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="630" dstpinname="sbWorld">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="631">
+   <BOUNDS type="Node" left="5190" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="0.5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="630" dstpinname="gsfxTransformTex">
+   </LINK>
+   <LINK srcnodeid="628" srcpinname="Buffer" dstnodeid="630" dstpinname="TexTransform">
    </LINK>
    </PATCH>

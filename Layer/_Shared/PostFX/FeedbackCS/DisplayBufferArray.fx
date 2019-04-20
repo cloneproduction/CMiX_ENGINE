@@ -40,7 +40,7 @@ VS_OUT VS(VS_IN In)
 
 float4 PS_PIX(VS_OUT In): SV_Target{
 	
-	float4 c=.1;
+	float4 c=1.0;
 	int2 iuv=floor((In.UV*Reso+0.));
 	c=sbInput[(min(iuv,Reso).x+floor(iuv.y/(uint)pixSize)*Reso.x)+offset];
 	return c;
@@ -50,7 +50,7 @@ technique10 Pixels
 {
 	pass P0
 	{
-		SetVertexShader( CompileShader( vs_4_0, VS() ) );
-		SetPixelShader( CompileShader( ps_4_0, PS_PIX() ) );
+		SetVertexShader( CompileShader( vs_5_0, VS() ) );
+		SetPixelShader( CompileShader( ps_5_0, PS_PIX() ) );
 	}
 }
