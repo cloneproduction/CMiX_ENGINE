@@ -118,7 +118,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="3760" top="3980" width="27160" height="13570">
+   <BOUNDS type="Window" left="3520" top="7140" width="27160" height="13570">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -426,8 +426,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="Input Index" dstnodeid="29" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="122">
    <BOUNDS type="Box" left="1770" top="5430" width="795" height="960">
    </BOUNDS>
@@ -441,15 +439,13 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0,,,">
+   <PIN pinname="Y Input Value" slicecount="4" values="0,,," visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="Input Index" dstnodeid="122" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="123">
    <BOUNDS type="Box" left="2410" top="2950" width="800" height="240">
    </BOUNDS>
@@ -465,5 +461,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Extension" dstnodeid="123" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Filter Index" dstnodeid="122" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Filter Index" dstnodeid="29" dstpinname="Input">
    </LINK>
    </PATCH>
