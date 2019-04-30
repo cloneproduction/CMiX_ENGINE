@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4480" top="9610" width="16290" height="10240">
+   <BOUNDS type="Window" left="16850" top="10130" width="16290" height="10240">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -311,9 +311,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="20470" top="9530" width="11120" height="9940">
    </BOUNDS>
+   <PIN pinname="Address" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="698" srcpinname="Output" dstnodeid="704" dstpinname="Address">
-   </LINK>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="704" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="704" srcpinname="Output" dstnodeid="691" dstpinname="Input">
@@ -360,4 +360,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="698" srcpinname="Output" dstnodeid="704" dstpinname="Address">
+   </LINK>
    </PATCH>
