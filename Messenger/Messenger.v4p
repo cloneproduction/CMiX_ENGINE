@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="1440" scrolly="1030">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="6290">
    <BOUNDS type="Window" left="19140" top="7960" width="16630" height="14090">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -484,24 +484,6 @@
    </LINK>
    <LINK srcnodeid="775" srcpinname="Y Output Value" dstnodeid="1114" dstpinname="Local Port">
    </LINK>
-   <NODE id="1115" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
-   <BOUNDS type="Node" height="270" left="1125" top="3615" width="440">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1115" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="778" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="1078" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1114" srcpinname="Output" dstnodeid="1115" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1116">
    <BOUNDS type="Box" left="2325" top="675" width="800" height="240">
    </BOUNDS>
@@ -549,15 +531,13 @@
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="1123">
    <BOUNDS type="Node" left="2310" top="7510" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1115" srcpinname="Output" dstnodeid="1123" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1124">
-   <BOUNDS type="Box" left="1760" top="8500" width="5440" height="4030">
+   <BOUNDS type="Box" left="1760" top="8500" width="7840" height="4600">
    </BOUNDS>
    <BOUNDS type="Node" left="1760" top="8500" width="0" height="0">
    </BOUNDS>
@@ -568,6 +548,10 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1123" srcpinname="Output" dstnodeid="1124" dstpinname="Input String">
@@ -783,5 +767,75 @@
    <LINK srcnodeid="1141" srcpinname="Count" dstnodeid="1140" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="1132" srcpinname="Output" dstnodeid="1141" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1142">
+   <BOUNDS type="Node" left="3620" top="6960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3620" top="6960" width="800" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/Layer0/Content/Geometry/RotationMode">
+   </PIN>
+   </NODE>
+   <NODE id="1144" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
+   <BOUNDS type="Node" height="270" left="1125" top="3615" width="440">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1144" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="778" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="1078" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1114" srcpinname="Output" dstnodeid="1144" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="1123" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1145">
+   <BOUNDS type="Box" left="3420" top="13140" width="3560" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3420" top="13140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="/Layer1/Content/Geometry/RotationMode">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1147">
+   <BOUNDS type="Box" left="1750" top="14520" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1750" top="14520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE id="1148" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="2110" top="13360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2110" top="13360">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20470" top="9530" width="11120" height="9940">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1145" srcpinname="Output String" dstnodeid="1148" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="1148" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1147" dstpinname="Input String">
    </LINK>
    </PATCH>
