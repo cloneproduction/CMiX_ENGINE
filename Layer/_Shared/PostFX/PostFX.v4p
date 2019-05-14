@@ -218,12 +218,12 @@
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="58" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
-   </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="TexArray Out" dstnodeid="58" dstpinname="tex0">
    </LINK>
    </PATCH>

@@ -69,6 +69,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2760" top="1130" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <NODE id="20" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Videos">
@@ -118,7 +120,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="3520" top="7140" width="27160" height="13570">
+   <BOUNDS type="Window" left="3760" top="3980" width="27160" height="13570">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -439,7 +441,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0,,," visible="1">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,,,">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -447,7 +449,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="123">
-   <BOUNDS type="Box" left="2410" top="2950" width="800" height="240">
+   <BOUNDS type="Box" left="2410" top="2950" width="2260" height="780">
    </BOUNDS>
    <BOUNDS type="Node" left="2410" top="2950" width="0" height="0">
    </BOUNDS>

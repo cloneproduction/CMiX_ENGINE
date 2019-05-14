@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="24880" top="12240" width="4200" height="6290">
+   <BOUNDS type="Window" left="32300" top="14040" width="4200" height="6290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -105,7 +105,7 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="7170" top="5370" width="20250" height="10905">
+   <BOUNDS type="Window" left="400" top="12760" width="20250" height="10900">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>

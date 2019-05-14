@@ -77,7 +77,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12190" top="4210" width="6244" height="12997">
    </BOUNDS>
-   <BOUNDS type="Window" left="3750" top="4350" width="21920" height="15740">
+   <BOUNDS type="Window" left="14450" top="4460" width="21920" height="15740">
    </BOUNDS>
    <PIN pinname="Input - Input String" visible="1">
    </PIN>
@@ -164,7 +164,7 @@
    <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/Is3D">
    </PIN>
    </NODE>
-   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Input 1" hiddenwhenlocked="1">
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Input - Input 2 - Y Output Value" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="685">
    <BOUNDS type="Node" left="8710" top="4210" width="0" height="0">
