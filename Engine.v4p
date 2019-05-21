@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="32300" top="14040" width="4200" height="6290">
+   <BOUNDS type="Window" left="25720" top="10370" width="4200" height="6290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -55,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Mixer" filename="Mixer\Mixer.v4p" nodename="Mixer\Mixer.v4p" componentmode="Hidden" id="37" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="1222" top="2291" width="740" height="280">
+   <BOUNDS type="Node" left="992" top="2291" width="990" height="280">
    </BOUNDS>
-   <BOUNDS type="Box" left="1222" top="2291" width="8980" height="7828">
+   <BOUNDS type="Box" left="992" top="2291" width="8980" height="7828">
    </BOUNDS>
    <BOUNDS type="Window" left="16080" top="9930" width="11580" height="8300">
    </BOUNDS>
@@ -95,7 +95,7 @@
    <NODE id="38" componentmode="Hidden" systemname="PostFX" filename="PostFX\PostFX.v4p" nodename="PostFX\PostFX.v4p" debug="0">
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Node" left="590" top="2950" width="1300" height="280">
+   <BOUNDS type="Node" left="590" top="2950" width="860" height="280">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1" slicecount="1" values="||">
    </PIN>
@@ -137,7 +137,7 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="19140" top="7960" width="16630" height="14090">
+   <BOUNDS type="Window" left="6660" top="5120" width="16630" height="14090">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1760" height="270">
    </BOUNDS>
@@ -161,9 +161,9 @@
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="38" dstpinname="Beat">
    </LINK>
    <NODE systemname="Layer" filename="Layer\Layer.v4p" nodename="Layer\Layer.v4p" componentmode="Hidden" id="51" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="1904" top="1653" width="1150" height="270">
+   <BOUNDS type="Node" left="1914" top="1673" width="1150" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1904" top="1653" width="8332" height="8260">
+   <BOUNDS type="Box" left="1914" top="1673" width="8332" height="8260">
    </BOUNDS>
    <BOUNDS type="Window" left="4630" top="13350" width="7710" height="6820">
    </BOUNDS>

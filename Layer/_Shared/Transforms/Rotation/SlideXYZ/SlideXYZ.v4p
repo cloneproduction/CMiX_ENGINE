@@ -343,7 +343,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="190">
-   <BOUNDS type="Node" left="5730" top="4450" width="100" height="100">
+   <BOUNDS type="Node" left="5740" top="4360" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -417,7 +417,7 @@
    <LINK srcnodeid="197" srcpinname="Output" dstnodeid="198" dstpinname="Input">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="199">
-   <BOUNDS type="Node" left="4760" top="6420" width="100" height="100">
+   <BOUNDS type="Node" left="4760" top="5920" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -477,7 +477,7 @@
    <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="216" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="215">
-   <BOUNDS type="Box" left="11570" top="3130" width="990" height="240">
+   <BOUNDS type="Box" left="11570" top="3130" width="1450" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="11570" top="3130" width="0" height="0">
    </BOUNDS>
@@ -666,20 +666,8 @@
    </LINK>
    <LINK srcnodeid="218" srcpinname="Output" dstnodeid="214" dstpinname="Phase">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="219">
-   <BOUNDS type="Box" left="9820" top="7580" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9820" top="7580" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="207" srcpinname="Output" dstnodeid="219" dstpinname="Y Input Value">
+   <LINK srcnodeid="197" srcpinname="Output" dstnodeid="192" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="208" srcpinname="Remainder" dstnodeid="211" dstpinname="Select">
-   </LINK>
-   <LINK srcnodeid="198" srcpinname="Remainder" dstnodeid="192" dstpinname="Select">
+   <LINK srcnodeid="209" srcpinname="Output" dstnodeid="211" dstpinname="Select">
    </LINK>
    </PATCH>

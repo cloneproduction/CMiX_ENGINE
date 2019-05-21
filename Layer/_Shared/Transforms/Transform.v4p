@@ -91,7 +91,7 @@
    <NODE systemname="Rotation" filename="Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4480" top="9610" width="16290" height="10240">
+   <BOUNDS type="Window" left="10780" top="9270" width="16290" height="10240">
    </BOUNDS>
    <PIN pinname="RotationName" visible="1" slicecount="1" values="FLA">
    </PIN>

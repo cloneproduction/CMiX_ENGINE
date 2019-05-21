@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Mixer\Mixer.v4p" systemname="Mixer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Mixer.v4p" scrollx="2380" scrolly="1420">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Mixer\Mixer.v4p" systemname="Mixer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Mixer.v4p" scrollx="0" scrolly="0">
    <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
@@ -364,16 +364,6 @@
    </NODE>
    <LINK srcnodeid="380" srcpinname="Y Output Value" dstnodeid="377" dstpinname="ScaleY">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="381">
-   <BOUNDS type="Box" left="7050" top="7540" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7050" top="7540" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Layers">
-   </PIN>
-   </NODE>
    <NODE id="374" border="1" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden">
    <BOUNDS type="Window" left="20320" top="680" width="14820" height="10240">
    </BOUNDS>

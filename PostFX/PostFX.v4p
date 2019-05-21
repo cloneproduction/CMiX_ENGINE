@@ -1129,6 +1129,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Brightness">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <LINK srcnodeid="700" srcpinname="Y Output Value" dstnodeid="589" dstpinname="Brightness">
    </LINK>
