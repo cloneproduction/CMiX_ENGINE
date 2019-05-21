@@ -292,4 +292,18 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="467">
+   <BOUNDS type="Box" left="5930" top="2830" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5930" top="2830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="452" srcpinname="Output" dstnodeid="467" dstpinname="Input String">
+   </LINK>
    </PATCH>

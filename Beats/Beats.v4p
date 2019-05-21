@@ -111,7 +111,7 @@
    <LINK srcnodeid="70" srcpinname="Output" dstnodeid="63" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="62">
-   <BOUNDS type="Node" left="7020" top="3390" width="330" height="270">
+   <BOUNDS type="Node" left="7020" top="3410" width="330" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -121,7 +121,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="59">
-   <BOUNDS type="Node" left="7020" top="4540" width="100" height="100">
+   <BOUNDS type="Node" left="7020" top="4560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -167,11 +167,11 @@
    <LINK srcnodeid="84" srcpinname="Change" dstnodeid="78" dstpinname="Y">
    </LINK>
    <NODE systemname="DateTime (Value)" filename="ValueDateTime\ValueDateTime.csproj" nodename="DateTime (Value)" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="7620" top="3390" width="100" height="100">
+   <BOUNDS type="Node" left="7620" top="3410" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7620" top="3390">
+   <BOUNDS type="Box" left="7620" top="3410">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="64" dstpinname="Period" hiddenwhenlocked="1">
@@ -221,7 +221,7 @@
    <LINK srcnodeid="119" srcpinname="Output" dstnodeid="118" dstpinname="Input 2">
    </LINK>
    <NODE systemname="LT (Value)" nodename="LT (Value)" componentmode="Hidden" id="265">
-   <BOUNDS type="Node" left="7020" top="3960" width="100" height="100">
+   <BOUNDS type="Node" left="7020" top="3980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
@@ -349,7 +349,7 @@
    <LINK srcnodeid="285" srcpinname="Output" dstnodeid="119" dstpinname="Input">
    </LINK>
    <NODE id="287" systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="7020" top="5130" width="100" height="100">
+   <BOUNDS type="Node" left="7020" top="5150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -357,7 +357,7 @@
    </PIN>
    <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="7020" top="5130" width="4800" height="3600">
+   <BOUNDS type="Box" left="7020" top="5150" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="4140" top="9720" width="9000" height="6000">
    </BOUNDS>

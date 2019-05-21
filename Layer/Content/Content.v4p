@@ -149,7 +149,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9960" top="4205" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="13150" top="11750" width="12840" height="8160">
+   <BOUNDS type="Window" left="16240" top="8370" width="12840" height="8160">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -373,7 +373,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8475" top="4225" width="7836" height="5712">
    </BOUNDS>
-   <BOUNDS type="Window" left="10820" top="12520" width="10270" height="5970">
+   <BOUNDS type="Window" left="19060" top="3060" width="10270" height="5970">
    </BOUNDS>
    <PIN pinname="MskOn" visible="1">
    </PIN>
@@ -403,7 +403,7 @@
    <NODE systemname="TransformView" filename="..\_Shared\TransformsView\TransformView.v4p" nodename="..\_Shared\TransformsView\TransformView.v4p" componentmode="Hidden" id="65">
    <BOUNDS type="Node" left="3160" top="6155" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8280" top="10870" width="11860" height="8880">
+   <BOUNDS type="Window" left="23530" top="8820" width="11860" height="8880">
    </BOUNDS>
    <BOUNDS type="Box" left="3160" top="6155">
    </BOUNDS>
@@ -546,8 +546,8 @@
    </LINK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Rotate Out" dstnodeid="61" dstpinname="TransformView">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    </PATCH>
