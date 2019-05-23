@@ -147,7 +147,7 @@
    </PIN>
    <PIN pinname="Original" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="7800" top="14660" width="8950" height="4950">
+   <BOUNDS type="Window" left="11370" top="8190" width="8940" height="4950">
    </BOUNDS>
    <BOUNDS type="Box" left="790" top="4510">
    </BOUNDS>
@@ -290,8 +290,6 @@
    </NODE>
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1161" dstpinname="Operand 1" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1161" srcpinname="Result" dstnodeid="1142" dstpinname="Address">
-   </LINK>
    <NODE systemname="Capture" filename="Capture.v4p" nodename="Capture.v4p" componentmode="Hidden" id="1169">
    <BOUNDS type="Node" left="5840" top="1610" width="0" height="0">
    </BOUNDS>
@@ -313,5 +311,7 @@
    <LINK srcnodeid="1169" srcpinname="Resolution" dstnodeid="1150" dstpinname="CaptureRes" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1161" srcpinname="Result" dstnodeid="1142" dstpinname="Address">
    </LINK>
    </PATCH>
