@@ -287,7 +287,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3410" top="3945" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="26440" top="1030" width="12170" height="8510">
+   <BOUNDS type="Window" left="20385" top="675" width="7470" height="5400">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="290" dstpinname="Layers">

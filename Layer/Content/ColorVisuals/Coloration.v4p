@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="9340" top="5290" width="24310" height="11870">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="720">
+   <BOUNDS type="Window" left="6240" top="9150" width="24300" height="11880">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -151,7 +151,7 @@
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="602" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="619">
-   <BOUNDS type="Node" left="1605" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="1605" top="1845" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -161,9 +161,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="618" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1785" top="1755" width="1725" height="240">
+   <BOUNDS type="Box" left="1785" top="1290" width="1725" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1785" top="1755" width="0" height="0">
+   <BOUNDS type="Node" left="1785" top="1290" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/ObjColor">
    </PIN>
@@ -191,7 +191,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4660" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Hue/Amount">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Hue/Range/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -215,11 +215,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="625" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="19730" top="6240" width="1910" height="240">
+   <BOUNDS type="Box" left="19735" top="6240" width="2790" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="19730" top="6240" width="0" height="0">
+   <BOUNDS type="Node" left="19735" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Value/Amount">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Value/Range/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -269,9 +269,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="634" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9680" top="6240" width="2320" height="240">
+   <BOUNDS type="Box" left="9725" top="5640" width="2320" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9680" top="6240" width="0" height="0">
+   <BOUNDS type="Node" left="9725" top="5640" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Saturation/Modifier">
    </PIN>
@@ -297,11 +297,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="637" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11930" top="6240" width="2230" height="240">
+   <BOUNDS type="Box" left="11930" top="6240" width="3285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="11930" top="6240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Saturation/Amount">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration/Saturation/Range/Amount">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -419,7 +419,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="661" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2140" top="6240" width="1850" height="240">
+   <BOUNDS type="Box" left="2140" top="6240" width="2145" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2140" top="6240" width="0" height="0">
    </BOUNDS>
@@ -453,16 +453,16 @@
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="263" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="666" debug="0">
-   <BOUNDS type="Node" left="645" top="2985" width="100" height="100">
+   <BOUNDS type="Node" left="645" top="2520" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="645" top="2985">
+   <BOUNDS type="Box" left="645" top="2520">
    </BOUNDS>
    <BOUNDS type="Window" left="25950" top="8810" width="11120" height="9940">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="666" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="666" srcpinname="Output" dstnodeid="226" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="619" srcpinname="Output" dstnodeid="666" dstpinname="Address">
    </LINK>
@@ -581,5 +581,7 @@
    <LINK srcnodeid="680" srcpinname="XYZ" dstnodeid="658" dstpinname="BeatInfos" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="678" srcpinname="Output" dstnodeid="680" dstpinname="Address 1">
+   </LINK>
+   <LINK srcnodeid="666" srcpinname="Output" dstnodeid="226" dstpinname="Input">
    </LINK>
    </PATCH>

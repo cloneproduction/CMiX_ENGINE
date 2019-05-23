@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Layer.v4p" scrollx="0" scrolly="0" systemname="Layer" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" locked="0">
-   <BOUNDS type="Window" left="4630" top="13350" width="7710" height="6820">
+   <BOUNDS type="Window" left="16665" top="6435" width="7710" height="6810">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -163,7 +163,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1130" top="3200" width="8350" height="7135">
    </BOUNDS>
-   <BOUNDS type="Window" left="10760" top="11310" width="9400" height="7640">
+   <BOUNDS type="Window" left="7470" top="6390" width="9390" height="7635">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -179,7 +179,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2640" top="2400" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="2860" top="8960" width="21250" height="12340">
+   <BOUNDS type="Window" left="3900" top="4365" width="21240" height="12330">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -219,7 +219,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4150" top="2400" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="17900" top="6310" width="21250" height="12340">
+   <BOUNDS type="Window" left="4875" top="4515" width="21240" height="12330">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>

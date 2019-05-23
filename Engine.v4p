@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="26470" top="9760" width="4200" height="6290">
+   <BOUNDS type="Window" left="18705" top="6945" width="4200" height="6285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -105,7 +105,7 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="400" top="12760" width="20250" height="10900">
+   <BOUNDS type="Window" left="2085" top="3060" width="20250" height="10890">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -137,7 +137,7 @@
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
    </LINK>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="6040" top="6910" width="16630" height="14090">
+   <BOUNDS type="Window" left="10710" top="6540" width="16620" height="14085">
    </BOUNDS>
    <BOUNDS type="Node" left="580" top="460" width="1760" height="270">
    </BOUNDS>
@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1914" top="1673" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="4630" top="13350" width="7710" height="6820">
+   <BOUNDS type="Window" left="16665" top="6435" width="7710" height="6810">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>

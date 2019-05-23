@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="17900" top="6310" width="21250" height="12340">
+   <BOUNDS type="Window" left="4875" top="4515" width="21240" height="12330">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="16190" top="4205" width="3360" height="5056">
    </BOUNDS>
-   <BOUNDS type="Window" left="5920" top="9220" width="24310" height="11890">
+   <BOUNDS type="Window" left="6240" top="9150" width="24300" height="11880">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -403,7 +403,7 @@
    <NODE systemname="TransformView" filename="..\_Shared\TransformsView\TransformView.v4p" nodename="..\_Shared\TransformsView\TransformView.v4p" componentmode="Hidden" id="65">
    <BOUNDS type="Node" left="3160" top="6155" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="23530" top="8820" width="11860" height="8880">
+   <BOUNDS type="Window" left="9210" top="2700" width="11850" height="8880">
    </BOUNDS>
    <BOUNDS type="Box" left="3160" top="6155">
    </BOUNDS>
@@ -546,7 +546,7 @@
    </LINK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Rotate Out" dstnodeid="61" dstpinname="TransformView">
+   <LINK srcnodeid="65" srcpinname="TransformOut" dstnodeid="61" dstpinname="TransformView">
    </LINK>
    <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
