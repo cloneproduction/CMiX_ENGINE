@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Scale\Scale.v4p" systemname="Scale" filename="C:\Users\clone\Desktop\2D_MOTION\Scale\Scale.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="800" top="8520" width="13110" height="8890">
+   <BOUNDS type="Window" left="11100" top="6720" width="13110" height="8880">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -187,6 +187,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="10050" top="4760" width="13160" height="13520">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="457" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
@@ -293,15 +295,17 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="467">
-   <BOUNDS type="Box" left="5930" top="2830" width="800" height="240">
+   <BOUNDS type="Box" left="5935" top="2825" width="3840" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5930" top="2830" width="0" height="0">
+   <BOUNDS type="Node" left="5935" top="2825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
    <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="452" srcpinname="Output" dstnodeid="467" dstpinname="Input String">

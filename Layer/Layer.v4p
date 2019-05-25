@@ -179,7 +179,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2640" top="2400" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="3900" top="4365" width="21240" height="12330">
+   <BOUNDS type="Window" left="7020" top="3270" width="21240" height="12330">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -310,8 +310,8 @@
    </LINK>
    <LINK srcnodeid="1169" srcpinname="Resolution" dstnodeid="1150" dstpinname="CaptureRes" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="1161" srcpinname="Result" dstnodeid="1142" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
    </LINK>
    </PATCH>

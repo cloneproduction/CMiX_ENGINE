@@ -32,7 +32,7 @@
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
+   <BOUNDS type="Window" left="17115" top="9855" width="9975" height="8055">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -111,5 +111,21 @@
    <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="63" dstpinname="Update">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="63" dstpinname="Value Bin Size">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="64">
+   <BOUNDS type="Box" left="3435" top="2595" width="4260" height="915">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3435" top="2595" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="64" dstpinname="Input String">
    </LINK>
    </PATCH>

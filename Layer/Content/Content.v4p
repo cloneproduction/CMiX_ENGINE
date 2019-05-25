@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4875" top="4515" width="21240" height="12330">
+   <BOUNDS type="Window" left="7020" top="3270" width="21240" height="12330">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -149,7 +149,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9960" top="4205" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="16240" top="8370" width="12840" height="8160">
+   <BOUNDS type="Window" left="11895" top="5655" width="12840" height="8160">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -373,7 +373,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8475" top="4225" width="7836" height="5712">
    </BOUNDS>
-   <BOUNDS type="Window" left="19060" top="3060" width="10270" height="5970">
+   <BOUNDS type="Window" left="11250" top="4860" width="10260" height="5970">
    </BOUNDS>
    <PIN pinname="MskOn" visible="1">
    </PIN>
@@ -513,7 +513,7 @@
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="67" dstpinname="Address" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="70">
-   <BOUNDS type="Box" left="12130" top="620" width="800" height="240">
+   <BOUNDS type="Box" left="12130" top="620" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="12130" top="620" width="0" height="0">
    </BOUNDS>

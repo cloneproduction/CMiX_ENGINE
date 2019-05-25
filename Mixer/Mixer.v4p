@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="16080" top="9930" width="11580" height="8300">
+   <BOUNDS type="Window" left="16350" top="6330" width="11580" height="8295">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -45,7 +45,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="820" top="2700" width="16428" height="12460">
    </BOUNDS>
-   <BOUNDS type="Window" left="13980" top="6135" width="14355" height="9990">
+   <BOUNDS type="Window" left="12960" top="5310" width="8040" height="9990">
    </BOUNDS>
    <PIN pinname="TransformTexture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -258,6 +258,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="371" srcpinname="Output String" dstnodeid="282" dstpinname="LayerNames">
