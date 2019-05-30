@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="2085">
-   <BOUNDS type="Window" left="2085" top="3060" width="20250" height="10890">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="4575">
+   <BOUNDS type="Window" left="10245" top="10260" width="20250" height="10890">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="4830" top="16346" width="795" height="240">
@@ -303,7 +303,7 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="546" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5937" top="2347" width="792" height="240">
+   <BOUNDS type="Box" left="5937" top="2347" width="330" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="5937" top="2347" width="0" height="0">
    </BOUNDS>
@@ -457,7 +457,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5785" top="5635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.21">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.27">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -701,11 +701,11 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Inner Radius" slicecount="1" values="0.58">
+   <PIN pinname="Inner Radius" slicecount="1" values="0.78">
    </PIN>
    <PIN pinname="Magnification" slicecount="1" visible="1" values="1.02">
    </PIN>
-   <PIN pinname="Outer Radius" slicecount="1" values="0.51">
+   <PIN pinname="Outer Radius" slicecount="1" values="0.93">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
@@ -741,7 +741,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="8">
+   <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="529" srcpinname="X" dstnodeid="620" dstpinname="Input 1" hiddenwhenlocked="1">
@@ -883,7 +883,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3060" top="13030" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -893,7 +893,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="659" srcpinname="Y Output Value" dstnodeid="616" dstpinname="Enabled">
@@ -930,8 +930,6 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="589" srcpinname="Texture Out" dstnodeid="675" dstpinname="Texture In">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="677">
    <BOUNDS type="Box" left="4990" top="14950" width="800" height="240">
    </BOUNDS>
@@ -959,11 +957,13 @@
    <LINK srcnodeid="678" srcpinname="Output Enum" dstnodeid="675" dstpinname="Technique">
    </LINK>
    <NODE systemname="Damper (Animation)" filename="" nodename="Damper (Animation)" componentmode="Hidden" id="681">
-   <BOUNDS type="Node" left="7690" top="9720" width="100" height="100">
+   <BOUNDS type="Node" left="4060" top="7320" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Go To Position" visible="1">
    </PIN>
    <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="530" srcpinname="Output" dstnodeid="681" dstpinname="Go To Position">
@@ -987,7 +987,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6800" top="10990" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -999,7 +999,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Displace (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Displace.tfx" nodename="Displace (DX11.TextureFX)" componentmode="Hidden" id="691">
@@ -1185,5 +1185,35 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="704" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Amount">
+   </LINK>
+   <LINK srcnodeid="616" srcpinname="Texture Out" dstnodeid="675" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="584" srcpinname="Output" dstnodeid="271" dstpinname="Input 2">
+   <LINKPOINT x="2280" y="5925">
+   </LINKPOINT>
+   <LINKPOINT x="2265" y="6075">
+   </LINKPOINT>
+   <LINKPOINT x="2205" y="5940">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="582" srcpinname="Up Edge" dstnodeid="583" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="705">
+   <BOUNDS type="Box" left="5895" top="3300" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5895" top="3300" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="546" srcpinname="Y Output Value" dstnodeid="705" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="529" srcpinname="X" dstnodeid="681" dstpinname="FilterTime">
    </LINK>
    </PATCH>
