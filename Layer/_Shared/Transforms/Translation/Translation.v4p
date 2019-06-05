@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
-   <BOUNDS type="Window" left="1890" top="8620" width="12250" height="8740">
+   <BOUNDS type="Window" left="8595" top="5610" width="12240" height="8730">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -199,7 +199,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1136">
-   <BOUNDS type="Box" left="2290" top="1400" width="2110" height="240">
+   <BOUNDS type="Box" left="2290" top="1400" width="3480" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2290" top="1400" width="0" height="0">
    </BOUNDS>
@@ -233,11 +233,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="4285" top="1760" width="2050" height="240">
+   <BOUNDS type="Box" left="4285" top="1760" width="2730" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4285" top="1760" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode/Mode">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>

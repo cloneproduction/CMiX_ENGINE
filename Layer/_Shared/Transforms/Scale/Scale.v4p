@@ -195,11 +195,11 @@
    <LINK srcnodeid="457" srcpinname="Output" dstnodeid="444" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="460">
-   <BOUNDS type="Box" left="4270" top="1905" width="1695" height="240">
+   <BOUNDS type="Box" left="4270" top="1905" width="3060" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4270" top="1905" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/ScaleMode">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/ScaleMode/Mode">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -294,20 +294,4 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="467">
-   <BOUNDS type="Box" left="5935" top="2825" width="3840" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5935" top="2825" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="452" srcpinname="Output" dstnodeid="467" dstpinname="Input String">
-   </LINK>
    </PATCH>

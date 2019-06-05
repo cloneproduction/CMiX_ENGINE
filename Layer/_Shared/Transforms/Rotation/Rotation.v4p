@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="10780" top="9270" width="16290" height="10240">
+   <BOUNDS type="Window" left="10860" top="5370" width="16290" height="10230">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -109,7 +109,7 @@
    <NODE systemname="Rotate" filename="Rotate\Rotate.v4p" nodename="Rotate\Rotate.v4p" componentmode="Hidden" id="617">
    <BOUNDS type="Node" left="945" top="6090" width="10110" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="19130" top="7080" width="11540" height="9150">
+   <BOUNDS type="Window" left="5790" top="4725" width="11535" height="9150">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -227,11 +227,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="700">
-   <BOUNDS type="Box" left="8140" top="1780" width="1890" height="240">
+   <BOUNDS type="Box" left="8140" top="1780" width="3450" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="8140" top="1780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationMode">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/RotationMode/Mode">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -312,6 +312,8 @@
    <BOUNDS type="Window" left="20470" top="9530" width="11120" height="9940">
    </BOUNDS>
    <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="704" dstpinname="Input" hiddenwhenlocked="1">

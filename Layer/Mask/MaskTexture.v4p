@@ -111,7 +111,7 @@
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="EnableMask" visible="1">
+   <PIN pinname="EnableMask" visible="1" slicecount="3" values="0,1,0">
    </PIN>
    </NODE>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="10">
@@ -169,16 +169,14 @@
    <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Content">
    </PIN>
-   <BOUNDS type="Box" left="2625" top="405" width="750" height="240">
+   <BOUNDS type="Box" left="2370" top="375" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2625" top="405" width="750" height="240">
+   <BOUNDS type="Node" left="2370" top="375" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Output Node" dstnodeid="9" dstpinname="Content">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="9" dstpinname="texarrayID">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="9" dstpinname="EnableMask">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="1" dstpinname="TranslateX">
    </LINK>
@@ -223,9 +221,9 @@
    <NODE id="18" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Input 1|">
    </PIN>
-   <BOUNDS type="Box" left="7735" top="610" width="840" height="240">
+   <BOUNDS type="Box" left="8365" top="160" width="840" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7735" top="610" width="750" height="240">
+   <BOUNDS type="Node" left="8365" top="160" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
@@ -238,7 +236,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="7470" top="6390" width="9390" height="7635">
+   <BOUNDS type="Window" left="7470" top="6390" width="11160" height="8505">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -255,5 +253,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Color Output" dstnodeid="7" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="9" dstpinname="EnableMask">
    </LINK>
    </PATCH>

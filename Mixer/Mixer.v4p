@@ -384,4 +384,26 @@
    </LINK>
    <LINK srcnodeid="374" srcpinname="Actual BackBuffer SizeXY" dstnodeid="376" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="382">
+   <BOUNDS type="Box" left="4545" top="3825" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4545" top="3825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="372" srcpinname="Output" dstnodeid="382" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

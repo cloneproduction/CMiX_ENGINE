@@ -45,7 +45,7 @@
    </PIN>
    <BOUNDS type="Box" left="6690" top="2130">
    </BOUNDS>
-   <BOUNDS type="Window" left="1890" top="8620" width="12250" height="8740">
+   <BOUNDS type="Window" left="8595" top="5610" width="12240" height="8730">
    </BOUNDS>
    <PIN pinname="SprTra" visible="1">
    </PIN>
@@ -91,7 +91,7 @@
    <NODE systemname="Rotation" filename="Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="10780" top="9270" width="16290" height="10240">
+   <BOUNDS type="Window" left="10860" top="5370" width="16290" height="10230">
    </BOUNDS>
    <PIN pinname="RotationName" visible="1" slicecount="1" values="FLA">
    </PIN>
