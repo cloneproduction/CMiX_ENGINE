@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1350" top="3970" width="5253" height="6886">
    </BOUNDS>
-   <BOUNDS type="Window" left="16290" top="6310" width="9450" height="8170">
+   <BOUNDS type="Window" left="11910" top="3615" width="12075" height="8145">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="Pictures\">
    </PIN>
