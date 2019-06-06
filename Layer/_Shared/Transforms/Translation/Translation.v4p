@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
    <BOUNDS type="Window" left="8595" top="5610" width="12240" height="8730">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -49,7 +49,7 @@
    </PIN>
    <BOUNDS type="Box" left="4785" top="3565">
    </BOUNDS>
-   <BOUNDS type="Window" left="7815" top="4830" width="22755" height="15660">
+   <BOUNDS type="Window" left="2025" top="405" width="22755" height="15660">
    </BOUNDS>
    </NODE>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="1068">
@@ -81,7 +81,7 @@
    </PIN>
    <BOUNDS type="Box" left="8115" top="3565">
    </BOUNDS>
-   <BOUNDS type="Window" left="16590" top="5040" width="33160" height="17730">
+   <BOUNDS type="Window" left="-300" top="480" width="29100" height="16500">
    </BOUNDS>
    <PIN pinname="TranslateName" visible="1">
    </PIN>
@@ -298,4 +298,6 @@
    </LINK>
    <LINK srcnodeid="1126" srcpinname="Transform Out" dstnodeid="1108" dstpinname="Input Node">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>

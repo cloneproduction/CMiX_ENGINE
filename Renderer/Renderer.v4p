@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-16200" top="5450" width="10830" height="9060">
    </BOUNDS>
@@ -12,7 +12,7 @@
    <PIN pinname="XY" visible="1" slicecount="2" values="416,230">
    </PIN>
    </NODE>
-   <NODE systemname="AspectRatio (Transform)" filename="" nodename="AspectRatio (Transform)" componentmode="Hidden" id="20">
+   <NODE systemname="ASPECTRATIO (TRANSFORM)" filename="" nodename="AspectRatio (Transform)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="4560" top="6480" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Aspect Height" visible="1">
    </PIN>
-   <PIN pinname="Alignment">
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="X" dstnodeid="20" dstpinname="Aspect Width">
@@ -38,7 +38,7 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="20" dstpinname="Alignment">
    </LINK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="54" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="3530" top="1445" width="1545" height="240">
@@ -254,16 +254,6 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Transform Out" dstnodeid="284" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="288">
-   <BOUNDS type="Box" left="6420" top="4460" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6420" top="4460" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="288" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="289">
    <BOUNDS type="Node" left="2580" top="5930" width="100" height="100">
    </BOUNDS>
@@ -294,4 +284,6 @@
    </LINK>
    <LINK srcnodeid="290" srcpinname="Actual BackBuffer SizeXY" dstnodeid="237" dstpinname="Y Input Value">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>

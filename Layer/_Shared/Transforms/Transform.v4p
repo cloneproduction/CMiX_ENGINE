@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" systemname="Transform" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" scrollx="0" scrolly="-360" locked="0">
    <BOUNDS type="Window" left="11250" top="4860" width="10260" height="5970">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
@@ -91,7 +91,7 @@
    <NODE systemname="Rotation" filename="Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="10860" top="5370" width="16290" height="10230">
+   <BOUNDS type="Window" left="5370" top="3045" width="16035" height="9420">
    </BOUNDS>
    <PIN pinname="RotationName" visible="1" slicecount="1" values="FLA">
    </PIN>
@@ -143,7 +143,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1980" top="3160" width="8020" height="4980">
    </BOUNDS>
-   <BOUNDS type="Window" left="10545" top="11400" width="9600" height="6495">
+   <BOUNDS type="Window" left="10500" top="7380" width="9600" height="6495">
    </BOUNDS>
    <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -260,4 +260,6 @@
    </LINK>
    <LINK srcnodeid="135" srcpinname="Output" dstnodeid="9" dstpinname="Input Node">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="13935" scrolly="0">
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="0" debug="0">
    <BOUNDS type="Node" left="8030" top="8100" width="100" height="100">
    </BOUNDS>
@@ -96,11 +96,11 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="16590" top="5040" width="33160" height="17730">
+   <BOUNDS type="Window" left="-300" top="480" width="29100" height="16500">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="4950" top="11070" width="30210" height="270">
@@ -1039,7 +1039,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="203">
-   <BOUNDS type="Node" left="27850" top="6650" width="100" height="100">
+   <BOUNDS type="Node" left="27865" top="6740" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1047,11 +1047,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="27850" top="6650">
+   <BOUNDS type="Box" left="27865" top="6740">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="Output" dstnodeid="203" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="202">
    <BOUNDS type="Node" left="26880" top="6730" width="100" height="100">
    </BOUNDS>
@@ -1188,8 +1186,6 @@
    <BOUNDS type="Box" left="31120" top="6790">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="Output" dstnodeid="215" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="213">
    <BOUNDS type="Node" left="31120" top="7480" width="100" height="100">
    </BOUNDS>
@@ -1322,8 +1318,6 @@
    <BOUNDS type="Box" left="33870" top="6830">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="Output" dstnodeid="227" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="226">
    <BOUNDS type="Node" left="33870" top="7520" width="100" height="100">
    </BOUNDS>
@@ -1460,8 +1454,6 @@
    <BOUNDS type="Box" left="36580" top="6890">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="Output" dstnodeid="237" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="236">
    <BOUNDS type="Node" left="36580" top="7550" width="100" height="100">
    </BOUNDS>
@@ -1915,5 +1907,41 @@
    <LINK srcnodeid="272" srcpinname="Output" dstnodeid="106" dstpinname="Input">
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="273">
+   <BOUNDS type="Node" left="30405" top="3420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="128" srcpinname="Output" dstnodeid="273" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="203" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="215" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="227" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="237" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="274">
+   <BOUNDS type="Box" left="30735" top="3075" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="30735" top="3075" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="274" srcpinname="Y Output Value" dstnodeid="273" dstpinname="Input 2">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    </PATCH>

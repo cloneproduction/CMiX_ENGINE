@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Layer.v4p" scrollx="0" scrolly="0" systemname="Layer" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" locked="0">
    <BOUNDS type="Window" left="16665" top="6435" width="7710" height="6810">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -179,7 +179,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2640" top="2400" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="6330" top="6090" width="21240" height="12330">
+   <BOUNDS type="Window" left="1785" top="2205" width="21060" height="9870">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -314,4 +314,6 @@
    </LINK>
    <LINK srcnodeid="1142" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>

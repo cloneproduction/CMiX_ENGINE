@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Mixer\Blender\Blender.v4p" systemname="Blender" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Blender\Blender.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12960" top="5310" width="8040" height="9990">
+   <BOUNDS type="Window" left="7320" top="2970" width="8040" height="9990">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="1425" top="6045" width="100" height="100">
@@ -352,4 +352,6 @@
    </LINK>
    <LINK srcnodeid="292" srcpinname="Output" dstnodeid="287" dstpinname="Input">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>

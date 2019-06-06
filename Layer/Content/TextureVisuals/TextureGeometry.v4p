@@ -1,19 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureGeometry.v4p" systemname="TextureGeometry" filename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\Visuals\TextureVisuals\TextureGeometry.v4p" scrollx="0" scrolly="40">
-   <NODE id="0" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
-   </PIN>
-   <BOUNDS type="Box" left="3760" top="4600" width="910" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3760" top="4600" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="2048,2048">
-   </PIN>
-   <PIN pinname="Pin Visibility" slicecount="1" values="True">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="460" top="4600" width="795" height="240">
    </BOUNDS>
@@ -22,30 +8,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="TextureArray">
    </PIN>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2110" top="4600" width="648" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2110" top="4600" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TextureBinSize">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,1">
    </PIN>
    </NODE>
    <NODE systemname="Pictures" filename="Pictures\Pictures.v4p" nodename="Pictures\Pictures.v4p" componentmode="Hidden" id="3">
@@ -91,11 +53,13 @@
    </PIN>
    <PIN pinname="PicturesRes" visible="1">
    </PIN>
+   <PIN pinname="Texture Spread" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="460" top="460" width="795" height="240">
+   <BOUNDS type="Box" left="690" top="465" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="460" top="460" width="0" height="0">
+   <BOUNDS type="Node" left="690" top="465" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -114,26 +78,24 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="1" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="5" dstpinname="Videos">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Resolution" dstnodeid="5" dstpinname="VideosRes">
    </LINK>
-   <BOUNDS type="Window" left="18530" top="12160" width="8610" height="6160">
+   <BOUNDS type="Window" left="9705" top="5865" width="8610" height="6150">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="1680" top="460" width="100" height="100">
+   <BOUNDS type="Node" left="1680" top="465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="1680" top="460">
+   <BOUNDS type="Box" left="1680" top="465">
    </BOUNDS>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="15">
@@ -151,7 +113,7 @@
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="15" dstpinname="Input 2">
    </LINK>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="4580" top="1560" width="100" height="100">
+   <BOUNDS type="Node" left="4325" top="990" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>
@@ -161,9 +123,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="22">
-   <BOUNDS type="Box" left="4690" top="940" width="800" height="240">
+   <BOUNDS type="Box" left="4435" top="370" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4690" top="940" width="0" height="0">
+   <BOUNDS type="Node" left="4435" top="370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|C:\Users\BabyClone\Google Drive\RESSOURCES\VJ CONTENT\Clone - Texture\_Selection\Material\Rust-2.png|">
    </PIN>
@@ -218,6 +180,114 @@
    </LINK>
    <LINK srcnodeid="21" srcpinname="SizeXY" dstnodeid="25" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="27" debug="0">
+   <BOUNDS type="Node" left="675" top="2070" width="1050" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="2070">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20830" top="8810" width="9980" height="8060">
+   </BOUNDS>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="27" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="27" dstpinname="Address">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="6345" top="690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="6555" top="1110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Cycles" dstnodeid="30" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="5" dstpinname="Pictures">
+   </LINK>
+   <NODE systemname="Perlin (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Perlin.tfx" nodename="Perlin (DX11.TextureFX)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="5520" top="1905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color1" slicecount="1" visible="1" values="|0.63670,0.63670,0.63670,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Texture Out" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="5190" top="1200" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="1200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.49955,0.49955,0.49955,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Color Output" dstnodeid="31" dstpinname="Color1">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE id="2" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="1,1,1,1,1,1">
+   </PIN>
+   <BOUNDS type="Box" left="2110" top="4600" width="648" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2110" top="4600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TextureBinSize">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,1">
+   </PIN>
+   </NODE>
+   <NODE id="0" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
+   </PIN>
+   <BOUNDS type="Box" left="3760" top="4600" width="910" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3760" top="4600" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="2048,2048">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   </NODE>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Y Input Value">
    </LINK>
    <NODE id="26" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
@@ -239,63 +309,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="27" debug="0">
-   <BOUNDS type="Node" left="675" top="2070" width="1050" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="675" top="2070">
-   </BOUNDS>
-   <BOUNDS type="Window" left="20830" top="8810" width="9980" height="8060">
-   </BOUNDS>
-   <PIN pinname="Output Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Address" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="27" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="27" dstpinname="Address">
-   </LINK>
-   <PACK Name="vvvv-Message" Version="2.9.10">
-   </PACK>
-   <NODE systemname="Perlin (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Perlin.tfx" nodename="Perlin (DX11.TextureFX)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="5520" top="1905" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Z" visible="1">
-   </PIN>
-   <PIN pinname="FrequencyBalance" slicecount="1" values="0.32">
-   </PIN>
-   <PIN pinname="Amplitude" slicecount="1" values="1.34">
-   </PIN>
-   </NODE>
-   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="6345" top="690" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Cycles" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="6555" top="1110" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Cycles" dstnodeid="30" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="28" dstpinname="Z">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="5" dstpinname="Pictures">
    </LINK>
    </PATCH>

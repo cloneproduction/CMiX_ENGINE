@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="21615" top="9015" width="4200" height="6285">
+   <BOUNDS type="Window" left="23310" top="8130" width="4200" height="6285">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -11,9 +11,9 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" debug="0" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="590" top="4240" width="1120" height="710">
+   <BOUNDS type="Box" left="585" top="4245" width="1120" height="710">
    </BOUNDS>
-   <BOUNDS type="Node" left="590" top="4240" width="0" height="0">
+   <BOUNDS type="Node" left="585" top="4245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Beats" filename="Beats\Beats.v4p" nodename="Beats\Beats.v4p" componentmode="Hidden" id="48" debug="0">
-   <BOUNDS type="Node" left="2630" top="973" width="710" height="270">
+   <BOUNDS type="Node" left="2630" top="1018" width="710" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2354" top="167" width="9028" height="7636">
+   <BOUNDS type="Box" left="2354" top="212" width="9028" height="7636">
    </BOUNDS>
    <BOUNDS type="Window" left="15885" top="4575" width="10755" height="10290">
    </BOUNDS>
@@ -95,17 +95,17 @@
    <NODE id="38" componentmode="Hidden" systemname="PostFX" filename="PostFX\PostFX.v4p" nodename="PostFX\PostFX.v4p" debug="0">
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Node" left="590" top="2950" width="860" height="280">
+   <BOUNDS type="Node" left="585" top="2955" width="860" height="280">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="590" top="2950">
+   <BOUNDS type="Box" left="585" top="2955">
    </BOUNDS>
    <PIN pinname="PostFXParameters" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="2085" top="3060" width="20250" height="10890">
+   <BOUNDS type="Window" left="11745" top="1965" width="20250" height="10890">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -117,11 +117,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer" filename="Renderer\Renderer.v4p" nodename="Renderer" componentmode="Hidden" id="36" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="590" top="3640" width="2490" height="270">
+   <BOUNDS type="Node" left="585" top="3585" width="2490" height="270">
    </BOUNDS>
    <PIN pinname="Layer - Layer" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="590" top="3640">
+   <BOUNDS type="Box" left="585" top="3585">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -139,9 +139,9 @@
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
    <BOUNDS type="Window" left="18345" top="7290" width="16620" height="14085">
    </BOUNDS>
-   <BOUNDS type="Node" left="580" top="460" width="1760" height="270">
+   <BOUNDS type="Node" left="585" top="465" width="1760" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="580" top="460">
+   <BOUNDS type="Box" left="585" top="465">
    </BOUNDS>
    <PIN pinname="LayerNames" visible="1">
    </PIN>
@@ -211,9 +211,9 @@
    <LINK srcnodeid="48" srcpinname="MasterPeriod" dstnodeid="51" dstpinname="CamBeat">
    </LINK>
    <LINK srcnodeid="36" srcpinname="fps" dstnodeid="49" dstpinname="Y Input Value">
-   <LINKPOINT x="600" y="3890">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
    </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    </PATCH>
