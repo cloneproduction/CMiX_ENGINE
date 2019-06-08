@@ -105,7 +105,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="630" top="4725" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="5385" top="2670" width="27150" height="13560">
+   <BOUNDS type="Window" left="11625" top="720" width="27150" height="13560">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="file.foo">
    </PIN>
