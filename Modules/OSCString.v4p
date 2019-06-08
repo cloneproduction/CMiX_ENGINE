@@ -27,12 +27,12 @@
    </BOUNDS>
    <BOUNDS type="Node" left="650" top="3770" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1" slicecount="4" values="Normal,Normal,Normal,Normal">
+   <PIN pinname="Input String" visible="1" slicecount="8" values="text,text,text,text,text,text,text,text">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="17115" top="9855" width="9975" height="8055">
+   <BOUNDS type="Window" left="18330" top="6105" width="9975" height="8055">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -65,7 +65,7 @@
    </PIN>
    </NODE>
    <NODE id="46" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="0" left="650" top="1910" type="Node" width="0">
+   <BOUNDS height="270" left="650" top="1910" type="Node" width="1020">
    </BOUNDS>
    <PIN pinname="Match Rule" slicecount="1" values="All">
    </PIN>
@@ -80,52 +80,30 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="46" dstpinname="Input">
    </LINK>
-   <NODE systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden" id="63">
+   <NODE systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden" id="65">
    <BOUNDS type="Node" left="650" top="2810" width="1980" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="650" top="2810">
    </BOUNDS>
-   <PIN pinname="Value Bin Size" visible="1" slicecount="2" values="1,1">
-   </PIN>
-   <PIN pinname="Output Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="63" dstpinname="Delete Key">
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="65" dstpinname="Delete Key">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Update Key" hiddenwhenlocked="1">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="65" dstpinname="Update Key" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Output Key" hiddenwhenlocked="1">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="65" dstpinname="Output Key" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
+   <LINK srcnodeid="65" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="63" dstpinname="Key">
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="65" dstpinname="Key">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="63" dstpinname="Update Value">
+   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="65" dstpinname="Update Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="63" dstpinname="Value">
+   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="65" dstpinname="Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="63" dstpinname="Update">
+   <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="65" dstpinname="Update">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="63" dstpinname="Value Bin Size">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="64">
-   <BOUNDS type="Box" left="3435" top="2595" width="4260" height="915">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3435" top="2595" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="64" dstpinname="Input String">
+   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="65" dstpinname="Value Bin Size">
    </LINK>
    </PATCH>

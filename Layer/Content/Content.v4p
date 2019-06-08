@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1785" top="2205" width="21060" height="9870">
+   <BOUNDS type="Window" left="4590" top="3585" width="21090" height="9240">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Coloration" filename="ColorVisuals\Coloration.v4p" nodename="ColorVisuals\Coloration.v4p" componentmode="Hidden" id="2" debug="0">
    <BOUNDS type="Node" left="15780" top="3105" width="1020" height="270">
@@ -67,7 +67,7 @@
    <NODE systemname="ShadeContent" filename="ShadeVisuals\ShadeContent.v4p" nodename="ShadeVisuals\ShadeContent.v4p" componentmode="Hidden" id="17" debug="0">
    <BOUNDS type="Node" left="2470" top="4100" width="14670" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="645" top="3060" width="25710" height="12540">
+   <BOUNDS type="Window" left="1035" top="2265" width="25710" height="12540">
    </BOUNDS>
    <BOUNDS type="Box" left="2470" top="4100">
    </BOUNDS>
@@ -97,11 +97,11 @@
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="tex" visible="1">
+   <PIN pinname="tex" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="20" values="|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|,|0.76082,0.22986,0.86196,1.00000|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="17" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureGeometry" filename="TextureVisuals\TextureGeometry.v4p" nodename="TextureVisuals\TextureGeometry.v4p" componentmode="Hidden" id="38">
@@ -149,7 +149,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9780" top="3105" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="11895" top="5655" width="12840" height="8160">
+   <BOUNDS type="Window" left="16275" top="5115" width="8580" height="7410">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -162,6 +162,10 @@
    <PIN pinname="Capture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="CaptureRes" visible="1">
+   </PIN>
+   <PIN pinname="TextureBinSize" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="46" dstpinname="Input" hiddenwhenlocked="1">
@@ -415,6 +419,8 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="12" values="0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
+   <PIN pinname="TransformOut" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="65" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -490,8 +496,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="0" dstpinname="UseDefault" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Texture Spread" dstnodeid="17" dstpinname="tex">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="69">
    <BOUNDS type="Box" left="1240" top="6365" width="800" height="240">
    </BOUNDS>
@@ -521,9 +525,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Capture">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="70" srcpinname="Output Node" dstnodeid="46" dstpinname="Capture">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
    <BOUNDS type="Box" left="13350" top="915" width="800" height="240">
    </BOUNDS>
@@ -542,14 +546,32 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="TextureArray" dstnodeid="17" dstpinname="Control">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="61" dstpinname="Layer">
-   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="65" srcpinname="TransformOut" dstnodeid="61" dstpinname="TransformView">
    </LINK>
+   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="61" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Texture Out" dstnodeid="17" dstpinname="tex">
+   </LINK>
    <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
-   <PACK Name="dx11" Version="1.3.1">
-   </PACK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="73" stayontop="1">
+   <BOUNDS type="Node" left="11610" top="5850" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11610" top="5850" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="22080" top="8130" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Texture Out" dstnodeid="73" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Output Node" dstnodeid="46" dstpinname="Capture">
+   </LINK>
    </PATCH>

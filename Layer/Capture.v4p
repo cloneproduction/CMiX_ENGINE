@@ -53,14 +53,14 @@
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1710" top="3460" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="X" visible="1" slicecount="1" values="1920">
+   <PIN pinname="X" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1" slicecount="1" values="1080">
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="XY" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-1" top="-1" width="5310" height="5120">
+   <BOUNDS type="Window" left="11895" top="4515" width="5310" height="5115">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -91,8 +91,10 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <NODE id="12" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
+   <NODE id="13" systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden">
    <BOUNDS type="Node" left="1500" top="2800" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1500" top="2800">
@@ -100,20 +102,20 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="12" dstpinname="Device">
+   <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="13" dstpinname="Device">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output Enum" dstnodeid="12" dstpinname="Video Format">
+   <LINK srcnodeid="1" srcpinname="Output Enum" dstnodeid="13" dstpinname="Video Format">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="12" dstpinname="Resolution">
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="13" dstpinname="Resolution">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="12" dstpinname="Framerate">
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="13" dstpinname="Framerate">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Enable">
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Enable">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Width" dstnodeid="6" dstpinname="X">
+   <LINK srcnodeid="13" srcpinname="Width" dstnodeid="6" dstpinname="X">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Height" dstnodeid="6" dstpinname="Y">
+   <LINK srcnodeid="13" srcpinname="Height" dstnodeid="6" dstpinname="Y">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
    </LINK>
    </PATCH>

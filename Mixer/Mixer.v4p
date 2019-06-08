@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Mixer\Mixer.v4p" systemname="Mixer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Mixer\Mixer.v4p" scrollx="0" scrolly="0">
    <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
@@ -12,7 +12,7 @@
    </NODE>
    <BOUNDS type="Window" left="16350" top="6330" width="11580" height="8295">
    </BOUNDS>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>

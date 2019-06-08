@@ -1,12 +1,12 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="10">
-   <BOUNDS type="Window" left="11895" top="5655" width="12840" height="8160">
+   <BOUNDS type="Window" left="13590" top="4500" width="8580" height="7410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="35" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="8" visible="1" values="0,0,0,0,0,0,0,1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3540" top="3975" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="8700" top="4515" width="9750" height="11250">
+   <BOUNDS type="Window" left="2220" top="1080" width="19545" height="12645">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -105,9 +105,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="630" top="4725" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="3760" top="3980" width="27160" height="13570">
+   <BOUNDS type="Window" left="5385" top="2670" width="27150" height="13560">
    </BOUNDS>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="TexArray\">
+   <PIN pinname="Filename" visible="1" slicecount="1" values="file.foo">
    </PIN>
    <PIN pinname="CaptureRes" visible="1">
    </PIN>
@@ -131,9 +131,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1575" top="3975" width="5253" height="6886">
    </BOUNDS>
-   <BOUNDS type="Window" left="11910" top="3615" width="12075" height="8145">
+   <BOUNDS type="Window" left="12615" top="3945" width="6165" height="7140">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="Pictures\">
+   <PIN pinname="Input" visible="1" slicecount="1" values="..\..\..\..\..\..\Desktop\HAP\Glitch\Session3\V1-0003_Untitled01831238.hap.mov">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -143,32 +143,6 @@
    <LINK srcnodeid="369" srcpinname="Resolution" dstnodeid="368" dstpinname="PicturesRes">
    </LINK>
    <LINK srcnodeid="369" srcpinname="Output" dstnodeid="368" dstpinname="Pictures">
-   </LINK>
-   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="376" debug="0">
-   <BOUNDS type="Node" left="630" top="2910" width="1050" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="630" top="2910">
-   </BOUNDS>
-   <BOUNDS type="Window" left="17115" top="9855" width="9975" height="8055">
-   </BOUNDS>
-   <PIN pinname="Output Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="306" srcpinname="Output" dstnodeid="376" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="279" srcpinname="Output Node" dstnodeid="376" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="376" srcpinname="Output" dstnodeid="368" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="376" srcpinname="Output" dstnodeid="369" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="376" srcpinname="Output" dstnodeid="275" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="376" srcpinname="Output Bin Size" dstnodeid="197" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="376" srcpinname="Output Bin Size" dstnodeid="275" dstpinname="VideoCount">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="377">
    <BOUNDS type="Box" left="1605" top="1080" width="800" height="240">
@@ -192,16 +166,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="387">
-   <BOUNDS type="Box" left="3870" top="5565" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3870" top="5565" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Spread|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="368" srcpinname="Texture Spread" dstnodeid="387" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="275" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="388">
@@ -234,4 +198,38 @@
    </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="391">
+   <BOUNDS type="Box" left="3870" top="5640" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="5640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="368" srcpinname="Texture Spread" dstnodeid="391" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden" id="396" debug="0">
+   <BOUNDS type="Node" left="630" top="2910" width="1050" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="2910">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18330" top="6105" width="9975" height="8055">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="279" srcpinname="Output Node" dstnodeid="396" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output" dstnodeid="368" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output" dstnodeid="369" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output" dstnodeid="275" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output Bin Size" dstnodeid="197" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output Bin Size" dstnodeid="275" dstpinname="Input - Output Bin Size">
+   </LINK>
+   <LINK srcnodeid="306" srcpinname="Output" dstnodeid="396" dstpinname="Address">
+   </LINK>
    </PATCH>
