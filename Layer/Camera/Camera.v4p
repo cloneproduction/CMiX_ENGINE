@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Camera\Camera.v4p" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Camera\Camera.v4p" systemname="Camera" scrollx="0" scrolly="0">
-   <BOUNDS height="7050" left="15340" top="11130" type="Window" width="6940">
+   <BOUNDS height="7050" left="15615" top="8760" type="Window" width="6930">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -15,7 +15,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2545" top="2625" width="6256" height="6784">
    </BOUNDS>
-   <BOUNDS type="Window" left="11280" top="8340" width="7800" height="10990">
+   <BOUNDS type="Window" left="12840" top="4275" width="7800" height="10980">
    </BOUNDS>
    <PIN pinname="CamCut" visible="1" slicecount="1" values="1">
    </PIN>
@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2730" top="4320" width="4396" height="7837">
    </BOUNDS>
-   <BOUNDS type="Window" left="10620" top="10650" width="4530" height="6910">
+   <BOUNDS type="Window" left="19560" top="6885" width="4530" height="6900">
    </BOUNDS>
    <PIN pinname="BeatPeriod" visible="1" slicecount="1" values="4">
    </PIN>
@@ -209,7 +209,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3640" top="1800" width="8860" height="11275">
    </BOUNDS>
-   <BOUNDS type="Window" left="17180" top="8760" width="7150" height="10700">
+   <BOUNDS type="Window" left="16425" top="5730" width="7140" height="10695">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>

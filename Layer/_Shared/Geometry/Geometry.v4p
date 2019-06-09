@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Geometry\Geometry.v4p" systemname="Geometry" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\_Shared\Geometry.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="13950" top="4770" width="6450" height="8070">
    </BOUNDS>
@@ -6,7 +6,7 @@
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="3303" top="6231" width="830" height="240">
@@ -35,39 +35,13 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="33">
    <BOUNDS type="Node" left="1800" top="990" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1800" top="990" width="700" height="240">
+   <BOUNDS type="Box" left="1800" top="990" width="1065" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
    <PIN pinname="Input String" slicecount="1" values="SpriteSelectedGeom">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
-   </PIN>
-   </NODE>
-   <NODE id="38" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1800" top="2380" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" pintype="Input" values="SpriteMultiplier">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="" pintype="Input" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Intersperse" pintype="Input" visible="1" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Intersperse String" pintype="Input" visible="0" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="/Geometry/GeometryPaths">
    </PIN>
    </NODE>
    <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="42">
@@ -101,7 +75,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="810" top="2950">
    </BOUNDS>
-   <BOUNDS type="Window" left="15280" top="5710" width="11120" height="9940">
+   <BOUNDS type="Window" left="16725" top="3975" width="11115" height="9930">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -109,17 +83,21 @@
    </PIN>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output" dstnodeid="42" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="49" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="49" dstpinname="Address">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1965" top="1630" width="2580" height="240">
+   <BOUNDS type="Box" left="1755" top="2185" width="2550" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1965" top="1630" width="0" height="0">
+   <BOUNDS type="Node" left="1755" top="2185" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/SelectedFileNameItem">
    </PIN>
@@ -132,10 +110,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="Output String" dstnodeid="38" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="51" srcpinname="Output String" dstnodeid="38" dstpinname="Input 2">
-   </LINK>
    <NODE id="52" systemname="GeometryFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="GeometryFile (DX11.Geometry Assimp)" componentmode="Hidden">
    <BOUNDS type="Node" left="2805" top="5325" width="100" height="100">
    </BOUNDS>
@@ -147,9 +121,9 @@
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="52" dstpinname="Filename">
    </LINK>
    <NODE id="44" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3225" top="990" width="800" height="240">
+   <BOUNDS type="Box" left="4740" top="990" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3225" top="990" width="0" height="0">
+   <BOUNDS type="Node" left="4740" top="990" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -184,4 +158,26 @@
    </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
+   <LINK srcnodeid="33" srcpinname="Output String" dstnodeid="49" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Output String" dstnodeid="49" dstpinname="Address">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55">
+   <BOUNDS type="Box" left="3195" top="990" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3195" top="990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerRemoved">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output String" dstnodeid="49" dstpinname="LayerRemoved">
+   </LINK>
    </PATCH>

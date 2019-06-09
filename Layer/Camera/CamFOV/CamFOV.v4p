@@ -36,7 +36,7 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10620" top="10650" width="4530" height="6910">
+   <BOUNDS type="Window" left="19560" top="6885" width="4530" height="6900">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Address" visible="1">
+   <PIN pinname="Address" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Default" visible="1" slicecount="1" values="0">
    </PIN>
@@ -111,10 +111,10 @@
    </PIN>
    <BOUNDS type="Box" left="1070" top="1460">
    </BOUNDS>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="33" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="33" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="FOV">
    </LINK>
@@ -143,5 +143,7 @@
    <LINK srcnodeid="33" srcpinname="Output" dstnodeid="40" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="39" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="33" dstpinname="LayerNames">
    </LINK>
    </PATCH>

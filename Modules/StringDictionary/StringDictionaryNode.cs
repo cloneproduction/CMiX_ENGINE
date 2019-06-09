@@ -35,6 +35,9 @@ namespace VVVV.Nodes
         [Output("Output")]
 		public ISpread<ISpread<string>> FOutputQueryValue;
 
+        [Output("Count")]
+        public ISpread<int> FOutputDicoCount;
+
         #endregion fields & pins
 
         Dictionary<string, ISpread<string>> dict = new Dictionary<string, ISpread<string>>();
@@ -42,10 +45,10 @@ namespace VVVV.Nodes
         public void Evaluate(int SpreadMax)
 		{
             FOutputQueryValue.SliceCount = FKey.SliceCount;
-
+            
             if (FKey.IsChanged)
             {
-                if (FKey.SliceCount != 0)
+                if (FKey.SliceCount > 0)
                 {
                     for (int i = 0; i < FKey.SliceCount; i++)
                     {
@@ -60,7 +63,7 @@ namespace VVVV.Nodes
 
             if (FDeleteKey.IsChanged)
             {
-                if(FDeleteKey.SliceCount != 0)
+                if(FDeleteKey.SliceCount > 0)
                 {
                     for (int i = 0; i < FDeleteKey.SliceCount; i++)
                     {
@@ -73,10 +76,11 @@ namespace VVVV.Nodes
                 }
             }
 
-            for (int i = 0; i < FUpdate.SliceCount; i++)
+            if (FUpdate.SliceCount > 0)
             {
-                if (FUpdate.SliceCount != 0)
-                {
+                for (int i = 0; i < FUpdate.SliceCount; i++)
+            {
+
                     if (FUpdate[i])
                     {
                         dict[FKey[i]] = FValue[i].Clone();
@@ -84,6 +88,7 @@ namespace VVVV.Nodes
                     FOutputQueryValue[i] = dict[FKey[i]];
                 }
             }
+            FOutputDicoCount[0] = dict.Count;
         }
 	}
 }

@@ -172,34 +172,6 @@
    </LINK>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="617" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="621">
-   <BOUNDS type="Node" left="5280" top="2505" width="600" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="624">
-   <BOUNDS type="Node" left="1950" top="2505" width="600" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
-   </PIN>
-   </NODE>
    <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="629">
    <BOUNDS type="Node" left="4335" top="3135" width="0" height="0">
    </BOUNDS>
@@ -208,6 +180,12 @@
    <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="629" dstpinname="Input" hiddenwhenlocked="1">
@@ -220,24 +198,26 @@
    </LINK>
    <LINK srcnodeid="629" srcpinname="Output" dstnodeid="613" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="621" srcpinname="Output" dstnodeid="629" dstpinname="Address">
-   </LINK>
    <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="630">
    <BOUNDS type="Node" left="1035" top="3135" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1035" top="3135">
    </BOUNDS>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="630" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="630" srcpinname="Output" dstnodeid="617" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="624" srcpinname="Output" dstnodeid="630" dstpinname="Address">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="632">
-   <BOUNDS type="Box" left="5460" top="1845" width="1110" height="240">
+   <BOUNDS type="Box" left="5280" top="2610" width="1110" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5460" top="1845" width="0" height="0">
+   <BOUNDS type="Node" left="5280" top="2610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/View">
    </PIN>
@@ -246,34 +226,14 @@
    <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="632" srcpinname="Output String" dstnodeid="621" dstpinname="Input 3">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="633">
-   <BOUNDS type="Box" left="3675" top="975" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3675" top="975" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="1">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="634">
-   <BOUNDS type="Box" left="2145" top="1845" width="1170" height="240">
+   <BOUNDS type="Box" left="1950" top="2490" width="1170" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="1845" width="0" height="0">
+   <BOUNDS type="Node" left="1950" top="2490" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/PostFX/View">
    </PIN>
@@ -286,14 +246,54 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="632" srcpinname="Output String" dstnodeid="621" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="621" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="633" srcpinname="Output String" dstnodeid="624" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="634" srcpinname="Output String" dstnodeid="624" dstpinname="Input 2">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="634" srcpinname="Output String" dstnodeid="630" dstpinname="Address">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="635">
+   <BOUNDS type="Box" left="3030" top="975" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3030" top="975" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="635" srcpinname="Output String" dstnodeid="630" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="635" srcpinname="Output String" dstnodeid="629" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="632" srcpinname="Output String" dstnodeid="629" dstpinname="Address">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="636">
+   <BOUNDS type="Box" left="4965" top="975" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4965" top="975" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerRemoved">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="636" srcpinname="Output String" dstnodeid="629" dstpinname="LayerRemoved">
+   </LINK>
+   <LINK srcnodeid="636" srcpinname="Output String" dstnodeid="630" dstpinname="LayerRemoved">
+   </LINK>
    </PATCH>
