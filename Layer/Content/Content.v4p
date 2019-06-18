@@ -155,7 +155,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11040" top="3225" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="13590" top="4500" width="8580" height="7410">
+   <BOUNDS type="Window" left="18660" top="5415" width="8580" height="7410">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>

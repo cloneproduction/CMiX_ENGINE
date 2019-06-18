@@ -99,7 +99,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1755" top="2185" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/SelectedFileNameItem">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/FileSelector/Selected">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>

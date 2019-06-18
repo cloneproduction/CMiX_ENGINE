@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="13590" top="4500" width="8580" height="7410">
+   <BOUNDS type="Window" left="18660" top="5415" width="8580" height="7410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3765" top="3540" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="2220" top="1080" width="19545" height="12645">
+   <BOUNDS type="Window" left="13005" top="3480" width="19545" height="12945">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1860" top="2135" width="1965" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/Texture/SelectedFileNameItem">
+   <PIN pinname="Input String" slicecount="1" values="/Texture/FileSelector/Selected">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -93,7 +93,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="4290" width="9700" height="10990">
    </BOUNDS>
-   <BOUNDS type="Window" left="11625" top="720" width="27150" height="13560">
+   <BOUNDS type="Window" left="10410" top="3105" width="27150" height="13560">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="file.foo">
    </PIN>
@@ -201,7 +201,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="2805">
    </BOUNDS>
-   <BOUNDS type="Window" left="18330" top="6105" width="9975" height="8055">
+   <BOUNDS type="Window" left="13635" top="5760" width="9975" height="8055">
    </BOUNDS>
    <PIN pinname="Address" visible="1">
    </PIN>
