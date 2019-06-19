@@ -14,3 +14,7 @@ C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Deb
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.pdb
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.csprojAssemblyReference.cache
 C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.csproj.CoreCompileInputs.cache
+D:\DATA\Github\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.csprojAssemblyReference.cache
+D:\DATA\Github\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.csproj.CoreCompileInputs.cache
+D:\DATA\Github\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.dll
+D:\DATA\Github\CMiX_ENGINE\Modules\StringDictionary\obj\Debug\StringDictionary.pdb
