@@ -10,7 +10,7 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="5010" top="2820" width="11145" height="9615">
+   <BOUNDS type="Window" left="13500" top="3975" width="13800" height="10290">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>

@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Blur" filename="Blur\Blur.v4p" nodename="Blur\Blur.v4p" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="1030" top="3595" width="5090" height="270">
+   <BOUNDS type="Node" left="1030" top="3595" width="5985" height="270">
    </BOUNDS>
    <PIN pinname="tex0" visible="1" slicecount="1" values="||">
    </PIN>

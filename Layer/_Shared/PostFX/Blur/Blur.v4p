@@ -325,6 +325,8 @@
    </PIN>
    <BOUNDS type="Box" left="9180" top="5430">
    </BOUNDS>
+   <BOUNDS type="Window" left="13290" top="6675" width="11520" height="9660">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="153" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>

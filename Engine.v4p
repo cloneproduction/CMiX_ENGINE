@@ -31,7 +31,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2219" top="287" width="9028" height="7636">
    </BOUNDS>
-   <BOUNDS type="Window" left="4755" top="5520" width="13800" height="10290">
+   <BOUNDS type="Window" left="13500" top="3975" width="13800" height="10290">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1914" top="1748" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="16890" top="10365" width="8265" height="8385">
+   <BOUNDS type="Window" left="18015" top="6510" width="8265" height="8385">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>
@@ -202,8 +202,6 @@
    </LINK>
    <LINK srcnodeid="51" srcpinname="Preview" dstnodeid="37" dstpinname="Preview">
    </LINK>
-   <LINK srcnodeid="51" srcpinname="TextureOut" dstnodeid="37" dstpinname="Texture Array">
-   </LINK>
    <LINK srcnodeid="48" srcpinname="SpriteBeats" dstnodeid="51" dstpinname="SpriteBeats">
    </LINK>
    <LINK srcnodeid="48" srcpinname="MaskBeats" dstnodeid="51" dstpinname="MaskBeats">
@@ -222,8 +220,6 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="fps" dstnodeid="49" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
-   </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <LINK srcnodeid="53" srcpinname="LayerRemoved" dstnodeid="48" dstpinname="LayerRemoved" hiddenwhenlocked="1">
@@ -231,5 +227,9 @@
    <LINK srcnodeid="53" srcpinname="LayerRemoved" dstnodeid="51" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="53" srcpinname="LayerRemoved" dstnodeid="37" dstpinname="LayerRemoved">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="36" dstpinname="Texture Out - Texture">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="TextureOut" dstnodeid="37" dstpinname="Texture Array">
    </LINK>
    </PATCH>
