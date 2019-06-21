@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4875" top="4515" width="21240" height="12330">
+   <BOUNDS type="Window" left="5190" top="3630" width="21240" height="12330">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Coloration" filename="ColorVisuals\Coloration.v4p" nodename="ColorVisuals\Coloration.v4p" componentmode="Hidden" id="2" debug="0">
-   <BOUNDS type="Node" left="17100" top="3225" width="1020" height="270">
+   <BOUNDS type="Node" left="17190" top="3255" width="1020" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="17100" top="3225" width="3360" height="5056">
+   <BOUNDS type="Box" left="17190" top="3255" width="3360" height="5056">
    </BOUNDS>
    <BOUNDS type="Window" left="4065" top="1515" width="24300" height="11880">
    </BOUNDS>
@@ -69,11 +69,11 @@
    </PIN>
    </NODE>
    <NODE systemname="ShadeContent" filename="ShadeVisuals\ShadeContent.v4p" nodename="ShadeVisuals\ShadeContent.v4p" componentmode="Hidden" id="17" debug="0">
-   <BOUNDS type="Node" left="2470" top="4100" width="15795" height="270">
+   <BOUNDS type="Node" left="2560" top="4130" width="15795" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="1035" top="2265" width="22335" height="12240">
    </BOUNDS>
-   <BOUNDS type="Box" left="2470" top="4100">
+   <BOUNDS type="Box" left="2560" top="4130">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -111,9 +111,9 @@
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="17" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureGeometry" filename="TextureVisuals\TextureGeometry.v4p" nodename="TextureVisuals\TextureGeometry.v4p" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="15345" top="3225" width="1425" height="270">
+   <BOUNDS type="Node" left="15435" top="3255" width="1425" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15345" top="3225" width="7275" height="7365">
+   <BOUNDS type="Box" left="15435" top="3255" width="7275" height="7365">
    </BOUNDS>
    <BOUNDS type="Window" left="9705" top="5865" width="8610" height="6150">
    </BOUNDS>
@@ -151,11 +151,11 @@
    </PIN>
    </NODE>
    <NODE systemname="TextureVisuals" filename="TextureVisuals\TextureVisuals.v4p" nodename="TextureVisuals\TextureVisuals.v4p" componentmode="Hidden" id="46" debug="0">
-   <BOUNDS type="Node" left="11040" top="3225" width="2970" height="270">
+   <BOUNDS type="Node" left="11130" top="3255" width="2955" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11040" top="3225" width="10912" height="11968">
+   <BOUNDS type="Box" left="11130" top="3255" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="18660" top="5415" width="8580" height="7410">
+   <BOUNDS type="Window" left="6150" top="3495" width="8580" height="7410">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -287,9 +287,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Box" left="1425" top="2675" width="480" height="480">
+   <BOUNDS type="Box" left="1320" top="2600" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1425" top="2675" width="0" height="0">
+   <BOUNDS type="Node" left="1320" top="2600" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -307,9 +307,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Geometry" filename="..\_Shared\Geometry\Geometry.v4p" nodename="..\_Shared\Geometry\Geometry.v4p" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="8175" top="3225" width="960" height="270">
+   <BOUNDS type="Node" left="8265" top="3255" width="960" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8175" top="3225" width="4324" height="6040">
+   <BOUNDS type="Box" left="8265" top="3255" width="4324" height="6040">
    </BOUNDS>
    <BOUNDS type="Window" left="13950" top="4770" width="6450" height="8070">
    </BOUNDS>
@@ -373,9 +373,9 @@
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="61" dstpinname="MskOn" hiddenwhenlocked="1">
    </LINK>
    <NODE id="66" systemname="Transform" filename="..\_Shared\Transforms\Transform.v4p" nodename="..\_Shared\Transforms\Transform.v4p" componentmode="Hidden" debug="0">
-   <BOUNDS type="Node" left="9615" top="3225" width="1005" height="270">
+   <BOUNDS type="Node" left="9705" top="3270" width="1005" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9615" top="3225" width="7836" height="5712">
+   <BOUNDS type="Box" left="9705" top="3270" width="7836" height="5712">
    </BOUNDS>
    <BOUNDS type="Window" left="11250" top="4860" width="10260" height="5970">
    </BOUNDS>
@@ -394,6 +394,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="66" dstpinname="SpreadCount" hiddenwhenlocked="1">
@@ -537,9 +539,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="13950" top="930" width="800" height="240">
+   <BOUNDS type="Box" left="14010" top="930" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13950" top="930" width="0" height="0">
+   <BOUNDS type="Node" left="14010" top="930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -617,6 +619,8 @@
    <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="2" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="2" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="66" dstpinname="LayerRemoved">
    </LINK>
    <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>

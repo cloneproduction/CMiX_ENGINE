@@ -5,7 +5,8 @@ uint texarrayID;
 #include "ColorSpace.fxh"
 
 bool EnableMask;
-
+bool KeepOriginal;
+uint MaskType;
 struct vsInput
 {
     float4 posObject : POSITION;
@@ -65,16 +66,19 @@ float4 PS_Textured(psInputTextured input): SV_Target
 	
 	if(EnableMask == true)
 	{
-		float4 m;
-		m = RGBtoHSV(Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID)).rgb).z;
-		
-		c.a *= m.a;
+		if(MaskType == 0)
+		{
+			float4 m;
+			m = RGBtoHSV(Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID)).rgb).z;
+			c.a *= m.a;
+		}
+
 	}
 
 	return c;
 }
 
-technique11 Constant <string noTexCdFallback="ConstantNoTexture"; >
+technique11 MaskPass <string noTexCdFallback="ConstantNoTexture"; >
 {
 	pass P0
 	{

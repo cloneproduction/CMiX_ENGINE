@@ -113,6 +113,10 @@
    </PIN>
    <PIN pinname="EnableMask" visible="1" slicecount="3" values="0,1,0">
    </PIN>
+   <PIN pinname="MaskType" visible="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="MaskPass">
+   </PIN>
    </NODE>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="4260" top="4785" width="100" height="100">
@@ -216,7 +220,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="7470" top="6390" width="9240" height="7860">
+   <BOUNDS type="Window" left="225" top="2445" width="11160" height="8505">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -277,5 +281,21 @@
    <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="13" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Box" left="6840" top="2415" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6840" top="2415" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="9" dstpinname="MaskType">
    </LINK>
    </PATCH>

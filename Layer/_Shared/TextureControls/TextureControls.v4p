@@ -463,7 +463,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="16905" top="3315" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="19095" top="12180" width="9000" height="6000">
+   <BOUNDS type="Window" left="16830" top="7005" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -507,6 +507,8 @@
    </PIN>
    <PIN pinname="LayerRemoved" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="12870" top="5400" width="11115" height="9930">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output Node" dstnodeid="66" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>

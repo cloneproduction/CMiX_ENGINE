@@ -1,0 +1,4 @@
+C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\bin\AnyCPU\Release\StringDictionary.dll
+C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Release\StringDictionary.csprojAssemblyReference.cache
+C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Release\StringDictionary.csproj.CoreCompileInputs.cache
+C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Modules\StringDictionary\obj\Release\StringDictionary.dll

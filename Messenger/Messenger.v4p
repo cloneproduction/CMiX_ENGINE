@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="1020">
-   <BOUNDS type="Window" left="15510" top="2640" width="15705" height="13875">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="480">
+   <BOUNDS type="Window" left="16230" top="2775" width="15705" height="13875">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5250" top="2505" width="1155" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/LayerNames">
+   <PIN pinname="Input String" slicecount="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -109,7 +109,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10515" top="2505" width="1215" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/LayerRemoved">
+   <PIN pinname="Input String" slicecount="1" values="LayerRemoved">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>

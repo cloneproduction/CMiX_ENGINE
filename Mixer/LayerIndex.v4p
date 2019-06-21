@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1950" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/LayerIndex">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="LayerIndex">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
