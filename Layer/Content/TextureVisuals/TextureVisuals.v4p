@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3765" top="3540" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="13005" top="3480" width="19545" height="12945">
+   <BOUNDS type="Window" left="11580" top="2010" width="19545" height="12945">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>

@@ -287,9 +287,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Box" left="1320" top="2600" width="480" height="480">
+   <BOUNDS type="Box" left="1275" top="2825" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1320" top="2600" width="0" height="0">
+   <BOUNDS type="Node" left="1275" top="2825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8265" top="3255" width="4324" height="6040">
    </BOUNDS>
-   <BOUNDS type="Window" left="13950" top="4770" width="6450" height="8070">
+   <BOUNDS type="Window" left="13185" top="3540" width="8595" height="10320">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
