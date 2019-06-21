@@ -3,7 +3,7 @@
    <NODE id="1" systemname="DynamicBuffer (DX11.Buffer Value)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="10130" top="5650" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Data" visible="1" slicecount="1" values="0">
+   <PIN pinname="Data" visible="1" slicecount="1" values="-0.0536494073611975">
    </PIN>
    <PIN pinname="Buffer" visible="1">
    </PIN>
@@ -43,7 +43,7 @@
    </BOUNDS>
    </NODE>
    <NODE id="10" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="10130" top="5010" width="100" height="100">
+   <BOUNDS type="Node" left="10130" top="4395" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Select" visible="1" slicecount="3" values="1,1,1">
    </PIN>
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="10130" top="5010">
+   <BOUNDS type="Box" left="10130" top="4395">
    </BOUNDS>
    </NODE>
    <NODE id="11" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
@@ -279,8 +279,6 @@
    <LINK srcnodeid="14" srcpinname="Buffer" dstnodeid="51" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Select" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="1" dstpinname="Data">
    </LINK>
    <NODE id="52" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Contrast">
@@ -743,5 +741,7 @@
    <LINK srcnodeid="93" srcpinname="Output String" dstnodeid="66" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="93" srcpinname="Output String" dstnodeid="65" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="1" dstpinname="Data">
    </LINK>
    </PATCH>

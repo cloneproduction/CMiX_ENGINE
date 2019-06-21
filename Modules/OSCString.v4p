@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCString.v4p" systemname="OSCString" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCString.v4p" scrollx="15" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCString.v4p" systemname="OSCString" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCString.v4p" scrollx="0" scrolly="0">
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -23,16 +23,16 @@
    <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="660" top="3765" width="1335" height="795">
+   <BOUNDS type="Box" left="660" top="3765" width="8865" height="2295">
    </BOUNDS>
    <BOUNDS type="Node" left="660" top="3765" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="13635" top="5760" width="9975" height="8055">
+   <BOUNDS type="Window" left="18195" top="6345" width="9975" height="8055">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -64,6 +64,8 @@
    <PIN pinname="Bin Sizes" visible="1">
    </PIN>
    <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Match Count" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="46" dstpinname="Input">
@@ -135,6 +137,8 @@
    </BOUNDS>
    <BOUNDS type="Box" left="660" top="2805">
    </BOUNDS>
+   <PIN pinname="Value Bin Size" visible="1" slicecount="1" values="-1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="73" dstpinname="Update Key" hiddenwhenlocked="1">
    </LINK>
@@ -150,12 +154,12 @@
    </LINK>
    <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="73" dstpinname="Update">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="73" dstpinname="Value Bin Size">
-   </LINK>
    <LINK srcnodeid="73" srcpinname="Count" dstnodeid="66" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="73" dstpinname="Key">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="73" dstpinname="Delete Key">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="73" dstpinname="Value Bin Size">
    </LINK>
    </PATCH>
