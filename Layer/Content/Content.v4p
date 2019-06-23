@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4230" top="1980" width="20505" height="9675">
+   <BOUNDS type="Window" left="5190" top="3630" width="21240" height="12330">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -155,7 +155,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11130" top="3255" width="10912" height="11968">
    </BOUNDS>
-   <BOUNDS type="Window" left="15765" top="5685" width="8580" height="7410">
+   <BOUNDS type="Window" left="7305" top="5445" width="8580" height="7410">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8265" top="3255" width="4324" height="6040">
    </BOUNDS>
-   <BOUNDS type="Window" left="13185" top="3540" width="8595" height="10320">
+   <BOUNDS type="Window" left="2925" top="4785" width="8595" height="10320">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -460,8 +460,6 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="67" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Input Node - Texture Out" dstnodeid="67" dstpinname="TexArray">
-   </LINK>
    <NODE systemname="BeatControl" filename="..\..\modules\BeatControl.v4p" nodename="..\..\modules\BeatControl.v4p" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="4225" top="2745" width="0" height="0">
    </BOUNDS>
@@ -560,18 +558,14 @@
    </PACK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="61" dstpinname="Layer">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="Texture Out" dstnodeid="17" dstpinname="tex">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="17" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Output Node" dstnodeid="46" dstpinname="Capture" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="72">
-   <BOUNDS type="Node" left="8775" top="930" width="100" height="100">
+   <BOUNDS type="Node" left="8835" top="945" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8775" top="930" width="795" height="240">
+   <BOUNDS type="Box" left="8835" top="945" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -579,7 +573,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="8790" top="1800" width="100" height="100">
+   <BOUNDS type="Node" left="8850" top="1815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
    </PIN>
@@ -621,5 +615,13 @@
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="66" dstpinname="LayerRemoved">
    </LINK>
    <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="61" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Input Node - Texture Out" dstnodeid="67" dstpinname="TexArray">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Texture Out" dstnodeid="17" dstpinname="tex">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="TransformOut" dstnodeid="61" dstpinname="TransformView">
    </LINK>
    </PATCH>

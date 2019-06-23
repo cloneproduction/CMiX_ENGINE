@@ -752,8 +752,6 @@
    </LINK>
    <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="632" dstpinname="sbWorld">
    </LINK>
-   <LINK srcnodeid="632" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="632" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="602" srcpinname="Output" dstnodeid="632" dstpinname="Light DirectionXYZ">
@@ -785,5 +783,7 @@
    <LINK srcnodeid="470" srcpinname="Output String" dstnodeid="438" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="438" dstpinname="LayerNames" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="632" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
    </LINK>
    </PATCH>

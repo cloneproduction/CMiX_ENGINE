@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="15765" top="5685" width="8580" height="7410">
+   <BOUNDS type="Window" left="7305" top="5445" width="8580" height="7410">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1485" top="3585" width="5253" height="6886">
    </BOUNDS>
-   <BOUNDS type="Window" left="12615" top="3945" width="8265" height="7560">
+   <BOUNDS type="Window" left="8385" top="1485" width="12315" height="11445">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="..\..\..\..\..\..\Desktop\HAP\Glitch\Session3\V1-0003_Untitled01831238.hap.mov">
    </PIN>
