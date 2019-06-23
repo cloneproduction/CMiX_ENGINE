@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TexArray\TexArray.v4p" scrollx="0" scrolly="0" systemname="TexArray" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TexArray\TexArray.v4p">
+   <PATCH nodename="D:\DATA\Github\CMiX_ENGINE\Layer\Content\TextureVisuals\TexArray\TexArray.v4p" scrollx="0" scrolly="0" systemname="TexArray" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TexArray\TexArray.v4p">
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="13800" top="1625" width="100" height="100">
    </BOUNDS>
@@ -37,9 +37,9 @@
    <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Pictures">
    </PIN>
-   <BOUNDS type="Box" left="3225" top="1085" width="750" height="240">
+   <BOUNDS type="Box" left="2595" top="1070" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3225" top="1085" width="750" height="240">
+   <BOUNDS type="Node" left="2595" top="1070" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -94,7 +94,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="5010" top="1890" width="20400" height="12915">
+   <BOUNDS type="Window" left="4905" top="5715" width="20400" height="12915">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -255,9 +255,9 @@
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="14" dstpinname="Input Node">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="185">
-   <BOUNDS type="Node" left="5340" top="1065" width="100" height="100">
+   <BOUNDS type="Node" left="5970" top="1050" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5340" top="1065" width="795" height="240">
+   <BOUNDS type="Box" left="5970" top="1050" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -275,7 +275,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="189">
-   <BOUNDS type="Node" left="6150" top="3465" width="100" height="100">
+   <BOUNDS type="Node" left="5970" top="3420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -288,64 +288,20 @@
    </LINK>
    <LINK srcnodeid="186" srcpinname="Output String" dstnodeid="189" dstpinname="Input 2">
    </LINK>
-   <NODE id="190" systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Hits" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Comparison" slicecount="1" pintype="Input" visible="1" values="ContainsAny">
-   </PIN>
-   <PIN pinname="Found At Position" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Filter" visible="1" slicecount="1" pintype="Input" values="text">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" pintype="Input" values="text">
-   </PIN>
-   <PIN pinname="Filter Index" visible="1" pintype="Output">
-   </PIN>
+   <NODE id="214" systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="5985" top="4290" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Index" visible="1" pintype="Output">
+   <PIN pinname="Comparison" slicecount="1" values="MatchesAny">
    </PIN>
-   <PIN pinname="Case Sensitive" slicecount="1" pintype="Input" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
+   <PIN pinname="Input Index" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="190" srcpinname="Filter Index" dstnodeid="13" dstpinname="Index">
+   <LINK srcnodeid="214" srcpinname="Filter Index" dstnodeid="13" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="190" srcpinname="Filter Index" dstnodeid="14" dstpinname="Index">
+   <LINK srcnodeid="189" srcpinname="Output" dstnodeid="214" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="189" srcpinname="Output" dstnodeid="190" dstpinname="Filter">
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="214" dstpinname="Filter">
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="206">
-   <BOUNDS type="Node" left="15465" top="1080" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15465" top="1080" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="208">
-   <BOUNDS type="Node" left="15450" top="2835" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="206" srcpinname="Output String" dstnodeid="208" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="208" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="208" srcpinname="Output" dstnodeid="190" dstpinname="Input">
-   <LINKPOINT x="12916" y="4359">
-   </LINKPOINT>
+   <LINK srcnodeid="214" srcpinname="Filter Index" dstnodeid="14" dstpinname="Index">
    </LINK>
    </PATCH>
