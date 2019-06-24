@@ -111,7 +111,7 @@
    </PIN>
    <PIN pinname="BeatInfos" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="6570" top="0" width="20250" height="15705">
+   <BOUNDS type="Window" left="-1335" top="900" width="20250" height="15705">
    </BOUNDS>
    <PIN pinname="C-MiX_UI - Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -175,7 +175,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1914" top="1748" width="8332" height="8260">
    </BOUNDS>
-   <BOUNDS type="Window" left="8850" top="7065" width="8265" height="8385">
+   <BOUNDS type="Window" left="8940" top="5355" width="9585" height="8595">
    </BOUNDS>
    <PIN pinname="TextureOut" visible="1">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4065" top="1515" width="24300" height="11880">
+   <BOUNDS type="Window" left="2055" top="2340" width="24300" height="11880">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -149,6 +149,8 @@
    </PIN>
    <PIN pinname="Hue" visible="1">
    </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="190" srcpinname="Output" dstnodeid="368" dstpinname="Input">
    </LINK>
@@ -249,7 +251,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="637" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11720" top="6900" width="1710" height="240">
+   <BOUNDS type="Box" left="11720" top="6900" width="2910" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="11720" top="6900" width="0" height="0">
    </BOUNDS>
@@ -407,9 +409,9 @@
    <LINK srcnodeid="189" srcpinname="Output Node" dstnodeid="666" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="667">
-   <BOUNDS type="Box" left="14730" top="855" width="800" height="240">
+   <BOUNDS type="Box" left="15735" top="855" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="14730" top="855" width="0" height="0">
+   <BOUNDS type="Node" left="15735" top="855" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -431,9 +433,9 @@
    <LINK srcnodeid="667" srcpinname="Y Output Value" dstnodeid="658" dstpinname="SpreadCount" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="673">
-   <BOUNDS type="Node" left="10770" top="855" width="100" height="100">
+   <BOUNDS type="Node" left="11130" top="855" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10770" top="855" width="800" height="240">
+   <BOUNDS type="Box" left="11130" top="855" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -441,7 +443,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="678">
-   <BOUNDS type="Node" left="9420" top="2265" width="100" height="100">
+   <BOUNDS type="Node" left="10575" top="2925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -451,9 +453,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="679">
-   <BOUNDS type="Box" left="9600" top="1710" width="1090" height="240">
+   <BOUNDS type="Box" left="10755" top="2370" width="1090" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9600" top="1710" width="0" height="0">
+   <BOUNDS type="Node" left="10755" top="2370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration">
    </PIN>
@@ -469,9 +471,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE systemname="BeatControl" filename="..\..\..\modules\BeatControl.v4p" nodename="..\..\..\modules\BeatControl.v4p" componentmode="Hidden" id="680" debug="0">
-   <BOUNDS type="Node" left="9165" top="2985" width="0" height="0">
+   <BOUNDS type="Node" left="10320" top="3645" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9165" top="2985" width="8860" height="11275">
+   <BOUNDS type="Box" left="10320" top="3645" width="8860" height="11275">
    </BOUNDS>
    <BOUNDS type="Window" left="10290" top="5220" width="10185" height="10740">
    </BOUNDS>
@@ -497,9 +499,9 @@
    <LINK srcnodeid="618" srcpinname="Output String" dstnodeid="666" dstpinname="Address">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="681">
-   <BOUNDS type="Box" left="2535" top="855" width="795" height="240">
+   <BOUNDS type="Box" left="4170" top="855" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2535" top="855" width="0" height="0">
+   <BOUNDS type="Node" left="4170" top="855" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Layer0/">
    </PIN>
@@ -517,9 +519,9 @@
    <LINK srcnodeid="681" srcpinname="Output String" dstnodeid="666" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="682">
-   <BOUNDS type="Box" left="4860" top="855" width="795" height="240">
+   <BOUNDS type="Box" left="7305" top="855" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4860" top="855" width="0" height="0">
+   <BOUNDS type="Node" left="7305" top="855" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -559,7 +561,7 @@
    <LINK srcnodeid="682" srcpinname="Output String" dstnodeid="265" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="684">
-   <BOUNDS type="Node" left="10695" top="2265" width="100" height="100">
+   <BOUNDS type="Node" left="11850" top="2925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
    </PIN>
@@ -569,9 +571,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="683">
-   <BOUNDS type="Box" left="10875" top="1710" width="1090" height="240">
+   <BOUNDS type="Box" left="12030" top="2370" width="1090" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10875" top="1710" width="0" height="0">
+   <BOUNDS type="Node" left="12030" top="2370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Coloration">
    </PIN>
@@ -598,10 +600,10 @@
    </LINK>
    <LINK srcnodeid="625" srcpinname="Output String" dstnodeid="265" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="681" srcpinname="Output String" dstnodeid="678" dstpinname="Input 1">
+   <LINK srcnodeid="681" srcpinname="Output String" dstnodeid="678" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="622" srcpinname="Output String" dstnodeid="263" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="682" srcpinname="Output String" dstnodeid="263" dstpinname="LayerRemoved">
+   <LINK srcnodeid="682" srcpinname="Output String" dstnodeid="263" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

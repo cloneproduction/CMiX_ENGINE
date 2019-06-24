@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1365" top="3360" width="20505" height="9675">
+   <BOUNDS type="Window" left="570" top="5040" width="20940" height="9570">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="17190" top="3255" width="3360" height="5056">
    </BOUNDS>
-   <BOUNDS type="Window" left="4065" top="1515" width="24300" height="11880">
+   <BOUNDS type="Window" left="2055" top="2340" width="24300" height="11880">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -588,7 +588,7 @@
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="0" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="65" dstpinname="LayerNames">
+   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="65" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="65" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
@@ -614,8 +614,6 @@
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="66" dstpinname="LayerRemoved">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="61" dstpinname="Layer">
    </LINK>
    <LINK srcnodeid="61" srcpinname="Input Node - Texture Out" dstnodeid="67" dstpinname="TexArray">
@@ -623,5 +621,7 @@
    <LINK srcnodeid="46" srcpinname="Texture Out" dstnodeid="17" dstpinname="tex">
    </LINK>
    <LINK srcnodeid="65" srcpinname="TransformOut" dstnodeid="61" dstpinname="TransformView">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    </PATCH>
