@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="15" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
    <BOUNDS type="Window" left="22455" top="390" width="4200" height="6285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -11,19 +11,21 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" debug="0" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="585" top="4245" width="1120" height="710">
+   <BOUNDS type="Box" left="585" top="4395" width="1710" height="1005">
    </BOUNDS>
-   <BOUNDS type="Node" left="585" top="4245" width="0" height="0">
+   <BOUNDS type="Node" left="585" top="4395" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
+   <PIN pinname="Precision" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="fps">
    </PIN>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="24">
+   <PIN pinname="Size" slicecount="1" values="40">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
    <NODE systemname="Beats" filename="Beats\Beats.v4p" nodename="Beats\Beats.v4p" componentmode="Hidden" id="48" debug="0">
@@ -121,11 +123,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer" filename="Renderer\Renderer.v4p" nodename="Renderer" componentmode="Hidden" id="36" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="585" top="3585" width="2490" height="270">
+   <BOUNDS type="Node" left="585" top="3720" width="2490" height="270">
    </BOUNDS>
    <PIN pinname="Layer - Layer" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="585" top="3585">
+   <BOUNDS type="Box" left="585" top="3720">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
