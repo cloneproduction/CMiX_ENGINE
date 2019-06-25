@@ -359,7 +359,7 @@
    <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="459" dstpinname="InstanceStartIndex">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="470" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="13075" top="6955" width="1785" height="240">
+   <BOUNDS type="Box" left="13075" top="6955" width="3060" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="13075" top="6955" width="0" height="0">
    </BOUNDS>
@@ -413,7 +413,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="447" srcpinname="Output" dstnodeid="510" dstpinname="Input 2">
@@ -803,5 +803,19 @@
    <LINK srcnodeid="354" srcpinname="Output" dstnodeid="636" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="632" dstpinname="sbWorld">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="637">
+   <BOUNDS type="Box" left="11130" top="8610" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11130" top="8610" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="637" srcpinname="Y Output Value" dstnodeid="510" dstpinname="Input 1">
    </LINK>
    </PATCH>
