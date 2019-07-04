@@ -161,7 +161,7 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="84" srcpinname="Change" dstnodeid="78" dstpinname="Y">
@@ -196,8 +196,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="Change" dstnodeid="119" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="118" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="118" srcpinname="Output" dstnodeid="84" dstpinname="Period">
@@ -380,8 +378,6 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Up Edge" dstnodeid="287" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="287" srcpinname="Output" dstnodeid="84" dstpinname="Reset">
-   </LINK>
    <LINK srcnodeid="287" srcpinname="Output" dstnodeid="276" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="287" srcpinname="Output" dstnodeid="64" dstpinname="Reset">
@@ -421,5 +417,9 @@
    <LINK srcnodeid="293" srcpinname="Output String" dstnodeid="285" dstpinname="LayerRemoved">
    </LINK>
    <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="163" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="287" srcpinname="Output" dstnodeid="84" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Change" dstnodeid="119" dstpinname="Set">
    </LINK>
    </PATCH>

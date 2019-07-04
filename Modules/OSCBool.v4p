@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCBool.v4p" systemname="OSCBool" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCBool.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="13350" top="5580" width="8925" height="8040">
+   <BOUNDS type="Window" left="13830" top="6915" width="8925" height="8040">
    </BOUNDS>
    <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
@@ -103,6 +103,8 @@
    </PIN>
    <PIN pinname="Delete Key" visible="1">
    </PIN>
+   <PIN pinname="Flush" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="OnReceive" dstnodeid="23" dstpinname="Update">
    </LINK>
@@ -179,5 +181,15 @@
    <LINK srcnodeid="35" srcpinname="Output" dstnodeid="23" dstpinname="Key">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="23" dstpinname="Delete Key">
+   </LINK>
+   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="5085" top="2670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="CompositionReloaded">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="23" dstpinname="Flush">
    </LINK>
    </PATCH>

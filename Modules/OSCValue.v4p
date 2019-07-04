@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="855">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="3420" top="4860" width="17770" height="8150">
    </BOUNDS>
    <NODE id="6" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
@@ -33,9 +33,9 @@
    <NODE id="2" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)" exposed="0">
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
    </PIN>
-   <BOUNDS type="Box" left="2250" top="495" width="720" height="240">
+   <BOUNDS type="Box" left="2205" top="645" width="1815" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2250" top="495" width="750" height="240">
+   <BOUNDS type="Node" left="2205" top="645" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -155,6 +155,10 @@
    </PIN>
    <PIN pinname="Update" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Flush" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Bin Sizes" dstnodeid="106" dstpinname="Value Bin Size">
    </LINK>
@@ -166,8 +170,18 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="106" dstpinname="Update">
    </LINK>
+   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="106" dstpinname="Delete Key">
+   </LINK>
+   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="4050" top="2310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="CompositionReloaded">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
    <LINK srcnodeid="94" srcpinname="Output" dstnodeid="106" dstpinname="Key">
    </LINK>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="106" dstpinname="Delete Key">
+   <LINK srcnodeid="107" srcpinname="Output" dstnodeid="106" dstpinname="Flush">
    </LINK>
    </PATCH>

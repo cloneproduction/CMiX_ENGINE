@@ -96,7 +96,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="645" top="1095" width="14385" height="8370">
+   <BOUNDS type="Window" left="14895" top="16275" width="14385" height="8370">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -267,9 +267,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="186">
-   <BOUNDS type="Node" left="9525" top="750" width="100" height="100">
+   <BOUNDS type="Node" left="9135" top="720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9525" top="750" width="810" height="240">
+   <BOUNDS type="Box" left="9135" top="720" width="855" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -287,6 +287,12 @@
    </PIN>
    <BOUNDS type="Box" left="5475" top="3405">
    </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="185" srcpinname="Output String" dstnodeid="189" dstpinname="Input 1">
    </LINK>
@@ -315,5 +321,31 @@
    <LINK srcnodeid="214" srcpinname="Filter Index" dstnodeid="13" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="214" srcpinname="Filter Index" dstnodeid="14" dstpinname="Index">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="215">
+   <BOUNDS type="Box" left="7005" top="2835" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7005" top="2835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Capture.txt">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="216">
+   <BOUNDS type="Node" left="11880" top="660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11880" top="660" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CaptureName">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="216" srcpinname="Output String" dstnodeid="189" dstpinname="Input 3">
    </LINK>
    </PATCH>

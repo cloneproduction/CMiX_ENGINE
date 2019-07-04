@@ -19,6 +19,9 @@ namespace VVVV.Nodes
         [Input("Key")]
         public IDiffSpread<string> FKey;
 
+        [Input("Flush")]
+        public IDiffSpread<bool> FFlush;
+
         [Input("Delete Key")]
         public IDiffSpread<string> FDeleteKey;
 
@@ -32,6 +35,30 @@ namespace VVVV.Nodes
         public void Evaluate(int SpreadMax)
         {
             FOutputQueryValue.SliceCount = FKey.SliceCount;
+
+            if (FFlush.IsChanged)
+            {
+                if (FFlush.SliceCount > 0)
+                {
+                    if (FFlush[0] == true)
+                    {
+                        dict.Clear();
+
+                    }
+                }
+
+                if (FKey.SliceCount > 0)
+                {
+                    for (int i = 0; i < FKey.SliceCount; i++)
+                    {
+                        if (!dict.ContainsKey(FKey[i]))
+                        {
+                            dict.Add(FKey[i], FValue[i].Clone());
+                        }
+                        FOutputQueryValue[i] = dict[FKey[i]];
+                    }
+                }
+            }
 
             if (FDeleteKey.IsChanged)
             {

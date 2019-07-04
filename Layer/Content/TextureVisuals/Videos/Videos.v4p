@@ -30,7 +30,7 @@
    <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="11580" top="2010" width="19545" height="12945">
+   <BOUNDS type="Window" left="20175" top="5835" width="19545" height="12945">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -439,7 +439,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="586">
-   <BOUNDS type="Node" left="8460" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="8235" top="3900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

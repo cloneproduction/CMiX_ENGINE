@@ -65,7 +65,7 @@
    </PIN>
    <BOUNDS type="Box" left="6435" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="14600" top="2420" width="23280" height="17660">
+   <BOUNDS type="Window" left="2775" top="930" width="23280" height="16500">
    </BOUNDS>
    </NODE>
    <NODE systemname="RandomXYZ" filename="RandomXYZ\RandomXYZ.v4p" nodename="RandomXYZ\RandomXYZ.v4p" componentmode="Hidden" id="1069" debug="0">
