@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1260" top="5370" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="19560" top="180" width="2700" height="13272">
+   <BOUNDS type="Window" left="18516" top="0" width="2700" height="13272">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
