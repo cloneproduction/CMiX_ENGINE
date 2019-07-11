@@ -337,9 +337,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="216">
-   <BOUNDS type="Node" left="11880" top="660" width="100" height="100">
+   <BOUNDS type="Node" left="10104" top="672" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11880" top="660" width="795" height="240">
+   <BOUNDS type="Box" left="10104" top="672" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>

@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3255" top="3225" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="1365" top="3360" width="20505" height="9675">
+   <BOUNDS type="Window" left="2628" top="11112" width="22500" height="10080">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>

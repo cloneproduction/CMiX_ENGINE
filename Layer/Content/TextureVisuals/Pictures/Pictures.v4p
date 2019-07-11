@@ -318,8 +318,8 @@
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="54" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="3" dstpinname="Filename">
-   </LINK>
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="19" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="3" dstpinname="Filename">
    </LINK>
    </PATCH>

@@ -7,9 +7,9 @@
    <NODE id="59" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="1140" top="5445" width="750" height="240">
+   <BOUNDS type="Box" left="1164" top="6357" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1140" top="5445" width="750" height="240">
+   <BOUNDS type="Node" left="1164" top="6357" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -125,12 +125,10 @@
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="201" srcpinname="Transform Out" dstnodeid="59" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="62" srcpinname="Output Node" dstnodeid="201" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="190" srcpinname="Output" dstnodeid="201" dstpinname="Input 1">
    </LINK>
    <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="202">
    <BOUNDS type="Node" left="1140" top="3440" width="100" height="100">
@@ -171,5 +169,51 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="200" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="190" srcpinname="Output" dstnodeid="201" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="204">
+   <BOUNDS type="Node" left="1152" top="5652" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="201" srcpinname="Transform Out" dstnodeid="204" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="204" srcpinname="Transform Out" dstnodeid="59" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="1416" top="5136" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Rotate XYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Scale XYZ" slicecount="3" visible="1" values="-1,-1,-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="Transform Out" dstnodeid="204" dstpinname="Transform In 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="207">
+   <BOUNDS type="Box" left="2652" top="5136" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2652" top="5136" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-1,1,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="207" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Scale XYZ">
    </LINK>
    </PATCH>
