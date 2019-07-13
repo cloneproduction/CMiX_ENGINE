@@ -119,7 +119,7 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14">
-   <BOUNDS type="Box" left="4524" top="8508" width="3210" height="240">
+   <BOUNDS type="Box" left="4524" top="8508" width="2052" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4524" top="8508" width="0" height="0">
    </BOUNDS>
@@ -225,6 +225,8 @@
    </PIN>
    <PIN pinname="Input Index" visible="1">
    </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="43" dstpinname="Filter">
    </LINK>
@@ -283,7 +285,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="2" values="0,1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -300,8 +302,6 @@
    </NODE>
    <LINK srcnodeid="51" srcpinname="Count" dstnodeid="52" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="53" dstpinname="Switch">
-   </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="54">
    <BOUNDS type="Node" left="2064" top="7308" width="100" height="100">
    </BOUNDS>
@@ -314,12 +314,24 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="54" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="54" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="19" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="3" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="54" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="636" top="6084" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Hits" dstnodeid="58" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="53" dstpinname="Switch">
    </LINK>
    </PATCH>

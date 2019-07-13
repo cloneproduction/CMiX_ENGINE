@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="645" scrolly="12390">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="120" scrolly="10644">
    <BOUNDS type="Window" left="9855" top="7140" width="20250" height="15705">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
@@ -977,7 +977,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6800" top="10990" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -989,7 +989,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Displace (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Displace.tfx" nodename="Displace (DX11.TextureFX)" componentmode="Hidden" id="691">

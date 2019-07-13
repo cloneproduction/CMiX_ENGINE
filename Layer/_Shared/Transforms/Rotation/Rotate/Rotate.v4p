@@ -174,7 +174,7 @@
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="1" dstpinname="XYZ">
    </LINK>
-   <BOUNDS type="Window" left="5790" top="4725" width="11535" height="9150">
+   <BOUNDS type="Window" left="-864" top="4032" width="11532" height="9144">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

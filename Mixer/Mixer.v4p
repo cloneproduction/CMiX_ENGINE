@@ -254,20 +254,6 @@
    </NODE>
    <LINK srcnodeid="371" srcpinname="Output String" dstnodeid="282" dstpinname="LayerNames">
    </LINK>
-   <NODE systemname="LayerIndex" filename="LayerIndex.v4p" nodename="LayerIndex.v4p" componentmode="Hidden" id="372">
-   <BOUNDS type="Node" left="4432" top="1752" width="1100" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2452" top="340" width="3960" height="5870">
-   </BOUNDS>
-   <BOUNDS type="Window" left="18045" top="7860" width="3960" height="5865">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="372" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="372" srcpinname="Output" dstnodeid="282" dstpinname="LayerIndex">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <LINK srcnodeid="272" srcpinname="Output Node" dstnodeid="328" dstpinname="TexArray" hiddenwhenlocked="1">
@@ -281,10 +267,10 @@
    </BOUNDS>
    <BOUNDS type="Window" left="2150" top="9760" width="14480" height="9200">
    </BOUNDS>
+   <PIN pinname="LayerIndex" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="272" srcpinname="Output Node" dstnodeid="375" dstpinname="Preview" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="372" srcpinname="Output" dstnodeid="375" dstpinname="LayerIndex">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="376">
    <BOUNDS type="Box" left="8635" top="7700" width="800" height="480">
@@ -391,9 +377,53 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerRemoved">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="381" srcpinname="Output String" dstnodeid="282" dstpinname="LayerRemoved">
    </LINK>
    <LINK srcnodeid="371" srcpinname="Output String" dstnodeid="298" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="384">
+   <BOUNDS type="Box" left="4716" top="1488" width="1404" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4716" top="1488" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="LayerIndex">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="387" debug="0">
+   <BOUNDS type="Node" left="4416" top="1944" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4416" top="1944">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16560" top="6870" width="12975" height="9735">
+   </BOUNDS>
+   <PIN pinname="Init" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="384" srcpinname="Output String" dstnodeid="387" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="387" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="387" srcpinname="Output" dstnodeid="282" dstpinname="LayerIndex">
+   </LINK>
+   <LINK srcnodeid="387" srcpinname="Output" dstnodeid="375" dstpinname="LayerIndex">
    </LINK>
    </PATCH>
