@@ -43,15 +43,15 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="775">
-   <BOUNDS type="Node" left="1320" top="675" width="100" height="100">
+   <BOUNDS type="Node" left="444" top="483" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1320" top="675" width="912" height="240">
+   <BOUNDS type="Box" left="444" top="483" width="912" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="2222">
+   <PIN pinname="Y Input Value" slicecount="1" values="1111">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Local Port|">
    </PIN>
    </NODE>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="988">
@@ -397,9 +397,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1209">
-   <BOUNDS type="Node" left="11820" top="4284" width="100" height="100">
+   <BOUNDS type="Node" left="9840" top="204" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11820" top="4284" width="3792" height="240">
+   <BOUNDS type="Box" left="9840" top="204" width="3792" height="240">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
@@ -411,20 +411,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1209" srcpinname="Output String" dstnodeid="1208" dstpinname="Input">
-   </LINK>
-   <NODE id="1226" nodename="UDP (Network Server)" systemname="UDP (Network Server)">
-   <BOUNDS height="276" left="1140" top="2130" type="Node" width="780">
-   </BOUNDS>
-   </NODE>
-   <LINK dstnodeid="1226" dstpinname="Queue Mode" srcnodeid="685" srcpinname="Output Enum">
-   </LINK>
-   <LINK srcnodeid="1226" srcpinname="Queue Count" dstnodeid="703" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="775" srcpinname="Y Output Value" dstnodeid="1226" dstpinname="Local Port">
-   </LINK>
-   <LINK srcnodeid="1117" srcpinname="Output" dstnodeid="1226" dstpinname="Buffer Size">
-   </LINK>
-   <LINK srcnodeid="1226" srcpinname="Output" dstnodeid="1188" dstpinname="Input">
    </LINK>
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="1228">
    <BOUNDS type="Node" left="1140" top="5265" width="708" height="276">
@@ -445,8 +431,6 @@
    <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1229" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="1229" srcpinname="Output" dstnodeid="1205" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1226" srcpinname="Output" dstnodeid="1229" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="1229" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
    </LINK>
@@ -475,5 +459,21 @@
    <LINK srcnodeid="1197" srcpinname="Output" dstnodeid="1198" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="1196" srcpinname="Up Edge" dstnodeid="1197" dstpinname="Input">
+   </LINK>
+   <NODE id="1230" nodename="UDP (Network Server)" systemname="UDP (Network Server)">
+   <BOUNDS height="276" left="1140" top="2130" type="Node" width="780">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="1230" dstpinname="Queue Mode" srcnodeid="685" srcpinname="Output Enum">
+   </LINK>
+   <LINK srcnodeid="1230" srcpinname="Queue Count" dstnodeid="703" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="775" srcpinname="Y Output Value" dstnodeid="1230" dstpinname="Local Port">
+   </LINK>
+   <LINK srcnodeid="1117" srcpinname="Output" dstnodeid="1230" dstpinname="Buffer Size">
+   </LINK>
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1188" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1229" dstpinname="Input">
    </LINK>
    </PATCH>
