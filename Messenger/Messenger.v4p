@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="200" scrolly="0">
-   <BOUNDS type="Window" left="20124" top="3252" width="21072" height="18840">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="12110" top="6370" width="21070" height="18840">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -75,7 +75,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="1069">
-   <BOUNDS type="Node" left="7695" top="4695" width="100" height="100">
+   <BOUNDS type="Node" left="6315" top="4155" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -92,8 +92,6 @@
    <BOUNDS type="Box" left="7680" top="5265">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="1069" srcpinname="Count" dstnodeid="1070" dstpinname="Input">
-   </LINK>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="1101">
    <BOUNDS type="Node" left="9570" top="5265" width="100" height="100">
    </BOUNDS>
@@ -135,9 +133,9 @@
    <LINK srcnodeid="1095" srcpinname="Arguments" dstnodeid="1105" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1111">
-   <BOUNDS type="Box" left="5820" top="5265" width="1335" height="1695">
+   <BOUNDS type="Box" left="6260" top="5365" width="1335" height="1695">
    </BOUNDS>
-   <BOUNDS type="Node" left="5820" top="5265" width="0" height="0">
+   <BOUNDS type="Node" left="6260" top="5365" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -196,24 +194,6 @@
    </NODE>
    <LINK srcnodeid="1122" srcpinname="Y Output Value" dstnodeid="1117" dstpinname="Input 2">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1124">
-   <BOUNDS type="Box" left="1044" top="9519" width="9924" height="6432">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1044" top="9519" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="SliceOffset" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="1126">
    <BOUNDS type="Node" left="6395" top="385" width="100" height="100">
    </BOUNDS>
@@ -241,17 +221,17 @@
    <NODE id="1156" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
    <BOUNDS height="0" left="4305" top="3825" type="Node" width="0">
    </BOUNDS>
+   <PIN pinname="Arguments" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1042" srcpinname="Output String" dstnodeid="1156" dstpinname="Address">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1159">
-   <BOUNDS type="Node" left="4290" top="4455" width="100" height="100">
+   <BOUNDS type="Node" left="4410" top="4495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="1069" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="1111" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="1156" srcpinname="OnReceive" dstnodeid="1159" dstpinname="Set">
@@ -356,38 +336,6 @@
    </NODE>
    <LINK srcnodeid="1196" srcpinname="Up Edge" dstnodeid="1199" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="988" dstpinname="Input">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1206">
-   <BOUNDS type="Node" left="13095" top="1425" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13095" top="1425" width="1215" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="/ContentFolder">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1205" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="0" left="12165" top="2745" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1206" srcpinname="Output String" dstnodeid="1205" dstpinname="Address">
-   </LINK>
-   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1204">
-   <BOUNDS type="Node" left="12165" top="3375" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1205" srcpinname="OnReceive" dstnodeid="1204" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="1205" srcpinname="Arguments" dstnodeid="1204" dstpinname="Input">
-   </LINK>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="1208">
    <BOUNDS type="Node" left="11808" top="5424" width="100" height="100">
    </BOUNDS>
@@ -415,9 +363,9 @@
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="1228">
    <BOUNDS type="Node" left="1140" top="5265" width="708" height="276">
    </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1228" srcpinname="Output" dstnodeid="1124" dstpinname="Input String">
-   </LINK>
    <NODE id="1198" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="16296" top="6411" width="480" height="480">
    </BOUNDS>
@@ -458,22 +406,66 @@
    </LINK>
    <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1188" dstpinname="Input">
    </LINK>
-   <NODE id="1231" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
+   <NODE id="1241" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
    <BOUNDS type="Node" height="276" left="1125" top="3615" width="456">
    </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1231" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1231" srcpinname="Output" dstnodeid="1156" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1156" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1231" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
+   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1231" dstpinname="Set">
+   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1231" srcpinname="Output" dstnodeid="1205" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1241" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1231" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
+   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="988" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1231" dstpinname="Input">
+   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1241" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1243">
+   <BOUNDS type="Box" left="940" top="8400" width="9924" height="6432">
+   </BOUNDS>
+   <BOUNDS type="Node" left="940" top="8400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="1" values="|I2J1bmRsZQAAAAAAAAAAAAAAABgvTGF5ZXJOYW1lAAAscwAAS3VuZ0Z1AAAAAAA8L0xheWVyQ29u&cr;&lf;dGVudEZvbGRlck5hbWUALHMAAEM6XFVzZXJzXEJhYnlDbG9uZVxEZXNrdG9wXEhBUAAAAAAAHExh&cr;&lf;eWVyTmFtZXMAACxzAAAvTGF5ZXIwLwAAAAAAAAAUTGF5ZXJJbmRleAAALHMAADAAAAAAAAAkL0xh&cr;&lf;eWVyMC9MYXllck5hbWUAAAAscwAAL0xheWVyMC8AAAAAAAAAHC9MYXllcjAvRW5hYmxlZAAscwAA&cr;&lf;RmFsc2UAAAAAAAAYL0xheWVyMC9PdXQALHMAAEZhbHNlAAAAAAAAGC9MYXllcjAvSW5kZXgAAAAs&cr;&lf;cwAAMAAAAAAAACAvTGF5ZXIwL0JsZW5kTW9kZQAAACxzAABOb3JtYWwAAAAAABwvTGF5ZXIwL0Zh&cr;&lf;ZGUvQW1vdW50ACxzAAAxAAAAAAAAKC9MYXllcjAvQmVhdE1vZGlmaWVyL011bHRpcGxpZXIALHMA&cr;&lf;ADEAAAAAAAAwL0xheWVyMC9CZWF0TW9kaWZpZXIvQ2hhbmNlVG9IaXQvQW1vdW50ACxzAAAxAAAA&cr;&lf;AAAAJC9MYXllcjAvQ29udGVudC9FbmFibGUAACxzAABUcnVlAAAAAAAAADAvTGF5ZXIwL0NvbnRl&cr;&lf;bnQvQmVhdE1vZGlmaWVyL011bHRpcGxpZXIALHMAADEAAAAAAAA4L0xheWVyMC9Db250ZW50L0Jl&cr;&lf;YXRNb2RpZmllci9DaGFuY2VUb0hpdC9BbW91bnQALHMAADEAAAAAAABML0xheWVyMC9Db250ZW50&cr;&lf;L1RleHR1cmUvRmlsZVNlbGVjdG9yL1NlbGVjdGVkAAAALHMAAEt1bmdGdVxLdW5nRnUtMi5oYXAu&cr;&lf;bW92AAAAADQvTGF5ZXIwL0NvbnRlbnQvVGV4dHVyZS9CcmlnaHRuZXNzL0Ftb3VudAAAACxzAAAw&cr;&lf;AAAAAAAAMC9MYXllcjAvQ29udGVudC9UZXh0dXJlL0NvbnRyYXN0L0Ftb3VudAAscwAAMAAAAAAA&cr;&lf;ADAvTGF5ZXIwL0NvbnRlbnQvVGV4dHVyZS9JbnZlcnQvQW1vdW50AAAALHMAADAAAAAAAAAsL0xh&cr;&lf;eWVyMC9Db250ZW50L1RleHR1cmUvSHVlL0Ftb3VudAAALHMAADAAAAAAAAA0L0xheWVyMC9Db250&cr;&lf;ZW50L1RleHR1cmUvU2F0dXJhdGlvbi9BbW91bnQAAAAscwAAMAAAAAAAADQvTGF5ZXIwL0NvbnRl&cr;&lf;bnQvVGV4dHVyZS9MdW1pbm9zaXR5L0Ftb3VudAAAACxzAAAwAAAAAAAAMC9MYXllcjAvQ29udGVu&cr;&lf;dC9UZXh0dXJlL0tleWluZy9BbW91bnQAAAAscwAAMAAAAAAAACwvTGF5ZXIwL0NvbnRlbnQvVGV4&cr;&lf;dHVyZS9QYW4vQW1vdW50AAAscwAAMAAAAAAAACwvTGF5ZXIwL0NvbnRlbnQvVGV4dHVyZS9UaWx0&cr;&lf;L0Ftb3VudAAscwAAMAAAAAAAADAvTGF5ZXIwL0NvbnRlbnQvVGV4dHVyZS9TY2FsZS9BbW91bnQA&cr;&lf;AAAALHMAADAAAAAAAAAwL0xheWVyMC9Db250ZW50L1RleHR1cmUvUm90YXRlL0Ftb3VudAAAACxz&cr;&lf;AAAwAAAAAAAAMC9MYXllcjAvQ29udGVudC9UZXh0dXJlL0ludmVydE1vZGUAACxzAABJTlZfUkdC&cr;&lf;AAAAAEQvTGF5ZXIwL0NvbnRlbnQvR2VvbWV0cnkvRmlsZVNlbGVjdG9yL1NlbGVjdGVkAAAscwAA&cr;&lf;UXVhZCAoZGVmYXVsdCkAAAAAADQvTGF5ZXIwL0NvbnRlbnQvR2VvbWV0cnkvVHJhbnNsYXRlL0Ft&cr;&lf;b3VudAAAACxzAAAwAAAAAAAANC9MYXllcjAvQ29udGVudC9HZW9tZXRyeS9TY2FsZS9BbW91bnQA&cr;&lf;AAAscwAAMC4yNQAAAAAAAAA0L0xheWVyMC9Db250ZW50L0dlb21ldHJ5L1JvdGF0aW9uL0Ftb3Vu&cr;&lf;dAAAAAAscwAAMAAAAAAAADAvTGF5ZXIwL0NvbnRlbnQvR2VvbWV0cnkvQ291bnRlci9Db3VudAAA&cr;&lf;LHMAADEAAAAAAAA4L0xheWVyMC9Db250ZW50L0dlb21ldHJ5L1RyYW5zbGF0ZU1vZGUvTW9kZQAs&cr;&lf;cwAAU1REX0NUUgAAAAA0L0xheWVyMC9Db250ZW50L0dlb21ldHJ5L1NjYWxlTW9kZS9Nb2RlACxz&cr;&lf;AABTVERfQ1RSAAAAADgvTGF5ZXIwL0NvbnRlbnQvR2VvbWV0cnkvUm90YXRpb25Nb2RlL01vZGUA&cr;&lf;ACxzAABTVERfQ1RSAAAAADwvTGF5ZXIwL0NvbnRlbnQvR2VvbWV0cnkvUm90YXRpb25Nb2RlL1Jv&cr;&lf;dGF0aW9uWAAscwAAVHJ1ZQAAAAAAAAA8L0xheWVyMC9Db250ZW50L0dlb21ldHJ5L1JvdGF0aW9u&cr;&lf;TW9kZS9Sb3RhdGlvblkALHMAAFRydWUAAAAAAAAAPC9MYXllcjAvQ29udGVudC9HZW9tZXRyeS9S&cr;&lf;b3RhdGlvbk1vZGUvUm90YXRpb25aACxzAABUcnVlAAAAAAAAADwvTGF5ZXIwL0NvbnRlbnQvR2Vv&cr;&lf;bWV0cnkvR2VvbWV0cnlGWC9FeHBsb2RlL0Ftb3VudAAALHMAADAAAAAAAABUL0xheWVyMC9Db250&cr;&lf;ZW50L0dlb21ldHJ5L0dlb21ldHJ5RlgvRmlsZVNlbGVjdG9yL1NlbGVjdGVkAAAALHMAAEJsYWNr&cr;&lf;IChkZWZhdWx0KS5wbmcAAAAALC9MYXllcjAvQ29udGVudC9HZW9tZXRyeS9JczNEAAAALHMAAEZh&cr;&lf;bHNlAAAAAAAAOC9MYXllcjAvQ29udGVudC9HZW9tZXRyeS9LZWVwQXNwZWN0UmF0aW8AAAAALHMA&cr;&lf;AEZhbHNlAAAAAAAAMC9MYXllcjAvQ29udGVudC9Qb3N0RlgvRmVlZGJhY2svQW1vdW50AAAscwAA&cr;&lf;MAAAAAAAACwvTGF5ZXIwL0NvbnRlbnQvUG9zdEZYL0JsdXIvQW1vdW50AAAscwAAMAAAAAAAADAv&cr;&lf;TGF5ZXIwL0NvbnRlbnQvUG9zdEZYL1RyYW5zZm9ybXMAAAAscwAATk9ORQAAAAAAAAAoL0xheWVy&cr;&lf;MC9Db250ZW50L1Bvc3RGWC9WaWV3ACxzAABTVERfQ1RSAAAAACAvTGF5ZXIwL01hc2svRW5hYmxl&cr;&lf;ACxzAABGYWxzZQAAAAAAACgvTGF5ZXIwL01hc2svS2VlcE9yaWdpbmFsAAAALHMAAEZhbHNlAAAA&cr;&lf;AAAAMC9MYXllcjAvTWFzay9CZWF0TW9kaWZpZXIvTXVsdGlwbGllcgAAAAAscwAAMQAAAAAAADgv&cr;&lf;TGF5ZXIwL01hc2svQmVhdE1vZGlmaWVyL0NoYW5jZVRvSGl0L0Ftb3VudAAAAAAscwAAMQAAAAAA&cr;&lf;AEAvTGF5ZXIwL01hc2svR2VvbWV0cnkvRmlsZVNlbGVjdG9yL1NlbGVjdGVkACxzAABRdWFkIChk&cr;&lf;ZWZhdWx0KQAAAAAAMC9MYXllcjAvTWFzay9HZW9tZXRyeS9UcmFuc2xhdGUvQW1vdW50AAAscwAA&cr;&lf;MAAAAAAAADAvTGF5ZXIwL01hc2svR2VvbWV0cnkvU2NhbGUvQW1vdW50AAAscwAAMC4yNQAAAAAA&cr;&lf;AAAwL0xheWVyMC9NYXNrL0dlb21ldHJ5L1JvdGF0aW9uL0Ftb3VudAAAACxzAAAwAAAAAAAALC9M&cr;&lf;YXllcjAvTWFzay9HZW9tZXRyeS9Db3VudGVyL0NvdW50ACxzAAAxAAAAAAAAOC9MYXllcjAvTWFz&cr;&lf;ay9HZW9tZXRyeS9UcmFuc2xhdGVNb2RlL01vZGUAAAAALHMAAFNURF9DVFIAAAAANC9MYXllcjAv&cr;&lf;TWFzay9HZW9tZXRyeS9TY2FsZU1vZGUvTW9kZQAAAAAscwAAU1REX0NUUgAAAAA0L0xheWVyMC9N&cr;&lf;YXNrL0dlb21ldHJ5L1JvdGF0aW9uTW9kZS9Nb2RlACxzAABTVERfQ1RSAAAAADwvTGF5ZXIwL01h&cr;&lf;c2svR2VvbWV0cnkvUm90YXRpb25Nb2RlL1JvdGF0aW9uWAAAAAAscwAAVHJ1ZQAAAAAAAAA8L0xh&cr;&lf;eWVyMC9NYXNrL0dlb21ldHJ5L1JvdGF0aW9uTW9kZS9Sb3RhdGlvblkAAAAALHMAAFRydWUAAAAA&cr;&lf;AAAAPC9MYXllcjAvTWFzay9HZW9tZXRyeS9Sb3RhdGlvbk1vZGUvUm90YXRpb25aAAAAACxzAABU&cr;&lf;cnVlAAAAAAAAADgvTGF5ZXIwL01hc2svR2VvbWV0cnkvR2VvbWV0cnlGWC9FeHBsb2RlL0Ftb3Vu&cr;&lf;dAAscwAAMAAAAAAAAFAvTGF5ZXIwL01hc2svR2VvbWV0cnkvR2VvbWV0cnlGWC9GaWxlU2VsZWN0&cr;&lf;b3IvU2VsZWN0ZWQAACxzAABCbGFjayAoZGVmYXVsdCkucG5nAAAAACgvTGF5ZXIwL01hc2svR2Vv&cr;&lf;bWV0cnkvSXMzRAAALHMAAEZhbHNlAAAAAAAANC9MYXllcjAvTWFzay9HZW9tZXRyeS9LZWVwQXNw&cr;&lf;ZWN0UmF0aW8AAAAscwAARmFsc2UAAAAAAABEL0xheWVyMC9NYXNrL1RleHR1cmUvRmlsZVNlbGVj&cr;&lf;dG9yL1NlbGVjdGVkAAAscwAAQmxhY2sgKGRlZmF1bHQpLnBuZwAAAAAwL0xheWVyMC9NYXNrL1Rl&cr;&lf;eHR1cmUvQnJpZ2h0bmVzcy9BbW91bnQAACxzAAAwAAAAAAAAMC9MYXllcjAvTWFzay9UZXh0dXJl&cr;&lf;L0NvbnRyYXN0L0Ftb3VudAAAAAAscwAAMAAAAAAAACwvTGF5ZXIwL01hc2svVGV4dHVyZS9JbnZl&cr;&lf;cnQvQW1vdW50AAAscwAAMAAAAAAAACgvTGF5ZXIwL01hc2svVGV4dHVyZS9IdWUvQW1vdW50ACxz&cr;&lf;AAAwAAAAAAAAMC9MYXllcjAvTWFzay9UZXh0dXJlL1NhdHVyYXRpb24vQW1vdW50AAAscwAAMAAA&cr;&lf;AAAAADAvTGF5ZXIwL01hc2svVGV4dHVyZS9MdW1pbm9zaXR5L0Ftb3VudAAALHMAADAAAAAAAAAs&cr;&lf;L0xheWVyMC9NYXNrL1RleHR1cmUvS2V5aW5nL0Ftb3VudAAALHMAADAAAAAAAAAoL0xheWVyMC9N&cr;&lf;YXNrL1RleHR1cmUvUGFuL0Ftb3VudAAscwAAMAAAAAAAACwvTGF5ZXIwL01hc2svVGV4dHVyZS9U&cr;&lf;aWx0L0Ftb3VudAAAAAAscwAAMAAAAAAAACwvTGF5ZXIwL01hc2svVGV4dHVyZS9TY2FsZS9BbW91&cr;&lf;bnQAAAAscwAAMAAAAAAAACwvTGF5ZXIwL01hc2svVGV4dHVyZS9Sb3RhdGUvQW1vdW50AAAscwAA&cr;&lf;MAAAAAAAACwvTGF5ZXIwL01hc2svVGV4dHVyZS9JbnZlcnRNb2RlACxzAABJTlZfUkdCAAAAACwv&cr;&lf;TGF5ZXIwL01hc2svUG9zdEZYL0ZlZWRiYWNrL0Ftb3VudAAscwAAMAAAAAAAACgvTGF5ZXIwL01h&cr;&lf;c2svUG9zdEZYL0JsdXIvQW1vdW50ACxzAAAwAAAAAAAALC9MYXllcjAvTWFzay9Qb3N0RlgvVHJh&cr;&lf;bnNmb3JtcwAALHMAAE5PTkUAAAAAAAAAKC9MYXllcjAvTWFzay9Qb3N0RlgvVmlldwAAAAAscwAA&cr;&lf;U1REX0NUUgAAAAAsL0xheWVyMC9Db2xvcmF0aW9uL09iakNvbG9yACxzAAAjRkZGRkZGRkYAAAAA&cr;&lf;AAAsL0xheWVyMC9Db2xvcmF0aW9uL0JnQ29sb3IAACxzAAAjRkZGRjAwRkYAAAAAAAA0L0xheWVy&cr;&lf;MC9Db2xvcmF0aW9uL0JlYXRNb2RpZmllci9NdWx0aXBsaWVyAAAscwAAMQAAAAAAADwvTGF5ZXIw&cr;&lf;L0NvbG9yYXRpb24vQmVhdE1vZGlmaWVyL0NoYW5jZVRvSGl0L0Ftb3VudAAALHMAADEAAAAAAAAs&cr;&lf;L0xheWVyMC9Db2xvcmF0aW9uL0h1ZS9SYW5nZS9BbW91bnQALHMAADAAAAAAAAAsL0xheWVyMC9D&cr;&lf;b2xvcmF0aW9uL0h1ZS9Nb2RpZmllcgAscwAAU1REX0NUUgAAAAA0L0xheWVyMC9Db2xvcmF0aW9u&cr;&lf;L1NhdHVyYXRpb24vUmFuZ2UvQW1vdW50AAAscwAAMAAAAAAAADQvTGF5ZXIwL0NvbG9yYXRpb24v&cr;&lf;U2F0dXJhdGlvbi9Nb2RpZmllcgAALHMAAFNURF9DVFIAAAAAMC9MYXllcjAvQ29sb3JhdGlvbi9W&cr;&lf;YWx1ZS9SYW5nZS9BbW91bnQAAAAscwAAMAAAAAAAADAvTGF5ZXIwL0NvbG9yYXRpb24vVmFsdWUv&cr;&lf;TW9kaWZpZXIAAAAscwAAU1REX0NUUgAAAAAoL0xheWVyMC9Qb3N0RlgvRmVlZGJhY2svQW1vdW50&cr;&lf;AAAscwAAMAAAAAAAACQvTGF5ZXIwL1Bvc3RGWC9CbHVyL0Ftb3VudAAALHMAADAAAAAAAAAoL0xh&cr;&lf;eWVyMC9Qb3N0RlgvVHJhbnNmb3JtcwAAACxzAABOT05FAAAAAAAAACAvTGF5ZXIwL1Bvc3RGWC9W&cr;&lf;aWV3ACxzAABTVERfQ1RSAAAAABwvTWFzdGVyQmVhdC9QZXJpb2QAACxzAAAwAAAAAAAAIC9DYW1l&cr;&lf;cmEvUm90YXRpb24AAAAALHMAAFNURF9DVFIAAAAAHC9DYW1lcmEvTG9va0F0AAAscwAAU1REX0NU&cr;&lf;UgAAAAAcL0NhbWVyYS9WaWV3AAAAACxzAABTVERfQ1RSAAAAACgvQ2FtZXJhL0JlYXRNb2RpZmll&cr;&lf;ci9NdWx0aXBsaWVyACxzAAAxAAAAAAAAMC9DYW1lcmEvQmVhdE1vZGlmaWVyL0NoYW5jZVRvSGl0&cr;&lf;L0Ftb3VudAAscwAAMQAAAAAAABwvQ2FtZXJhL0ZPVi9BbW91bnQAACxzAAAwAAAAAAAAHC9DYW1l&cr;&lf;cmEvWm9vbS9BbW91bnQALHMAADAAAAA=|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1228" srcpinname="Output" dstnodeid="1243" dstpinname="Input String">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="1069" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1244">
+   <BOUNDS type="Box" left="7690" top="4460" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7690" top="4460" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1069" srcpinname="Count" dstnodeid="1070" dstpinname="Input">
    </LINK>
    </PATCH>

@@ -44,18 +44,17 @@ namespace VVVV.Nodes
                     {
                         dict.Clear();
 
-                    }
-                }
-
-                if (FKey.SliceCount > 0)
-                {
-                    for (int i = 0; i < FKey.SliceCount; i++)
-                    {
-                        if (!dict.ContainsKey(FKey[i]))
+                        if (FKey.SliceCount > 0)
                         {
-                            dict.Add(FKey[i], FValue[i].Clone());
+                            for (int i = 0; i < FKey.SliceCount; i++)
+                            {
+                                if (!dict.ContainsKey(FKey[i]))
+                                {
+                                    dict.Add(FKey[i], FValue[i].Clone());
+                                }
+                                FOutputQueryValue[i] = dict[FKey[i]];
+                            }
                         }
-                        FOutputQueryValue[i] = dict[FKey[i]];
                     }
                 }
             }

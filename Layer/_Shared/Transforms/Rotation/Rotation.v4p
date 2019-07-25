@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="RotationName" visible="1" slicecount="2" values="text,text">
+   <PIN pinname="RotationName" visible="1" slicecount="6" values="text,text,text,text,text,text">
    </PIN>
    </NODE>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="532" dstpinname="SpreadCount" hiddenwhenlocked="1">
@@ -87,7 +87,7 @@
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="2" values="text,text">
+   <PIN pinname="Input" visible="1" slicecount="6" values="text,text,text,text,text,text">
    </PIN>
    </NODE>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="SpreadCount" hiddenwhenlocked="1">
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="3190" top="2520" width="22140" height="12690">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="2" values=",">
+   <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
    </PIN>
    </NODE>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="685" dstpinname="Input 1" hiddenwhenlocked="1">
@@ -161,7 +161,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="2" values=",">
+   <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
    </PIN>
    </NODE>
    <LINK srcnodeid="532" srcpinname="Position Out" dstnodeid="691" dstpinname="Input 2">
@@ -240,32 +240,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE id="704" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
-   <BOUNDS type="Node" left="6045" top="3030" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6045" top="3030">
-   </BOUNDS>
-   <BOUNDS type="Window" left="20470" top="9530" width="11120" height="9940">
-   </BOUNDS>
-   <PIN pinname="Address" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="LayerRemoved" visible="1">
-   </PIN>
-   <PIN pinname="LayerNames" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="704" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="704" srcpinname="Output" dstnodeid="691" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="704" srcpinname="Output" dstnodeid="685" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="704" srcpinname="Output" dstnodeid="532" dstpinname="RotationName" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="704" srcpinname="Output" dstnodeid="533" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="OSCBool" filename="..\..\..\..\Modules\OSCBool.v4p" nodename="..\..\..\..\Modules\OSCBool.v4p" componentmode="Hidden" id="705">
    <BOUNDS type="Node" left="4380" top="3030" width="960" height="270">
    </BOUNDS>
@@ -362,12 +336,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="700" srcpinname="Output String" dstnodeid="704" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="708" srcpinname="Output String" dstnodeid="704" dstpinname="LayerRemoved" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="704" dstpinname="LayerNames" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="702" srcpinname="Output String" dstnodeid="705" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="706" dstpinname="LayerNames" hiddenwhenlocked="1">
@@ -381,5 +349,29 @@
    <LINK srcnodeid="703" srcpinname="Output String" dstnodeid="706" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="708" srcpinname="Output String" dstnodeid="706" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="710" systemname="OSCString" filename="..\..\..\modules\OSCString.v4p" nodename="..\..\..\modules\OSCString.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="6045" top="3030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6045" top="3030">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20470" top="9530" width="11120" height="9940">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="578" srcpinname="Output Node" dstnodeid="710" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="710" srcpinname="Output" dstnodeid="691" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="710" srcpinname="Output" dstnodeid="685" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="710" srcpinname="Output" dstnodeid="532" dstpinname="RotationName" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="710" srcpinname="Output" dstnodeid="533" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="700" srcpinname="Output String" dstnodeid="710" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="708" srcpinname="Output String" dstnodeid="710" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="710" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

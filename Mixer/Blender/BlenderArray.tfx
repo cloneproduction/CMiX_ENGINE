@@ -11,6 +11,7 @@ Texture2D tex0: PREVIOUS;
 Texture2DArray texArray;
 
 int texcount = 6;
+float transition;
 
 #include "ColorSpace.fxh"
 #define bld(op,c0,c1) float4(lerp((c0*c0.a+c1*c1.a*(1-c0.a))/saturate(c0.a+c1.a*(1-c0.a))  ,(op)  ,c0.a*c1.a).rgb,  saturate(c0.a+c1.a*(1-c0.a)))
@@ -23,7 +24,7 @@ float2 TexCoord (float2 x, float4x4 tTex){
 float4 pBlender(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
 {
 	float4 color = float4(0.0, 0.0, 0.0, 1.0);
-	
+
 	for(int i = texcount-1; i>=0; i--){
 		float4 col = texArray.Sample(s0, float3(uv, LayerIndex[i]));
 		col.a *= Alpha[i];
@@ -36,7 +37,7 @@ float4 pBlender(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
 		if (BlendMode[i]==5){color=bld(color*col,color,col);}//MULTIPLY
 
 	}
-	return color;
+	return float4(color.rgb * transition, color.a);
 }
 
 technique10 Blender

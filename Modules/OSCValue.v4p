@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\modules\OSCValue.v4p" systemname="OSCValue" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Modules\OSCValue.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="3420" top="4860" width="17770" height="8150">
+   <BOUNDS type="Window" left="16560" top="6870" width="12975" height="9735">
    </BOUNDS>
    <NODE id="6" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
    <BOUNDS height="270" left="930" top="2265" type="Node" width="1995">
@@ -142,36 +142,6 @@
    </LINK>
    <LINK srcnodeid="95" srcpinname="Output String" dstnodeid="93" dstpinname="Input 2">
    </LINK>
-   <NODE id="106" systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden">
-   <BOUNDS type="Node" left="930" top="3135" width="3960" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="930" top="3135">
-   </BOUNDS>
-   <PIN pinname="ChangeCount" visible="1">
-   </PIN>
-   <PIN pinname="Key" visible="1" slicecount="1" values="/MasterBeat/Resync">
-   </PIN>
-   <PIN pinname="Delete Key" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Update" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Flush" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Bin Sizes" dstnodeid="106" dstpinname="Value Bin Size">
-   </LINK>
-   <LINK srcnodeid="106" srcpinname="Output" dstnodeid="7" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="106" srcpinname="Output Bin Size" dstnodeid="20" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="106" dstpinname="Value">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="106" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="106" dstpinname="Delete Key">
-   </LINK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="107">
    <BOUNDS type="Node" left="4050" top="2310" width="100" height="100">
    </BOUNDS>
@@ -180,8 +150,28 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="106" dstpinname="Key">
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE id="113" systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="930" top="3135" width="3960" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="930" top="3135">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Bin Sizes" dstnodeid="113" dstpinname="Value Bin Size">
    </LINK>
-   <LINK srcnodeid="107" srcpinname="Output" dstnodeid="106" dstpinname="Flush">
+   <LINK srcnodeid="113" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Output Bin Size" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Arguments" dstnodeid="113" dstpinname="Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="OnReceive" dstnodeid="113" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="113" dstpinname="Delete Key">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="113" dstpinname="Key">
+   </LINK>
+   <LINK srcnodeid="107" srcpinname="Output" dstnodeid="113" dstpinname="Flush">
    </LINK>
    </PATCH>

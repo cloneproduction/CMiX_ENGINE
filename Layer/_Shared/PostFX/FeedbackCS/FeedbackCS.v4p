@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\PostFX\FeedbackCS\FeedbackCS.v4p" systemname="FeedbackCS" filename="C:\WORK\Michael Theater\Interactive\EchoCS\FeedbackCS.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="4890" top="1080" width="16410" height="14910">
    </BOUNDS>
@@ -76,7 +76,7 @@
    </LINK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="38">
    <BOUNDS type="Box" left="9915" top="870" width="792" height="240">
@@ -547,34 +547,14 @@
    </PIN>
    <PIN pinname="Texture Slices Out" visible="1">
    </PIN>
+   <PIN pinname="Element Count" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Mips">
-   </LINK>
-   <LINK srcnodeid="166" srcpinname="Output" dstnodeid="195" dstpinname="Element Count" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="95" srcpinname="Output" dstnodeid="195" dstpinname="SizeXY" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="151" srcpinname="Color Output" dstnodeid="195" dstpinname="Background Color">
-   </LINK>
-   <NODE id="198" systemname="SelectTexArray (DX11.Effect)" filename="SelectTexArray.fx" nodename="SelectTexArray (DX11.Effect)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3075" top="9000" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3075" top="9000" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="153" srcpinname="Geometry Out" dstnodeid="198" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="194" srcpinname="Output Node" dstnodeid="198" dstpinname="TexArray">
-   </LINK>
-   <LINK srcnodeid="146" srcpinname="Transform Out" dstnodeid="198" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Render State" dstnodeid="198" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="155" srcpinname="Output" dstnodeid="198" dstpinname="TexIndex">
-   </LINK>
-   <LINK srcnodeid="198" srcpinname="Layer" dstnodeid="135" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer UInt)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer UInt)" componentmode="Hidden" id="205">
    <BOUNDS type="Node" left="11190" top="4995" width="100" height="100">
@@ -625,7 +605,7 @@
    <LINK srcnodeid="60" srcpinname="Transform Out" dstnodeid="211" dstpinname="Transform In">
    </LINK>
    <NODE id="48" systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden">
-   <BOUNDS type="Node" left="9155" top="8990" width="100" height="100">
+   <BOUNDS type="Node" left="9115" top="8970" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Source" visible="1" slicecount="1" values="||">
    </PIN>
@@ -715,5 +695,41 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="228" srcpinname="Output String" dstnodeid="160" dstpinname="LayerRemoved">
+   </LINK>
+   <NODE id="198" systemname="SelectTexArray (DX11.Effect)" filename="..\..\..\..\Mixer\SelectTexArray.fx" nodename="SelectTexArray (DX11.Effect)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3075" top="9000" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3075" top="9000" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="Geometry Out" dstnodeid="198" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="194" srcpinname="Output Node" dstnodeid="198" dstpinname="TexArray">
+   </LINK>
+   <LINK srcnodeid="146" srcpinname="Transform Out" dstnodeid="198" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Render State" dstnodeid="198" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Output" dstnodeid="198" dstpinname="TexIndex">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Layer" dstnodeid="135" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="229">
+   <BOUNDS type="Box" left="6430" top="10480" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6430" top="10480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="229" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Element Count">
    </LINK>
    </PATCH>

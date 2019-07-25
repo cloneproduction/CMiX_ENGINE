@@ -191,9 +191,9 @@
    <LINK srcnodeid="199" srcpinname="Y Output Value" dstnodeid="351" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="TextureIDBuffer" filename="TextureIDBuffer\TextureIDBuffer.v4p" nodename="TextureIDBuffer\TextureIDBuffer.v4p" componentmode="Hidden" id="350">
-   <BOUNDS type="Node" left="11970" top="1945" width="0" height="0">
+   <BOUNDS type="Node" left="13170" top="1885" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11970" top="1945" width="7225" height="10220">
+   <BOUNDS type="Box" left="13170" top="1885" width="7225" height="10220">
    </BOUNDS>
    <BOUNDS type="Window" left="9180" top="8010" width="12220" height="10770">
    </BOUNDS>
@@ -429,7 +429,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="514">
-   <BOUNDS type="Node" left="18945" top="8961" width="100" height="100">
+   <BOUNDS type="Node" left="18825" top="8471" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -437,7 +437,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" visible="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="18945" top="8961">
+   <BOUNDS type="Box" left="18825" top="8471">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="514" dstpinname="Select" hiddenwhenlocked="1">
@@ -453,7 +453,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="550">
-   <BOUNDS type="Node" left="18960" top="8466" width="100" height="100">
+   <BOUNDS type="Node" left="18840" top="7976" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -777,7 +777,7 @@
    <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="632" dstpinname="Control" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="640">
-   <BOUNDS type="Node" left="20616" top="8712" width="100" height="100">
+   <BOUNDS type="Node" left="18966" top="8932" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -785,7 +785,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="642">
-   <BOUNDS type="Node" left="18780" top="9501" width="100" height="100">
+   <BOUNDS type="Node" left="18800" top="9481" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="1.34">
    </PIN>

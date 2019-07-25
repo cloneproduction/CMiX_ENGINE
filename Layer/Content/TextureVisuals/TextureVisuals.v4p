@@ -46,30 +46,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="TextureBinSize">
    </PIN>
    </NODE>
-   <NODE systemname="Videos" filename="Videos\Videos.v4p" nodename="Videos\Videos.v4p" componentmode="Hidden" id="275" debug="0">
-   <BOUNDS type="Node" left="3936" top="4980" width="1344" height="288">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3936" top="4980" width="5545" height="9243">
-   </BOUNDS>
-   <BOUNDS type="Window" left="20172" top="5832" width="9852" height="13092">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Sequence" visible="1">
-   </PIN>
-   <PIN pinname="Beat" visible="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="VidName" visible="1">
-   </PIN>
-   <PIN pinname="Address" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="279">
    <BOUNDS type="Box" left="1356" top="1416" width="795" height="240">
    </BOUNDS>
@@ -117,7 +93,7 @@
    </PIN>
    <PIN pinname="TexName" visible="1">
    </PIN>
-   <PIN pinname="VidName" visible="1">
+   <PIN pinname="VidName" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Address" visible="1" slicecount="1" values="||">
    </PIN>
@@ -126,8 +102,6 @@
    <PIN pinname="CaptureName" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="275" srcpinname="Resolution" dstnodeid="368" dstpinname="VideosRes">
-   </LINK>
    <LINK srcnodeid="368" srcpinname="Output" dstnodeid="35" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Pictures" filename="Pictures\Pictures.v4p" nodename="Pictures\Pictures.v4p" componentmode="Hidden" id="369">
@@ -172,8 +146,6 @@
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <LINK srcnodeid="275" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="388">
    <BOUNDS type="Box" left="7140" top="1416" width="800" height="240">
    </BOUNDS>
@@ -236,11 +208,7 @@
    </LINK>
    <LINK srcnodeid="396" srcpinname="Output" dstnodeid="369" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="396" srcpinname="Output" dstnodeid="275" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="396" srcpinname="Output Bin Size" dstnodeid="197" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="396" srcpinname="Output Bin Size" dstnodeid="275" dstpinname="Input - Output Bin Size">
    </LINK>
    <LINK srcnodeid="288" srcpinname="Output String" dstnodeid="396" dstpinname="Address" hiddenwhenlocked="1">
    </LINK>
@@ -266,8 +234,6 @@
    </LINK>
    <LINK srcnodeid="369" srcpinname="TexName" dstnodeid="368" dstpinname="TexName">
    </LINK>
-   <LINK srcnodeid="275" srcpinname="VidName" dstnodeid="368" dstpinname="VidName">
-   </LINK>
    <LINK srcnodeid="377" srcpinname="Output String" dstnodeid="368" dstpinname="LayerNames">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="398">
@@ -285,8 +251,6 @@
    <LINK srcnodeid="377" srcpinname="Output String" dstnodeid="398" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="398" srcpinname="Output" dstnodeid="369" dstpinname="Address">
-   </LINK>
-   <LINK srcnodeid="398" srcpinname="Output" dstnodeid="275" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="398" srcpinname="Output" dstnodeid="368" dstpinname="Address">
    </LINK>
@@ -337,5 +301,25 @@
    <LINK srcnodeid="398" srcpinname="Output" dstnodeid="410" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="410" srcpinname="Output" dstnodeid="368" dstpinname="CaptureName">
+   </LINK>
+   <NODE systemname="Videos" filename="Videos\Videos.v4p" nodename="Videos\Videos.v4p" componentmode="Hidden" id="411" debug="0">
+   <BOUNDS type="Node" left="3936" top="4980" width="1344" height="288">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3936" top="4980" width="5545" height="9243">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20172" top="5832" width="9852" height="13092">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="411" srcpinname="Resolution" dstnodeid="368" dstpinname="VideosRes">
+   </LINK>
+   <LINK srcnodeid="411" srcpinname="Texture Out" dstnodeid="368" dstpinname="Videos">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output" dstnodeid="411" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Output Bin Size" dstnodeid="411" dstpinname="Input - Output Bin Size">
+   </LINK>
+   <LINK srcnodeid="411" srcpinname="VidName" dstnodeid="368" dstpinname="VidName">
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Output" dstnodeid="411" dstpinname="Address">
    </LINK>
    </PATCH>
