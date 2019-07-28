@@ -4,7 +4,7 @@ SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MI
 
 StructuredBuffer<float>Alpha;
 StructuredBuffer<int>BlendMode;
-//StructuredBuffer<int>LayerIndex;
+StructuredBuffer<int>LayerID;
 
 
 Texture2D tex0: PREVIOUS;
@@ -26,7 +26,7 @@ float4 pBlender(float4 PosWVP: SV_POSITION, float2 uv: TEXCOORD0): SV_Target
 	float4 color = float4(0.0, 0.0, 0.0, 1.0);
 
 	for(int i = texcount-1; i>=0; i--){
-		float4 col = texArray.Sample(s0, float3(uv, i));
+		float4 col = texArray.Sample(s0, float3(uv, LayerID[i]));
 		col.a *= Alpha[i];
 		
 		if (BlendMode[i]==0){color=bld(col,col,color);}//NORMAL

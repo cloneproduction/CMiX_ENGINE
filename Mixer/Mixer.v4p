@@ -45,7 +45,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="820" top="2700" width="16428" height="12460">
    </BOUNDS>
-   <BOUNDS type="Window" left="20510" top="6950" width="12380" height="11160">
+   <BOUNDS type="Window" left="20010" top="6270" width="12380" height="11160">
    </BOUNDS>
    <PIN pinname="TransformTexture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -56,6 +56,8 @@
    <PIN pinname="LayerNames" visible="1">
    </PIN>
    <PIN pinname="LayerRemoved" visible="1">
+   </PIN>
+   <PIN pinname="LayerID" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="282" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
@@ -335,7 +337,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6020" top="950" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="LayerIndex">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/LayerID">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -346,30 +348,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="387" debug="0">
-   <BOUNDS type="Node" left="5696" top="1684" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5696" top="1684">
-   </BOUNDS>
-   <BOUNDS type="Window" left="16560" top="6870" width="12975" height="9735">
-   </BOUNDS>
-   <PIN pinname="Init" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="LayerRemoved" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="LayerNames" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="384" srcpinname="Output String" dstnodeid="387" dstpinname="LayerNames">
-   </LINK>
-   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="387" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="387" srcpinname="Output" dstnodeid="375" dstpinname="LayerIndex">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="388">
    <BOUNDS type="Box" left="6890" top="3400" width="795" height="480">
    </BOUNDS>
@@ -383,13 +361,31 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   <PIN pinname="Y Input Value">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|0, 0|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="387" srcpinname="Output" dstnodeid="388" dstpinname="Y Input Value">
+   <NODE systemname="OSCValue" filename="..\Modules\OSCValue.v4p" nodename="..\Modules\OSCValue.v4p" componentmode="Hidden" id="389" debug="0">
+   <BOUNDS type="Node" left="5696" top="1684" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5696" top="1684">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16560" top="6870" width="12975" height="9735">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="384" srcpinname="Output String" dstnodeid="389" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="389" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="389" srcpinname="Output" dstnodeid="375" dstpinname="LayerIndex">
+   </LINK>
+   <LINK srcnodeid="389" srcpinname="Output" dstnodeid="388" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="389" srcpinname="Output" dstnodeid="282" dstpinname="LayerID">
    </LINK>
    </PATCH>

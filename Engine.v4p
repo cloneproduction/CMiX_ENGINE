@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="23470" top="7940" width="4730" height="6750">
+   <BOUNDS type="Window" left="30570" top="11810" width="4730" height="6750">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -59,7 +59,7 @@
    </PIN>
    </NODE>
    <NODE id="53" componentmode="Hidden" debug="0" systemname="Messenger" filename="Messenger\Messenger.v4p" nodename="Messenger\Messenger.v4p">
-   <BOUNDS type="Window" left="18210" top="11340" width="21070" height="18840">
+   <BOUNDS type="Window" left="8930" top="7590" width="21070" height="16340">
    </BOUNDS>
    <BOUNDS type="Node" left="990" top="1450" width="2200" height="280">
    </BOUNDS>

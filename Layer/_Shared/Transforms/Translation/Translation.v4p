@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="970" scrolly="70" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
    <BOUNDS type="Window" left="8595" top="5610" width="12105" height="8865">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -49,7 +49,7 @@
    </PIN>
    <BOUNDS type="Box" left="4785" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="2025" top="405" width="22755" height="15660">
+   <BOUNDS type="Window" left="-460" top="3890" width="27260" height="15660">
    </BOUNDS>
    </NODE>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="1068">
@@ -81,7 +81,7 @@
    </PIN>
    <BOUNDS type="Box" left="8115" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="-300" top="480" width="29100" height="16500">
+   <BOUNDS type="Window" left="1740" top="1890" width="28860" height="15800">
    </BOUNDS>
    <PIN pinname="TranslateName" visible="1">
    </PIN>
@@ -131,14 +131,12 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9680" top="4940" width="9310" height="14220">
+   <BOUNDS type="Window" left="9680" top="4940" width="13340" height="15250">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1107" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="1068" srcpinname="XYZ Transformed" dstnodeid="1107" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1107" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
    <NODE id="1108" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
@@ -171,9 +169,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1136">
-   <BOUNDS type="Box" left="2070" top="2100" width="1665" height="240">
+   <BOUNDS type="Box" left="2100" top="2120" width="1665" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2070" top="2100" width="0" height="0">
+   <BOUNDS type="Node" left="2100" top="2120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Translate/Amount">
    </PIN>
@@ -205,9 +203,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="4065" top="2100" width="1590" height="240">
+   <BOUNDS type="Box" left="4120" top="2120" width="1590" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4065" top="2100" width="0" height="0">
+   <BOUNDS type="Node" left="4120" top="2120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode/Mode">
    </PIN>
@@ -249,6 +247,8 @@
    </PIN>
    <PIN pinname="LayerRemoved" visible="1">
    </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1142" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -265,8 +265,6 @@
    <LINK srcnodeid="1139" srcpinname="Output" dstnodeid="1126" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1126" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1126" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="1126" srcpinname="Transform Out" dstnodeid="1108" dstpinname="Input Node">
    </LINK>
@@ -333,5 +331,9 @@
    <LINK srcnodeid="1136" srcpinname="Output String" dstnodeid="1139" dstpinname="Address">
    </LINK>
    <LINK srcnodeid="1144" srcpinname="Output String" dstnodeid="1139" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1107" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1126" dstpinname="Select">
    </LINK>
    </PATCH>

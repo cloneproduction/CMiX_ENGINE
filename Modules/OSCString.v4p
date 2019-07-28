@@ -27,12 +27,12 @@
    </BOUNDS>
    <BOUNDS type="Node" left="675" top="4155" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input String" visible="1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="16620" top="6720" width="9975" height="8055">
+   <BOUNDS type="Window" left="27560" top="12070" width="6160" height="6480">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -52,24 +52,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Output Bin Size|">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE id="46" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="270" left="660" top="1905" type="Node" width="2010">
-   </BOUNDS>
-   <PIN pinname="Match Rule" slicecount="1" values="All">
-   </PIN>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   <PIN pinname="OnReceive" visible="1">
-   </PIN>
-   <PIN pinname="Bin Sizes" visible="1">
-   </PIN>
-   <PIN pinname="Address" visible="1">
-   </PIN>
-   <PIN pinname="Match Count" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="68">
@@ -120,8 +102,6 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="67" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="46" dstpinname="Address">
-   </LINK>
    <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="74">
    <BOUNDS type="Node" left="3450" top="1980" width="100" height="100">
    </BOUNDS>
@@ -130,40 +110,66 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="46" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="76" dstpinname="Update Key" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="76" dstpinname="Output Key" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="76" dstpinname="Update Value">
-   </LINK>
-   <NODE id="73" systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden">
-   <PIN pinname="Key" visible="1" slicecount="3" values="/Layer0/BlendMode,/Layer1/BlendMode,/Layer2/BlendMode">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="75">
+   <BOUNDS type="Box" left="5700" top="2550" width="4820" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5700" top="2550" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Flush" visible="1" slicecount="1" values="0">
+   <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="75" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="77">
+   <BOUNDS type="Box" left="1640" top="1390" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1640" top="1390" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="All">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="78" dstpinname="Update Key" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="78" dstpinname="Output Key" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="78" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
+   <BOUNDS height="270" left="660" top="1905" type="Node" width="2010">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="78" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Arguments" dstnodeid="78" dstpinname="Update Value">
+   </LINK>
+   <LINK srcnodeid="77" srcpinname="Output Enum" dstnodeid="78" dstpinname="Match Rule">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="78" dstpinname="Input">
+   </LINK>
+   <NODE id="79" systemname="Dictionary (String)" filename="StringDictionary\bin\AnyCPU\Debug\StringDictionary.dll" nodename="Dictionary (String)" componentmode="Hidden">
    <BOUNDS type="Node" left="660" top="2805" width="3945" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="660" top="2805">
    </BOUNDS>
-   <PIN pinname="Value Bin Size" visible="1" slicecount="1" values="-1">
-   </PIN>
    </NODE>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
+   <LINK srcnodeid="79" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="73" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
+   <LINK srcnodeid="79" srcpinname="Output Bin Size" dstnodeid="43" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Arguments" dstnodeid="73" dstpinname="Value">
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="79" dstpinname="Delete Key">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="OnReceive" dstnodeid="73" dstpinname="Update">
+   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="79" dstpinname="Flush">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="73" dstpinname="Delete Key">
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="79" dstpinname="Key">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Bin Sizes" dstnodeid="73" dstpinname="Value Bin Size">
+   <LINK srcnodeid="78" srcpinname="Arguments" dstnodeid="79" dstpinname="Value">
    </LINK>
-   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="73" dstpinname="Flush">
+   <LINK srcnodeid="78" srcpinname="OnReceive" dstnodeid="79" dstpinname="Update">
    </LINK>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="73" dstpinname="Key">
+   <LINK srcnodeid="78" srcpinname="Bin Sizes" dstnodeid="79" dstpinname="Value Bin Size">
    </LINK>
    </PATCH>

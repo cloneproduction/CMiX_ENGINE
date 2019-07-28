@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="13935" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\RandomXYZ\RandomXYZ.v4p" systemname="RandomXYZ" filename="C:\Users\flfq\Google Drive\PROJECT\_C-MiX\_C-MiX-2.0\Engine\Channels\Sprite\Transform\Translation\RandomXYZ.v4p" scrollx="21010" scrolly="360">
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="0" debug="0">
    <BOUNDS type="Node" left="8030" top="8100" width="100" height="100">
    </BOUNDS>
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="4">
-   <BOUNDS type="Node" left="2470" top="2720" width="100" height="100">
+   <BOUNDS type="Node" left="2490" top="2350" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2470" top="2720" width="1584" height="2988">
+   <BOUNDS type="Box" left="2490" top="2350" width="1584" height="2988">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="12">
    </PIN>
@@ -96,11 +96,11 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-300" top="480" width="29100" height="16500">
+   <BOUNDS type="Window" left="1740" top="1890" width="28860" height="15800">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="4950" top="11070" width="30210" height="270">
@@ -136,6 +136,8 @@
    <BOUNDS type="Box" left="4950" top="11070">
    </BOUNDS>
    <PIN pinname="Input 12" visible="1">
+   </PIN>
+   <PIN pinname="Input 13" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="60">
@@ -301,7 +303,7 @@
    <LINK srcnodeid="105" srcpinname="Occurrence Index" dstnodeid="74" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="128">
-   <BOUNDS type="Node" left="30460" top="2440" width="320" height="270">
+   <BOUNDS type="Node" left="31140" top="2230" width="320" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1909,7 +1911,7 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="273">
-   <BOUNDS type="Node" left="30405" top="3420" width="100" height="100">
+   <BOUNDS type="Node" left="31125" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1929,9 +1931,9 @@
    <LINK srcnodeid="273" srcpinname="Output" dstnodeid="237" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="274">
-   <BOUNDS type="Box" left="30735" top="3075" width="795" height="240">
+   <BOUNDS type="Box" left="31395" top="2845" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="30735" top="3075" width="0" height="0">
+   <BOUNDS type="Node" left="31395" top="2845" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>

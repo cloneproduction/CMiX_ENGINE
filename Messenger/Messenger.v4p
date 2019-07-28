@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="18210" top="11340" width="21070" height="18840">
+   <BOUNDS type="Window" left="8930" top="7590" width="21070" height="16340">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -55,11 +55,11 @@
    </PIN>
    </NODE>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="988">
-   <BOUNDS type="Node" left="4290" top="5265" width="100" height="100">
+   <BOUNDS type="Node" left="4320" top="5945" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="/Layer1/">
+   <PIN pinname="Input" visible="1" slicecount="2" values="/Layer0/,/Layer1/">
    </PIN>
-   <BOUNDS type="Box" left="4290" top="5265">
+   <BOUNDS type="Box" left="4320" top="5945">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="LayerNames">
    </PIN>
@@ -69,27 +69,27 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5250" top="2505" width="1155" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="LayerNames">
+   <PIN pinname="Input String" slicecount="1" values="/LayerNames">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="1069">
-   <BOUNDS type="Node" left="7685" top="4695" width="100" height="100">
+   <BOUNDS type="Node" left="7735" top="4775" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input" visible="1" slicecount="2" values=",">
    </PIN>
    <PIN pinname="Count" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="1070">
-   <BOUNDS type="Node" left="7680" top="5265" width="100" height="100">
+   <BOUNDS type="Node" left="7730" top="5345" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="LayerCount">
    </PIN>
-   <BOUNDS type="Box" left="7680" top="5265">
+   <BOUNDS type="Box" left="7730" top="5345">
    </BOUNDS>
    </NODE>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="1101">
@@ -133,9 +133,9 @@
    <LINK srcnodeid="1095" srcpinname="Arguments" dstnodeid="1105" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1111">
-   <BOUNDS type="Box" left="6260" top="5365" width="1335" height="1695">
+   <BOUNDS type="Box" left="7260" top="6585" width="1335" height="1695">
    </BOUNDS>
-   <BOUNDS type="Node" left="6260" top="5365" width="0" height="0">
+   <BOUNDS type="Node" left="7260" top="6585" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -145,7 +145,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="/Layer1/">
+   <PIN pinname="Input String" visible="1" slicecount="2" values="/Layer0/,/Layer1/">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
@@ -194,56 +194,12 @@
    </NODE>
    <LINK srcnodeid="1122" srcpinname="Y Output Value" dstnodeid="1117" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="1126">
-   <BOUNDS type="Node" left="6395" top="385" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="IP" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1127">
-   <BOUNDS type="Box" left="7075" top="925" width="1365" height="1185">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7075" top="925" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="192.168.1.1">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="IP">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="5">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1126" srcpinname="IP" dstnodeid="1127" dstpinname="Input String">
-   </LINK>
-   <NODE id="1156" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
-   <BOUNDS height="0" left="4305" top="3825" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Arguments" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1042" srcpinname="Output String" dstnodeid="1156" dstpinname="Address">
-   </LINK>
-   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1159">
-   <BOUNDS type="Node" left="4320" top="4535" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="1111" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="1156" srcpinname="OnReceive" dstnodeid="1159" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="1156" srcpinname="Arguments" dstnodeid="1159" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="1105" srcpinname="Output" dstnodeid="1101" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1180">
-   <BOUNDS type="Box" left="9204" top="5871" width="1290" height="1590">
+   <BOUNDS type="Box" left="9244" top="6351" width="1290" height="1590">
    </BOUNDS>
-   <BOUNDS type="Node" left="9204" top="5871" width="0" height="0">
+   <BOUNDS type="Node" left="9244" top="6351" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -406,28 +362,6 @@
    </LINK>
    <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1188" dstpinname="Input">
    </LINK>
-   <NODE id="1241" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
-   <BOUNDS type="Node" height="276" left="1125" top="3615" width="456">
-   </BOUNDS>
-   <PIN pinname="Set" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1156" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="1241" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1241" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="988" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1241" dstpinname="Set">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1243">
    <BOUNDS type="Box" left="1150" top="8550" width="9924" height="6432">
    </BOUNDS>
@@ -452,20 +386,42 @@
    </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <LINK srcnodeid="1159" srcpinname="Output" dstnodeid="1069" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1244">
-   <BOUNDS type="Box" left="7960" top="3130" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7960" top="3130" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="1069" srcpinname="Count" dstnodeid="1070" dstpinname="Input">
+   </LINK>
+   <NODE id="1249" nodename="OSCDecoder (Network)" systemname="OSCDecoder (Network)">
+   <BOUNDS height="0" left="4305" top="3825" type="Node" width="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1042" srcpinname="Output String" dstnodeid="1249" dstpinname="Address">
+   </LINK>
+   <NODE id="1250" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
+   <BOUNDS type="Node" height="276" left="1125" top="3615" width="456">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1250" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1250" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1250" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1250" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1250" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="1250" srcpinname="Output" dstnodeid="1249" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1251">
+   <BOUNDS type="Node" left="4320" top="4535" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1251" srcpinname="Output" dstnodeid="988" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1251" srcpinname="Output" dstnodeid="1069" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1251" srcpinname="Output" dstnodeid="1111" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1249" srcpinname="OnReceive" dstnodeid="1251" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="1249" srcpinname="Arguments" dstnodeid="1251" dstpinname="Input">
    </LINK>
    </PATCH>
