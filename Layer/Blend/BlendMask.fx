@@ -1,5 +1,6 @@
 Texture2DArray Mask <string uiname="Mask";>;
 Texture2DArray Content <string uiname="Content";>;
+
 uint texarrayID;
 
 #include "ColorSpace.fxh"
@@ -62,19 +63,39 @@ psInputTextured VS_Textured(vsInputTextured input)
 float4 PS_Textured(psInputTextured input): SV_Target
 {
 	float4 c = Content.Sample(linearSampler,float3(input.uv.xy, texarrayID));
-	
-	
 	if(EnableMask == true)
 	{
+		float4 m = Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID));
 		if(MaskType == 0)
 		{
-			float4 m;
-			m = RGBtoHSV(Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID)).rgb).z;
+			float luminance = dot(m.rgb, float3(0.3, 0.59, 0.11)).r;
+			c.a *= luminance;
+		}
+		else if(MaskType == 1)
+		{
+			c.a *= m.r;
+		}
+		else if(MaskType == 2)
+		{
+			c.a *= m.g;
+		}
+		else if(MaskType == 3)
+		{
+			c.a *= m.b;
+		}
+		else if(MaskType == 4)
+		{
+			c.a *= m.b;
+		}
+		else if(MaskType == 5) //ALPHA
+		{
 			c.a *= m.a;
 		}
-
+		else if(MaskType == 6) //INVERT
+		{
+			c.rgb = lerp(c.rgb, 1-c.rgb, dot(float3(0.3, 0.59, 0.11), m.rgb));
+		}
 	}
-
 	return c;
 }
 

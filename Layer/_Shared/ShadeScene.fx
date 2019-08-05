@@ -24,45 +24,10 @@ StructuredBuffer<float>ExplodeAmount;
 
 #include "ColorSpace.fxh"
 
-float4x4 brightnessMatrix (float brightness)
+float Map (float value, float low1, float high1,float low2, float high2)
 {
-	return float4x4(1, 0, 0, 0,
-					0, 1, 0, 0,
-					0, 0, 1, 0,
-					brightness, brightness, brightness, 1);
+	return low2 + (value - low1) * (high2 - low2) / (high1 - low1);
 }
-
-float4x4 contrastMatrix (float contrast)
-{
-	float t = ( 1.0 - contrast) / 2.0;
-	return float4x4 ( contrast, 0, 0, 0,
-                 	0, contrast, 0, 0,
-                 	0, 0, contrast, 0,
-                 	t, t, t, 1 );
-}
-
-
-float4x4 saturationMatrix( float saturation )
-{
-    float3 luminance = float3( 0.3086, 0.6094, 0.0820 );
-    
-    float oneMinusSat = 1.0 - saturation;
-    
-    float3 red = float3( luminance.x * oneMinusSat, luminance.x * oneMinusSat, luminance.x * oneMinusSat );
-    red+= float3( saturation, 0, 0 );
-    
-    float3 green = float3( luminance.y * oneMinusSat, luminance.y * oneMinusSat, luminance.y * oneMinusSat );
-    green += float3( 0, saturation, 0 );
-    
-    float3 blue = float3( luminance.z * oneMinusSat, luminance.z * oneMinusSat, luminance.z * oneMinusSat );
-    blue += float3( 0, 0, saturation );
-    
-    return float4x4( red,     0,
-                 green,   0,
-                 blue,    0,
-                 0, 0, 0, 1 );
-}
-
 
 SamplerState g_samLinear <string uiname="Sampler State";>
 {
@@ -201,14 +166,17 @@ float4 PS(vs2psVisual In): SV_Target
 	float2 uv = mul(float4((In.TexCd.xy*2-1)*float2(1,-1)*.5,0,1),TexTransform[id]).xy*float2(1,-1)+0.5;
 	float4 c = tex.SampleLevel(g_samLinear, uv, 0);
 
+	float3 grey = dot(c.rgb, float3(0.3, 0.59, 0.11));
+	c.rgb = lerp(c.rgb, grey, Map(Saturation[id], -1.0, 1.0, 1.0, -1.0));
 	float3 hsv = RGBtoHSL(c.rgb);
-
+	
 	hsv.r += Hue[id];
-	hsv.g *= Saturation[id];
+	//hsv.g *= Saturation[id];
 	hsv.b += Luminosity[id];
 	c.rgb = HSLtoRGB(hsv.rgb);
 	
-	c =  mul(c, mul(contrastMatrix((Contrast[id] + 1.0)), brightnessMatrix(Brightness[id] * 2.0)));
+	c.rgb = ((c.rgb - 0.5f) * max(Contrast[id]*4.0 + 1.0, 0)) + 0.5f;
+	c.rgb += Brightness[id]*2.0;
 
 	if(InvertMode[id] == 0)
 	{

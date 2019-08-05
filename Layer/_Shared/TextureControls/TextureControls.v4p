@@ -43,7 +43,7 @@
    </BOUNDS>
    </NODE>
    <NODE id="10" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="10130" top="4395" width="100" height="100">
+   <BOUNDS type="Node" left="10120" top="4995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Select" visible="1" slicecount="3" values="1,1,1">
    </PIN>
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="10130" top="4395">
+   <BOUNDS type="Box" left="10120" top="4995">
    </BOUNDS>
    </NODE>
    <NODE id="11" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
@@ -667,7 +667,7 @@
    <LINK srcnodeid="89" srcpinname="Buffer" dstnodeid="91" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="3430" top="4230" width="100" height="100">
+   <BOUNDS type="Node" left="3550" top="4270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -675,12 +675,12 @@
    </PIN>
    <PIN pinname="Source Minimum" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="2">
+   <PIN pinname="Destination Maximum" slicecount="1" values="-4">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Output" dstnodeid="92" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="83" dstpinname="Input">
    </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -743,5 +743,7 @@
    <LINK srcnodeid="93" srcpinname="Output String" dstnodeid="65" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="1" dstpinname="Data">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Output" dstnodeid="83" dstpinname="Input">
    </LINK>
    </PATCH>

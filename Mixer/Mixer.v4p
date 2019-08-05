@@ -349,9 +349,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="388">
-   <BOUNDS type="Box" left="6890" top="3400" width="795" height="480">
+   <BOUNDS type="Box" left="6300" top="2640" width="900" height="1600">
    </BOUNDS>
-   <BOUNDS type="Node" left="6890" top="3400" width="0" height="0">
+   <BOUNDS type="Node" left="6300" top="2640" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -359,7 +359,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
+   <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
    <PIN pinname="Y Input Value">
    </PIN>

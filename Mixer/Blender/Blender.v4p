@@ -234,16 +234,6 @@
    </LINK>
    <LINK srcnodeid="308" srcpinname="Buffer" dstnodeid="274" dstpinname="Alpha">
    </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="311">
-   <BOUNDS type="Node" left="6685" top="2525" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="LayerCount">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="6685" top="2525">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="312">
    <BOUNDS type="Box" left="2230" top="930" width="800" height="240">
    </BOUNDS>
@@ -399,7 +389,7 @@
    <LINK srcnodeid="335" srcpinname="Buffer" dstnodeid="274" dstpinname="LayerID">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="337">
-   <BOUNDS type="Node" left="3750" top="5610" width="100" height="100">
+   <BOUNDS type="Node" left="3620" top="5760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -508,4 +498,14 @@
    </LINK>
    <LINK srcnodeid="349" srcpinname="Y Output Value" dstnodeid="335" dstpinname="Data">
    </LINK>
+   <NODE id="311" systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden">
+   <BOUNDS type="Node" left="6685" top="2525" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6685" top="2525">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="LayerCount">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
    </PATCH>

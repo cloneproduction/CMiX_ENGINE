@@ -309,6 +309,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="20172" top="5832" width="9852" height="13092">
    </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="411" srcpinname="Resolution" dstnodeid="368" dstpinname="VideosRes">
    </LINK>

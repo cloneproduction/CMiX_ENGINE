@@ -11,9 +11,9 @@
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="315" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1455" top="6315" width="1125" height="240">
+   <BOUNDS type="Box" left="1460" top="6320" width="1125" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1455" top="6315" width="0" height="0">
+   <BOUNDS type="Node" left="1460" top="6320" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="TextureOut">
    </PIN>
@@ -21,9 +21,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="838" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1455" top="1500" width="690" height="240">
+   <BOUNDS type="Box" left="1460" top="1500" width="690" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1455" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="1460" top="1500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -117,9 +117,9 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1092" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5715" top="1500" width="720" height="240">
+   <BOUNDS type="Box" left="5720" top="1500" width="720" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5715" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="5720" top="1500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0.12818212890625,0,0,2.0509140625,0,0">
    </PIN>
@@ -135,9 +135,9 @@
    <LINK srcnodeid="1092" srcpinname="Y Output Value" dstnodeid="8" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="Hidden" id="1150">
-   <BOUNDS type="Node" left="3255" top="3225" width="830" height="270">
+   <BOUNDS type="Node" left="3245" top="3225" width="830" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3255" top="3225" width="13053" height="5136">
+   <BOUNDS type="Box" left="3245" top="3225" width="13053" height="5136">
    </BOUNDS>
    <BOUNDS type="Window" left="2440" top="11200" width="22680" height="9990">
    </BOUNDS>
@@ -159,9 +159,9 @@
    <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="1150" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1153">
-   <BOUNDS type="Box" left="3585" top="2385" width="800" height="240">
+   <BOUNDS type="Box" left="3590" top="2390" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3585" top="2385" width="0" height="0">
+   <BOUNDS type="Node" left="3590" top="2390" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Content">
    </PIN>
@@ -175,9 +175,9 @@
    <LINK srcnodeid="1153" srcpinname="Output String" dstnodeid="1150" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="Hidden" id="1154">
-   <BOUNDS type="Node" left="4665" top="3225" width="830" height="270">
+   <BOUNDS type="Node" left="4685" top="3225" width="830" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4665" top="3225" width="13053" height="5136">
+   <BOUNDS type="Box" left="4685" top="3225" width="13053" height="5136">
    </BOUNDS>
    <BOUNDS type="Window" left="390" top="6195" width="20940" height="9570">
    </BOUNDS>
@@ -199,9 +199,9 @@
    <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="1154" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1155">
-   <BOUNDS type="Box" left="4995" top="2385" width="800" height="240">
+   <BOUNDS type="Box" left="5020" top="2390" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4995" top="2385" width="0" height="0">
+   <BOUNDS type="Node" left="5020" top="2390" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Mask">
    </PIN>
@@ -245,9 +245,9 @@
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1161" dstpinname="Operand 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Capture" filename="Capture.v4p" nodename="Capture.v4p" componentmode="Hidden" id="1169">
-   <BOUNDS type="Node" left="6870" top="2385" width="0" height="0">
+   <BOUNDS type="Node" left="6870" top="2390" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6870" top="2385" width="5310" height="5120">
+   <BOUNDS type="Box" left="6870" top="2390" width="5310" height="5120">
    </BOUNDS>
    <BOUNDS type="Window" left="11895" top="4515" width="5310" height="5115">
    </BOUNDS>
@@ -267,9 +267,9 @@
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1170">
-   <BOUNDS type="Node" left="4215" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="4220" top="1500" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4215" top="1500" width="795" height="240">
+   <BOUNDS type="Box" left="4220" top="1500" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="LayerRemoved">
    </PIN>
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1785" top="4140" width="8350" height="7135">
    </BOUNDS>
-   <BOUNDS type="Window" left="225" top="2445" width="11160" height="8505">
+   <BOUNDS type="Window" left="20420" top="12250" width="11160" height="8500">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -303,11 +303,11 @@
    <LINK srcnodeid="1170" srcpinname="Output String" dstnodeid="1171" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="PostFX" filename="_Shared\PostFX\PostFX.v4p" nodename="_Shared\PostFX\PostFX.v4p" componentmode="Hidden" id="1172">
-   <BOUNDS type="Node" left="1455" top="5625" width="100" height="100">
+   <BOUNDS type="Node" left="1460" top="5630" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="11370" top="8190" width="13560" height="7950">
    </BOUNDS>
-   <BOUNDS type="Box" left="1455" top="5625">
+   <BOUNDS type="Box" left="1460" top="5630">
    </BOUNDS>
    <PIN pinname="TexArray Out" visible="1">
    </PIN>
