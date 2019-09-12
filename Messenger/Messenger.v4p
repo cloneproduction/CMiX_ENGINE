@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="20" scrolly="580">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="20" scrolly="1660">
    <BOUNDS type="Window" left="17190" top="10760" width="21070" height="16340">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -376,22 +376,20 @@
    </LINK>
    <LINK srcnodeid="1249" srcpinname="Arguments" dstnodeid="1253" dstpinname="Input">
    </LINK>
-   <NODE id="1257" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
+   <NODE id="1258" hiddenwhenlocked="0" nodename="S+H (Raw)" systemname="S+H (Raw)">
    <BOUNDS type="Node" height="276" left="1125" top="3615" width="456">
    </BOUNDS>
-   <PIN pinname="Set" visible="1">
-   </PIN>
    </NODE>
-   <LINK srcnodeid="1257" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="1095" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1257" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
+   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="690" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="1257" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
+   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1257" dstpinname="Input">
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="1258" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1257" srcpinname="Output" dstnodeid="1249" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="1249" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1257" dstpinname="Set">
+   <LINK srcnodeid="703" srcpinname="Output" dstnodeid="1258" dstpinname="Set">
    </LINK>
    </PATCH>

@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="32520" top="12680" width="4730" height="6750">
+   <BOUNDS type="Window" left="27540" top="3890" width="4730" height="6750">
    </BOUNDS>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -49,7 +49,7 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="-16200" top="5450" width="10830" height="9060">
+   <BOUNDS type="Window" left="12700" top="9110" width="10830" height="9060">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
@@ -141,7 +141,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="950" top="1200" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1111">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1112">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -249,7 +249,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="950" top="320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\Desktop\HAP\DESIGN_TALK">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\Desktop\HAP">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
