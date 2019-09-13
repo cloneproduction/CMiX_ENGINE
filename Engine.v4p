@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="0" scrolly="0" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="27540" top="3890" width="4730" height="6750">
+   <BOUNDS type="Window" left="31840" top="1070" width="4730" height="6750">
    </BOUNDS>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
@@ -141,7 +141,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="950" top="1200" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1112">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1111">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

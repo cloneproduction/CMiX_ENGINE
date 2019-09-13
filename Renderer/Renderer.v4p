@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Renderer\Renderer.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="12700" top="9110" width="10830" height="9060">
    </BOUNDS>
@@ -38,7 +38,7 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="20" dstpinname="Alignment">
    </LINK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="54" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="3530" top="1445" width="1545" height="240">
@@ -318,12 +318,12 @@
    </LINK>
    <LINK srcnodeid="293" srcpinname="IP" dstnodeid="295" dstpinname="Input 1">
    </LINK>
-   <NODE id="290" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" stayontop="0" border="1" hiddenwhenlocked="0" managers="">
+   <NODE id="290" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" border="1" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="2480" top="3975" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2480" top="3975" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="63070" top="6080" width="14400" height="9230">
+   <BOUNDS type="Window" left="22110" top="9170" width="14400" height="9230">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1" pintype="Output">
    </PIN>
@@ -423,17 +423,5 @@
    <LINK srcnodeid="225" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
    <LINK srcnodeid="225" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
-   </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="302" stayontop="1" border="0">
-   <BOUNDS type="Node" left="5370" top="3970" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5370" top="3970" width="4000" height="3000">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-15280" top="2950" width="4220" height="3560">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="256" srcpinname="Layer Out" dstnodeid="302" dstpinname="Layers">
    </LINK>
    </PATCH>
