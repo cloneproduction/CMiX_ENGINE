@@ -73,9 +73,9 @@
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="532" dstpinname="Beat" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="533" debug="0">
-   <BOUNDS type="Node" left="11265" top="3750" width="0" height="0">
+   <BOUNDS type="Node" left="11245" top="3750" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11265" top="3750" width="6244" height="12997">
+   <BOUNDS type="Box" left="11245" top="3750" width="6244" height="12997">
    </BOUNDS>
    <BOUNDS type="Window" left="14450" top="4460" width="21920" height="15740">
    </BOUNDS>
@@ -109,7 +109,7 @@
    <NODE systemname="Rotate" filename="Rotate\Rotate.v4p" nodename="Rotate\Rotate.v4p" componentmode="Hidden" id="617">
    <BOUNDS type="Node" left="1020" top="5625" width="10110" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="-864" top="4032" width="11532" height="9144">
+   <BOUNDS type="Window" left="19830" top="10570" width="11530" height="9140">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
