@@ -323,7 +323,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2480" top="3975" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="28590" top="130" width="9810" height="7040">
+   <BOUNDS type="Window" left="24560" top="130" width="13840" height="8180">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1" pintype="Output">
    </PIN>

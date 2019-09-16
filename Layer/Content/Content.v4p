@@ -43,6 +43,8 @@
    </PIN>
    <PIN pinname="LayerRemoved" visible="1">
    </PIN>
+   <PIN pinname="ContentType" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" hiddenwhenlocked="0" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="600" top="768" width="800" height="240">
@@ -607,5 +609,7 @@
    <LINK srcnodeid="83" srcpinname="Layer" dstnodeid="81" dstpinname="Layer">
    </LINK>
    <LINK srcnodeid="82" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="2" dstpinname="ContentType">
    </LINK>
    </PATCH>

@@ -8,6 +8,8 @@ uint texarrayID;
 bool EnableMask;
 bool KeepOriginal;
 uint MaskType;
+uint ControlType;
+
 struct vsInput
 {
     float4 posObject : POSITION;
@@ -63,43 +65,94 @@ psInputTextured VS_Textured(vsInputTextured input)
 float4 PS_Textured(psInputTextured input): SV_Target
 {
 	float4 c = Content.Sample(linearSampler,float3(input.uv.xy, texarrayID));
+	
 	if(EnableMask == true)
 	{
 		float4 m = Mask.Sample(linearSampler,float3(input.uv.xy, texarrayID));
-		if(MaskType == 0)
+		float maskcomponent;
+		
+		if(MaskType == 0) // Get Luminance
 		{
-			float luminance = dot(m.rgb, float3(0.3, 0.59, 0.11)).r;
-			c.a *= luminance;
+			maskcomponent = dot(m.rgb, float3(0.3, 0.59, 0.11)).r;
 		}
-		else if(MaskType == 1)
+		else if(MaskType == 1) // Get Red
 		{
-			c.a *= m.r;
+			maskcomponent = m.r;
 		}
-		else if(MaskType == 2)
+		else if(MaskType == 2) // Get Green
 		{
-			c.a *= m.g;
+			maskcomponent = m.g;
 		}
-		else if(MaskType == 3)
+		else if(MaskType == 3) // Get Blue
 		{
-			c.a *= m.b;
+			maskcomponent = m.b;
 		}
-		else if(MaskType == 4)
+		else if(MaskType == 4) // Get Alpha
 		{
-			c.a *= m.b;
+			maskcomponent = m.a;
 		}
-		else if(MaskType == 5) //ALPHA
+		else if(MaskType == 5) // Get Invert Alpha
 		{
-			c.a *= m.a;
+			maskcomponent = 1-m.a;
 		}
-		else if(MaskType == 6) //INVERT
+		else if(MaskType == 6) // Get Saturation
 		{
-			c.rgb = lerp(c.rgb, 1-c.rgb, dot(float3(0.3, 0.59, 0.11), m.rgb));
+			maskcomponent = RGBtoHSV(m.rgb).y;
+		}
+		else if(MaskType == 7) // Get Value
+		{
+			maskcomponent = RGBtoHSV(m.rgb).z;
+		}
+		
+		
+		if(ControlType == 0) // Control GreyScale
+		{
+			c.rgb = lerp(c.rgb, dot(c.rgb, float3(0.3, 0.59, 0.11)), maskcomponent);
+		}
+		else if(ControlType == 1) // Control Red
+		{
+			c.r *= maskcomponent;
+		}
+		else if(ControlType == 2) // Control Green
+		{
+			c.g *= maskcomponent;
+		}
+		else if(ControlType == 3) // Control Blue
+		{
+			c.b *= maskcomponent;
+		}
+		else if(ControlType == 4) // Control Alpha
+		{
+			c.a *= 1-maskcomponent;
+		}
+		else if(ControlType == 5) //Control InvertRGB
+		{
+			c.rgb = lerp(c.rgb, 1-c.rgb, maskcomponent);
+		}
+		else if(ControlType == 6) //Control InvertValue
+		{
+			float3 hsv = RGBtoHSV(c.rgb);
+			hsv.z = lerp(hsv.z, 1-hsv.z, maskcomponent);
+			c.rgb = HSVtoRGB(hsv);
+		}
+		else if(ControlType == 7) //Control Saturation
+		{
+			float3 hsv = RGBtoHSV(c.rgb);
+			hsv.y *= maskcomponent;
+			c.rgb = HSVtoRGB(hsv);
+		}
+		else if(ControlType == 8) //Control Value
+		{
+			float3 hsv = RGBtoHSV(c.rgb);
+			hsv.z *= maskcomponent;
+			c.rgb = HSVtoRGB(hsv);
 		}
 	}
+	
 	return c;
 }
 
-technique11 MaskPass <string noTexCdFallback="ConstantNoTexture"; >
+technique11 MaskPass
 {
 	pass P0
 	{
