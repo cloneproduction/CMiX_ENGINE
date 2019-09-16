@@ -54,6 +54,24 @@ cbuffer cbTextureData : register(b2)
 	float4x4 tTex <string uiname="Texture Transform"; bool uvspace=true; >;
 };
 
+float4 Pixelate(Texture2DArray tex, SamplerState s0, float2 uv, float Fader)
+{
+	float pixels;
+	float segment_progress;//= (Fader - 0.5) * 2;
+	if (Fader < 0.5)
+	{
+		segment_progress = 1 - Fader * 2;
+	}
+	else
+	{		
+		segment_progress = (Fader - 0.5) * 2;
+	}
+    pixels = 20 ;
+	float2 newUV = round(uv * pixels) / pixels;	
+	float4 c1 = tex.Sample(linearSampler,float3(newUV, texarrayID));
+	return c1;	
+}
+
 psInputTextured VS_Textured(vsInputTextured input)
 {
 	psInputTextured output;
@@ -146,6 +164,10 @@ float4 PS_Textured(psInputTextured input): SV_Target
 			float3 hsv = RGBtoHSV(c.rgb);
 			hsv.z *= maskcomponent;
 			c.rgb = HSVtoRGB(hsv);
+		}
+		else if(ControlType == 9) //Control Value
+		{
+			c.rgb = lerp(c.rgb, Pixelate(Content, linearSampler, input.uv, maskcomponent), maskcomponent);
 		}
 	}
 	

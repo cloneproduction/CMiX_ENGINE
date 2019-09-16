@@ -323,7 +323,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2480" top="3975" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="24560" top="130" width="13840" height="8180">
+   <BOUNDS type="Window" left="24090" top="130" width="14310" height="8190">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1" pintype="Output">
    </PIN>
@@ -405,7 +405,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="1920,1080">
+   <PIN pinname="Y Input Value" slicecount="2" values="1920,1080" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
