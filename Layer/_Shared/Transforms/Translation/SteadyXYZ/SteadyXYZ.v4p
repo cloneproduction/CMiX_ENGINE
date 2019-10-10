@@ -53,7 +53,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="1,0,0">
+   <PIN pinname="Y Input Value" slicecount="3" values="0.56,0,0">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -210,7 +210,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-460" top="3890" width="27260" height="15660">
+   <BOUNDS type="Window" left="18110" top="3610" width="27260" height="15660">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>

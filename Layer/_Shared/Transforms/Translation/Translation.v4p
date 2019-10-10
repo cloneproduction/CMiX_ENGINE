@@ -49,7 +49,7 @@
    </PIN>
    <BOUNDS type="Box" left="4785" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="-460" top="3890" width="27260" height="15660">
+   <BOUNDS type="Window" left="18110" top="3610" width="27260" height="15660">
    </BOUNDS>
    </NODE>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="1068">

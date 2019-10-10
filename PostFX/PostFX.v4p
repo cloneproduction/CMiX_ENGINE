@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="6660">
-   <BOUNDS type="Window" left="9855" top="7140" width="20250" height="15705">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\PostFX\PostFX.v4p" systemname="PostFX" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\PostFX\PostFX.v4p" scrollx="0" scrolly="330">
+   <BOUNDS type="Window" left="18380" top="4110" width="20250" height="15700">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="4830" top="16346" width="795" height="240">
@@ -133,7 +133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17836" top="7282" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -143,7 +143,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Gradient (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Gradient.tfx" nodename="Gradient (DX11.TextureFX)" componentmode="Hidden" id="297">
@@ -157,7 +157,7 @@
    </PIN>
    <PIN pinname="Color2" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Gamma" slicecount="1" values="3">
+   <PIN pinname="Gamma" slicecount="1" values="0.22">
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -183,7 +183,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15556" top="6934" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.49212,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -457,11 +457,13 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5785" top="5635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.18">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="568" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Destination Maximum">
@@ -529,7 +531,7 @@
    <NODE systemname="Decay (Animation)" nodename="Decay (Animation)" componentmode="Hidden" id="584">
    <BOUNDS type="Node" left="2215" top="5740" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -773,8 +775,6 @@
    <LINK srcnodeid="529" srcpinname="Y" dstnodeid="623" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="622" srcpinname="Output" dstnodeid="623" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="583" srcpinname="Output" dstnodeid="584" dstpinname="Input">
    </LINK>
    <NODE systemname="FXAA11 (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\FXAA11.tfx" nodename="FXAA11 (DX11.TextureFX)" componentmode="Hidden" id="624">
    <BOUNDS type="Node" left="1730" top="3470" width="100" height="100">
@@ -1195,5 +1195,9 @@
    <LINK srcnodeid="529" srcpinname="X" dstnodeid="102" dstpinname="Period">
    </LINK>
    <LINK srcnodeid="589" srcpinname="Texture Out" dstnodeid="21" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Transform Out" dstnodeid="589" dstpinname="tTex">
+   </LINK>
+   <LINK srcnodeid="529" srcpinname="Z" dstnodeid="102" dstpinname="BackBeat">
    </LINK>
    </PATCH>

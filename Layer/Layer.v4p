@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Layer.v4p" scrollx="0" scrolly="0" systemname="Layer" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Layer.v4p" locked="0">
-   <BOUNDS type="Window" left="22370" top="10440" width="9580" height="8590">
+   <BOUNDS type="Window" left="21910" top="12820" width="9580" height="8590">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -174,30 +174,6 @@
    </NODE>
    <LINK srcnodeid="1153" srcpinname="Output String" dstnodeid="1150" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="Hidden" id="1154">
-   <BOUNDS type="Node" left="4685" top="3225" width="830" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4685" top="3225" width="13053" height="5136">
-   </BOUNDS>
-   <BOUNDS type="Window" left="390" top="6195" width="20940" height="9570">
-   </BOUNDS>
-   <PIN pinname="Input Node - Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Capture" visible="1">
-   </PIN>
-   <PIN pinname="CaptureRes" visible="1">
-   </PIN>
-   <PIN pinname="LayerRemoved" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="1154" dstpinname="Messenger" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1154" dstpinname="LayerNames" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="1154" dstpinname="MasterPeriod" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1155">
    <BOUNDS type="Box" left="5020" top="2390" width="800" height="240">
    </BOUNDS>
@@ -212,8 +188,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1155" srcpinname="Output String" dstnodeid="1154" dstpinname="Input 2">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1160">
    <BOUNDS type="Box" left="2580" top="4890" width="660" height="240">
    </BOUNDS>
@@ -256,11 +230,7 @@
    <PIN pinname="Resolution" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1169" srcpinname="Texture Out" dstnodeid="1154" dstpinname="Capture" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="1169" srcpinname="Texture Out" dstnodeid="1150" dstpinname="Capture" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1169" srcpinname="Resolution" dstnodeid="1154" dstpinname="CaptureRes" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="1169" srcpinname="Resolution" dstnodeid="1150" dstpinname="CaptureRes" hiddenwhenlocked="1">
    </LINK>
@@ -278,8 +248,6 @@
    </NODE>
    <LINK srcnodeid="1170" srcpinname="Output String" dstnodeid="1150" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1170" srcpinname="Output String" dstnodeid="1154" dstpinname="LayerRemoved" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="MaskTexture" filename="Mask\MaskTexture.v4p" nodename="Mask\MaskTexture.v4p" componentmode="Hidden" id="1171">
    <BOUNDS type="Node" left="1785" top="4140" width="5865" height="270">
    </BOUNDS>
@@ -295,8 +263,6 @@
    <LINK srcnodeid="1150" srcpinname="Input Node - Texture Out" dstnodeid="1171" dstpinname="Content">
    </LINK>
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1171" dstpinname="Input - Input 1" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1154" srcpinname="Input Node - Texture Out" dstnodeid="1171" dstpinname="Mask">
    </LINK>
    <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1171" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
@@ -323,5 +289,29 @@
    <LINK srcnodeid="1171" srcpinname="Texture Out" dstnodeid="1172" dstpinname="TexArray">
    </LINK>
    <LINK srcnodeid="1172" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="Hidden" id="1173">
+   <BOUNDS type="Node" left="4685" top="3225" width="830" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4685" top="3225" width="13053" height="5136">
+   </BOUNDS>
+   <BOUNDS type="Window" left="390" top="6195" width="20940" height="9570">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="838" srcpinname="Output Node" dstnodeid="1173" dstpinname="Messenger" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1090" srcpinname="Output String" dstnodeid="1173" dstpinname="LayerNames" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1091" srcpinname="Y Output Value" dstnodeid="1173" dstpinname="MasterPeriod" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1155" srcpinname="Output String" dstnodeid="1173" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1169" srcpinname="Texture Out" dstnodeid="1173" dstpinname="Capture" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1169" srcpinname="Resolution" dstnodeid="1173" dstpinname="CaptureRes" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1170" srcpinname="Output String" dstnodeid="1173" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1173" srcpinname="Input Node - Texture Out" dstnodeid="1171" dstpinname="Mask">
    </LINK>
    </PATCH>

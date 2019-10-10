@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Messenger\Messenger.v4p" systemname="Messenger" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Messenger\Messenger.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="16070" top="8560" width="21070" height="16340">
+   <BOUNDS type="Window" left="3190" top="2580" width="21070" height="16340">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -55,11 +55,11 @@
    </PIN>
    </NODE>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="988">
-   <BOUNDS type="Node" left="4310" top="5350" width="100" height="100">
+   <BOUNDS type="Node" left="5340" top="5370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="4310" top="5350">
+   <BOUNDS type="Box" left="5340" top="5370">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="LayerNames">
    </PIN>
@@ -75,7 +75,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="1069">
-   <BOUNDS type="Node" left="7735" top="4775" width="100" height="100">
+   <BOUNDS type="Node" left="6975" top="4765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -83,21 +83,21 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="1070">
-   <BOUNDS type="Node" left="7730" top="5350" width="100" height="100">
+   <BOUNDS type="Node" left="6980" top="5370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="LayerCount">
    </PIN>
-   <BOUNDS type="Box" left="7730" top="5350">
+   <BOUNDS type="Box" left="6980" top="5370">
    </BOUNDS>
    </NODE>
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="1101">
-   <BOUNDS type="Node" left="9580" top="5350" width="100" height="100">
+   <BOUNDS type="Node" left="10420" top="5370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="/Layer0/">
    </PIN>
-   <BOUNDS type="Box" left="9580" top="5350">
+   <BOUNDS type="Box" left="10420" top="5370">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="LayerRemoved">
    </PIN>
@@ -133,9 +133,9 @@
    <LINK srcnodeid="1095" srcpinname="Arguments" dstnodeid="1105" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1111">
-   <BOUNDS type="Box" left="6520" top="6410" width="1335" height="1695">
+   <BOUNDS type="Box" left="4320" top="6290" width="1335" height="1695">
    </BOUNDS>
-   <BOUNDS type="Node" left="6520" top="6410" width="0" height="0">
+   <BOUNDS type="Node" left="4320" top="6290" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -147,7 +147,7 @@
    </PIN>
    <PIN pinname="Input String" visible="1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="6">
+   <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.10">
@@ -197,9 +197,9 @@
    <LINK srcnodeid="1105" srcpinname="Output" dstnodeid="1101" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1180">
-   <BOUNDS type="Box" left="9240" top="6410" width="1290" height="1590">
+   <BOUNDS type="Box" left="9600" top="6390" width="1290" height="1590">
    </BOUNDS>
-   <BOUNDS type="Node" left="9240" top="6410" width="0" height="0">
+   <BOUNDS type="Node" left="9600" top="6390" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -287,7 +287,7 @@
    <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="1208">
    <BOUNDS type="Node" left="12250" top="5360" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="ContentFolder">
    </PIN>
@@ -394,20 +394,24 @@
    </NODE>
    <LINK srcnodeid="1261" srcpinname="Output String" dstnodeid="1260" dstpinname="Address">
    </LINK>
-   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1259">
+   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="1260" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="1264">
    <BOUNDS type="Node" left="12255" top="4195" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1260" srcpinname="OnReceive" dstnodeid="1259" dstpinname="Set">
+   <LINK srcnodeid="1260" srcpinname="OnReceive" dstnodeid="1264" dstpinname="Set">
    </LINK>
-   <LINK srcnodeid="1260" srcpinname="Arguments" dstnodeid="1259" dstpinname="Input">
+   <LINK srcnodeid="1260" srcpinname="Arguments" dstnodeid="1264" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1258" srcpinname="Output" dstnodeid="1260" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1259" srcpinname="Output" dstnodeid="1208" dstpinname="Input">
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="1265">
+   <BOUNDS type="Node" left="12260" top="4760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1265" srcpinname="Output" dstnodeid="1208" dstpinname="Input">
    </LINK>
    </PATCH>

@@ -205,9 +205,9 @@
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="350" dstpinname="Transform BinSize" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="ColorBuffer" filename="ColorBuffer\ColorBuffer.v4p" nodename="ColorBuffer\ColorBuffer.v4p" componentmode="Hidden" id="352">
-   <BOUNDS type="Node" left="12225" top="4545" width="0" height="0">
+   <BOUNDS type="Node" left="12305" top="4545" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12225" top="4545" width="3100" height="3820">
+   <BOUNDS type="Box" left="12305" top="4545" width="3100" height="3820">
    </BOUNDS>
    <BOUNDS type="Window" left="14445" top="8370" width="4215" height="4620">
    </BOUNDS>
@@ -668,70 +668,6 @@
    </PACK>
    <LINK srcnodeid="550" srcpinname="Output" dstnodeid="514" dstpinname="Input">
    </LINK>
-   <NODE systemname="ShadeScene (DX11.Effect)" filename="..\..\_Shared\ShadeScene.fx" nodename="ShadeScene (DX11.Effect)" componentmode="Hidden" id="632">
-   <BOUNDS type="Node" left="3335" top="5935" width="15270" height="270">
-   </BOUNDS>
-   <PIN pinname="sbWorld" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Light DirectionXYZ" visible="1" slicecount="3" values="-0.127550675621982,-0.158806294779184,-2.0774001139797">
-   </PIN>
-   <PIN pinname="TexTransform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Control" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="632" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="632" dstpinname="InstanceStartIndex">
-   </LINK>
-   <LINK srcnodeid="561" srcpinname="Color Output" dstnodeid="632" dstpinname="Ambient Color">
-   </LINK>
-   <LINK srcnodeid="562" srcpinname="Color Output" dstnodeid="632" dstpinname="Diffuse Color">
-   </LINK>
-   <LINK srcnodeid="563" srcpinname="Color Output" dstnodeid="632" dstpinname="Specular Color">
-   </LINK>
-   <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="632" dstpinname="texarrayID">
-   </LINK>
-   <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="632" dstpinname="Amb">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="632" dstpinname="Saturation">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Contrast" dstnodeid="632" dstpinname="Contrast">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Brightness" dstnodeid="632" dstpinname="Brightness">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Invert" dstnodeid="632" dstpinname="Invert">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Keying" dstnodeid="632" dstpinname="Keying">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="632" dstpinname="InvertMode">
-   </LINK>
-   <LINK srcnodeid="437" srcpinname="Buffer" dstnodeid="632" dstpinname="ExplodeAmount" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="632" dstpinname="Technique">
-   </LINK>
-   <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="632" dstpinname="tex" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Hue" dstnodeid="632" dstpinname="Hue">
-   </LINK>
-   <LINK srcnodeid="609" srcpinname="Luminosity" dstnodeid="632" dstpinname="Luminosity">
-   </LINK>
-   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="632" dstpinname="gsfxTransformTex" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="632" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="602" srcpinname="Output" dstnodeid="632" dstpinname="Light DirectionXYZ">
-   </LINK>
-   <LINK srcnodeid="628" srcpinname="Buffer" dstnodeid="632" dstpinname="TexTransform">
-   </LINK>
-   <LINK srcnodeid="136" srcpinname="Transform Out" dstnodeid="632" dstpinname="Transform In">
-   </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="635">
    <BOUNDS type="Node" left="4095" top="720" width="100" height="100">
    </BOUNDS>
@@ -756,10 +692,6 @@
    </LINK>
    <LINK srcnodeid="611" srcpinname="Output String" dstnodeid="438" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="632" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="632" dstpinname="sbWorld">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="637">
    <BOUNDS type="Box" left="13422" top="9018" width="792" height="240">
    </BOUNDS>
@@ -773,8 +705,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="637" srcpinname="Y Output Value" dstnodeid="510" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="632" dstpinname="Control" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="640">
    <BOUNDS type="Node" left="18966" top="8932" width="100" height="100">
@@ -793,5 +723,85 @@
    <LINK srcnodeid="642" srcpinname="Transform Out" dstnodeid="512" dstpinname="Data">
    </LINK>
    <LINK srcnodeid="640" srcpinname="Output" dstnodeid="642" dstpinname="TranslateX">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="643">
+   <BOUNDS type="Box" left="8490" top="5020" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8490" top="5020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="644">
+   <BOUNDS type="Box" left="5990" top="5540" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5990" top="5540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShadeScene (DX11.Effect)" filename="..\..\_Shared\ShadeScene.fx" nodename="ShadeScene (DX11.Effect)" componentmode="Hidden" id="645">
+   <BOUNDS type="Node" left="3335" top="5935" width="15270" height="270">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="142" srcpinname="Render State" dstnodeid="645" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Remainder" dstnodeid="645" dstpinname="InstanceStartIndex">
+   </LINK>
+   <LINK srcnodeid="561" srcpinname="Color Output" dstnodeid="645" dstpinname="Ambient Color">
+   </LINK>
+   <LINK srcnodeid="562" srcpinname="Color Output" dstnodeid="645" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="563" srcpinname="Color Output" dstnodeid="645" dstpinname="Specular Color">
+   </LINK>
+   <LINK srcnodeid="350" srcpinname="Buffer" dstnodeid="645" dstpinname="texarrayID">
+   </LINK>
+   <LINK srcnodeid="352" srcpinname="Buffer" dstnodeid="645" dstpinname="Amb">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Saturation" dstnodeid="645" dstpinname="Saturation">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Contrast" dstnodeid="645" dstpinname="Contrast">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Brightness" dstnodeid="645" dstpinname="Brightness">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Invert" dstnodeid="645" dstpinname="Invert">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Keying" dstnodeid="645" dstpinname="Keying">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="InvertMode" dstnodeid="645" dstpinname="InvertMode">
+   </LINK>
+   <LINK srcnodeid="437" srcpinname="Buffer" dstnodeid="645" dstpinname="ExplodeAmount" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="614" srcpinname="Output Enum" dstnodeid="645" dstpinname="Technique">
+   </LINK>
+   <LINK srcnodeid="615" srcpinname="Output Node" dstnodeid="645" dstpinname="tex" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Hue" dstnodeid="645" dstpinname="Hue">
+   </LINK>
+   <LINK srcnodeid="609" srcpinname="Luminosity" dstnodeid="645" dstpinname="Luminosity">
+   </LINK>
+   <LINK srcnodeid="512" srcpinname="Buffer" dstnodeid="645" dstpinname="gsfxTransformTex" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="Geometry Out" dstnodeid="645" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="602" srcpinname="Output" dstnodeid="645" dstpinname="Light DirectionXYZ">
+   </LINK>
+   <LINK srcnodeid="628" srcpinname="Buffer" dstnodeid="645" dstpinname="TexTransform">
+   </LINK>
+   <LINK srcnodeid="136" srcpinname="Transform Out" dstnodeid="645" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="645" srcpinname="Layer" dstnodeid="138" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="351" srcpinname="Buffer" dstnodeid="645" dstpinname="sbWorld">
+   </LINK>
+   <LINK srcnodeid="428" srcpinname="Output Node" dstnodeid="645" dstpinname="Control" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="643" srcpinname="Y Output Value" dstnodeid="645" dstpinname="Power">
+   </LINK>
+   <LINK srcnodeid="644" srcpinname="Output Node" dstnodeid="645" dstpinname="Texture Transform">
    </LINK>
    </PATCH>

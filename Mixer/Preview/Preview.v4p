@@ -90,12 +90,12 @@
    </NODE>
    <LINK srcnodeid="345" srcpinname="Output" dstnodeid="338" dstpinname=".. To [">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="350">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="350">
    <BOUNDS type="Node" left="1260" top="5370" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1260" top="5370" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="20840" top="2080" width="2700" height="13270">
+   <BOUNDS type="Window" left="21540" top="2260" width="1830" height="10700">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

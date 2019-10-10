@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\TextureVisuals\TextureVisuals.v4p" systemname="TextureVisuals" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine\Visuals\TextureVisuals\TextureVisuals.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="5400" top="5856" width="12348" height="10188">
    </BOUNDS>
@@ -6,7 +6,7 @@
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="35" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
@@ -111,7 +111,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2028" top="4980" width="5253" height="6886">
    </BOUNDS>
-   <BOUNDS type="Window" left="8364" top="1476" width="8976" height="11748">
+   <BOUNDS type="Window" left="12930" top="4070" width="8970" height="11740">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="..\..\..\..\..\..\Desktop\HAP\Glitch\Session3\V1-0003_Untitled01831238.hap.mov">
    </PIN>
@@ -122,6 +122,8 @@
    <PIN pinname="TexName" visible="1">
    </PIN>
    <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="369" srcpinname="Resolution" dstnodeid="368" dstpinname="PicturesRes">
@@ -309,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3936" top="4980" width="5545" height="9243">
    </BOUNDS>
-   <BOUNDS type="Window" left="20172" top="5832" width="9852" height="13092">
+   <BOUNDS type="Window" left="20170" top="5830" width="14860" height="13090">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
