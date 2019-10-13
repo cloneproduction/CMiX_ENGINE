@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="10" scrolly="10">
-   <BOUNDS type="Window" left="390" top="6195" width="20940" height="9570">
+   <BOUNDS type="Window" left="8870" top="10040" width="22680" height="9990">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -139,11 +139,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="19224" top="2076" width="1990" height="240">
+   <BOUNDS type="Box" left="19224" top="2076" width="2840" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="19224" top="2076" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Counter/Count">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Modifier/Counter/Count">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -186,7 +186,7 @@
    </NODE>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="46" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="59" dstpinname="Input 1">
+   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="59" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5880" top="768" width="800" height="240">
@@ -206,7 +206,7 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="59" dstpinname="Input 2">
+   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="59" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
@@ -265,7 +265,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9708" top="3612" width="7836" height="5712">
    </BOUNDS>
-   <BOUNDS type="Window" left="19400" top="10800" width="10260" height="5970">
+   <BOUNDS type="Window" left="14500" top="10900" width="10260" height="5970">
    </BOUNDS>
    <PIN pinname="MskOn" visible="1">
    </PIN>
@@ -344,7 +344,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="48" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="48" dstpinname="MasterPeriod">
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="48" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="48" dstpinname="ObjectCount" hiddenwhenlocked="1">
    </LINK>
@@ -426,7 +426,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="74" dstpinname="Input 1">
+   <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="74" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="74" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
@@ -531,7 +531,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="925" top="6014" width="9604" height="8251">
    </BOUNDS>
-   <BOUNDS type="Window" left="7530" top="2790" width="11260" height="11790">
+   <BOUNDS type="Window" left="18370" top="4970" width="11260" height="11790">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -573,10 +573,12 @@
    <NODE systemname="ShadeContent" filename="ShadeVisuals\ShadeContent.v4p" nodename="ShadeVisuals\ShadeContent.v4p" componentmode="Hidden" id="83" debug="0">
    <BOUNDS type="Node" left="2560" top="4334" width="15795" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1035" top="2265" width="22335" height="12240">
+   <BOUNDS type="Window" left="8740" top="5900" width="22330" height="12240">
    </BOUNDS>
    <BOUNDS type="Box" left="2560" top="4334">
    </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="83" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
@@ -596,8 +598,6 @@
    </LINK>
    <LINK srcnodeid="48" srcpinname="XYZ" dstnodeid="83" dstpinname="Beat" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="83" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="83" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="83" dstpinname="LayerRemoved" hiddenwhenlocked="1">
@@ -610,6 +610,8 @@
    </LINK>
    <LINK srcnodeid="82" srcpinname="TexArray Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="2" dstpinname="ContentType">
+   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="2" dstpinname="ContentType" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="83" dstpinname="Transform In">
    </LINK>
    </PATCH>

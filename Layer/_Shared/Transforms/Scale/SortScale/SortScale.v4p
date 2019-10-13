@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Scale\SortScale\SortScale.v4p" systemname="SortScale" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Scale\SortScale\SortScale.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Scale\SortScale\SortScale.v4p" systemname="SortScale" filename="C:\Users\Clone\Google Drive\PROJECT\_C-MiX\C-MiX_3.0\Engine\Engine\_Shared\Transforms\Scale\SortScale\SortScale.v4p" scrollx="0" scrolly="-360">
    <NODE id="0" systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden">
    <BOUNDS type="Node" left="1510" top="3700" width="100" height="100">
    </BOUNDS>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="10">
    </PIN>
-   <PIN pinname="Input String" slicecount="10" values="STD_CTR,STD_RDM,STD_LIN,FLA_RDM,FLA_GRW,FLA_CMP,SLD_RDM_DMP,SLD_RDM_LIN,SLD_GRW,SLD_CMP">
+   <PIN pinname="Input String" slicecount="10" values="STEADY,STD_RDM,STD_LIN,FLA_RDM,FLA_GRW,FLA_CMP,SLD_RDM_DMP,SLD_RDM_LIN,SLD_GRW,SLD_CMP">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -248,7 +248,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="7" dstpinname="Index">
    </LINK>
-   <BOUNDS type="Window" left="27860" top="11320" width="10390" height="8990">
+   <BOUNDS type="Window" left="18300" top="6990" width="10740" height="10380">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

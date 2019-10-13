@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="970" scrolly="70" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
-   <BOUNDS type="Window" left="8595" top="5610" width="12105" height="8865">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
+   <BOUNDS type="Window" left="10890" top="8250" width="12930" height="8170">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="613">
-   <BOUNDS type="Node" left="9765" top="1110" width="100" height="100">
+   <BOUNDS type="Node" left="10060" top="910" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9765" top="1110" width="792" height="240">
+   <BOUNDS type="Box" left="10060" top="910" width="792" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -17,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="611">
-   <BOUNDS type="Node" left="6870" top="1110" width="100" height="100">
+   <BOUNDS type="Node" left="7190" top="910" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6870" top="1110" width="700" height="770">
+   <BOUNDS type="Box" left="7190" top="910" width="700" height="770">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -39,7 +39,7 @@
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="1067">
-   <BOUNDS type="Node" left="4785" top="3570" width="100" height="100">
+   <BOUNDS type="Node" left="5075" top="3290" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -47,13 +47,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="4785" top="3570">
+   <BOUNDS type="Box" left="5075" top="3290">
    </BOUNDS>
-   <BOUNDS type="Window" left="18110" top="3610" width="27260" height="15660">
+   <BOUNDS type="Window" left="9860" top="4590" width="8250" height="13110">
    </BOUNDS>
    </NODE>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="1068">
-   <BOUNDS type="Node" left="6435" top="3570" width="100" height="100">
+   <BOUNDS type="Node" left="6745" top="3290" width="100" height="100">
    </BOUNDS>
    <PIN pinname="SpreadCount" visible="1">
    </PIN>
@@ -63,13 +63,13 @@
    </PIN>
    <PIN pinname="XYZ Transformed" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="6435" top="3570">
+   <BOUNDS type="Box" left="6745" top="3290">
    </BOUNDS>
    <BOUNDS type="Window" left="2775" top="930" width="23280" height="16500">
    </BOUNDS>
    </NODE>
    <NODE systemname="RandomXYZ" filename="RandomXYZ\RandomXYZ.v4p" nodename="RandomXYZ\RandomXYZ.v4p" componentmode="Hidden" id="1069" debug="0">
-   <BOUNDS type="Node" left="8115" top="3570" width="100" height="100">
+   <BOUNDS type="Node" left="8405" top="3290" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter - Input" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    </PIN>
    <PIN pinname="Beats" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="8115" top="3570">
+   <BOUNDS type="Box" left="8405" top="3290">
    </BOUNDS>
    <BOUNDS type="Window" left="1740" top="1890" width="28860" height="15800">
    </BOUNDS>
@@ -97,9 +97,9 @@
    <LINK srcnodeid="611" srcpinname="Y Output Value" dstnodeid="1068" dstpinname="Beat" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1090" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="1140" top="1110" width="795" height="240">
+   <BOUNDS type="Box" left="1130" top="910" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1140" top="1110" width="0" height="0">
+   <BOUNDS type="Node" left="1130" top="910" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -109,7 +109,7 @@
    </PIN>
    </NODE>
    <NODE systemname="SortTranslation" filename="SortTranslation\SortTranslation.v4p" nodename="SortTranslation\SortTranslation.v4p" componentmode="Hidden" id="1107" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="3120" top="4360" width="6705" height="270">
+   <BOUNDS type="Node" left="3420" top="4080" width="6705" height="270">
    </BOUNDS>
    <PIN pinname="Input 4" visible="1">
    </PIN>
@@ -127,11 +127,11 @@
    </PIN>
    <PIN pinname="Select" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3120" top="4360">
+   <BOUNDS type="Box" left="3420" top="4080">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9680" top="4940" width="13340" height="15250">
+   <BOUNDS type="Window" left="9680" top="4940" width="8820" height="13150">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1107" dstpinname="Input 4">
@@ -141,9 +141,9 @@
    <NODE id="1108" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
    </PIN>
-   <BOUNDS type="Box" left="1140" top="6375" width="750" height="240">
+   <BOUNDS type="Box" left="1130" top="6020" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1140" top="6375" width="750" height="240">
+   <BOUNDS type="Node" left="1130" top="6020" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -152,42 +152,32 @@
    </LINK>
    <LINK srcnodeid="1069" srcpinname="Output" dstnodeid="1107" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="Translate" filename="Translate\Translate.v4p" nodename="Translate\Translate.v4p" componentmode="Hidden" id="1126">
-   <BOUNDS type="Node" left="1140" top="5325" width="3990" height="270">
+   <NODE systemname="Translate" filename="Translate\Translate.v4p" nodename="Translate\Translate.v4p" componentmode="Hidden" id="1126" stayontop="1">
+   <BOUNDS type="Node" left="1130" top="4970" width="3130" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="16725" top="7125" width="5700" height="6810">
+   <BOUNDS type="Window" left="11550" top="11690" width="9590" height="7910">
    </BOUNDS>
-   <BOUNDS type="Box" left="1140" top="5325">
+   <BOUNDS type="Box" left="1130" top="4970">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="3" values="0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Select" visible="1" slicecount="1" values="1">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="1136">
-   <BOUNDS type="Box" left="2100" top="2120" width="1665" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2100" top="2120" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Translate/Amount">
+   <PIN pinname="LayerNames" visible="1">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
+   <PIN pinname="LayerRemoved" visible="1">
    </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
+   <PIN pinname="Input 2 - Output" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1137">
-   <BOUNDS type="Box" left="2865" top="1110" width="800" height="240">
+   <BOUNDS type="Box" left="2490" top="910" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2865" top="1110" width="0" height="0">
+   <BOUNDS type="Node" left="2490" top="910" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="text">
    </PIN>
@@ -197,17 +187,17 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="LayerNames">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1138">
-   <BOUNDS type="Box" left="4120" top="2120" width="1590" height="240">
+   <BOUNDS type="Box" left="4420" top="2180" width="4290" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4120" top="2120" width="0" height="0">
+   <BOUNDS type="Node" left="4420" top="2180" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/TranslateMode/Mode">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/Geometry/Modifier/TranslateModifier/TranslateMode/Mode">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -218,26 +208,10 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="OSCValue" filename="..\..\..\..\Modules\OSCValue.v4p" nodename="..\..\..\..\Modules\OSCValue.v4p" componentmode="Hidden" id="1139">
-   <BOUNDS type="Node" left="1140" top="3000" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1140" top="3000">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="LayerRemoved" visible="1">
-   </PIN>
-   <PIN pinname="LayerNames" visible="1">
-   </PIN>
-   <PIN pinname="Address" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1139" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="OSCString" filename="..\..\..\..\Modules\OSCString.v4p" nodename="..\..\..\..\Modules\OSCString.v4p" componentmode="Hidden" id="1142">
-   <BOUNDS type="Node" left="3120" top="3000" width="0" height="0">
+   <BOUNDS type="Node" left="3420" top="2720" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="3000" width="3100" height="4460">
+   <BOUNDS type="Box" left="3420" top="2720" width="3100" height="4460">
    </BOUNDS>
    <BOUNDS type="Window" left="15570" top="9315" width="12435" height="6150">
    </BOUNDS>
@@ -262,10 +236,6 @@
    </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <LINK srcnodeid="1139" srcpinname="Output" dstnodeid="1126" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1126" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="1126" srcpinname="Transform Out" dstnodeid="1108" dstpinname="Input Node">
    </LINK>
    <PACK Name="dx11" Version="1.3.1">
@@ -275,9 +245,9 @@
    </PIN>
    <PIN pinname="Output String" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="4710" top="1110" width="100" height="100">
+   <BOUNDS type="Node" left="4070" top="910" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4710" top="1110" width="795" height="240">
+   <BOUNDS type="Box" left="4070" top="910" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
@@ -322,18 +292,22 @@
    </NODE>
    <LINK srcnodeid="1138" srcpinname="Output String" dstnodeid="1142" dstpinname="Address">
    </LINK>
-   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1139" dstpinname="LayerNames" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1142" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="1144" srcpinname="Output String" dstnodeid="1142" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1136" srcpinname="Output String" dstnodeid="1139" dstpinname="Address">
+   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1107" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="1144" srcpinname="Output String" dstnodeid="1139" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1126" dstpinname="Count" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1107" dstpinname="Select">
+   <LINK srcnodeid="1137" srcpinname="Output String" dstnodeid="1126" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="1126" dstpinname="Select">
+   <LINK srcnodeid="1144" srcpinname="Output String" dstnodeid="1126" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1090" srcpinname="Output Node" dstnodeid="1126" dstpinname="Data" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1126" dstpinname="Input 2 - Output">
+   </LINK>
+   <LINK srcnodeid="1107" srcpinname="Output" dstnodeid="1126" dstpinname="Input">
    </LINK>
    </PATCH>

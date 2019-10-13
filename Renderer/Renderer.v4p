@@ -323,7 +323,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2480" top="3975" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="21910" top="0" width="16490" height="9420">
+   <BOUNDS type="Window" left="26340" top="330" width="11450" height="6560">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1" pintype="Output">
    </PIN>
@@ -430,4 +430,6 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="290" srcpinname="Actual BackBuffer SizeXY" dstnodeid="301" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

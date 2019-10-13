@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" systemname="Transform" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" scrollx="0" scrolly="-360" locked="0">
-   <BOUNDS type="Window" left="19400" top="10800" width="10260" height="5970">
+   <BOUNDS type="Window" left="14500" top="10900" width="10260" height="5970">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -45,7 +45,7 @@
    </PIN>
    <BOUNDS type="Box" left="6690" top="2130">
    </BOUNDS>
-   <BOUNDS type="Window" left="8595" top="5610" width="12105" height="8865">
+   <BOUNDS type="Window" left="10890" top="8250" width="12930" height="8170">
    </BOUNDS>
    <PIN pinname="SprTra" visible="1">
    </PIN>
@@ -77,7 +77,7 @@
    </PIN>
    <BOUNDS type="Box" left="5120" top="2130">
    </BOUNDS>
-   <BOUNDS type="Window" left="10680" top="2835" width="12600" height="8370">
+   <BOUNDS type="Window" left="14220" top="4150" width="12600" height="8370">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -95,7 +95,7 @@
    <NODE systemname="Rotation" filename="Rotation\Rotation.v4p" nodename="..\..\_Shared\Transforms\Rotation\Rotation.v4p" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="3540" top="2130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="5370" top="3045" width="14970" height="8370">
+   <BOUNDS type="Window" left="14280" top="7170" width="14970" height="8370">
    </BOUNDS>
    <PIN pinname="RotationName" visible="1" slicecount="1" values="FLA">
    </PIN>
@@ -149,11 +149,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1980" top="3160" width="8020" height="4980">
    </BOUNDS>
-   <BOUNDS type="Window" left="10500" top="7380" width="9600" height="6495">
+   <BOUNDS type="Window" left="8560" top="5000" width="9840" height="7050">
    </BOUNDS>
    <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -161,9 +161,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="LayerNames" visible="1">
+   </PIN>
+   <PIN pinname="LayerRemoved" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 3" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
-   </LINK>
    <LINK srcnodeid="78" srcpinname="Rotate Out" dstnodeid="135" dstpinname="Transform In 1">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="78" dstpinname="BeatInfos" hiddenwhenlocked="1">
@@ -173,9 +177,9 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="80" dstpinname="BeatInfos" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1980" top="960" width="800" height="240">
+   <BOUNDS type="Box" left="2340" top="930" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1980" top="960" width="0" height="0">
+   <BOUNDS type="Node" left="2340" top="930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -186,8 +190,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="MaskOn">
    </PIN>
    </NODE>
-   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="148" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="8235" top="960" width="800" height="240">
    </BOUNDS>
@@ -234,7 +236,7 @@
    </LINK>
    <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="79" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="80" dstpinname="Input 2" hiddenwhenlocked="1">
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="80" dstpinname="LayerNames" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="148" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
@@ -323,5 +325,13 @@
    <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="79" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="80" dstpinname="LayerRemoved" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output String" dstnodeid="135" dstpinname="LayerNames">
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="135" dstpinname="LayerRemoved">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output Node" dstnodeid="135" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
    </LINK>
    </PATCH>

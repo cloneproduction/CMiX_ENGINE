@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\ColorVisuals\Coloration.v4p" systemname="Coloration" filename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine\Visuals\ColorVisuals\Coloration.v4p" scrollx="0" scrolly="1080">
    <BOUNDS type="Window" left="13000" top="7510" width="24300" height="11880">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -7,9 +7,9 @@
    <NODE id="6" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="645" top="10095" width="1224" height="240">
+   <BOUNDS type="Box" left="2225" top="10785" width="1224" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="645" top="10095" width="750" height="240">
+   <BOUNDS type="Node" left="2225" top="10785" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Color Input" visible="1">
    </PIN>
