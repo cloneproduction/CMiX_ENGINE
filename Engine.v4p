@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Engine.v4p" scrollx="10" scrolly="10" systemname="Engine" filename="C:\Users\flfq\Desktop\_C-MiX-2.0\CMiX\Engine\Engine.v4p" locked="0">
-   <BOUNDS type="Window" left="26750" top="11050" width="4730" height="6750">
+   <BOUNDS type="Window" left="22560" top="10640" width="4730" height="6750">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -66,7 +66,7 @@
    </PACK>
    <LINK srcnodeid="53" srcpinname="LayerRemoved" dstnodeid="48" dstpinname="LayerRemoved" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Layer" filename="Layer\Layer.v4p" nodename="Layer" componentmode="Hidden" id="51" debug="0" stayontop="0">
+   <NODE systemname="Layer" filename="Layer\Layer.v4p" nodename="Layer" componentmode="InAWindow" id="51" debug="0" stayontop="0">
    <BOUNDS type="Node" left="1762" top="2468" width="750" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1762" top="2468" width="8332" height="8260">

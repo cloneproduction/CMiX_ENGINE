@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" systemname="Transform" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Layer\_Shared\Transforms\Transform.v4p" scrollx="0" scrolly="-360" locked="0">
-   <BOUNDS type="Window" left="14500" top="10900" width="10260" height="5970">
+   <BOUNDS type="Window" left="14550" top="10910" width="10260" height="5970">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -153,7 +153,7 @@
    </BOUNDS>
    <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -177,9 +177,9 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="80" dstpinname="BeatInfos" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2340" top="930" width="800" height="240">
+   <BOUNDS type="Box" left="1970" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2340" top="930" width="0" height="0">
+   <BOUNDS type="Node" left="1970" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -189,11 +189,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="MaskOn">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="148" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8235" top="960" width="800" height="240">
+   <BOUNDS type="Box" left="8240" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8235" top="960" width="0" height="0">
+   <BOUNDS type="Node" left="8240" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -275,9 +277,9 @@
    </PIN>
    <PIN pinname="Output String" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="5445" top="960" width="100" height="100">
+   <BOUNDS type="Node" left="5450" top="960" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5445" top="960" width="795" height="240">
+   <BOUNDS type="Box" left="5450" top="960" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
@@ -330,8 +332,8 @@
    </LINK>
    <LINK srcnodeid="151" srcpinname="Output String" dstnodeid="135" dstpinname="LayerRemoved">
    </LINK>
-   <LINK srcnodeid="104" srcpinname="Output Node" dstnodeid="135" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform In 3">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Input">
    </LINK>
    </PATCH>

@@ -1,25 +1,17 @@
 Texture2DArray ControlTexture <string uiname="Control";>;
-
 Texture2D tex;
 
-StructuredBuffer< float4x4> sbWorld;
 StructuredBuffer< float4x4> TexTransform;
 StructuredBuffer< float4x4> gsfxTransformTex;
-
-StructuredBuffer<uint> KeepOriginal;
 StructuredBuffer<float4> Amb;
-
 StructuredBuffer<float>Hue;
-StructuredBuffer<float>Saturation;
+float Saturation;
 StructuredBuffer<float>Luminosity;
-
 StructuredBuffer<float>Contrast;
 StructuredBuffer<float>Brightness;
 StructuredBuffer<float>Invert;
 StructuredBuffer<uint> InvertMode;
-
 StructuredBuffer<float>Keying;
-
 StructuredBuffer<float>ExplodeAmount;
 
 #include "ColorSpace.fxh"
@@ -36,6 +28,8 @@ SamplerState g_samLinear <string uiname="Sampler State";>
     AddressV = Mirror;
 };
 
+StructuredBuffer<float4x4> ObjPosOriginal;
+
 cbuffer cbPerDraw : register( b0 )
 {
 	float4x4 tVP : VIEWPROJECTION;
@@ -50,7 +44,8 @@ cbuffer cbPerDraw : register( b0 )
 cbuffer cbPerObj : register( b1 )
 {
 	float4x4 tTex <string uiname="Texture Transform"; bool uvspace=true; >;
-	
+	float4x4 ObjTransform;
+	float4x4 GroupTransform;
 };
 
 cbuffer cbLightData : register(b3)
@@ -122,19 +117,20 @@ void GS(triangle vs2psVisual input[3], inout TriangleStream<vs2psVisual> gsout)
 	for(int i = 0; i < 3; i++)
 	{
 		int id = input[i].iid + InstanceStartIndex;
-		float4x4 wo = sbWorld[id];
-	
-		wo = mul(wo, tW);
-	
-		float4 position = float4(input[i].Pos.xyz+(norm*amt*ExplodeAmount[id]), input[i].Pos.w);
-			
+
+		float4x4 InstancePos = mul(ObjPosOriginal[id], GroupTransform);
+		float4 ObjPos = mul(input[i].Pos, ObjTransform);
+		float4 NewPosition = mul(ObjPos, InstancePos);
+
+		float4 position = float4(NewPosition.xyz+(norm*amt*ExplodeAmount[id]), NewPosition.w);
+		
 		float3 LightDirV = normalize(-mul(float4(lDir,0.0f), tV).xyz);
 	
 	    //normal in view space
-	    float3 NormV = normalize(mul(mul(mul(input[i].NormV.xyz, wo), (float3x3)tWIT),(float3x3)tV).xyz);
+	    float3 NormV = normalize(mul(mul(mul(input[i].NormV.xyz, tW), tWIT),tV)).xyz;
 		
 	    //view direction = inverse vertexposition in viewspace
-	    float4 PosV = mul(mul(position, wo), tWV);
+	    float4 PosV = mul(mul(position, tW), tWV);
 	    float3 ViewDirV = normalize(-PosV.xyz);
 	
 	    //halfvector
@@ -142,11 +138,11 @@ void GS(triangle vs2psVisual input[3], inout TriangleStream<vs2psVisual> gsout)
 	
 	    //compute blinn lighting
 	    float3 shades = lit(dot(NormV, LightDirV), dot(NormV, H), lPower).xyz;
-	
 	    float4 diff = lDiff * shades.y;
 	    float4 spec = lSpec * shades.z;
 		
-		elem.Pos = mul(mul(position, wo), tVP);
+		//elem.Pos = mul(mul(position, wo), tVP);
+		elem.Pos = mul(position, mul(tW, tVP));
 		elem.Diffuse = diff + lAmb;
 	    elem.Specular = spec;
 		elem.TexCd = input[i].TexCd;
@@ -167,7 +163,7 @@ float4 PS(vs2psVisual In): SV_Target
 	float4 c = tex.SampleLevel(g_samLinear, uv, 0);
 
 	float3 grey = dot(c.rgb, float3(0.3, 0.59, 0.11));
-	c.rgb = lerp(c.rgb, grey, Map(Saturation[id], -1.0, 1.0, 1.0, -1.0));
+	c.rgb = lerp(c.rgb, grey, Map(Saturation, -1.0, 1.0, 1.0, -1.0));
 	float3 hsv = RGBtoHSL(c.rgb);
 	
 	hsv.r += Hue[id];
