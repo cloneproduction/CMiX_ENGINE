@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Rotation\Rotation.v4p" systemname="Rotation" filename="C:\Users\clone\Desktop\2D_MOTION\Rotation\Rotation.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="14280" top="7170" width="14970" height="8370">
+   <BOUNDS type="Window" left="10660" top="5150" width="14970" height="8370">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -140,12 +140,12 @@
    </LINK>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Input - Input 2 - Y Output Value" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="685">
+   <NODE systemname="SteadyXYZ" filename="SteadyXYZ\SteadyXYZ.v4p" nodename="SteadyXYZ\SteadyXYZ.v4p" componentmode="Hidden" id="685" stayontop="1">
    <BOUNDS type="Node" left="3180" top="3480" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3180" top="3480" width="11686" height="9009">
    </BOUNDS>
-   <BOUNDS type="Window" left="22980" top="8060" width="7200" height="11450">
+   <BOUNDS type="Window" left="21840" top="8620" width="7200" height="11450">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="6" values=",,,,,">
    </PIN>

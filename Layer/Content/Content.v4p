@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="10" scrolly="10">
-   <BOUNDS type="Window" left="8810" top="16780" width="22680" height="9990">
+   <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\Content\Content.v4p" systemname="Content" filename="C:\Users\Clone\Google Drive\PROJECT\GITHUB\CMiX_ENGINE\Engine\Visuals\Content.v4p" scrollx="10" scrolly="20">
+   <BOUNDS type="Window" left="390" top="6195" width="20940" height="9570">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.4">
    </PACK>
@@ -265,7 +265,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9708" top="3612" width="7836" height="5712">
    </BOUNDS>
-   <BOUNDS type="Window" left="14550" top="10910" width="10260" height="5970">
+   <BOUNDS type="Window" left="9020" top="10970" width="10260" height="5970">
    </BOUNDS>
    <PIN pinname="MskOn" visible="1">
    </PIN>
@@ -570,7 +570,7 @@
    </LINK>
    <LINK srcnodeid="81" srcpinname="Input Node - Texture Out" dstnodeid="82" dstpinname="TexArray">
    </LINK>
-   <NODE systemname="ShadeContent" filename="ShadeVisuals\ShadeContent.v4p" nodename="ShadeVisuals\ShadeContent.v4p" componentmode="InAWindow" id="83" debug="0">
+   <NODE systemname="ShadeContent" filename="ShadeVisuals\ShadeContent.v4p" nodename="ShadeVisuals\ShadeContent.v4p" componentmode="Hidden" id="83" debug="0">
    <BOUNDS type="Node" left="2560" top="4334" width="15795" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="470" top="8760" width="22330" height="12240">

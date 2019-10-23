@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="C:\Users\BabyClone\Documents\GitHub\CMiX_ENGINE\Layer\_Shared\Transforms\Translation\Translation.v4p" scrollx="0" scrolly="0" systemname="Translation" filename="C:\Users\clone\Desktop\2D_MOTION\Translation\Translation.v4p">
-   <BOUNDS type="Window" left="10890" top="8250" width="12930" height="8170">
+   <BOUNDS type="Window" left="4640" top="8800" width="12930" height="8170">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -49,7 +49,7 @@
    </PIN>
    <BOUNDS type="Box" left="5075" top="3290">
    </BOUNDS>
-   <BOUNDS type="Window" left="9860" top="4590" width="8250" height="13110">
+   <BOUNDS type="Window" left="22440" top="5730" width="8250" height="13110">
    </BOUNDS>
    </NODE>
    <NODE systemname="SlideXYZ" filename="SlideXYZ\SlideXYZ.v4p" nodename="SlideXYZ\SlideXYZ.v4p" componentmode="Hidden" id="1068">

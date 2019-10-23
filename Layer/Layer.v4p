@@ -134,12 +134,12 @@
    </NODE>
    <LINK srcnodeid="1092" srcpinname="Y Output Value" dstnodeid="8" dstpinname="MasterPeriod" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="InAWindow" id="1150">
+   <NODE systemname="Content" filename="Content\Content.v4p" nodename="Content\Content.v4p" componentmode="Hidden" id="1150">
    <BOUNDS type="Node" left="3245" top="3225" width="830" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3245" top="3225" width="13053" height="5136">
    </BOUNDS>
-   <BOUNDS type="Window" left="8810" top="16780" width="22680" height="9990">
+   <BOUNDS type="Window" left="3060" top="8790" width="22680" height="9990">
    </BOUNDS>
    <PIN pinname="Input Node - Texture Out" visible="1">
    </PIN>
@@ -312,6 +312,6 @@
    </LINK>
    <LINK srcnodeid="1173" srcpinname="Input Node - Texture Out" dstnodeid="1171" dstpinname="Mask">
    </LINK>
-   <LINK srcnodeid="1150" srcpinname="Input Node - Texture Out" dstnodeid="315" dstpinname="Input Node">
+   <LINK srcnodeid="1172" srcpinname="TexArray Out" dstnodeid="315" dstpinname="Input Node">
    </LINK>
    </PATCH>
